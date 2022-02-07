@@ -4,7 +4,7 @@
   "language": "en",
   "home_page_url": "https://polymc.org/",
   "feed_url": "https://example.com/feed/feed.json",
-  "description": "An opensource launcher",
+  "description": "An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.",
   "author": {
     "name": "PolyMC",
     "url": "https://polymc.org/about/"
