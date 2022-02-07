@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <style>:root{--grad-primary:linear-gradient(126deg, #88b858 0%, #72b147 25%, #5a9a30 50%);--grad-secondary:linear-gradient(126deg, #555 0%, #272727 50%);--primary:#88b858;--secondary:#a87953;--background:#333;--accent:#555;--link:#88b858ff;--visited:#72b147ff;--primary-text:#fff;--code:#222}@media (prefers-color-scheme:light){:root{--primary-text:#333;--background:#fff;--accent:#e0e0e0}}@font-face{font-family:Heebo;src:url(/assets/css/fonts/Heebo-Medium.ttf);font-display:swap}*{box-sizing:border-box}body,html{padding:0;margin:0;font-family:-apple-system,system-ui,sans-serif;color:var(--primary-text);background-color:var(--background)}*{box-sizing:border-box}h1,h2,h3,h4,h5,h6{font-family:Heebo}p:last-child{margin-bottom:0}.tmpl-post li,img,p{max-width:45em}.tmpl-post li,p{line-height:1.45}a[href]{color:var(--blue)}a[href]:visited{color:var(--navy)}main{padding:1rem}main :first-child{margin-top:0}header{border-bottom:1px dashed var(--lightgray)}header:after{content:"";display:table;clear:both}table{margin:1em 0}table td,table th{padding-right:1em}code,pre{font-family:Consolas,Menlo,Monaco,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L","Courier New",Courier,monospace;line-height:1.5}pre{font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;background-color:var(--code)}code{word-break:break-all}.highlight-line{display:block;padding:.125em 1em;text-decoration:none;color:inherit}.highlight-line:empty:before{content:" "}.highlight-line+br{display:none}.highlight-line-isdir{color:#b0b0b0;background-color:#222}.highlight-line-active{background-color:#444;background-color:hsla(0,0%,27%,.8)}.highlight-line-add{background-color:#45844b}.highlight-line-remove{background-color:#902f2f}.container{max-width:1400px;width:100%;margin:0 auto}.center{text-align:center;margin:auto}.infobox{background-color:var(--accent);padding:1em}.button{position:relative;color:#fff;padding:.5em 1.5em;list-style:none;font-size:1.5em;font-family:Heebo;text-decoration:none;background-color:var(--primary);background-image:var(--grad-primary);background-size:200%;clip-path:polygon(0.6em 0,calc(100% - 0.6em) 0,100% 50%,calc(100% - 0.6em) 100%,0.6em 100%,0 50%);transition:.3s ease}.button:focus,.button:hover{text-decoration:underline;background-position-x:100%}.button[href]{color:#fff}.button[href]:visited{color:#fff}.button.secondary{background-color:var(--secondary);background-image:var(--grad-secondary)}.postlist{list-style:none;padding:0}.postlist-item{display:flex;flex-wrap:wrap;align-items:baseline;counter-increment:start-from -1;line-height:1.8}.postlist-item:before{display:inline-block;pointer-events:none;content:""counter(start-from, decimal-leading-zero) ". ";line-height:100%;text-align:right}.postlist-date,.postlist-item:before{font-size:.8125em;color:var(--darkgray)}.postlist-date{word-spacing:-0.5px}.postlist-link{padding-left:.25em;padding-right:.25em;text-underline-position:from-font;text-underline-offset:0;text-decoration-thickness:1px}.postlist-item-active .postlist-link{font-weight:700}.tmpl-home .postlist-link{font-size:1.1875em;font-weight:700}.post-tag{display:inline-flex;align-items:center;justify-content:center;text-transform:uppercase;font-size:.75em;padding:.08333333333333em .3333333333333em;margin-left:.6666666666667em;margin-top:.5em;margin-bottom:.5em;color:var(--darkgray);border:1px solid var(--accent);border-radius:.25em;text-decoration:none;line-height:1.8}a[href].post-tag,a[href].post-tag:visited{color:inherit}a[href].post-tag:focus,a[href].post-tag:hover{background-color:var(--lightgray)}.postlist-item>.post-tag{align-self:center}.warning{background-color:#ffc;padding:1em .625em}.warning ol:only-child{margin:0}.direct-link{font-family:sans-serif;text-decoration:none;font-style:normal;margin-left:.1em}a[href].direct-link,a[href].direct-link:visited{color:transparent}:hover>a[href].direct-link,:hover>a[href].direct-link:visited,a[href].direct-link:focus,a[href].direct-link:focus:visited{color:#aaa}.download-links{padding:0}.download-links li{display:inline;margin:.25rem}.row{display:flex}.row-reverse{flex-direction:row-reverse}.column{display:flex;align-items:center;justify-content:center;flex:50%;padding:20px}.subtitle{font-size:1.5em}.ccontent{text-align:center}.column img{max-width:100%}.footer{border-top:1px dashed var(--accent);padding:2em}.hero{background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("");background-position:center;background-repeat:no-repeat;background-size:cover;position:relative;color:#fff}.hero-title{font-size:3em}@media only screen and (max-width:1400px){.row{flex-direction:column}}header{border-bottom:1px dashed var(--accent)}.home{display:flex;align-items:center;font-size:2em}.home img{width:2em;height:2em;margin-right:.1em}.home :link:not(:hover){text-decoration:none}nav{overflow:auto;font-family:Heebo;display:flex;justify-content:space-between}.links,.navbar{margin:.5em;display:flex;align-items:center;padding:0}.nav-item{display:inline-block;margin-right:1rem;font-size:18px}.nav-item a{color:var(--primary-text);text-decoration:none}.nav-item:hover{text-decoration:underline}.nav-item-active{font-weight:700;text-decoration:underline}.links li{margin-left:1rem;list-style:none}code[class*=language-],pre[class*=language-]{font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;background:var(--code);color:#f8f8f2}pre[class*=language-]{padding:1.5em 0;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#75715e}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.boolean,.token.number,.token.operator{color:#fd971f}.token.property{color:#f4bf75}.token.tag{color:#66d9ef}.token.string{color:#a1efe4}.token.selector{color:#ae81ff}.token.attr-name{color:#fd971f}.language-css .token.string,.style .token.string,.token.entity,.token.url{color:#a1efe4}.token.attr-value,.token.control,.token.directive,.token.keyword,.token.unit{color:#a6e22e}.token.atrule,.token.regex,.token.statement{color:#a1efe4}.token.placeholder,.token.variable{color:#66d9ef}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #f9f8f5;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#f92672}.token.entity{cursor:help}pre>code.highlight{outline:.4em solid #f92672;outline-offset:.4em}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyMC - 0.4.6 - Bug fixes and improvements!</title>
+    <meta name="description" content="An opensource launcher">
+    <link rel="alternate" href="/eleventy-gh-demo/feed/feed.xml" type="application/atom+xml" title="PolyMC">
+    <link rel="alternate" href="/eleventy-gh-demo/feed/feed.json" type="application/json" title="PolyMC"> 
+    
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"></link>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+  </head>
+  <body>
+    <header>
+      
+        <nav class="container">
+    <ul class="navbar">
+        <li class="nav-item">
+            <a href="/eleventy-gh-demo/" class="home">
+                <img src="/eleventy-gh-demo/assets/img/icon.svg" alt="Logo">
+                PolyMC
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/eleventy-gh-demo/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="/eleventy-gh-demo/news/">News</a>
+        </li>
+        <li class="nav-item">
+            <a href="/eleventy-gh-demo/about/">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="/eleventy-gh-demo/wiki/">Wiki</a>
+        </li>
+        <li class="nav-item">
+            <a href="/eleventy-gh-demo/support/">Support</a>
+        </li>
+        </ul>
+        <ul class="links">
+            <li>
+                <a class="button" href="/eleventy-gh-demo/download/">Download</a>
+            </li>
+            <li>
+                <a class="button secondary" href="https://github.com/PolyMC/PolyMC">GitHub</a>
+            </li>
+        </ul>
+    </ul>
+</nav>
+
+        
+      
+    </header>
+    <main class="container">
+      
+<h1>0.4.6 - Bug fixes and improvements!</h1>
+
+<time datetime="2015-05-20">20 May 2015</time>
+
+<p>After about half a year, a new stable release is (almost) ready. This one includes plenty of behind the scenes fixes and also some UI and usability improvements.</p>
+<p>Why almost? Apple forced my hand and made me release early by breaking secure connections on OSX. The remaining issues weren't critical though, and I decided to push the release now, rather than leave the OSX users hanging.</p>
+<p>Stable releases should come in a more timely manner from now on.</p>
+<p>So, what's new?</p>
+<h3 id="enough-bug-fixes-to-fix...-a-lot-of-things" tabindex="-1">Enough bug fixes to fix... a lot of things <a class="direct-link" href="#enough-bug-fixes-to-fix...-a-lot-of-things" aria-hidden="true">#</a></h3>
+<p>With almost half a year since the last stable version, the list of fixes is very long indeed.</p>
+<p>Probably the most important part of MultiMC - network and download functionality - has been improved significantly.</p>
+<p>If you still play some very old version of Minecraft, you'll also notice that some mods now behave better - instead of letting java load them, we just stuff everything into the Minecraft jar, just like the old mods expect.</p>
+<p>The problem that triggered this release - broken root certificates on OSX - has also been fixed.</p>
+<p>No bees were involved in this release.</p>
+<h3 id="simple-modpack-support" tabindex="-1">Simple modpack support <a class="direct-link" href="#simple-modpack-support" aria-hidden="true">#</a></h3>
+<p>We've added some simple modpack import and export functionality into this version. You can export instance as minimal zip files using the handy export dialog that lets you pick which files to export and even remembers them for the next time:</p>
+<p align="center">
+  <img src="/images/export1.png" alt="Export Instance dialog"/>
+</p>
+<p>And the instance creation dialog lets you pick local and remote pack zip files instead of just Minecraft versions:</p>
+<p align="center">
+  <img src="/images/import1.png" alt="New Instance from modpack"/>
+</p>
+<p>This should be expanded upon in the (hopefully) near future.</p>
+<h3 id="better-version-lists-and-java-detection" tabindex="-1">Better version lists and java detection <a class="direct-link" href="#better-version-lists-and-java-detection" aria-hidden="true">#</a></h3>
+<p>Version lists got a new facelift and now highlight the latest (with a bug icon) and recommended (with a star icon) versions.</p>
+<p align="center">
+  <img src="/images/version_lists1.png" alt="Improved version lists"/>
+</p>
+<p>Same applies to the list that presents the detected java versions. The best one detected will be on top of the list. This should make it super easy to decide which one to use.</p>
+<h2 id="the-future" tabindex="-1">The future <a class="direct-link" href="#the-future" aria-hidden="true">#</a></h2>
+<p>Exciting things are coming, at the usual glacial pace and with the ETA of &quot;when it's done&quot; :)</p>
+<p>We are hard at work at getting our own package repository running (continuation of QuickMods), along with much better modpack support. The future MultiMC will have this package repository at its core and will use it for more than just mods.</p>
+<p>Seeing that FTB is moving to the curse platform, the FTB tracking support will be abandoned when the FTB launcher stops working. The replacement should be import (not tracking) of other launcher instances and direct download and updating of modpack instances from the various platforms out there.</p>
+<p><a href="https://twitter.com/peterixxx">@peterixxx</a> and <a href="https://twitter.com/02JanDal">@02JanDal</a></p>
+<h2 id="full-changelog" tabindex="-1">Full changelog <a class="direct-link" href="#full-changelog" aria-hidden="true">#</a></h2>
+<h3 id="functional-changes" tabindex="-1">Functional changes <a class="direct-link" href="#functional-changes" aria-hidden="true">#</a></h3>
+<ul>
+<li>Old version.json and custom.json version files will be transformed into a minecraft version patch:
+<ul>
+<li>The process is automated</li>
+<li>LWJGL entries are stripped from the original file - you may have to re-do LWJGL version customizations</li>
+<li>Old files will be renamed - .old extension is added</li>
+</ul>
+</li>
+<li>It's now possible to:
+<ul>
+<li>Customize, edit and revert builtin version patches (Minecraft, LWJGL)</li>
+<li>Edit custom version patches (Forge, LiteLoader, other)</li>
+</ul>
+</li>
+<li>Blocked various environment variables from affecting Minecraft:
+<ul>
+<li>&quot;JAVA_ARGS&quot;,</li>
+<li>&quot;CLASSPATH&quot;,</li>
+<li>&quot;CONFIGPATH&quot;,</li>
+<li>&quot;JAVA_HOME&quot;,</li>
+<li>&quot;JRE_HOME&quot;,</li>
+<li>&quot;_JAVA_OPTIONS&quot;,</li>
+<li>&quot;JAVA_OPTIONS&quot;,</li>
+<li>&quot;JAVA_TOOL_OPTIONS&quot;</li>
+<li>If you rely on those in any way, now would be a time to fix that</li>
+</ul>
+</li>
+<li>Improved handling of LWJGL on OSX (.dylib vs. .jnilib extensions)</li>
+<li>Jar mods are now always put into a generated temporary Minecraft jar instead of being put on the classpath</li>
+<li>PermGen settings:
+<ul>
+<li>Changed default PermGen value to 128M because of many issues from new users</li>
+<li>MultiMC now recognizes the Java version used and will not add PermGen settings to Java &gt;= 1.8</li>
+</ul>
+</li>
+<li>Implemented simple modpack import and export feature:
+<ul>
+<li>Export allows selecting which files go into the resulting zip archive</li>
+<li>Only MultiMC instances for now, other pack formats are planned</li>
+<li>Import is either from local file or URL, URL can't have ad/click/pay gates</li>
+</ul>
+</li>
+<li>Instance copy doesn't follow symlinks on Linux anymore
+<ul>
+<li>Still does on Windows because copying symlinks requires Administrator level access</li>
+</ul>
+</li>
+<li>Instance delete doesn't follow symlinks anymore - anywhere</li>
+<li>MCEdit tool now recognizes MCEdit2.exe as a valid file to runtime</li>
+<li>Log uploads now follow the maximum allowed paste sizes of <a href="http://paste.ee">paste.ee</a> and are encoded properly</li>
+<li>MultiMC now doesn't use a proxy by default</li>
+<li>Running profilers now works on Windows</li>
+<li>MultiMC will warn you if you run it from WinRAR or temporary folders</li>
+<li>Minecraft process ID is printed in the log on start</li>
+<li>SSL certificates are fixed on OSX 10.10.3 and newer - see <a href="http://www.infoworld.com/article/2911209/mac-os-x/yosemite-10103-breaks-some-applications-and-https-sites.html">explanation</a>.</li>
+</ul>
+<h3 id="ui-changes" tabindex="-1">UI changes <a class="direct-link" href="#ui-changes" aria-hidden="true">#</a></h3>
+<ul>
+<li>Version lists:
+<ul>
+<li>All version lists now include latest and recommended versions - recommended are pre-selected</li>
+<li>Java version list now sorts versions based on suitability - best on top</li>
+<li>Forge version list includes the development branch the version came from</li>
+<li>Minecraft list marks latest release as 'recommended' and latest snapshot as 'latest', if it is newer than the release</li>
+</ul>
+</li>
+<li>Mod lists:
+<ul>
+<li>Are updated and sorted after adding mods</li>
+<li>Browse buttons now properly open the central mods folder</li>
+<li>Are no longer watching for updates when the user doesn't look at them</li>
+<li>Loader mod list now recognizes .litemod files as valid mod files</li>
+</ul>
+</li>
+<li>Improved wording of instance delete dialog</li>
+<li>Icon themes:
+<ul>
+<li>Can be changed without restarting</li>
+<li>Added a workaround for icon themes broken in KDE Plasma 5 (only relevant for custom builds)</li>
+</ul>
+</li>
+<li>Status icons:
+<ul>
+<li>Included a 'yellow' one</li>
+<li>Are clickable and link to <a href="https://help.mojang.com/">help.mojang.com</a></li>
+<li>Refresh when the icon theme does</li>
+</ul>
+</li>
+<li>Changed default console font to Courier 10pt on Windows</li>
+<li>Description text in the main window status bar now updates when Minecraft version is changed</li>
+<li>Inserted blatant self-promotion (Only Minecraft 1.8 and up)
+<ul>
+<li>This adds a bit of unobtrusive flavor text to the Minecraft F3 screen</li>
+</ul>
+</li>
+<li>Log page now has a button to scroll to bottom</li>
+<li>Errors are reported while updating the instance in the Version page</li>
+<li>Fixed typos (forge -&gt; Forge)</li>
+</ul>
+<h3 id="internals" tabindex="-1">Internals <a class="direct-link" href="#internals" aria-hidden="true">#</a></h3>
+<ul>
+<li>Massive internal restructuring (ongoing)</li>
+<li>Downloads now follow redirects</li>
+<li>Minecraft window size is now always at least 1x1 pixel (prevents crash from bad settings)</li>
+<li>Better handling of Forge downloads (obviously invalid/broken files are redownloaded)</li>
+<li>All download tasks now only start 6 downloads, using a queue (fixes issues with assets downloads)</li>
+<li>Fixed bugs related to corrupted settings files (settings and patch order file saves are now atomic)</li>
+<li>Updated zip manipulation library - files inside newly written zip/jar files should have proper access rights and timestamps</li>
+<li>Made Minecraft resource downloads more resilient (throwing away invalid/broken index files)</li>
+<li>Minecraft asset import from old format has been removed</li>
+<li>Generally improved MultiMC logging:
+<ul>
+<li>More error logging for network tasks</li>
+<li>Added timestamps relative to application start</li>
+</ul>
+</li>
+<li>Fixed issue with the application getting stuck in a modal dialog when screenshot uploads fail</li>
+<li>Instance profiles and patches are now loaded lazily (speeds up MultiMC start)</li>
+<li>Groups are saved after copying an instance</li>
+<li>MultiMC launcher part will now exit cleanly when MultiMC crashes or is closed during instance launch</li>
+</ul>
+
+<hr>
+<ul><li>Next: <a href="/eleventy-gh-demo/news/0-4-7-update/">0.4.7 - What 0.4.6 should have been.</a></li><li>Previous: <a href="/eleventy-gh-demo/news/0-4-4-update/">0.4.5 - Translations, Themes, and Technic</a></li>
+</ul>
+
+    </main>
+    <footer>
+      <div class="footer">
+    <div class="container">
+        © 2021-2022 PolyMC Contributors
+        <!-- Add social buttons and cat button -->
+        
+        <h1>Latest
+            
+                3 Posts
+        </h1>
+        
+        
+        <ol reversed class="postlist" style="counter-reset: start-from 31">
+
+  <li class="postlist-item">
+    <a href="/eleventy-gh-demo/news/log4j-remote-execution/" class="postlist-link">IMPORTANT MESSAGE - Security vulnerability in Minecraft</a>
+    <time class="postlist-date" datetime="2021-12-10">10 Dec 2021</time>
+    
+  </li>
+
+  <li class="postlist-item">
+    <a href="/eleventy-gh-demo/news/0-6-14-update/" class="postlist-link">0.6.14 - Microsoft account refinement, Forge 1.17+ and other fixes</a>
+    <time class="postlist-date" datetime="2021-12-08">08 Dec 2021</time>
+    
+  </li>
+
+  <li class="postlist-item">
+    <a href="/eleventy-gh-demo/news/0-6-13-update/" class="postlist-link">0.6.13 - Microsoft account integration</a>
+    <time class="postlist-date" datetime="2021-09-09">09 Sep 2021</time>
+    
+  </li>
+
+</ol>
+
+        <p>More posts can be found in
+            <a href="/eleventy-gh-demo/news/">the news</a>.</p>
+    </div>
+</div>
+    </footer>
+  </body>
+</html>

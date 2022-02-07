@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <style>:root{--grad-primary:linear-gradient(126deg, #88b858 0%, #72b147 25%, #5a9a30 50%);--grad-secondary:linear-gradient(126deg, #555 0%, #272727 50%);--primary:#88b858;--secondary:#a87953;--background:#333;--accent:#555;--link:#88b858ff;--visited:#72b147ff;--primary-text:#fff;--code:#222}@media (prefers-color-scheme:light){:root{--primary-text:#333;--background:#fff;--accent:#e0e0e0}}@font-face{font-family:Heebo;src:url(/assets/css/fonts/Heebo-Medium.ttf);font-display:swap}*{box-sizing:border-box}body,html{padding:0;margin:0;font-family:-apple-system,system-ui,sans-serif;color:var(--primary-text);background-color:var(--background)}*{box-sizing:border-box}h1,h2,h3,h4,h5,h6{font-family:Heebo}p:last-child{margin-bottom:0}.tmpl-post li,img,p{max-width:45em}.tmpl-post li,p{line-height:1.45}a[href]{color:var(--blue)}a[href]:visited{color:var(--navy)}main{padding:1rem}main :first-child{margin-top:0}header{border-bottom:1px dashed var(--lightgray)}header:after{content:"";display:table;clear:both}table{margin:1em 0}table td,table th{padding-right:1em}code,pre{font-family:Consolas,Menlo,Monaco,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L","Courier New",Courier,monospace;line-height:1.5}pre{font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;background-color:var(--code)}code{word-break:break-all}.highlight-line{display:block;padding:.125em 1em;text-decoration:none;color:inherit}.highlight-line:empty:before{content:" "}.highlight-line+br{display:none}.highlight-line-isdir{color:#b0b0b0;background-color:#222}.highlight-line-active{background-color:#444;background-color:hsla(0,0%,27%,.8)}.highlight-line-add{background-color:#45844b}.highlight-line-remove{background-color:#902f2f}.container{max-width:1400px;width:100%;margin:0 auto}.center{text-align:center;margin:auto}.infobox{background-color:var(--accent);padding:1em}.button{position:relative;color:#fff;padding:.5em 1.5em;list-style:none;font-size:1.5em;font-family:Heebo;text-decoration:none;background-color:var(--primary);background-image:var(--grad-primary);background-size:200%;clip-path:polygon(0.6em 0,calc(100% - 0.6em) 0,100% 50%,calc(100% - 0.6em) 100%,0.6em 100%,0 50%);transition:.3s ease}.button:focus,.button:hover{text-decoration:underline;background-position-x:100%}.button[href]{color:#fff}.button[href]:visited{color:#fff}.button.secondary{background-color:var(--secondary);background-image:var(--grad-secondary)}.postlist{list-style:none;padding:0}.postlist-item{display:flex;flex-wrap:wrap;align-items:baseline;counter-increment:start-from -1;line-height:1.8}.postlist-item:before{display:inline-block;pointer-events:none;content:""counter(start-from, decimal-leading-zero) ". ";line-height:100%;text-align:right}.postlist-date,.postlist-item:before{font-size:.8125em;color:var(--darkgray)}.postlist-date{word-spacing:-0.5px}.postlist-link{padding-left:.25em;padding-right:.25em;text-underline-position:from-font;text-underline-offset:0;text-decoration-thickness:1px}.postlist-item-active .postlist-link{font-weight:700}.tmpl-home .postlist-link{font-size:1.1875em;font-weight:700}.post-tag{display:inline-flex;align-items:center;justify-content:center;text-transform:uppercase;font-size:.75em;padding:.08333333333333em .3333333333333em;margin-left:.6666666666667em;margin-top:.5em;margin-bottom:.5em;color:var(--darkgray);border:1px solid var(--accent);border-radius:.25em;text-decoration:none;line-height:1.8}a[href].post-tag,a[href].post-tag:visited{color:inherit}a[href].post-tag:focus,a[href].post-tag:hover{background-color:var(--lightgray)}.postlist-item>.post-tag{align-self:center}.warning{background-color:#ffc;padding:1em .625em}.warning ol:only-child{margin:0}.direct-link{font-family:sans-serif;text-decoration:none;font-style:normal;margin-left:.1em}a[href].direct-link,a[href].direct-link:visited{color:transparent}:hover>a[href].direct-link,:hover>a[href].direct-link:visited,a[href].direct-link:focus,a[href].direct-link:focus:visited{color:#aaa}.download-links{padding:0}.download-links li{display:inline;margin:.25rem}.row{display:flex}.row-reverse{flex-direction:row-reverse}.column{display:flex;align-items:center;justify-content:center;flex:50%;padding:20px}.subtitle{font-size:1.5em}.ccontent{text-align:center}.column img{max-width:100%}.footer{border-top:1px dashed var(--accent);padding:2em}.hero{background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("");background-position:center;background-repeat:no-repeat;background-size:cover;position:relative;color:#fff}.hero-title{font-size:3em}@media only screen and (max-width:1400px){.row{flex-direction:column}}header{border-bottom:1px dashed var(--accent)}.home{display:flex;align-items:center;font-size:2em}.home img{width:2em;height:2em;margin-right:.1em}.home :link:not(:hover){text-decoration:none}nav{overflow:auto;font-family:Heebo;display:flex;justify-content:space-between}.links,.navbar{margin:.5em;display:flex;align-items:center;padding:0}.nav-item{display:inline-block;margin-right:1rem;font-size:18px}.nav-item a{color:var(--primary-text);text-decoration:none}.nav-item:hover{text-decoration:underline}.nav-item-active{font-weight:700;text-decoration:underline}.links li{margin-left:1rem;list-style:none}code[class*=language-],pre[class*=language-]{font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;background:var(--code);color:#f8f8f2}pre[class*=language-]{padding:1.5em 0;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#75715e}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.boolean,.token.number,.token.operator{color:#fd971f}.token.property{color:#f4bf75}.token.tag{color:#66d9ef}.token.string{color:#a1efe4}.token.selector{color:#ae81ff}.token.attr-name{color:#fd971f}.language-css .token.string,.style .token.string,.token.entity,.token.url{color:#a1efe4}.token.attr-value,.token.control,.token.directive,.token.keyword,.token.unit{color:#a6e22e}.token.atrule,.token.regex,.token.statement{color:#a1efe4}.token.placeholder,.token.variable{color:#66d9ef}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #f9f8f5;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#f92672}.token.entity{cursor:help}pre>code.highlight{outline:.4em solid #f92672;outline-offset:.4em}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyMC - 0.6.14 - Microsoft account refinement, Forge 1.17+ and other fixes</title>
+    <meta name="description" content="An opensource launcher">
+    <link rel="alternate" href="/eleventy-gh-demo/feed/feed.xml" type="application/atom+xml" title="PolyMC">
+    <link rel="alternate" href="/eleventy-gh-demo/feed/feed.json" type="application/json" title="PolyMC"> 
+    
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"></link>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+  </head>
+  <body>
+    <header>
+      
+        <nav class="container">
+    <ul class="navbar">
+        <li class="nav-item">
+            <a href="/eleventy-gh-demo/" class="home">
+                <img src="/eleventy-gh-demo/assets/img/icon.svg" alt="Logo">
+                PolyMC
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/eleventy-gh-demo/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="/eleventy-gh-demo/news/">News</a>
+        </li>
+        <li class="nav-item">
+            <a href="/eleventy-gh-demo/about/">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="/eleventy-gh-demo/wiki/">Wiki</a>
+        </li>
+        <li class="nav-item">
+            <a href="/eleventy-gh-demo/support/">Support</a>
+        </li>
+        </ul>
+        <ul class="links">
+            <li>
+                <a class="button" href="/eleventy-gh-demo/download/">Download</a>
+            </li>
+            <li>
+                <a class="button secondary" href="https://github.com/PolyMC/PolyMC">GitHub</a>
+            </li>
+        </ul>
+    </ul>
+</nav>
+
+        
+      
+    </header>
+    <main class="container">
+      
+<h1>0.6.14 - Microsoft account refinement, Forge 1.17+ and other fixes</h1>
+
+<time datetime="2021-12-08">08 Dec 2021</time>
+
+<p>This further refines Microsoft account support, along with small fixes related to modpack platforms and Java runtime detection.</p>
+<p>It's also been 10 years since the first release of MultiMC. All background cats are now ready to party!</p>
+<p align="center">
+  <img src="/images/cattiversary.png" alt="Background cat with a party hat"/>
+</p>
+<p>What comes next, in no particular order:</p>
+<ul>
+<li>Complete rework of Java runtime management. With the release of 1.18, the game now requires even more different versions of the JRE, and a solution is required.</li>
+<li>Switch release model from distinct development and stable builds to a stream of builds with some of them promoted to stable.</li>
+<li>Overhauling theming in general, ideally with a repository of themes <a href="https://www.myteamspeak.com/">like teamspeak has</a>.</li>
+<li>Deconstructing Forge installers and replacing them with something that doesn't randomly break and we can host ourselves.</li>
+<li>Investigation into gathering and providing mod metadata for all mods.</li>
+<li>Fixing skins in old releases, and telemetry blocking.</li>
+<li>... and others.</li>
+</ul>
+<h3 id="forge" tabindex="-1">Forge <a class="direct-link" href="#forge" aria-hidden="true">#</a></h3>
+<ul>
+<li>Forge for 1.17.x and 1.18 has been enabled.<br>
+It's still messy on the inside, which is something to address in the future.</li>
+</ul>
+<h3 id="microsoft-accounts" tabindex="-1">Microsoft accounts <a class="direct-link" href="#microsoft-accounts" aria-hidden="true">#</a></h3>
+<p>The account system now refreshes accounts in the background while the application is running.</p>
+<ul>
+<li>GH-4071: Errors encountered while refreshing account tokens no longer always result in the tokens expiring:
+<ul>
+<li>Network errors encountered when refreshing the main account tokens result in the account being <strong>Offline</strong>.</li>
+<li><strong>Hard</strong> errors are produced by the main tokens becoming provably invalid.</li>
+<li>Errors encountered later are treated as <strong>Soft</strong> - they do make the account unusable, but still recoverable by trying again.</li>
+<li><strong>Soft</strong> errors are treated as <strong>Hard</strong> errors when adding the account initially.</li>
+</ul>
+</li>
+</ul>
+<p>In general, this should make MultiMC much more forgiving towards various temporary and non-fatal errors.</p>
+<ul>
+<li>GH-4217: Added support for GamePass accounts and Minecraft profile setup:
+<ul>
+<li>The new endpoint for logging in with Microsoft is now used (<code>/launcher/login</code>), enabling compatibility with GamePass.</li>
+<li>Game ownership is checked instead of only relying on Minecraft profile presence.</li>
+<li>Accounts can now be added even when they do not have a profile.</li>
+<li>The launcher should guide you through selecting a Minecraft name if you don't have one yet.</li>
+</ul>
+</li>
+</ul>
+<h3 id="modpack-platform-changes" tabindex="-1">Modpack platform changes <a class="direct-link" href="#modpack-platform-changes" aria-hidden="true">#</a></h3>
+<ul>
+<li>
+<p>GH-4055: MultiMC now tries to avoid downloading multiple files to the same path for FTB modpacks.</p>
+</li>
+<li>
+<p>Search as you type is now used for FTB.</p>
+</li>
+<li>
+<p>GH-4185: Version of the modpack is now included in the name of the instance by default.</p>
+</li>
+<li>
+<p>The modpack platform UIs now include text field clear buttons.</p>
+</li>
+</ul>
+<h3 id="other-changes" tabindex="-1">Other changes <a class="direct-link" href="#other-changes" aria-hidden="true">#</a></h3>
+<ul>
+<li>
+<p>Adjusted warnings about Java runtime required for Minecraft 1.18 (it's not Java 16, it's Java 17).</p>
+</li>
+<li>
+<p>GH-3490: Instance sorting is now aware of numbers (and sorts 99 before 100).</p>
+</li>
+<li>
+<p>GH-4164: Reimplemented assigning instances to groups using drag &amp; drop.</p>
+</li>
+<li>
+<p>GH-1795: Added terminal launch option to use a specific Minecraft profile (in-game player name).</p>
+<p>Used like this:</p>
+<pre><code>./MultiMC --launch 1.17.1 --profile MultiMCTest --server mc.hypixel.net
+</code></pre>
+</li>
+<li>
+<p>GH-4227: Fix crash related to invalid Forge mod metadata.</p>
+</li>
+<li>
+<p>GH-4200: Search for the <em>Eclipse Foundation</em> and <em>Adoptium</em> Java runtimes in the Windows Registry.</p>
+</li>
+<li>
+<p>Added shader packs page to instances.</p>
+</li>
+<li>
+<p>Removed Mojang services status information from the main window - the status is no longer provided by Mojang.</p>
+</li>
+<li>
+<p>It is now possible to turn off global tracking of play time.</p>
+</li>
+</ul>
+<h3 id="technical-changes" tabindex="-1">Technical changes <a class="direct-link" href="#technical-changes" aria-hidden="true">#</a></h3>
+<ul>
+<li>Debranding is mostly finished. You may see some changes in the logo being used in less places.</li>
+</ul>
+
+<hr>
+<ul><li>Next: <a href="/eleventy-gh-demo/news/log4j-remote-execution/">IMPORTANT MESSAGE - Security vulnerability in Minecraft</a></li><li>Previous: <a href="/eleventy-gh-demo/news/0-6-13-update/">0.6.13 - Microsoft account integration</a></li>
+</ul>
+
+    </main>
+    <footer>
+      <div class="footer">
+    <div class="container">
+        © 2021-2022 PolyMC Contributors
+        <!-- Add social buttons and cat button -->
+        
+        <h1>Latest
+            
+                3 Posts
+        </h1>
+        
+        
+        <ol reversed class="postlist" style="counter-reset: start-from 31">
+
+  <li class="postlist-item">
+    <a href="/eleventy-gh-demo/news/log4j-remote-execution/" class="postlist-link">IMPORTANT MESSAGE - Security vulnerability in Minecraft</a>
+    <time class="postlist-date" datetime="2021-12-10">10 Dec 2021</time>
+    
+  </li>
+
+  <li class="postlist-item">
+    <a href="/eleventy-gh-demo/news/0-6-14-update/" class="postlist-link">0.6.14 - Microsoft account refinement, Forge 1.17+ and other fixes</a>
+    <time class="postlist-date" datetime="2021-12-08">08 Dec 2021</time>
+    
+  </li>
+
+  <li class="postlist-item">
+    <a href="/eleventy-gh-demo/news/0-6-13-update/" class="postlist-link">0.6.13 - Microsoft account integration</a>
+    <time class="postlist-date" datetime="2021-09-09">09 Sep 2021</time>
+    
+  </li>
+
+</ol>
+
+        <p>More posts can be found in
+            <a href="/eleventy-gh-demo/news/">the news</a>.</p>
+    </div>
+</div>
+    </footer>
+  </body>
+</html>
