@@ -10,6 +10,12 @@
     "url": "https://polymc.org/about/"
   },
   "items": [{
+      "id": "https://polymc.org/polymc.org/news/moddownload/",
+      "url": "https://polymc.org/polymc.org/news/moddownload/",
+      "title": "Modrinth support and Mod downloading",
+      "content_html": "<p>Thanks to @timoreo it is now possible to download individual mods from both cursforge and modrinth this pull request is the first of many big changes coming to PolyMC.</p>\n<p><img src=\"https://user-images.githubusercontent.com/81902668/152801619-8d826540-2467-4973-9488-f6afcb7ba804.png\" alt=\"ModInstallBlack\" /><br />\n<img src=\"https://user-images.githubusercontent.com/81902668/152801625-e7ad87f7-464f-49a2-ab4f-116f592acec1.png\" alt=\"ModInstallWhite\" /><br />\nScreenshots of the new feature</p>\n",
+      "date_published": "2022-02-07T00:00:00Z"
+    },{
       "id": "https://polymc.org/polymc.org/news/newmantainers/",
       "url": "https://polymc.org/polymc.org/news/newmantainers/",
       "title": "New maintainers and step down.",

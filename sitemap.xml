@@ -7,6 +7,11 @@
   </url>
   
   <url>
+    <loc>https://polymc.org/polymc.org/news/moddownload/</loc>
+    <lastmod>2022-02-07</lastmod>
+  </url>
+  
+  <url>
     <loc>https://polymc.org/polymc.org/about/</loc>
     <lastmod>2022-02-07</lastmod>
   </url>
@@ -38,6 +43,11 @@
   
   <url>
     <loc>https://polymc.org/polymc.org/tags/</loc>
+    <lastmod>2022-02-07</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/polymc.org/tags/feature/</loc>
     <lastmod>2022-02-07</lastmod>
   </url>
   
