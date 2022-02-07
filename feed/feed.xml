@@ -3,7 +3,7 @@
 	<title>PolyMC</title>
 	<subtitle>An opensource launcher</subtitle>
 	
-	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
+	<link href="https://polymc.org/polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
 	<updated>2021-12-10T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
@@ -14,16 +14,16 @@
 	
 	<entry>
 		<title>IMPORTANT MESSAGE - Security vulnerability in Minecraft</title>
-		<link href="https://polymc.org/news/log4j-remote-execution/"/>
+		<link href="https://polymc.org/polymc.org/news/log4j-remote-execution/"/>
 		<updated>2021-12-10T00:00:00Z</updated>
-		<id>https://polymc.org/news/log4j-remote-execution/</id>
+		<id>https://polymc.org/polymc.org/news/log4j-remote-execution/</id>
 		<content type="html">&lt;p&gt;Hello, you may have seen all kinds of chaos and misunderstanding related to a &lt;a href=&quot;https://nvd.nist.gov/vuln/detail/CVE-2021-44228&quot;&gt;security bug in log4j&lt;/a&gt; that can allow attackers to run code on your machine.&lt;/p&gt;
 &lt;p&gt;All versions of the game that use an unpatched or old version of the &lt;em&gt;log4j&lt;/em&gt; library are susceptible to attacks - if you are running a server, or are connecting to one.&lt;/p&gt;
 &lt;p&gt;Single player should be safe.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;NOTE: log4j has been further updated to 2.16.0.&lt;/strong&gt;&lt;br /&gt;
 Do not be alarmed by the change from 2.15.0.&lt;/p&gt;
-&lt;h1 id=&quot;fixes-in-multimc&quot; tabindex=&quot;-1&quot;&gt;Fixes in MultiMC &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/log4j-remote-execution/#fixes-in-multimc&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;fixes-in-multimc&quot; tabindex=&quot;-1&quot;&gt;Fixes in MultiMC &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/log4j-remote-execution/#fixes-in-multimc&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;MultiMC has a system to automatically update game and mod loader versions.&lt;/p&gt;
 &lt;p&gt;We are using this system to:&lt;/p&gt;
 &lt;ul&gt;
@@ -32,7 +32,7 @@ Do not be alarmed by the change from 2.15.0.&lt;/p&gt;
 &lt;li&gt;Force all mod loaders installed through MultiMC to not bundle any version of &lt;em&gt;log4j&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Effectively, if you use MultiMC and haven&#39;t done anything unusual with it, you should be safe.&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;trust-but-verify.&quot; tabindex=&quot;-1&quot;&gt;Trust, but verify. &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/log4j-remote-execution/#trust-but-verify.&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;trust-but-verify.&quot; tabindex=&quot;-1&quot;&gt;Trust, but verify. &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/log4j-remote-execution/#trust-but-verify.&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;While the defaults are safe, there are some things you can do to ensure this is true in your case.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -90,9 +90,9 @@ Do not be alarmed by the change from 2.15.0.&lt;/p&gt;
 	
 	<entry>
 		<title>0.6.14 - Microsoft account refinement, Forge 1.17+ and other fixes</title>
-		<link href="https://polymc.org/news/0-6-14-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-6-14-update/"/>
 		<updated>2021-12-08T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-6-14-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-6-14-update/</id>
 		<content type="html">&lt;p&gt;This further refines Microsoft account support, along with small fixes related to modpack platforms and Java runtime detection.&lt;/p&gt;
 &lt;p&gt;It&#39;s also been 10 years since the first release of MultiMC. All background cats are now ready to party!&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
@@ -108,12 +108,12 @@ Do not be alarmed by the change from 2.15.0.&lt;/p&gt;
 &lt;li&gt;Fixing skins in old releases, and telemetry blocking.&lt;/li&gt;
 &lt;li&gt;... and others.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;forge&quot; tabindex=&quot;-1&quot;&gt;Forge &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-14-update/#forge&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;forge&quot; tabindex=&quot;-1&quot;&gt;Forge &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-14-update/#forge&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Forge for 1.17.x and 1.18 has been enabled.&lt;br /&gt;
 It&#39;s still messy on the inside, which is something to address in the future.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;microsoft-accounts&quot; tabindex=&quot;-1&quot;&gt;Microsoft accounts &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-14-update/#microsoft-accounts&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;microsoft-accounts&quot; tabindex=&quot;-1&quot;&gt;Microsoft accounts &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-14-update/#microsoft-accounts&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The account system now refreshes accounts in the background while the application is running.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;GH-4071: Errors encountered while refreshing account tokens no longer always result in the tokens expiring:
@@ -136,7 +136,7 @@ It&#39;s still messy on the inside, which is something to address in the future.
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;modpack-platform-changes&quot; tabindex=&quot;-1&quot;&gt;Modpack platform changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-14-update/#modpack-platform-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;modpack-platform-changes&quot; tabindex=&quot;-1&quot;&gt;Modpack platform changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-14-update/#modpack-platform-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;GH-4055: MultiMC now tries to avoid downloading multiple files to the same path for FTB modpacks.&lt;/p&gt;
@@ -151,7 +151,7 @@ It&#39;s still messy on the inside, which is something to address in the future.
 &lt;p&gt;The modpack platform UIs now include text field clear buttons.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;other-changes&quot; tabindex=&quot;-1&quot;&gt;Other changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-14-update/#other-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;other-changes&quot; tabindex=&quot;-1&quot;&gt;Other changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-14-update/#other-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Adjusted warnings about Java runtime required for Minecraft 1.18 (it&#39;s not Java 16, it&#39;s Java 17).&lt;/p&gt;
@@ -184,7 +184,7 @@ It&#39;s still messy on the inside, which is something to address in the future.
 &lt;p&gt;It is now possible to turn off global tracking of play time.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;technical-changes&quot; tabindex=&quot;-1&quot;&gt;Technical changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-14-update/#technical-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;technical-changes&quot; tabindex=&quot;-1&quot;&gt;Technical changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-14-update/#technical-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Debranding is mostly finished. You may see some changes in the logo being used in less places.&lt;/li&gt;
 &lt;/ul&gt;
@@ -193,9 +193,9 @@ It&#39;s still messy on the inside, which is something to address in the future.
 	
 	<entry>
 		<title>0.6.13 - Microsoft account integration</title>
-		<link href="https://polymc.org/news/0-6-13-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-6-13-update/"/>
 		<updated>2021-09-09T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-6-13-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-6-13-update/</id>
 		<content type="html">&lt;p&gt;This release brings initial support for Microsoft accounts, along with a nice pile of modpack platform changes and improved Java runtime detection.&lt;/p&gt;
 &lt;p&gt;What comes next:&lt;/p&gt;
 &lt;ul&gt;
@@ -204,7 +204,7 @@ It&#39;s still messy on the inside, which is something to address in the future.
 &lt;li&gt;Complete rework of Java runtime management. The game now requires different versions of the JRE and our current approach no longer works.&lt;/li&gt;
 &lt;li&gt;Full debranding of the MultiMC codebase and removal of API keys.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;microsoft-accounts&quot; tabindex=&quot;-1&quot;&gt;Microsoft accounts &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-13-update/#microsoft-accounts&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;microsoft-accounts&quot; tabindex=&quot;-1&quot;&gt;Microsoft accounts &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-13-update/#microsoft-accounts&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;This is the first release with Microsoft accounts in.&lt;/p&gt;
 &lt;p&gt;Implementation is loosely based on documentation available from &lt;a href=&quot;https://wiki.vg/Microsoft_Authentication_Scheme&quot;&gt;wiki.vg&lt;/a&gt; with some notable changes:&lt;/p&gt;
 &lt;ul&gt;
@@ -219,7 +219,7 @@ It&#39;s still messy on the inside, which is something to address in the future.
 &lt;/ul&gt;
 &lt;p&gt;As part of this, the skin fetching no longer uses a third party service and instead gets skins directly from Mojang.&lt;/p&gt;
 &lt;p&gt;Capes can also be selected in MultiMC now. With how many people will now get one for migrating their accounts, it only makes sense.&lt;/p&gt;
-&lt;h3 id=&quot;macos-update&quot; tabindex=&quot;-1&quot;&gt;macOS update &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-13-update/#macos-update&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;macos-update&quot; tabindex=&quot;-1&quot;&gt;macOS update &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-13-update/#macos-update&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Because of issues with the Microsoft accounts, we now have two builds on macOS:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -231,7 +231,7 @@ It&#39;s still messy on the inside, which is something to address in the future.
 &lt;/ul&gt;
 &lt;p&gt;MultiMC will update to the 5.15.2 builds when it detects that this is possible. &lt;strong&gt;It may look like it is updating twice, just let it do its thing.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Similar approach got attempted on Windows, aiming to fix various display scaling and theming issues, but it ran into too many problems and will be attempted later, with more caution.&lt;/p&gt;
-&lt;h3 id=&quot;modpack-platforms&quot; tabindex=&quot;-1&quot;&gt;Modpack platforms &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-13-update/#modpack-platforms&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;modpack-platforms&quot; tabindex=&quot;-1&quot;&gt;Modpack platforms &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-13-update/#modpack-platforms&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;In general, the modpack platform pages have been made more consistent with each other (&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/3118&quot;&gt;GH-3118&lt;/a&gt;, &lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/3720&quot;&gt;GH-3720&lt;/a&gt;, &lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/3731&quot;&gt;GH-3731&lt;/a&gt;).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -295,7 +295,7 @@ It&#39;s still messy on the inside, which is something to address in the future.
 &lt;p&gt;Fixed bugs in FTB platform search.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;other-changes&quot; tabindex=&quot;-1&quot;&gt;Other changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-13-update/#other-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;other-changes&quot; tabindex=&quot;-1&quot;&gt;Other changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-13-update/#other-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Forge installation is disabled on Minecraft 1.17+ because of incompatible/unresolved changes on the Forge side.&lt;/p&gt;
@@ -353,7 +353,7 @@ It&#39;s still messy on the inside, which is something to address in the future.
 &lt;p&gt;Quick and dirty minimum Java runtime versions checks have been added. This needs to be expanded in the future.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;technical-changes&quot; tabindex=&quot;-1&quot;&gt;Technical changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-13-update/#technical-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;technical-changes&quot; tabindex=&quot;-1&quot;&gt;Technical changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-13-update/#technical-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;The codebase continues to move towards being debranded and harder to build as &#39;MultiMC&#39; for third parties.&lt;/li&gt;
 &lt;/ul&gt;
@@ -362,9 +362,9 @@ It&#39;s still messy on the inside, which is something to address in the future.
 	
 	<entry>
 		<title>0.6.12 - Spring cleaning and modpack platforms</title>
-		<link href="https://polymc.org/news/0-6-12-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-6-12-update/"/>
 		<updated>2021-03-21T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-6-12-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-6-12-update/</id>
 		<content type="html">&lt;p&gt;After roughly one year of maintenance and development work by various contributors, we&#39;re just calling it a good time to release.&lt;/p&gt;
 &lt;p&gt;What got added since the last time? Quite a bit! But in general, this is more of a spring cleaning before the major changes that we need to make come in.&lt;/p&gt;
 &lt;p&gt;What comes next after this:&lt;/p&gt;
@@ -375,7 +375,7 @@ It&#39;s still messy on the inside, which is something to address in the future.
 &lt;li&gt;Complete rework of Java runtime management. The game will soon require different versions of the JRE and our approach will no longer work in that environment.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We&#39;ll probably call it 0.7 once all these are in place.&lt;/p&gt;
-&lt;h3 id=&quot;modpack-platforms&quot; tabindex=&quot;-1&quot;&gt;Modpack platforms &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-12-update/#modpack-platforms&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;modpack-platforms&quot; tabindex=&quot;-1&quot;&gt;Modpack platforms &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-12-update/#modpack-platforms&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;We&#39;ve added a whole bunch of new modpack platforms to pick from right into the new instance dialog. If you run into any unusual issues with the imported packs, report them on the bug tracker.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -392,7 +392,7 @@ It&#39;s still messy on the inside, which is something to address in the future.
 &lt;p&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/405&quot;&gt;GH-405&lt;/a&gt;: Added a ATLauncher pack browser&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;other-changes&quot; tabindex=&quot;-1&quot;&gt;Other changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-12-update/#other-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;other-changes&quot; tabindex=&quot;-1&quot;&gt;Other changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-12-update/#other-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Added the option to not use OpenAL and/or GLFW libraries bundled with the game.&lt;/p&gt;
@@ -432,7 +432,7 @@ It&#39;s still messy on the inside, which is something to address in the future.
 &lt;p&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/3602&quot;&gt;GH-3602&lt;/a&gt;: Pre-launch commands could fail on first launch of the instance because the .minecraft folder has not been created yet.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;technical-changes&quot; tabindex=&quot;-1&quot;&gt;Technical changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-12-update/#technical-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;technical-changes&quot; tabindex=&quot;-1&quot;&gt;Technical changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-12-update/#technical-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/3234&quot;&gt;GH-3234&lt;/a&gt;: At build time, the meta URL can be changed.&lt;/p&gt;
@@ -453,9 +453,9 @@ It&#39;s still messy on the inside, which is something to address in the future.
 	
 	<entry>
 		<title>About Microsoft accounts</title>
-		<link href="https://polymc.org/news/microsoft-accounts/"/>
+		<link href="https://polymc.org/polymc.org/news/microsoft-accounts/"/>
 		<updated>2020-10-23T22:22:00Z</updated>
-		<id>https://polymc.org/news/microsoft-accounts/</id>
+		<id>https://polymc.org/polymc.org/news/microsoft-accounts/</id>
 		<content type="html">&lt;p&gt;By now you&#39;ve probably heard the news that Mojang will be migrating everyone&#39;s Minecraft accounts to Microsoft accounts. If you haven&#39;t, please &lt;a href=&quot;https://www.minecraft.net/en-us/article/java-edition-moving-house&quot;&gt;read their announcement here&lt;/a&gt;, and then come back to read this article.&lt;/p&gt;
 &lt;p&gt;With this new change, the game&#39;s login system will change significantly, and a lot of people are understandably concerned about what this means for the future of MultiMC, so we are making this post to hopefully put your minds at ease.&lt;/p&gt;
 &lt;p&gt;In the coming months, MultiMC will be updated to support the new login system. &lt;strong&gt;As of now, Mojang has not started the migration process&lt;/strong&gt;, so we are hoping to support the new system before they begin migrating accounts, but we can&#39;t guarantee that will happen.&lt;/p&gt;
@@ -468,14 +468,14 @@ It&#39;s still messy on the inside, which is something to address in the future.
 	
 	<entry>
 		<title>0.6.7 - UI fixes and important metadata news - update required!</title>
-		<link href="https://polymc.org/news/0-6-7-metadata-changes/"/>
+		<link href="https://polymc.org/polymc.org/news/0-6-7-metadata-changes/"/>
 		<updated>2019-08-04T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-6-7-metadata-changes/</id>
+		<id>https://polymc.org/polymc.org/news/0-6-7-metadata-changes/</id>
 		<content type="html">&lt;p&gt;The previous release introduced some extra buttons that made the instance window way too big for some displays. This release is aimed at fixing that, along with other UI and performance improvements.&lt;/p&gt;
 &lt;p&gt;There are some accessibility fixes thrown in too.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;But along with those, we are also disabling the metadata server that older versions of MultiMC depend on&lt;/strong&gt;. &lt;strong&gt;This means that older versions will not work.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is a much needed change, because the encryption on that domain (&lt;a href=&quot;http://v1.meta.multimc.org/&quot;&gt;v1.meta.multimc.org&lt;/a&gt;) costs extra $30 every month for no good reason. The required files now all reside at &lt;a href=&quot;http://meta.multimc.org/&quot;&gt;meta.multimc.org&lt;/a&gt; instead.&lt;/p&gt;
-&lt;h3 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-7-metadata-changes/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-7-metadata-changes/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Mod lists are now asynchronous and heavily threaded.&lt;/p&gt;
@@ -519,11 +519,11 @@ It&#39;s still messy on the inside, which is something to address in the future.
 	
 	<entry>
 		<title>0.6.5 - translation UI and legacy sound fixes</title>
-		<link href="https://polymc.org/news/0-6-5-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-6-5-update/"/>
 		<updated>2019-02-20T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-6-5-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-6-5-update/</id>
 		<content type="html">&lt;p&gt;Finalizing the translation workflow improvements and adding fixes for sounds missing in old game versions.&lt;/p&gt;
-&lt;h3 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-5-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-5-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;UI for the language settings has been unified across the application&lt;/p&gt;
@@ -539,12 +539,12 @@ It&#39;s still messy on the inside, which is something to address in the future.
 	
 	<entry>
 		<title>0.6.4 - better translation workflow and new FTB API location</title>
-		<link href="https://polymc.org/news/0-6-4-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-6-4-update/"/>
 		<updated>2019-01-06T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-6-4-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-6-4-update/</id>
 		<content type="html">&lt;p&gt;This is a release mostly aimed at getting all the small changes and fixes out of the door.&lt;/p&gt;
-&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-4-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-4-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-4-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-4-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;FTB API location has changed&lt;/p&gt;
@@ -570,12 +570,12 @@ It&#39;s still messy on the inside, which is something to address in the future.
 	
 	<entry>
 		<title>0.6.3 - The Big Sync</title>
-		<link href="https://polymc.org/news/0-6-3-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-6-3-update/"/>
 		<updated>2018-12-26T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-6-3-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-6-3-update/</id>
 		<content type="html">&lt;p&gt;This is a release mostly aimed at getting all the small changes and fixes out of the door.&lt;/p&gt;
-&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-3-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;potentially-breaking-changes&quot; tabindex=&quot;-1&quot;&gt;Potentially breaking changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-3-update/#potentially-breaking-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-3-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;potentially-breaking-changes&quot; tabindex=&quot;-1&quot;&gt;Potentially breaking changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-3-update/#potentially-breaking-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Local libraries are only loaded from inside the instances now.&lt;/p&gt;
@@ -585,7 +585,7 @@ This in turn allowed existence of instances which could not be transported from 
 &lt;p&gt;Effectively, you will get errors from launching such instances. You can fix the errors by copying the libraries to the locations indicated in the error log.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-3-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-3-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;FTB import now has support for third party modpack codes.&lt;/p&gt;
@@ -632,7 +632,7 @@ This in turn allowed existence of instances which could not be transported from 
 &lt;p&gt;The background cat sometimes wears a silly hat.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;bugfixes&quot; tabindex=&quot;-1&quot;&gt;Bugfixes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-3-update/#bugfixes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;bugfixes&quot; tabindex=&quot;-1&quot;&gt;Bugfixes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-3-update/#bugfixes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/2252&quot;&gt;GH-2252&lt;/a&gt;: Fixed odd drag and drop behaviour on Windows&lt;/p&gt;
@@ -670,12 +670,12 @@ This in turn allowed existence of instances which could not be transported from 
 	
 	<entry>
 		<title>0.6.2 Released!</title>
-		<link href="https://polymc.org/news/0-6-2-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-6-2-update/"/>
 		<updated>2018-04-08T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-6-2-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-6-2-update/</id>
 		<content type="html">&lt;p&gt;This release contains some bugfixes, general UI polish and the beginnings of direct modpack platform integrations.&lt;/p&gt;
-&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-2-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-2-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-2-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-2-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;MultiMC now has FTB integration:&lt;/p&gt;
@@ -726,7 +726,7 @@ The label shows that they need to be prefixed by &lt;code&gt;$&lt;/code&gt;.&lt;
 &lt;p&gt;Secret cheat code has been added... What does it do?&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;bugfixes&quot; tabindex=&quot;-1&quot;&gt;Bugfixes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-2-update/#bugfixes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;bugfixes&quot; tabindex=&quot;-1&quot;&gt;Bugfixes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-2-update/#bugfixes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;VisualVM integration now works when VisualVM is bundled inside the MultiMC folder (uses a relative path).&lt;/p&gt;
@@ -756,16 +756,16 @@ The label shows that they need to be prefixed by &lt;code&gt;$&lt;/code&gt;.&lt;
 	
 	<entry>
 		<title>0.6.1 Released!</title>
-		<link href="https://polymc.org/news/0-6-1-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-6-1-update/"/>
 		<updated>2018-01-29T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-6-1-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-6-1-update/</id>
 		<content type="html">&lt;p&gt;This is a small bugfix update for some of the problems found since 0.6.0.&lt;/p&gt;
-&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-1-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-1-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-1-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-1-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/2087&quot;&gt;GH-2087&lt;/a&gt;: The version page now has a button that will download all the necessary files without launching the game.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;bugfixes&quot; tabindex=&quot;-1&quot;&gt;Bugfixes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-1-update/#bugfixes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;bugfixes&quot; tabindex=&quot;-1&quot;&gt;Bugfixes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-1-update/#bugfixes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Several issues related to bad URLs returned by the Curse servers have been fixed.&lt;/p&gt;
@@ -803,9 +803,9 @@ This affected pretty much all modpack imports. You may want to reimport them if 
 	
 	<entry>
 		<title>0.6.0 Released!</title>
-		<link href="https://polymc.org/news/0-6-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-6-update/"/>
 		<updated>2017-12-31T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-6-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-6-update/</id>
 		<content type="html">&lt;p&gt;Well, this took a while.&lt;/p&gt;
 &lt;p&gt;I&#39;ll just let the changelog speak for itself.&lt;/p&gt;
 &lt;p&gt;When it comes to the future of MultiMC, it is practically set in stone for the next few months. Minecraft 1.13 is coming, along with some big change in Forge and modding in general. For that, MultiMC will have to adapt.&lt;/p&gt;
@@ -813,8 +813,8 @@ This affected pretty much all modpack imports. You may want to reimport them if 
 &lt;p&gt;The big idea and bug pile still lives &lt;a href=&quot;https://workflowy.com/s/2EyDMcp7CU&quot;&gt;on workflowy&lt;/a&gt;. So if you just want to follow development, or want to help with something, it&#39;s the place to look.&lt;/p&gt;
 &lt;p&gt;2018 will be a very interesting year for Minecraft.&lt;/p&gt;
 &lt;p&gt;So, happy New Year everyone, let the madness begin!&lt;/p&gt;
-&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Contact with Mojang, Forge and LiteLoader servers is no longer handled by MultiMC, but a metadata server. Instead of generating and storing the files at the point of installation, they are updated hourly on the server and can be fixed when something goes wrong.&lt;/p&gt;
@@ -922,7 +922,7 @@ The workarounds for SSL problems on macOS have been removed thanks to this.&lt;/
 &lt;p&gt;When changing instance component versions, the present version is selected first.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;bugfixes&quot; tabindex=&quot;-1&quot;&gt;Bugfixes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-6-update/#bugfixes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;bugfixes&quot; tabindex=&quot;-1&quot;&gt;Bugfixes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-6-update/#bugfixes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;http://paste.ee/&quot;&gt;paste.ee&lt;/a&gt; upload now works again.&lt;/p&gt;
@@ -1020,9 +1020,9 @@ In many cases, the size of files is unknown before a download starts. The change
 	
 	<entry>
 		<title>Introducing the Archive</title>
-		<link href="https://polymc.org/news/announcing-mcarch/"/>
+		<link href="https://polymc.org/polymc.org/news/announcing-mcarch/"/>
 		<updated>2017-03-24T00:00:00Z</updated>
-		<id>https://polymc.org/news/announcing-mcarch/</id>
+		<id>https://polymc.org/polymc.org/news/announcing-mcarch/</id>
 		<content type="html">&lt;p&gt;Today we&#39;re announcing the Minecraft Archive project, a project which aims to&lt;br /&gt;
 make it easier to track down mods for old versions of Minecraft. We&#39;ll be doing&lt;br /&gt;
 this by providing a website which agregates links to the official downloads for&lt;br /&gt;
@@ -1044,12 +1044,12 @@ repository holds information about all the mods in the archive.&lt;/p&gt;
 	
 	<entry>
 		<title>0.5.1 - Bugfixes.</title>
-		<link href="https://polymc.org/news/0-5-1-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-5-1-update/"/>
 		<updated>2017-02-12T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-5-1-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-5-1-update/</id>
 		<content type="html">&lt;p&gt;This release is mainly bugfixes for some of the issues found in 0.5.0.&lt;/p&gt;
-&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-5-1-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;improvements&quot; tabindex=&quot;-1&quot;&gt;Improvements &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-5-1-update/#improvements&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-5-1-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;improvements&quot; tabindex=&quot;-1&quot;&gt;Improvements &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-5-1-update/#improvements&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Log uploads now use HTTPS because the &lt;a href=&quot;https://paste.ee/&quot;&gt;paste.ee&lt;/a&gt; site is switching to HTTPS only.&lt;/p&gt;
@@ -1100,15 +1100,15 @@ This meant that you wouldn&#39;t get enough of the log when the game crashed.&lt
 	
 	<entry>
 		<title>0.5.0 - Running multiple instances at the same time!</title>
-		<link href="https://polymc.org/news/0-5-0-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-5-0-update/"/>
 		<updated>2017-01-14T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-5-0-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-5-0-update/</id>
 		<content type="html">&lt;p&gt;There are many improvements in this release - the biggest one is the ability to run multiple instances simultaneously. There is also basic themeing support, a better first run experience and more bugfixes than you can shake a stick at.&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;img src=&quot;https://polymc.org/images/screenshots/0.5.0-linux.png&quot; alt=&quot;MultiMC5 0.5.0 with the Dark theme.&quot; /&gt;
 &lt;/p&gt;
 &lt;p&gt;I&#39;ll let the changelog speak for itself and let you discover all the new features.&lt;/p&gt;
-&lt;h3 id=&quot;the-next-release&quot; tabindex=&quot;-1&quot;&gt;The next release &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-5-0-update/#the-next-release&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;the-next-release&quot; tabindex=&quot;-1&quot;&gt;The next release &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-5-0-update/#the-next-release&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;The focus of the next release will be modpacks and integration with modpack platforms.&lt;/p&gt;
 &lt;p&gt;You can look forward to these:&lt;/p&gt;
 &lt;ul&gt;
@@ -1128,8 +1128,8 @@ This meant that you wouldn&#39;t get enough of the log when the game crashed.&lt
 &lt;p&gt;The actual planning for the next release will happen on &lt;a href=&quot;https://workflowy.com/s/E3Wo.yNRoPn2Wix&quot;&gt;this list&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;If you want the project to continue and expand, please &lt;a href=&quot;https://www.patreon.com/multimc&quot;&gt;support it on Patreon&lt;/a&gt;!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/peterixxx&quot;&gt;@peterixxx&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-5-0-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-5-0-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-5-0-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;new-or-changed-features&quot; tabindex=&quot;-1&quot;&gt;New or changed features &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-5-0-update/#new-or-changed-features&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/338&quot;&gt;GH-338&lt;/a&gt;, &lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/513&quot;&gt;GH-513&lt;/a&gt;, &lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/700&quot;&gt;GH-700&lt;/a&gt;: Edit instance dialog and Console window have been unified&lt;/p&gt;
@@ -1246,7 +1246,7 @@ Files you can customize are created in &lt;code&gt;themes/custom/&lt;/code&gt;. 
 &lt;p&gt;This should make installing library-based mods easier in the future, and allow to include them in modpacks.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;improvements&quot; tabindex=&quot;-1&quot;&gt;Improvements &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-5-0-update/#improvements&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;improvements&quot; tabindex=&quot;-1&quot;&gt;Improvements &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-5-0-update/#improvements&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/1433&quot;&gt;GH-1433&lt;/a&gt;: The account selection dialog no longer shows e-mail addresses when no default account is selected.&lt;/p&gt;
@@ -1283,7 +1283,7 @@ Files you can customize are created in &lt;code&gt;themes/custom/&lt;/code&gt;. 
 &lt;p&gt;Some ancient mods require the modded &lt;code&gt;Minecraft.jar&lt;/code&gt; to be in &lt;code&gt;.minecraft/bin&lt;/code&gt;, inside the instance. Now it is placed there.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;internals&quot; tabindex=&quot;-1&quot;&gt;Internals &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-5-0-update/#internals&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;internals&quot; tabindex=&quot;-1&quot;&gt;Internals &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-5-0-update/#internals&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Full support for the current Mojang downloads JSON format.&lt;/p&gt;
@@ -1313,11 +1313,11 @@ This also includes post-download validation of the download - like using SHA1 ch
 	
 	<entry>
 		<title>0.4.11 - OSX 10.7 fix and workaround for Minecraft 1.9 compatibility</title>
-		<link href="https://polymc.org/news/0-4-11-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-4-11-update/"/>
 		<updated>2016-02-28T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-4-11-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-4-11-update/</id>
 		<content type="html">&lt;p&gt;This release contains mainly a workaround for Minecraft 1.9 support and returned support for OSX 10.7.&lt;/p&gt;
-&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-11-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-11-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;GH-1410: MultiMC crashes on launch on OSX 10.7&lt;/p&gt;
@@ -1333,7 +1333,7 @@ This also includes post-download validation of the download - like using SHA1 ch
 &lt;p&gt;Some undocumented and unused features were removed from the format. Mostly version patches that removed libraries, advanced library application and merging rules, and things of similar nature. If you used them, you used an undocumented feature that is impossible to reach from the UI.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;improvements&quot; tabindex=&quot;-1&quot;&gt;Improvements &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-11-update/#improvements&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;improvements&quot; tabindex=&quot;-1&quot;&gt;Improvements &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-11-update/#improvements&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;GH-1502: When the locally cached Minecraft version was deleted, the instance that needed it would have to be started twice&lt;/p&gt;
@@ -1345,7 +1345,7 @@ This also includes post-download validation of the download - like using SHA1 ch
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/blob/a3cd3d5ff18215a475ed6b5f231f3f02ccd668f7/changelog.md&quot;&gt;The full changelog is available on github.&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;the-future&quot; tabindex=&quot;-1&quot;&gt;The future &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-11-update/#the-future&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;the-future&quot; tabindex=&quot;-1&quot;&gt;The future &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-11-update/#the-future&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Considering the generally huge gaps between the last releases, the future of MultiMC should focus on:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on things that &lt;em&gt;you&lt;/em&gt;, the users, consider useful.&lt;/li&gt;
@@ -1362,11 +1362,11 @@ This also includes post-download validation of the download - like using SHA1 ch
 	
 	<entry>
 		<title>0.4.10 - Another wifi fix</title>
-		<link href="https://polymc.org/news/0-4-10-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-4-10-update/"/>
 		<updated>2016-01-22T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-4-10-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-4-10-update/</id>
 		<content type="html">&lt;p&gt;0.4.9 ran into an another issue with network connections, the recently added bearer plugins causing huge network lag.&lt;/p&gt;
-&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-10-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-10-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;GH-1422: Huge ping spikes while using MultiMC&lt;/p&gt;
@@ -1378,7 +1378,7 @@ This also includes post-download validation of the download - like using SHA1 ch
 &lt;/ul&gt;
 &lt;p&gt;Because of the reverted Qt version, OSX 10.7 &lt;em&gt;might&lt;/em&gt; work again. If it does, please do tell, it would help with figuring out what went wrong there :)&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/blob/7ca9f92343e2fb2a15d278b08f7244838e74a5d8/changelog.md&quot;&gt;The full changelog is available on github.&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;the-future&quot; tabindex=&quot;-1&quot;&gt;The future &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-10-update/#the-future&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;the-future&quot; tabindex=&quot;-1&quot;&gt;The future &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-10-update/#the-future&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Considering the generally huge gaps between the last releases, the future of MultiMC should focus on:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on things that &lt;em&gt;you&lt;/em&gt;, the users, consider useful.&lt;/li&gt;
@@ -1394,11 +1394,11 @@ This also includes post-download validation of the download - like using SHA1 ch
 	
 	<entry>
 		<title>0.4.9 - the Windows wifi fix.</title>
-		<link href="https://polymc.org/news/0-4-9-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-4-9-update/"/>
 		<updated>2016-01-20T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-4-9-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-4-9-update/</id>
 		<content type="html">&lt;p&gt;0.4.8 ran into an issue with network connections not being detected properly and this is a fix for that, along with a tiny log upload improvement.&lt;/p&gt;
-&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-9-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-9-update/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;GH-1408: MultiMC 0.4.8 doesn&#39;t work on wireless connections.&lt;/p&gt;
@@ -1416,7 +1416,7 @@ This also includes post-download validation of the download - like using SHA1 ch
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/blob/33b6222f9ff658e7ce3095c8b96967ba14b72804/changelog.md&quot;&gt;The full changelog is available on github.&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;the-future&quot; tabindex=&quot;-1&quot;&gt;The future &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-9-update/#the-future&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;the-future&quot; tabindex=&quot;-1&quot;&gt;The future &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-9-update/#the-future&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Considering the generally huge gaps between the last releases, the future of MultiMC should focus on:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on things that &lt;em&gt;you&lt;/em&gt;, the users, consider useful.&lt;/li&gt;
@@ -1432,13 +1432,13 @@ This also includes post-download validation of the download - like using SHA1 ch
 	
 	<entry>
 		<title>0.4.8 - Worlds and more.</title>
-		<link href="https://polymc.org/news/0-4-8-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-4-8-update/"/>
 		<updated>2016-01-17T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-4-8-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-4-8-update/</id>
 		<content type="html">&lt;p&gt;This is a big update with some new features and a lot of fixed problems. We have moved to a new server and rebuilt the whole infrastructure.&lt;/p&gt;
 &lt;p&gt;Aside from MultiMC changes, we now have a &lt;a href=&quot;https://www.reddit.com/r/MultiMC/&quot;&gt;MultiMC subreddit&lt;/a&gt; and a &lt;a href=&quot;https://discord.gg/0k2zsXGNHs0fE4Wm&quot;&gt;MultiMC discord voice/chat server&lt;/a&gt; you can join.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/blob/2c2b960ab4842b527653ec6fb8081412d9b02bae/changelog.md&quot;&gt;The full changelog is available on github.&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;world-management&quot; tabindex=&quot;-1&quot;&gt;World management &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-8-update/#world-management&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;world-management&quot; tabindex=&quot;-1&quot;&gt;World management &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-8-update/#world-management&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;MultiMC can now manage Minecraft worlds in instances.&lt;/p&gt;
 &lt;p&gt;You can:&lt;/p&gt;
 &lt;ul&gt;
@@ -1449,9 +1449,9 @@ This also includes post-download validation of the download - like using SHA1 ch
 &lt;li&gt;Export individual worlds as zip files.&lt;/li&gt;
 &lt;li&gt;Import and export also works using mouse drag&amp;amp;drop.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;time-tracking&quot; tabindex=&quot;-1&quot;&gt;Time tracking &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-8-update/#time-tracking&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;time-tracking&quot; tabindex=&quot;-1&quot;&gt;Time tracking &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-8-update/#time-tracking&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;MultiMC will now track time you spent playing Minecraft for every instance.&lt;/p&gt;
-&lt;h2 id=&quot;the-future&quot; tabindex=&quot;-1&quot;&gt;The future &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-8-update/#the-future&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;the-future&quot; tabindex=&quot;-1&quot;&gt;The future &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-8-update/#the-future&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Considering the generally huge gaps between the last releases, the future of MultiMC should focus on:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on things that &lt;em&gt;you&lt;/em&gt;, the users, consider useful.&lt;/li&gt;
@@ -1467,23 +1467,23 @@ This also includes post-download validation of the download - like using SHA1 ch
 	
 	<entry>
 		<title>0.4.7 - What 0.4.6 should have been.</title>
-		<link href="https://polymc.org/news/0-4-7-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-4-7-update/"/>
 		<updated>2015-06-01T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-4-7-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-4-7-update/</id>
 		<content type="html">&lt;p&gt;This is mainly a bugfix release on top of 0.4.6 - with some minor features added.&lt;/p&gt;
 &lt;p&gt;What&#39;s new? Not much, really.&lt;/p&gt;
-&lt;h3 id=&quot;icon-export-an-import&quot; tabindex=&quot;-1&quot;&gt;Icon export an import &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-7-update/#icon-export-an-import&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;icon-export-an-import&quot; tabindex=&quot;-1&quot;&gt;Icon export an import &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-7-update/#icon-export-an-import&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;When exporting and importing instances, you&#39;ll notice that if the icon you use for the instance is custom,&lt;br /&gt;
 it will be exported too. If the user doesn&#39;t select an icon during import, this icon will be used for the instance after import.&lt;/p&gt;
-&lt;h3 id=&quot;ftb-related-crashes-should-be-gone&quot; tabindex=&quot;-1&quot;&gt;FTB related crashes should be gone &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-7-update/#ftb-related-crashes-should-be-gone&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;ftb-related-crashes-should-be-gone&quot; tabindex=&quot;-1&quot;&gt;FTB related crashes should be gone &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-7-update/#ftb-related-crashes-should-be-gone&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;0.4.6 had a crasher bug related to FTB tracking. This is now fixed. We are sorry for the inconvenience.&lt;/p&gt;
-&lt;h2 id=&quot;the-future&quot; tabindex=&quot;-1&quot;&gt;The future &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-7-update/#the-future&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;the-future&quot; tabindex=&quot;-1&quot;&gt;The future &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-7-update/#the-future&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Exciting things are coming, at the usual glacial pace and with the ETA of &amp;quot;when it&#39;s done&amp;quot; :)&lt;/p&gt;
 &lt;p&gt;We are (still) hard at work at getting our own package repository running (continuation of QuickMods), along with much better modpack support. The future MultiMC will have this package repository at its core and will use it for more than just mods.&lt;/p&gt;
 &lt;p&gt;Seeing that FTB is moving to the curse platform, the FTB tracking support will be abandoned when the FTB launcher stops working. The replacement should be import (not tracking) of other launcher instances and direct download and updating of modpack instances from the various platforms out there.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/peterixxx&quot;&gt;@peterixxx&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/02JanDal&quot;&gt;@02JanDal&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;full-changelog&quot; tabindex=&quot;-1&quot;&gt;Full changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-7-update/#full-changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;functional-changes&quot; tabindex=&quot;-1&quot;&gt;Functional changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-7-update/#functional-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&quot;full-changelog&quot; tabindex=&quot;-1&quot;&gt;Full changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-7-update/#full-changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;functional-changes&quot; tabindex=&quot;-1&quot;&gt;Functional changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-7-update/#functional-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/974&quot;&gt;GH-974&lt;/a&gt;: A copy of the libstdc++ library is now included in linux releases, improving compatibility&lt;/p&gt;
@@ -1537,7 +1537,7 @@ it will be exported too. If the user doesn&#39;t select an icon during import, t
 &lt;p&gt;This only applies if the icon was custom (not built-in) when exporting and the user doesn&#39;t choose an icon while importing the pack.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;ui-changes&quot; tabindex=&quot;-1&quot;&gt;UI changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-7-update/#ui-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;ui-changes&quot; tabindex=&quot;-1&quot;&gt;UI changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-7-update/#ui-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/MultiMC/MultiMC5/issues/970&quot;&gt;GH-970&lt;/a&gt;: Fixed help button for the External tools and Accounts dialog pages not linking to the proper wiki places
 &lt;ul&gt;
@@ -1550,20 +1550,20 @@ it will be exported too. If the user doesn&#39;t select an icon during import, t
 	
 	<entry>
 		<title>0.4.6 - Bug fixes and improvements!</title>
-		<link href="https://polymc.org/news/0-4-6-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-4-6-update/"/>
 		<updated>2015-05-20T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-4-6-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-4-6-update/</id>
 		<content type="html">&lt;p&gt;After about half a year, a new stable release is (almost) ready. This one includes plenty of behind the scenes fixes and also some UI and usability improvements.&lt;/p&gt;
 &lt;p&gt;Why almost? Apple forced my hand and made me release early by breaking secure connections on OSX. The remaining issues weren&#39;t critical though, and I decided to push the release now, rather than leave the OSX users hanging.&lt;/p&gt;
 &lt;p&gt;Stable releases should come in a more timely manner from now on.&lt;/p&gt;
 &lt;p&gt;So, what&#39;s new?&lt;/p&gt;
-&lt;h3 id=&quot;enough-bug-fixes-to-fix...-a-lot-of-things&quot; tabindex=&quot;-1&quot;&gt;Enough bug fixes to fix... a lot of things &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-6-update/#enough-bug-fixes-to-fix...-a-lot-of-things&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;enough-bug-fixes-to-fix...-a-lot-of-things&quot; tabindex=&quot;-1&quot;&gt;Enough bug fixes to fix... a lot of things &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-6-update/#enough-bug-fixes-to-fix...-a-lot-of-things&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;With almost half a year since the last stable version, the list of fixes is very long indeed.&lt;/p&gt;
 &lt;p&gt;Probably the most important part of MultiMC - network and download functionality - has been improved significantly.&lt;/p&gt;
 &lt;p&gt;If you still play some very old version of Minecraft, you&#39;ll also notice that some mods now behave better - instead of letting java load them, we just stuff everything into the Minecraft jar, just like the old mods expect.&lt;/p&gt;
 &lt;p&gt;The problem that triggered this release - broken root certificates on OSX - has also been fixed.&lt;/p&gt;
 &lt;p&gt;No bees were involved in this release.&lt;/p&gt;
-&lt;h3 id=&quot;simple-modpack-support&quot; tabindex=&quot;-1&quot;&gt;Simple modpack support &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-6-update/#simple-modpack-support&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;simple-modpack-support&quot; tabindex=&quot;-1&quot;&gt;Simple modpack support &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-6-update/#simple-modpack-support&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;We&#39;ve added some simple modpack import and export functionality into this version. You can export instance as minimal zip files using the handy export dialog that lets you pick which files to export and even remembers them for the next time:&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;img src=&quot;https://polymc.org/images/export1.png&quot; alt=&quot;Export Instance dialog&quot; /&gt;
@@ -1573,19 +1573,19 @@ it will be exported too. If the user doesn&#39;t select an icon during import, t
   &lt;img src=&quot;https://polymc.org/images/import1.png&quot; alt=&quot;New Instance from modpack&quot; /&gt;
 &lt;/p&gt;
 &lt;p&gt;This should be expanded upon in the (hopefully) near future.&lt;/p&gt;
-&lt;h3 id=&quot;better-version-lists-and-java-detection&quot; tabindex=&quot;-1&quot;&gt;Better version lists and java detection &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-6-update/#better-version-lists-and-java-detection&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;better-version-lists-and-java-detection&quot; tabindex=&quot;-1&quot;&gt;Better version lists and java detection &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-6-update/#better-version-lists-and-java-detection&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Version lists got a new facelift and now highlight the latest (with a bug icon) and recommended (with a star icon) versions.&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
   &lt;img src=&quot;https://polymc.org/images/version_lists1.png&quot; alt=&quot;Improved version lists&quot; /&gt;
 &lt;/p&gt;
 &lt;p&gt;Same applies to the list that presents the detected java versions. The best one detected will be on top of the list. This should make it super easy to decide which one to use.&lt;/p&gt;
-&lt;h2 id=&quot;the-future&quot; tabindex=&quot;-1&quot;&gt;The future &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-6-update/#the-future&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;the-future&quot; tabindex=&quot;-1&quot;&gt;The future &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-6-update/#the-future&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Exciting things are coming, at the usual glacial pace and with the ETA of &amp;quot;when it&#39;s done&amp;quot; :)&lt;/p&gt;
 &lt;p&gt;We are hard at work at getting our own package repository running (continuation of QuickMods), along with much better modpack support. The future MultiMC will have this package repository at its core and will use it for more than just mods.&lt;/p&gt;
 &lt;p&gt;Seeing that FTB is moving to the curse platform, the FTB tracking support will be abandoned when the FTB launcher stops working. The replacement should be import (not tracking) of other launcher instances and direct download and updating of modpack instances from the various platforms out there.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://twitter.com/peterixxx&quot;&gt;@peterixxx&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/02JanDal&quot;&gt;@02JanDal&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;full-changelog&quot; tabindex=&quot;-1&quot;&gt;Full changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-6-update/#full-changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;functional-changes&quot; tabindex=&quot;-1&quot;&gt;Functional changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-6-update/#functional-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&quot;full-changelog&quot; tabindex=&quot;-1&quot;&gt;Full changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-6-update/#full-changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;functional-changes&quot; tabindex=&quot;-1&quot;&gt;Functional changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-6-update/#functional-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Old version.json and custom.json version files will be transformed into a minecraft version patch:
 &lt;ul&gt;
@@ -1642,7 +1642,7 @@ it will be exported too. If the user doesn&#39;t select an icon during import, t
 &lt;li&gt;Minecraft process ID is printed in the log on start&lt;/li&gt;
 &lt;li&gt;SSL certificates are fixed on OSX 10.10.3 and newer - see &lt;a href=&quot;http://www.infoworld.com/article/2911209/mac-os-x/yosemite-10103-breaks-some-applications-and-https-sites.html&quot;&gt;explanation&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;ui-changes&quot; tabindex=&quot;-1&quot;&gt;UI changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-6-update/#ui-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;ui-changes&quot; tabindex=&quot;-1&quot;&gt;UI changes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-6-update/#ui-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Version lists:
 &lt;ul&gt;
@@ -1685,7 +1685,7 @@ it will be exported too. If the user doesn&#39;t select an icon during import, t
 &lt;li&gt;Errors are reported while updating the instance in the Version page&lt;/li&gt;
 &lt;li&gt;Fixed typos (forge -&amp;gt; Forge)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;internals&quot; tabindex=&quot;-1&quot;&gt;Internals &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-6-update/#internals&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;internals&quot; tabindex=&quot;-1&quot;&gt;Internals &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-6-update/#internals&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Massive internal restructuring (ongoing)&lt;/li&gt;
 &lt;li&gt;Downloads now follow redirects&lt;/li&gt;
@@ -1712,16 +1712,16 @@ it will be exported too. If the user doesn&#39;t select an icon during import, t
 	
 	<entry>
 		<title>0.4.5 - Translations, Themes, and Technic</title>
-		<link href="https://polymc.org/news/0-4-4-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-4-4-update/"/>
 		<updated>2014-11-21T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-4-4-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-4-4-update/</id>
 		<content type="html">&lt;p&gt;Just a few days ago we released version 0.4.4 of MultiMC 5, today we&#39;re already on 0.4.5! These two releases are mainly bug fix updates, but also contain a few new features, some of which are listed below.&lt;/p&gt;
 &lt;p&gt;See &lt;a href=&quot;https://github.com/MultiMC/MultiMC5/blob/stable/changelog.md#045&quot;&gt;the changelog&lt;/a&gt; for a full list of changes.&lt;/p&gt;
-&lt;h3 id=&quot;translations&quot; tabindex=&quot;-1&quot;&gt;Translations &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-4-update/#translations&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;translations&quot; tabindex=&quot;-1&quot;&gt;Translations &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-4-update/#translations&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Thanks to &lt;a href=&quot;https://twitter.com/skylordelros&quot;&gt;robotbrain&lt;/a&gt;, translations are now handled separately. This means they get updated at runtime, without having to update the entire program. If you want to contribute, head over to &lt;a href=&quot;http://weblate.robotbrain.info/&quot;&gt;our&lt;br /&gt;
 instance of weblate&lt;/a&gt; and start translating! Feel free to poke us on IRC if you have any questions about how it works.&lt;/p&gt;
 &lt;p&gt;At the time of writing German and Italian are fully translated, French and Spanish are close to done, and several others are in progress.&lt;/p&gt;
-&lt;h3 id=&quot;themes&quot; tabindex=&quot;-1&quot;&gt;Themes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-4-update/#themes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;themes&quot; tabindex=&quot;-1&quot;&gt;Themes &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-4-update/#themes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Since 0.4.0 we shipped two alternative themes with MultiMC. This update includes several new themes, as well as some tweaks to the existing themes. Have some samples!&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://polymc.org/images/theme_simple_colored1.png&quot; alt=&quot;Simple Colored&quot; /&gt;&lt;br /&gt;
 &lt;img src=&quot;https://polymc.org/images/theme_simple_light.png&quot; alt=&quot;Simple Light&quot; /&gt;&lt;br /&gt;
@@ -1731,7 +1731,7 @@ instance of weblate&lt;/a&gt; and start translating! Feel free to poke us on IRC
 &lt;img src=&quot;https://polymc.org/images/theme_ios.png&quot; alt=&quot;iOS&quot; /&gt;&lt;br /&gt;
 &lt;img src=&quot;https://polymc.org/images/theme_simple_colored3.png&quot; alt=&quot;Simple Colored&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;(Credits go to &lt;a href=&quot;https://github.com/pexner&quot;&gt;pe&lt;/a&gt;)&lt;/p&gt;
-&lt;h2 id=&quot;technic&quot; tabindex=&quot;-1&quot;&gt;Technic &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/0-4-4-update/#technic&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;technic&quot; tabindex=&quot;-1&quot;&gt;Technic &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/0-4-4-update/#technic&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Not related to the new release, but we recently had some discussions with &lt;a href=&quot;https://twitter.com/Gen_Page&quot;&gt;GenPage&lt;/a&gt; and the &lt;a href=&quot;http://technicpack.net/&quot;&gt;Technic&lt;/a&gt; team, and we got the permission from them to download and install modpacks&lt;br /&gt;
 from the Technic Platform, right from within MultiMC! &lt;a href=&quot;https://twitter.com/peterixxx&quot;&gt;@peterixxx&lt;/a&gt; has already started to work on this feature, take a look at the screenshot below. We&#39;re also discussing how we can combine this&lt;br /&gt;
 with QuickMods, so: Exciting times ahead!&lt;/p&gt;
@@ -1742,9 +1742,9 @@ with QuickMods, so: Exciting times ahead!&lt;/p&gt;
 	
 	<entry>
 		<title>0.4 out - Jar mods, UI changes, and more!</title>
-		<link href="https://polymc.org/news/0-4-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-4-update/"/>
 		<updated>2014-09-15T00:00:00Z</updated>
-		<id>https://polymc.org/news/0-4-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-4-update/</id>
 		<content type="html">&lt;p&gt;We&#39;ve just released MultiMC 5, version 0.4!&lt;/p&gt;
 &lt;p&gt;This version brings many changes, including Jar mod support for 1.6+. &lt;a href=&quot;https://twitter.com/peterixxx&quot;&gt;@peterixxx&lt;/a&gt; started work on this feature a few months ago, but it quickly avalanched in to a bunch of new features, and eventually resulted in a reworked instance dialog (&lt;a href=&quot;https://i.imgur.com/QrUyNwO.png&quot;&gt;https://i.imgur.com/QrUyNwO.png&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;The new dialog combines several of the old ones (including Edit Mods, Settings and Screenshots), and you&#39;ll see a modified version of it when running instances. There&#39;s also a new &amp;quot;Other Logs&amp;quot; page, which gives you the ability to view and upload all log files relating to the current instance.&lt;/p&gt;
@@ -1757,25 +1757,25 @@ with QuickMods, so: Exciting times ahead!&lt;/p&gt;
 	
 	<entry>
 		<title>Introducing QuickMods - A better way to install mods</title>
-		<link href="https://polymc.org/news/introducing-quickmods/"/>
+		<link href="https://polymc.org/polymc.org/news/introducing-quickmods/"/>
 		<updated>2014-04-24T23:35:44Z</updated>
-		<id>https://polymc.org/news/introducing-quickmods/</id>
+		<id>https://polymc.org/polymc.org/news/introducing-quickmods/</id>
 		<content type="html">&lt;p&gt;Hello from the MultiMC development team! We have an exciting announcement today. For a while, one of our developers, Jan (&lt;a href=&quot;https://twitter.com/02JanDal&quot;&gt;@02JanDal&lt;/a&gt;), has been working on a system for easily downloading and installing mods. The system is called QuickMod, and today we&#39;re excited to finally be able to show off an early proof of concept.&lt;/p&gt;
 &lt;p&gt;Before you read further, please keep in mind that this is still in early development. It is quite buggy, but we&#39;re working on smoothing it out. Everything here is subject to change and we &lt;strong&gt;do not have an ETA&lt;/strong&gt; for how long it will take to finish. It&#39;s done when it&#39;s done.&lt;/p&gt;
-&lt;h2 id=&quot;demo-video&quot; tabindex=&quot;-1&quot;&gt;Demo Video &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/introducing-quickmods/#demo-video&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;demo-video&quot; tabindex=&quot;-1&quot;&gt;Demo Video &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/introducing-quickmods/#demo-video&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;If you&#39;re too lazy to read, here is a video of Forkk demonstrating the installation of a bunch of mods using the QuickMod system:&lt;/p&gt;
 &lt;iframe width=&quot;800&quot; height=&quot;600&quot; src=&quot;https://www.youtube.com/embed/5OBKT7w6p6w?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;h2 id=&quot;quickmods&quot; tabindex=&quot;-1&quot;&gt;QuickMods &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/introducing-quickmods/#quickmods&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;quickmods&quot; tabindex=&quot;-1&quot;&gt;QuickMods &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/introducing-quickmods/#quickmods&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Once upon a time, when installing mods, you had to mess with the Minecraft jar file. Then came Forge and other great stuff to ease the installation, as well as MultiCraft (the predecessor of MultiMC), making installation of mods even easier. But it doesn&#39;t stop there, sometime in December last year I started working on a feature I call QuickMods. There are two parts to them, the JSON specification (available &lt;a href=&quot;http://02jandal.github.io/QuickModDoc/&quot;&gt;here&lt;/a&gt;) and the implementation in MultiMC 5.&lt;/p&gt;
-&lt;h3 id=&quot;the-quickmod-file-format&quot; tabindex=&quot;-1&quot;&gt;The QuickMod file format &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/introducing-quickmods/#the-quickmod-file-format&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;the-quickmod-file-format&quot; tabindex=&quot;-1&quot;&gt;The QuickMod file format &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/introducing-quickmods/#the-quickmod-file-format&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;QuickMods are small text files which contain information about a mod such as its name, description, and where to download it.&lt;/p&gt;
-&lt;h3 id=&quot;how-do-they-work&quot; tabindex=&quot;-1&quot;&gt;How do they work? &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/introducing-quickmods/#how-do-they-work&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;how-do-they-work&quot; tabindex=&quot;-1&quot;&gt;How do they work? &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/introducing-quickmods/#how-do-they-work&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;To install a QuickMod, you simply add it into MultiMC via its URL, or a file. Once the QuickMod is added to MultiMC, it can be installed into any instance via the &amp;quot;Install&amp;quot; button in the mod edit dialog.&lt;/p&gt;
 &lt;p&gt;When a QuickMod is installed into an instance, MultiMC will get the mod&#39;s download link, determine what other mods that mod requires, and then go through a download process for everything it needs to downloaded. Mods with direct download links are downloaded directly, while, for mods which must go through &lt;a href=&quot;http://adf.ly/&quot;&gt;adf.ly&lt;/a&gt; or some other website, MultiMC will open a small web browser window with whatever page the mod should be downloaded from. Mod developers still get their ad revenue, and users get a really easy way to download mods. Everybody wins.&lt;/p&gt;
-&lt;h3 id=&quot;how-are-they-made&quot; tabindex=&quot;-1&quot;&gt;How are they made? &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/introducing-quickmods/#how-are-they-made&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;how-are-they-made&quot; tabindex=&quot;-1&quot;&gt;How are they made? &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/introducing-quickmods/#how-are-they-made&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;QuickMods are simple JSON files which contain information about mods. Jan has written a &lt;a href=&quot;https://github.com/02JanDal/QuickModGenerator&quot;&gt;command line tool&lt;/a&gt; and a &lt;a href=&quot;https://github.com/robotbrain/quickmod-gradle&quot;&gt;gradle plugin&lt;/a&gt; to simplify the process of creating QuickMod files.&lt;/p&gt;
 &lt;p&gt;Anyone can create one, too, not just the mod developer. QuickMods don&#39;t distribute the mod files themselves, either; they download mods from the original download location, so you won&#39;t need to have permission from the mod developer to use them for your mod packs.&lt;/p&gt;
-&lt;h3 id=&quot;some-more-information&quot; tabindex=&quot;-1&quot;&gt;Some more information &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/introducing-quickmods/#some-more-information&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;some-more-information&quot; tabindex=&quot;-1&quot;&gt;Some more information &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/introducing-quickmods/#some-more-information&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;How does this relate to the Curse client?
 &lt;ul&gt;
@@ -1789,7 +1789,7 @@ with QuickMods, so: Exciting times ahead!&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;It&#39;ll still be some time until this is ready for release, in the mean time we&#39;d love to hear any thoughts or ideas, the best way to reach us is via IRC (#MultiMC on &lt;a href=&quot;http://irc.esper.net/&quot;&gt;irc.esper.net&lt;/a&gt;).&lt;/p&gt;
-&lt;h3 id=&quot;important-notice&quot; tabindex=&quot;-1&quot;&gt;Important notice &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/introducing-quickmods/#important-notice&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;important-notice&quot; tabindex=&quot;-1&quot;&gt;Important notice &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/polymc.org/news/introducing-quickmods/#important-notice&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Both the QuickMod specification and the implementation in MultiMC are still under heavy development, and likely to change. Be ready for incompatibilities until we have a stable release out.&lt;/p&gt;
 &lt;p&gt;~ Jan and Forkk&lt;/p&gt;
 </content>
@@ -1797,9 +1797,9 @@ with QuickMods, so: Exciting times ahead!&lt;/p&gt;
 	
 	<entry>
 		<title>Support us on Patreon!</title>
-		<link href="https://polymc.org/news/support-us-on-patreon/"/>
+		<link href="https://polymc.org/polymc.org/news/support-us-on-patreon/"/>
 		<updated>2014-04-11T00:48:10Z</updated>
-		<id>https://polymc.org/news/support-us-on-patreon/</id>
+		<id>https://polymc.org/polymc.org/news/support-us-on-patreon/</id>
 		<content type="html">&lt;p&gt;We&#39;ve created a &lt;a href=&quot;http://www.patreon.com/multimc&quot;&gt;Patreon account&lt;/a&gt; as a way to support MultiMC and its development team!&lt;/p&gt;
 &lt;p&gt;Patreon is a fundraising service, designed to let fans of something contribute to the people who make it. You can pledge any monthly amount you want, for perks (such as having your name in the MultiMC credits section) and to support us and the project.&lt;/p&gt;
 &lt;p&gt;If we get to $100 a month we&#39;ll make this website totally advert free. Adverts suck but servers are expensive, and as such adverts have been a necessary evil (until now, with Patreon).&lt;/p&gt;
@@ -1811,9 +1811,9 @@ with QuickMods, so: Exciting times ahead!&lt;/p&gt;
 	
 	<entry>
 		<title>Heartbleed Vulnerability Update (fixed!)</title>
-		<link href="https://polymc.org/news/heartbleed-vuln-update/"/>
+		<link href="https://polymc.org/polymc.org/news/heartbleed-vuln-update/"/>
 		<updated>2014-04-09T14:21:04Z</updated>
-		<id>https://polymc.org/news/heartbleed-vuln-update/</id>
+		<id>https://polymc.org/polymc.org/news/heartbleed-vuln-update/</id>
 		<content type="html">&lt;p&gt;If you&#39;ve used the Internet in the last couple of days, you&#39;ve probably heard about the &lt;a href=&quot;http://heartbleed.com/&quot;&gt;Heartbleed&lt;/a&gt; vulnerability. To keep it short, there&#39;s a vulnerability in a bunch of versions of OpenSSL that make it possible for servers or clients to make their counterparts expose system memory in 64kB blocks.&lt;/p&gt;
 &lt;p&gt;MultiMC on Windows ships with a version that&#39;s vulnerable. As far as we can tell, the only people that could use the exploit are servers that we connect to, which are Mojang and ourselves. We&#39;re going to update A.S.A.P. and hope to get a build out with it tonight (US time).&lt;/p&gt;
 &lt;p&gt;If you don&#39;t want to wait for the update tonight, you can replace three files in your MultiMC folder with newer versions. Specifically, &amp;quot;libeay32.dll&amp;quot;, &amp;quot;libssl32.dll&amp;quot; and &amp;quot;ssleay32.dll&amp;quot;. We use the OpenSSL distribution from &lt;a href=&quot;http://slproweb.com/products/Win32OpenSSL.html&quot;&gt;Shining Light Productions&lt;/a&gt; - download their &amp;quot;Win32 OpenSSL v1.0.1g Light&amp;quot; installer, run it, grab those files from the installation directory (&amp;quot;C:/OpenSSL-Win32/&amp;quot; by default), and copy them in to your MultiMC folder.&lt;/p&gt;
@@ -1825,9 +1825,9 @@ with QuickMods, so: Exciting times ahead!&lt;/p&gt;
 	
 	<entry>
 		<title>Announcing MultiMC 6</title>
-		<link href="https://polymc.org/news/multimc6/"/>
+		<link href="https://polymc.org/polymc.org/news/multimc6/"/>
 		<updated>2014-04-02T00:12:56Z</updated>
-		<id>https://polymc.org/news/multimc6/</id>
+		<id>https://polymc.org/polymc.org/news/multimc6/</id>
 		<content type="html">&lt;p&gt;Today, I am happy to announce MultiMC 6, a new, reimagined version of MultiMC written in the &lt;strong&gt;best language ever&lt;/strong&gt;, Haskell. MultiMC 6 will be far more stable and faster than MultiMC 5, and will make your Minecraft launching experience much more enjoyable. Furthermore, we&#39;ve decided that MultiMC&#39;s scope shouldn&#39;t be limited to simply launching Minecraft. That&#39;s why we&#39;ll be adding support for several more games to MultiMC, such as:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Factorio&lt;/li&gt;
@@ -1846,9 +1846,9 @@ with QuickMods, so: Exciting times ahead!&lt;/p&gt;
 	
 	<entry>
 		<title>0.3 - The big feature update.</title>
-		<link href="https://polymc.org/news/0-3-update/"/>
+		<link href="https://polymc.org/polymc.org/news/0-3-update/"/>
 		<updated>2014-03-29T22:44:53Z</updated>
-		<id>https://polymc.org/news/0-3-update/</id>
+		<id>https://polymc.org/polymc.org/news/0-3-update/</id>
 		<content type="html">&lt;p&gt;We&#39;re happy to announce a new version with a bunch of new features and bugfixes - MultiMC 5 Version 0.3!&lt;/p&gt;
 &lt;p&gt;Some of the changes include:&lt;/p&gt;
 &lt;ul&gt;
@@ -1872,9 +1872,9 @@ with QuickMods, so: Exciting times ahead!&lt;/p&gt;
 	
 	<entry>
 		<title>First official MultiMC 5 release!</title>
-		<link href="https://polymc.org/news/first-official-multimc5-release/"/>
+		<link href="https://polymc.org/polymc.org/news/first-official-multimc5-release/"/>
 		<updated>2014-01-05T21:10:24Z</updated>
-		<id>https://polymc.org/news/first-official-multimc5-release/</id>
+		<id>https://polymc.org/polymc.org/news/first-official-multimc5-release/</id>
 		<content type="html">&lt;p&gt;We&#39;re excited to announce that the first official MultiMC 5 release is now available on the &lt;a href=&quot;https://polymc.org/&quot;&gt;homepage&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;Whilst the builds have been stable enough for general use for a while now, we know that having the &amp;quot;stable&amp;quot; label can be important for people&#39;s peace of mind, especially around their beloved instances. There&#39;s still a few things that we&#39;d like to improve on and add, but we think that all of the core functionality is there. As always, you can track our progress using the &lt;a href=&quot;https://www.pivotaltracker.com/s/projects/869353&quot;&gt;tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We&#39;ll be keeping an eye on the &lt;a href=&quot;http://webchat.esper.net/?nick=&amp;amp;channels=MultiMC&quot;&gt;IRC channel&lt;/a&gt; for bug reports, and if anything unexpected pops up we&#39;ll be around to fix it.&lt;/p&gt;
@@ -1886,9 +1886,9 @@ Drayshak&lt;/p&gt;
 	
 	<entry>
 		<title>MultiMC Status Update</title>
-		<link href="https://polymc.org/news/multimc-status-update/"/>
+		<link href="https://polymc.org/polymc.org/news/multimc-status-update/"/>
 		<updated>2013-10-27T09:40:30Z</updated>
-		<id>https://polymc.org/news/multimc-status-update/</id>
+		<id>https://polymc.org/polymc.org/news/multimc-status-update/</id>
 		<content type="html">&lt;p&gt;I thought I&#39;d write a blog post discussing the current state of MultiMC, MultiMC 5 development progress, and the future.&lt;/p&gt;
 &lt;p&gt;First, we have a new, dedicated website, and you&#39;re looking at it! The idea was to keep it clean, simple and functional, and I think we&#39;ve achieved that. Things might still change a bit but the framework is there for us to use.&lt;/p&gt;
 &lt;p&gt;So who is &amp;quot;us&amp;quot;? &lt;a href=&quot;https://twitter.com/peterixxx&quot;&gt;peterix&lt;/a&gt; and myself (&lt;a href=&quot;https://twitter.com/drayshak&quot;&gt;@Drayshak&lt;/a&gt;) are pushing development of MultiMC 5 forward, I&#39;ve been working on the website, &lt;a href=&quot;https://twitter.com/forkk13&quot;&gt;Forkk&lt;/a&gt; is helping with infrastructure, and there have been notable contributions to the project from &lt;a href=&quot;https://twitter.com/TakSuyu&quot;&gt;@TakSuyu&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/Stiepen22&quot;&gt;Kilobyte&lt;/a&gt; and Orochimarufan. (If you think you&#39;ve made a contribution that I&#39;ve left out, tell me!).&lt;/p&gt;
