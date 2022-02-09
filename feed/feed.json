@@ -10,14 +10,14 @@
     "url": "https://polymc.org/about/"
   },
   "items": [{
-      "id": "https://polymc.org/polymc.org/news/moddownload/",
-      "url": "https://polymc.org/polymc.org/news/moddownload/",
+      "id": "https://polymc.org/news/moddownload/",
+      "url": "https://polymc.org/news/moddownload/",
       "title": "Modrinth support and Mod downloading",
       "content_html": "<p>Thanks to @timoreo it is now possible to download individual mods from both cursforge and modrinth this pull request is the first of many big changes coming to PolyMC.</p>\n<p>Screenshots of the new feature:</p>\n<p><img src=\"https://user-images.githubusercontent.com/81902668/152801619-8d826540-2467-4973-9488-f6afcb7ba804.png\" alt=\"ModInstallBlack\" />\n<img src=\"https://user-images.githubusercontent.com/81902668/152801625-e7ad87f7-464f-49a2-ab4f-116f592acec1.png\" alt=\"ModInstallWhite\" /></p>\n",
       "date_published": "2022-02-07T00:00:00Z"
     },{
-      "id": "https://polymc.org/polymc.org/news/newmantainers/",
-      "url": "https://polymc.org/polymc.org/news/newmantainers/",
+      "id": "https://polymc.org/news/newmantainers/",
+      "url": "https://polymc.org/news/newmantainers/",
       "title": "New maintainers and step down.",
       "content_html": "<p>Based off recent contoversy lead maintainer swurl has decided to step down from their role as maintainer. Lenny is now the head maintainer of PolyMC and has established a new core group of maintainers to keep the project healthy and active.</p>\n<p>&quot;Swurl Stated&quot;:</p>\n<blockquote>\n<p>@here Based on recent controversies, and in thinking of the general    future of this project, I believe it to be best if I step down from my leadership position in PolyMC.</p>\n<p>Lenny will now be maintaining PolyMC and all its related services, and will be establishing a core team to help with development resources and community management.</p>\n<p>Additionally, due to mental health and other personal reasons, I will be taking a break from--and generally will be unavailable for--contributing to the project.</p>\n<p>Thank you all for providing me a great community to work with. I pray for PolyMC to have a good future and for all of you to continue to do good for the Free Software community.</p>\n</blockquote>\n<p>Quote in news: <a href=\"https://discordapp.com/channels/923671181020766230/923672379144671263/939731859431100416\">Discord</a>, <a href=\"https://matrix.to/#/!oOkwnJBCfVOMgEOp:polymc.org/$yGu0hoOB36_bSVPnV8msXAHl7or12JHch7axAoCe-RY?via=polymc.org&amp;via=swirl.funny.cl&amp;via=matrix.org\">Element</a></p>\n<p>Swurl contributed a lot to PolyMC and is an incredibly talented programmer. They will be missed and we hope to keep PolyMC always active and healthy.</p>\n<p>In lighter news congratulations to:</p>\n<ul>\n<li>Scumplex</li>\n<li>timoreo</li>\n<li>txtsd</li>\n<li>dada513</li>\n<li>Tabzlock</li>\n<li>cozyGalvinism</li>\n</ul>\n<p>They are all apart of the PolyMC &quot;Core Team&quot; The core team maintain the PolyMc project and repositorys around it. We hope to see great contributions and continued development of PolyMC.</p>\n",
       "date_published": "2022-02-06T00:00:00Z"
