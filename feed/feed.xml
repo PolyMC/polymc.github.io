@@ -3,10 +3,10 @@
 	<title>PolyMC</title>
 	<subtitle>An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.</subtitle>
 	
-	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
-	<link href="https://polymc.org/"/>
+	<link href="https://polymc.github.io/feed/feed.xml" rel="self"/>
+	<link href="https://polymc.github.io/"/>
 	<updated>2022-02-07T00:00:00Z</updated>
-	<id>https://polymc.org/</id>
+	<id>https://polymc.github.io/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
@@ -14,9 +14,9 @@
 	
 	<entry>
 		<title>Modrinth support and Mod downloading</title>
-		<link href="https://polymc.org/news/moddownload/"/>
+		<link href="https://polymc.github.io/news/moddownload/"/>
 		<updated>2022-02-07T00:00:00Z</updated>
-		<id>https://polymc.org/news/moddownload/</id>
+		<id>https://polymc.github.io/news/moddownload/</id>
 		<content type="html">&lt;p&gt;Thanks to @timoreo it is now possible to download individual mods from both cursforge and modrinth this pull request is the first of many big changes coming to PolyMC.&lt;/p&gt;
 &lt;p&gt;Screenshots of the new feature:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/81902668/152801619-8d826540-2467-4973-9488-f6afcb7ba804.png&quot; alt=&quot;ModInstallBlack&quot; /&gt;
@@ -26,9 +26,9 @@
 	
 	<entry>
 		<title>New maintainers and step down.</title>
-		<link href="https://polymc.org/news/newmantainers/"/>
+		<link href="https://polymc.github.io/news/newmantainers/"/>
 		<updated>2022-02-06T00:00:00Z</updated>
-		<id>https://polymc.org/news/newmantainers/</id>
+		<id>https://polymc.github.io/news/newmantainers/</id>
 		<content type="html">&lt;p&gt;Based off recent contoversy lead maintainer swurl has decided to step down from their role as maintainer. Lenny is now the head maintainer of PolyMC and has established a new core group of maintainers to keep the project healthy and active.&lt;/p&gt;
 &lt;p&gt;&amp;quot;Swurl Stated&amp;quot;:&lt;/p&gt;
 &lt;blockquote&gt;
