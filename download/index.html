@@ -51,12 +51,14 @@
         <a class="button" href="https://packages.polymc.org/latest/win32/win32.zip">Windows (.zip)</a>
         <a class="button" href="#mac">Mac</a>
         <a class="button" href="#linux">Linux</a>
+        <a class="button" href="#freebsd">FreeBSD</a>
+        <a class="button" href="#openbsd">OpenBSD</a>
     </div>
 </div>
 <br>
 <div class="infobox">
 <h2 id="macos" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/apple/apple-tile.svg" height="20" /> MacOS</h2>
-<p>MacOS currently does not have any packages. We are still working on setting up MacOS packaging. Meanwhile, you can <a href="https://github.com/PolyMC/PolyMC/blob/develop/BUILD.md#macos">build</a> it for yourself.</p>
+<p>MacOS has experimental development builds available <a href="https://github.com/PolyMC/PolyMC/actions">here</a></p>
 </div>
 <br>
 <div class="infobox">
@@ -108,9 +110,43 @@ sudo tee -a /etc/portage/package.accept_keywords &lt;&lt;&lt; &quot;=games-actio
 </code></pre>
 <h3 id="fedora" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora</h3>
 <p>An RPM package is available on <a href="https://copr.fedorainfracloud.org/coprs/sentry/polymc/">COPR</a></p>
-<pre><code>sudo dnf copr enable sentry/polymc
+<pre><code>sudo dnf copr enable polymc/polymc
 sudo dnf install polymc
 </code></pre>
+<h3 id="slackware" tabindex="-1"><img src="https://lotar.altervista.org/wiki/_media/news/slackware-logo.png" height="20" /> Slackware</h3>
+<p><a href="https://codeberg.org/glowiak/SlackBuilds/src/branch/master/repository/polymc.md">A SlackBuild</a> is available. You will need <a href="http://slackbuilds.org/repository/14.2/libraries/qt5/">qt5</a> (on 15.0 installed by default), <a href="https://codeberg.org/glowiak/SlackBuilds/src/branch/master/repository/adoptium-jdk8.md">a JDK</a>, and if you're on 14.2, you need to compile newer CMake version manually. To build, type in extracted directory with all dependiences met:</p>
+<pre><code>sudo ./polymc.SlackBuild
+sudo installpkg /tmp/polymc-version-arch-1_SBo.tgz
+</code></pre>
+<p>You can also download a community-maintained <a href="http://glowiak.github.io/file/polymc-latest-slackware">prebuilt x86_64 package</a> and install it with /sbin/installpkg:</p>
+<pre><code>sudo /sbin/installpkg ~/Downloads/polymc-version-x86_64-1_SBo.tgz
+</code></pre>
+<h1 id="freebsd" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/freebsd/freebsd-icon.svg" height="20" /> FreeBSD</h1>
+<p>There are community-maintained binary packages available:</p>
+<ul>
+<li>
+<p><a href="http://glowiak.github.io/file/polymc-latest-fbsd64-appbsd">AppBSD Image</a> - a portable application, requires <a href="https://codeberg.org/glowiak/appbsd/">AppBSD</a> (0.4.9 or newer) to be installed.</p>
+</li>
+<li>
+<p><a href="http://glowiak.github.io/file/polymc-latest-fbsd64-raw">Gzipped binaries</a> - traditional way to distribute, unpack and run.</p>
+</li>
+</ul>
+<p>In both cases you need X11, Qt5 and Java installed. Both files are 64bit only.<br>
+You can build from source - see <a href="https://github.com/PolyMC/PolyMC/blob/develop/BUILD.md">BUILD.md</a></p>
+<h1 id="openbsd" tabindex="-1"><img src="https://raw.githubusercontent.com/AliasIO/wappalyzer/master/src/drivers/webextension/images/icons/OpenBSD%20httpd.svg" height="20" /> OpenBSD</h1>
+<p>There are community-maintained binary packages available:</p>
+<ul>
+<li><a href="http://glowiak.github.io/file/polymc-latest-obsd32-raw">gzipped 32-bit binaries</a>, download, unpack and run.</li>
+</ul>
+<p>You need X11, Qt5 and Java installed.<br>
+You can build from source - see <a href="https://github.com/PolyMC/PolyMC/blob/develop/BUILD.md">BUILD.md</a></p>
+<h1 id="development-builds" tabindex="-1">Development Builds</h1>
+<p>There are per-commit development builds available <a href="https://github.com/PolyMC/PolyMC/actions">here</a>. These have debug information in the binaries, so their file sizes are relatively larger.
+Portable builds are provided for AppImage on Linux, Windows, and macOS.</p>
+<p>For Debian and Arch, you can use these packages for the latest development versions:<br>
+<a href="https://aur.archlinux.org/packages/polymc-git/"><img src="https://img.shields.io/badge/aur-polymc--git-blue" alt="polymc-git"></a>
+<a href="https://mpr.makedeb.org/packages/polymc-git"><img src="https://img.shields.io/badge/mpr-polymc--git-orange" alt="polymc-git"></a><br>
+For flatpak, you can use <a href="https://discourse.flathub.org/t/how-to-use-flathub-beta/2111">flathub-beta</a></p>
 </div>
 
 </main>
