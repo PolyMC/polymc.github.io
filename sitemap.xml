@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://polymc.github.io/news/newmantainers/</loc>
+    <loc>https://polymc.github.io/news/newmaintainers/</loc>
     <lastmod>2022-02-06</lastmod>
   </url>
   
@@ -12,67 +12,77 @@
   </url>
   
   <url>
+    <loc>https://polymc.github.io/news/moving-on/</loc>
+    <lastmod>2022-02-15</lastmod>
+  </url>
+  
+  <url>
     <loc>https://polymc.github.io/about/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.github.io/download/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.github.io/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.github.io/news/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.github.io/tags/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.github.io/tags/feature/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.github.io/tags/multimc/</loc>
+    <lastmod>2022-03-06</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.github.io/tags/news/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.github.io/tags/wiki/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.github.io/wiki/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.github.io/wiki/FAQ/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.github.io/wiki/codeofconduct/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.github.io/wiki/faq/why/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.github.io/wiki/todo/</loc>
-    <lastmod>2022-03-02</lastmod>
+    <lastmod>2022-03-06</lastmod>
   </url>
 </urlset>

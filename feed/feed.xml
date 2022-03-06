@@ -5,12 +5,64 @@
 	
 	<link href="https://polymc.github.io/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.github.io/"/>
-	<updated>2022-02-07T00:00:00Z</updated>
+	<updated>2022-02-15T00:00:00Z</updated>
 	<id>https://polymc.github.io/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>Moving on</title>
+		<link href="https://polymc.github.io/news/moving-on/"/>
+		<updated>2022-02-15T00:00:00Z</updated>
+		<id>https://polymc.github.io/news/moving-on/</id>
+		<content type="html">&lt;p&gt;PolyMC emerged out of frustration with the MultiMC project and therefore brought controversy with it.&lt;br /&gt;
+In short, the original founders of PolyMC had disagreements with the maintainer of MultiMC and the project&#39;s direction.&lt;br /&gt;
+These disagreements were turned into a takeover of packaging on Arch Linux by the PolyMC founders, something that, understandably, the &lt;a href=&quot;https://github.com/PolyMC/PolyMC/issues/75#issuecomment-1023571223&quot;&gt;MultiMC maintainers took as sabotage&lt;/a&gt;.&lt;br /&gt;
+After MultiMC &lt;a href=&quot;https://www.reddit.com/r/linux_gaming/comments/riitbs/multimc_is_dropping_all_support_for_aur_packages/&quot;&gt;dropped support for third-party packaging&lt;/a&gt;, the seeds for PolyMC were laid.&lt;/p&gt;
+&lt;p&gt;As a side note, we want to mention that we do not approve the actions of community members that used these controversies as a basis to harass MultiMC developers.&lt;br /&gt;
+Please refrain from brigading other communities.&lt;br /&gt;
+It only causes harm on both sides.&lt;/p&gt;
+&lt;p&gt;PolyMC&#39;s inception is very controversial by its very nature.&lt;br /&gt;
+The founders have decided to sublicense PolyMC under the terms of the &lt;a href=&quot;https://en.wikipedia.org/wiki/GNU_General_Public_License&quot;&gt;GNU General Public License 3&lt;/a&gt; (GPL-3), which made it impossible for MultiMC to take contributions, without re-licensing to GPL-3 as well.&lt;br /&gt;
+As a result the MultiMC team have decided to burn bridges with PolyMC.&lt;br /&gt;
+This was manifested after access to the metadata service, provided by MultiMC, was &lt;a href=&quot;https://github.com/PolyMC/PolyMC/issues/75&quot;&gt;blocked for all PolyMC users&lt;/a&gt;.&lt;br /&gt;
+All versions prior to 1.0.6 do not work anymore, as they try to reach MultiMC servers instead of our own.&lt;/p&gt;
+&lt;p&gt;In an effort to prepare for our upcoming 1.1.0 release, we wanted to contact the MultiMC maintainer to see, if they want to be credited in our documentation.&lt;br /&gt;
+Sadly, our request was dismissed, and most of our team members were banned from the official MultiMC Discord server for being associated with PolyMC.&lt;/p&gt;
+&lt;div class=&quot;center&quot;&gt;
+    &lt;img alt=&quot;Screenshot of public chat with MultiMC maintainer&quot; src=&quot;https://polymc.github.io/img/news/moving-on/discord.png&quot; style=&quot;width: 40em&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;This has sparked many internal discussions both at PolyMC as well as MultiMC.&lt;br /&gt;
+In the end, we concluded that we will be moving on from our origins as a packaging-friendly fork of MultiMC.&lt;/p&gt;
+&lt;p&gt;In our upcoming 1.1.0 release, you will be able to use new features that will differentiate PolyMC from MultiMC.&lt;br /&gt;
+The major new feature is the integrated mod downloader that supports Modrinth and CurseForge mods.&lt;br /&gt;
+We also plan to clean the codebase, remove obscure or old features and cruft in an effort to make it easier for new contributors to start working on PolyMC.&lt;/p&gt;
+&lt;p&gt;Additionally, we have reorganized PolyMC since its inception to be more community-centric.&lt;br /&gt;
+One of the founders has stepped down as a maintainer and we have formed the &lt;em&gt;PolyMC Core Team&lt;/em&gt;.&lt;br /&gt;
+You can read more about it in &lt;a href=&quot;https://polymc.github.io/news/newmaintainers/&quot;&gt;this blogpost&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We want to decouple this project from its controversial origins and start work on a powerful Minecraft launcher.&lt;br /&gt;
+While we are working on getting 1.1.0 out, check out our future plans:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sneak peak of future plans&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rewrite of metadata generators, to make them easier to work with. See progress over on &lt;a href=&quot;https://github.com/PolyMC/polymorphosis&quot;&gt;PolyMC/polymorphosis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Potential rewrite of the launch-mechanism for Minecraft. This will give future alternative launchers the tools to build their own. See progress over on &lt;a href=&quot;https://github.com/PolyMC/PolyMC/issues/167&quot;&gt;PolyMC/PolyMC#167&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to be involved in PolyMC, check out the following links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/PolyMC&quot;&gt;PolyMC GitHub Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/PolyMC/PolyMC&quot;&gt;PolyMC Source Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://discord.com/invite/xq7fxrgtMP&quot;&gt;PolyMC Discord server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://matrix.to/#/#polymc:polymc.org&quot;&gt;PolyMC Matrix Space&lt;/a&gt; (bridged with Discord)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Never dig straight down!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;~ PolyMC Core Team&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Modrinth support and Mod downloading</title>
@@ -26,21 +78,22 @@
 	
 	<entry>
 		<title>New maintainers and step down.</title>
-		<link href="https://polymc.github.io/news/newmantainers/"/>
+		<link href="https://polymc.github.io/news/newmaintainers/"/>
 		<updated>2022-02-06T00:00:00Z</updated>
-		<id>https://polymc.github.io/news/newmantainers/</id>
-		<content type="html">&lt;p&gt;Based off recent contoversy lead maintainer swurl has decided to step down from their role as maintainer. Lenny is now the head maintainer of PolyMC and has established a new core group of maintainers to keep the project healthy and active.&lt;/p&gt;
-&lt;p&gt;&amp;quot;Swurl Stated&amp;quot;:&lt;/p&gt;
+		<id>https://polymc.github.io/news/newmaintainers/</id>
+		<content type="html">&lt;p&gt;Based off recent controversies, and for the project&#39;s best interest, Swirl has stepped down from his role as maintainer. LennyMcLennington is now the head maintainer of PolyMC and has established a new core group of maintainers to keep the project healthy and active.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Swirl Stated&lt;/strong&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;@here Based on recent controversies, and in thinking of the general    future of this project, I believe it to be best if I step down from my leadership position in PolyMC.&lt;/p&gt;
+&lt;p&gt;@here Based on recent controversies, and in thinking of the general future of this project, I believe it to be best if I step down from my leadership position in PolyMC.&lt;/p&gt;
 &lt;p&gt;Lenny will now be maintaining PolyMC and all its related services, and will be establishing a core team to help with development resources and community management.&lt;/p&gt;
 &lt;p&gt;Additionally, due to mental health and other personal reasons, I will be taking a break from--and generally will be unavailable for--contributing to the project.&lt;/p&gt;
 &lt;p&gt;Thank you all for providing me a great community to work with. I pray for PolyMC to have a good future and for all of you to continue to do good for the Free Software community.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Quote in news: &lt;a href=&quot;https://discordapp.com/channels/923671181020766230/923672379144671263/939731859431100416&quot;&gt;Discord&lt;/a&gt;, &lt;a href=&quot;https://matrix.to/#/!oOkwnJBCfVOMgEOp:polymc.org/$yGu0hoOB36_bSVPnV8msXAHl7or12JHch7axAoCe-RY?via=polymc.org&amp;amp;via=swirl.funny.cl&amp;amp;via=matrix.org&quot;&gt;Element&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Swurl contributed a lot to PolyMC and is an incredibly talented programmer. They will be missed and we hope to keep PolyMC always active and healthy.&lt;/p&gt;
-&lt;p&gt;In lighter news congratulations to:&lt;/p&gt;
+&lt;p&gt;Swirl contributed a lot to PolyMC and we hope to see more contributions in the future.&lt;/p&gt;
+&lt;p&gt;In lighter news, congratulations to our new Core Team consisting of:&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;LennyMcLennington&lt;/li&gt;
 &lt;li&gt;Scumplex&lt;/li&gt;
 &lt;li&gt;timoreo&lt;/li&gt;
 &lt;li&gt;txtsd&lt;/li&gt;
@@ -48,7 +101,8 @@
 &lt;li&gt;Tabzlock&lt;/li&gt;
 &lt;li&gt;cozyGalvinism&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;They are all apart of the PolyMC &amp;quot;Core Team&amp;quot; The core team maintain the PolyMc project and repositorys around it. We hope to see great contributions and continued development of PolyMC.&lt;/p&gt;
+&lt;p&gt;We will be maintaining the PolyMC project and repositories. We hope to see great contributions and continued development of PolyMC.&lt;/p&gt;
+&lt;p&gt;~ PolyMC Team&lt;/p&gt;
 </content>
 	</entry>
 </feed>
