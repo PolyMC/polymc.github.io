@@ -31,9 +31,7 @@ This was manifested after access to the metadata service, provided by MultiMC, w
 All versions prior to 1.0.6 do not work anymore, as they try to reach MultiMC servers instead of our own.&lt;/p&gt;
 &lt;p&gt;In an effort to prepare for our upcoming 1.1.0 release, we wanted to contact the MultiMC maintainer to see, if they want to be credited in our documentation.&lt;br /&gt;
 Sadly, our request was dismissed, and most of our team members were banned from the official MultiMC Discord server for being associated with PolyMC.&lt;/p&gt;
-&lt;div class=&quot;center&quot;&gt;
-    &lt;img alt=&quot;Screenshot of public chat with MultiMC maintainer&quot; src=&quot;https://polymc.github.io/img/news/moving-on/discord.png&quot; style=&quot;width: 40em&quot; /&gt;
-&lt;/div&gt;
+&lt;img alt=&quot;Screenshot of public chat with MultiMC maintainer&quot; src=&quot;https://polymc.github.io/img/news/moving-on/discord.png&quot; style=&quot;width: 40em&quot; /&gt;
 &lt;p&gt;This has sparked many internal discussions both at PolyMC as well as MultiMC.&lt;br /&gt;
 In the end, we concluded that we will be moving on from our origins as a packaging-friendly fork of MultiMC.&lt;/p&gt;
 &lt;p&gt;In our upcoming 1.1.0 release, you will be able to use new features that will differentiate PolyMC from MultiMC.&lt;br /&gt;
