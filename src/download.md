@@ -20,6 +20,17 @@ title: Download
 ## <img src="https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg" height="20" /> Windows
 
 [Windows (32-bit)](https://packages.polymc.org/latest/win32/win32.zip) ([SHA256](https://packages.polymc.org/latest/win32/win32.zip.sha256)) - this is a portable package, you can extract it anywhere and run it. This package needs testing.
+
+[Scoop Package](https://github.com/Calinou/scoop-games/blob/master/bucket/polymc.json)
+```
+scoop bucket add games
+scoop install polymc
+```
+
+[Chocolatey Package](https://github.com/PolyMC/PolyMC/blob/stable/packages/choco)
+```
+choco install polymc
+```
 </div>
 
 <br>
