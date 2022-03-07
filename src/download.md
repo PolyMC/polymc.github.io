@@ -30,8 +30,7 @@ scoop bucket add games
 scoop install polymc
 ```
 
-<!-- TODO: Change to choco link -->
-### [Chocolatey Package](https://github.com/PolyMC/PolyMC/blob/deevlop/packages/choco)
+### [Chocolatey Package](https://community.chocolatey.org/packages/polymc)
 There is also an official Chocolatey package
 ```
 choco install polymc
