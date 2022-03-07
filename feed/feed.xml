@@ -66,9 +66,9 @@ While we are working on getting 1.1.0 out, check out our future plans:&lt;/p&gt;
 	
 	<entry>
 		<title>Modrinth support and Mod downloading</title>
-		<link href="https://polymc.github.io/news/moddownload/"/>
+		<link href="https://polymc.github.io/news/mod-download/"/>
 		<updated>2022-02-07T00:00:00Z</updated>
-		<id>https://polymc.github.io/news/moddownload/</id>
+		<id>https://polymc.github.io/news/mod-download/</id>
 		<content type="html">&lt;p&gt;Thanks to @timoreo it is now possible to download individual mods from both cursforge and modrinth this pull request is the first of many big changes coming to PolyMC.&lt;/p&gt;
 &lt;p&gt;Screenshots of the new feature:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/81902668/152801619-8d826540-2467-4973-9488-f6afcb7ba804.png&quot; alt=&quot;ModInstallBlack&quot; /&gt;&lt;br /&gt;
