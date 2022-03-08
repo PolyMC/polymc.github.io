@@ -4,7 +4,7 @@ title: Downloads
 permalink: /download/
 hero:
   title: "Downloads"
-  background: /img/forest.webp
+  background: /img/forest.jpg
 ---
 
 <div class="cards">
