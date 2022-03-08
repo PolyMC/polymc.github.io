@@ -5,21 +5,12 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2024-02-06T00:00:00Z</updated>
+	<updated>2022-03-06T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
-	
-	<entry>
-		<title>Updating RSS FEED</title>
-		<link href="https://polymc.org/news/testbotrss/"/>
-		<updated>2024-02-06T00:00:00Z</updated>
-		<id>https://polymc.org/news/testbotrss/</id>
-		<content type="html">&lt;p&gt;Hello this is a test&lt;/p&gt;
-</content>
-	</entry>
 	
 	<entry>
 		<title>Moving on</title>

@@ -10,12 +10,6 @@
     "url": "https://polymc.org/about/"
   },
   "items": [{
-      "id": "https://polymc.org/news/testbotrss/",
-      "url": "https://polymc.org/news/testbotrss/",
-      "title": "Updating RSS FEED",
-      "content_html": "<p>Hello this is a test</p>\n",
-      "date_published": "2024-02-06T00:00:00Z"
-    },{
       "id": "https://polymc.org/news/moving-on/",
       "url": "https://polymc.org/news/moving-on/",
       "title": "Moving on",
