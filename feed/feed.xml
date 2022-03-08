@@ -75,6 +75,15 @@ While we are working on getting 1.1.0 out, check out our future plans:&lt;/p&gt;
 	</entry>
 	
 	<entry>
+		<title>Testing rss feed bot</title>
+		<link href="https://polymc.org/news/testingrssbot/"/>
+		<updated>2022-02-06T00:00:00Z</updated>
+		<id>https://polymc.org/news/testingrssbot/</id>
+		<content type="html">&lt;p&gt;Hello this is a test&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>New maintainers and step down.</title>
 		<link href="https://polymc.org/news/new-maintainers/"/>
 		<updated>2022-02-06T00:00:00Z</updated>
