@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>header{border-bottom:.15em dashed var(--accent)}header:after{content:"";display:table;clear:both}.home[href]{color:var(--primary-text);display:flex;align-items:center;font-family:Heebo,sans-serif;font-size:1.75em;text-decoration:none;font-weight:500}.home img{width:2em;height:2em;max-width:2em;margin-right:.3em}.home :link:not(:hover){text-decoration:none}nav{padding:.5em;overflow:auto;display:flex;justify-content:center}.nav{padding:0;margin:0}.links,.navbar{display:flex;align-items:center;justify-content:center;padding:0;flex-wrap:wrap}.links .button{font-size:1.2em}.navbar{flex-direction:column}.nav-item{display:inline-block;font-size:1.2em;margin:.5em}.nav-item a[href]{color:var(--primary-text);text-decoration:none}.nav-item-active{font-weight:700;font-size:1.25em}.hero{background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(".");background-position:center;background-repeat:no-repeat;background-size:cover;position:relative;color:#fff}.hero-title{font-size:3em}header>.container{flex-direction:column}@media (min-width:60em){nav{justify-content:space-between}.nav{margin-left:1em}.navbar{flex-direction:row}header>.container{flex-direction:row}}code[class*=language-],pre[class*=language-]{font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;background:var(--code);color:#f8f8f2}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#75715e}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.boolean,.token.number,.token.operator{color:#fd971f}.token.property{color:#f4bf75}.token.tag{color:#66d9ef}.token.string{color:#a1efe4}.token.selector{color:#ae81ff}.token.attr-name{color:#fd971f}.language-css .token.string,.style .token.string,.token.entity,.token.url{color:#a1efe4}.token.attr-value,.token.control,.token.directive,.token.keyword,.token.unit{color:#a6e22e}.token.atrule,.token.regex,.token.statement{color:#a1efe4}.token.placeholder,.token.variable{color:#66d9ef}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #f9f8f5;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#f92672}.token.entity{cursor:help}pre>code.highlight{outline:.4em solid #f92672;outline-offset:0.4em}.wiki-content{flex-basis:0;flex-grow:1;margin-bottom:1em}.wiki-toc{background-color:var(--accent);padding:1em}.wiki-toc ul{margin:0;padding:0;list-style:none}.wiki-category{margin-bottom:1em}.wiki-category>a{font-size:1.2em;font-weight:700;font-family:Heebo,sans-serif;text-decoration:none}.wiki-category-active>a{text-decoration:underline}.wiki-item{border-left:var(--primary) .25em solid;padding:.5em}.wiki-item>a[href]{text-decoration:none;color:var(--primary-text)}.wiki-item-active{text-decoration:underline}.wiki-category>a:hover,.wiki-item:hover{text-decoration:underline}:root{--grad-primary:linear-gradient(126deg, #88b858 0%, #72b147 25%, #5a9a30 50%);--grad-secondary:linear-gradient(126deg, #b7835a 0%, #765338 25%, #5b422d 50%);--primary:#88b858;--secondary:#a87953;--background:#333;--accent:#555;--link:#88b858ff;--visited:#72b147ff;--primary-text:#fff;--code:#222}@media (prefers-color-scheme:light){:root{--primary-text:#333;--background:#fff;--accent:#e0e0e0}}*{box-sizing:border-box}body,html{padding:0;margin:0;font-family:-apple-system,system-ui,sans-serif;color:var(--primary-text);background-color:var(--background)}*{box-sizing:border-box}h1,h2,h3,h4,h5,h6{font-family:Heebo,sans-serif}p:last-child{margin-bottom:0}.tmpl-post li,img,p{max-width:min(100%)}.tmpl-post li,p{line-height:1.45}a[href]{color:var(--link)}main{padding:1em}main :first-child{margin-top:0}table{margin:1em 0}table td,table th{padding-right:1em}blockquote{border-left:var(--primary) .25em solid;padding:.5em;margin:0}code,pre{font-family:Consolas,Menlo,Monaco,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L","Courier New",Courier,monospace;line-height:1.5}pre{font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;background-color:var(--code);color:#fff;overflow:auto}code{word-break:break-all}.highlight-line{display:block;padding:.125em 1em;text-decoration:none;color:inherit}.highlight-line:empty:before{content:" "}.highlight-line+br{display:none}.highlight-line-isdir{color:#b0b0b0;background-color:#222}.highlight-line-active{background-color:#444;background-color:hsla(0,0%,27%,.8)}.highlight-line-add{background-color:#45844b}.highlight-line-remove{background-color:#902f2f}.container{max-width:90em;width:100%;margin:0 auto}.center{text-align:center;margin:auto}.infobox{background-color:var(--accent);padding:1em}.button{display:inline-block;position:relative;color:#fff;padding:.5em 1.5em;margin:.25em;list-style:none;font-size:1.5em;font-family:Heebo,sans-serif;text-decoration:none;background-color:var(--primary);background-image:var(--grad-primary);background-size:200%;clip-path:polygon(0.6em 0,calc(100% - 0.6em) 0,100% 50%,calc(100% - 0.6em) 100%,0.6em 100%,0 50%);transition:250ms ease;background-position-x:100%}.button:focus,.button:hover{background-position-x:0%}.button[href]{color:#fff}.button[href]:visited{color:#fff}.button.secondary{background-color:var(--secondary);background-image:var(--grad-secondary)}.postlist{list-style:none;padding:0}.postlist-item{display:flex;flex-wrap:wrap;align-items:baseline;counter-increment:start-from -1;line-height:1.8}.postlist-item:before{display:inline-block;pointer-events:none;content:"" counter(start-from,decimal-leading-zero) ". ";line-height:100%;text-align:right}.postlist-date,.postlist-item:before{font-size:.8125em;color:var(--darkgray)}.postlist-item:not(:first-child){margin-top:1em}.postlist-date{word-spacing:-0.5px}.postlist-link{font-size:1.2em;font-family:Heebo,sans-serif;padding-left:.25em;padding-right:1em;text-underline-position:from-font;text-underline-offset:0;text-decoration-thickness:1px}.postlist-item-active .postlist-link{font-weight:700}.postlist-description{width:100%;border-left:var(--primary) .25em solid;padding:.5em;margin-top:.33em}.tmpl-home .postlist-link{font-size:1.1875em;font-weight:700}.post-tag{display:inline-flex;align-items:center;justify-content:center;text-transform:uppercase;font-size:.75em;padding:.08333333333333em .3333333333333em;margin-left:1em;color:var(--darkgray);border:1px solid var(--accent);border-radius:.25em;text-decoration:none;line-height:1.8}a[href].post-tag,a[href].post-tag:visited{color:inherit}a[href].post-tag:focus,a[href].post-tag:hover{background-color:var(--lightgray)}.postlist-item>.post-tag{align-self:center}.warning{background-color:#ffc;padding:1em .625em}.warning ol:only-child{margin:0}.direct-link{font-family:sans-serif;text-decoration:none;font-style:normal;margin-left:.1em}a[href].direct-link,a[href].direct-link:visited{color:transparent}:hover>a[href].direct-link,:hover>a[href].direct-link:visited,a[href].direct-link:focus,a[href].direct-link:focus:visited{color:#aaa}.download-links{padding:0}.download-links li{display:inline;margin:.25em}.row{display:flex;flex-direction:column}.column{display:flex;align-items:center;justify-content:center;padding:1em;text-align:center}.column img{height:auto}.subtitle{font-size:1.5em;text-align:center}.cards{display:flex;flex-wrap:wrap;flex-direction:column}.card{margin:1em;flex:0 1 24%;padding:1em;text-align:center;background-color:var(--accent)}.card .button{width:100%;margin:0}.footer{text-align:center;border-top:.15em dashed var(--accent);padding:2em}@media (min-width:90em){.row{flex-direction:row}.row-reverse{flex-direction:row-reverse}.column{flex:50%}.wiki-content{padding-left:1em}.cards{flex-direction:row;justify-content:space-between}.card{margin:0;align-self:flex-start}}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyMC - Build instructions</title>
+    <meta name="description" content="An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="PolyMC">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="PolyMC">
+    <link rel="icon" type="image/png" sizes="128x128" href="/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/heebo/500.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/heebo/700.css">
+  </head>
+  <body>
+    <header>
+  <nav class="container">
+    <div class="navbar">
+      <a href="/" class="home">
+        <img src="/img/icon.svg" alt="Logo">
+          PolyMC
+        </a>
+        <ul class="nav">
+            <li class="nav-item">
+              <a href="/news/">News</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about/">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/wiki/">Wiki</a>
+            </li>
+            <li class="nav-item">
+              <a href="/#get-involved">Community</a>
+            </li>
+        </ul>
+      </div>
+      <div class="links">
+        <a class="button" href="/download/">Download</a>
+        <a class="button secondary" href="https://github.com/PolyMC/PolyMC">GitHub</a>
+      </div>
+    </nav>
+    
+    </header>
+
+<main class="container">
+  
+<div class="row row-reverse">
+  <div class="wiki-content">
+    <h1 id="build-instructions" tabindex="-1">Build Instructions <a class="direct-link" href="#build-instructions" aria-hidden="true">#</a></h1>
+<h1 id="contents" tabindex="-1">Contents <a class="direct-link" href="#contents" aria-hidden="true">#</a></h1>
+<ul>
+<li><a href="#getting-the-source">Getting the source</a></li>
+<li><a href="#linux">Linux</a></li>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#macos">macOS</a></li>
+</ul>
+<h1 id="getting-the-source" tabindex="-1">Getting the source <a class="direct-link" href="#getting-the-source" aria-hidden="true">#</a></h1>
+<p>Clone the source code using git and grab all the submodules:</p>
+<pre><code>git clone https://github.com/PolyMC/PolyMC.git
+cd PolyMC
+git submodule init
+git submodule update
+</code></pre>
+<p>The rest of the documentation assumes you have already cloned the repository.</p>
+<h1 id="linux-and-freebsd" tabindex="-1">Linux and FreeBSD <a class="direct-link" href="#linux-and-freebsd" aria-hidden="true">#</a></h1>
+<p>Getting the project to build and run on Linux is easy if you use any modern and up-to-date linux distribution. If you're using FreeBSD you should use 13.0-RELEASE or newer.</p>
+<h2 id="build-dependencies" tabindex="-1">Build dependencies <a class="direct-link" href="#build-dependencies" aria-hidden="true">#</a></h2>
+<ul>
+<li>A C++ compiler capable of building C++11 code.</li>
+<li>Qt Development tools 5.6 or newer (<code>qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5</code> on Debian-based system)</li>
+<li>cmake 3.1 or newer (<code>cmake</code> on Debian-based system)</li>
+<li>zlib (<code>zlib1g-dev</code> on Debian-based system)</li>
+<li>Java JDK (<code>openjdk-17-jdk</code>on Debian-based system)</li>
+<li>GL headers (<code>libgl1-mesa-dev</code> on Debian-based system)</li>
+<li>games/lwjgl port if using FreeBSD</li>
+</ul>
+<p>You can use IDEs like KDevelop or QtCreator to open the CMake project if you want to work on the code.</p>
+<h3 id="building-a-portable-binary" tabindex="-1">Building a portable binary <a class="direct-link" href="#building-a-portable-binary" aria-hidden="true">#</a></h3>
+<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> <span class="token function">install</span><br><span class="token comment"># configure the project</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span>./install<br><span class="token comment"># build</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span></code></pre>
+<h3 id="building-and-installing-to-the-system" tabindex="-1">Building &amp; Installing to the System <a class="direct-link" href="#building-and-installing-to-the-system" aria-hidden="true">#</a></h3>
+<p>This is the preferred method for installation, and is suitable for packages.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># configure everything</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span><span class="token string">"/usr"</span> <span class="token punctuation">\</span> <span class="token comment"># Use "/usr" when building Linux packages. If building on FreeBSD or not for package, use "/usr/local"</span><br>   -DLauncher_PORTABLE<span class="token operator">=</span>OFF<br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span> <span class="token comment"># Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})</span></code></pre>
+<h3 id="building-a-.deb" tabindex="-1">Building a .deb <a class="direct-link" href="#building-a-.deb" aria-hidden="true">#</a></h3>
+<p>Requirements: <a href="https://docs.makedeb.org/">makedeb</a> installed on your system.</p>
+<pre><code>git clone https://mpr.makedeb.org/polymc.git
+cd polymc
+makedeb -s
+</code></pre>
+<p>The deb will be located in the directory the repo was cloned in.</p>
+<h3 id="building-an-.rpm" tabindex="-1">Building an .rpm <a class="direct-link" href="#building-an-.rpm" aria-hidden="true">#</a></h3>
+<p>Build dependencies are automatically installed using <code>dnf</code>, but you do need the <code>rpmdevtools</code> package (on Fedora)<br>
+in order to fetch sources and setup your tree.<br>
+You don't need to clone the repo for this; the spec file handles that</p>
+<pre><code>cd ~
+# setup your ~/rpmbuild directory, required for rpmbuild to work.
+rpmdev-setuptree
+# get the rpm spec file from the polymc-misc repo
+wget https://raw.githubusercontent.com/PolyMC/polymc-misc/master/rpm/polymc.spec
+# install build dependencies
+sudo dnf builddep polymc.spec
+# download build sources
+spectool -g -R polymc.spec
+# now build!
+rpmbuild -bb polymc.spec
+</code></pre>
+<p>The path to the rpm packages will be printed when the build is complete.</p>
+<h3 id="building-a-slackware-package" tabindex="-1">Building a Slackware package <a class="direct-link" href="#building-a-slackware-package" aria-hidden="true">#</a></h3>
+<p>To build a Slackware package, first install <a href="http://slackbuilds.org/repository/14.2/libraries/qt5/">qt5 SlackBuild</a> (on 15.0 and newer installed by defualt), then set up a <a href="https://codeberg.org/glowiak/SlackBuilds/raw/branch/master/tgz/adoptium-jdk8.tar.gz">JDK</a>.</p>
+<p>If you're using Slackware 14.2, update cmake with these commands:</p>
+<pre><code>mkdir -p /tmp/SBo
+cd /tmp/SBo
+wget -c https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2.tar.gz
+tar xzvf cmake-3.22.2.tar.gz
+cd cmake-3.22.2
+./configure --prefix=/usr
+make
+sudo make install
+</code></pre>
+<p>Next, download the <a href="https://codeberg.org/glowiak/SlackBuilds/raw/branch/master/tgz/polymc.tar.gz">SlackBuild</a>, unpack it and type in extracted directory:</p>
+<pre><code>sudo ./polymc.SlackBuild # script will do everything, just sit up and wait
+sudo /sbin/installpkg /tmp/polymc-version-arch-1_SBo.tgz # install the created package
+</code></pre>
+<h3 id="building-a-flatpak" tabindex="-1">Building a flatpak <a class="direct-link" href="#building-a-flatpak" aria-hidden="true">#</a></h3>
+<p>You don't need to clone the entire PolyMC repo for this; the flatpak file handles that.<br>
+<code>flatpak</code> and <code>flatpak-builder</code> need to be installed on your system</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/flathub/org.polymc.PolyMC<br><span class="token builtin class-name">cd</span> org.polymc.PolyMC<br><span class="token comment"># remove --user --install if you want to build without installing</span><br>flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml</code></pre>
+<h3 id="installing-qt-using-the-installer-(optional)" tabindex="-1">Installing Qt using the installer (optional) <a class="direct-link" href="#installing-qt-using-the-installer-(optional)" aria-hidden="true">#</a></h3>
+<ol>
+<li>Run the Qt installer.</li>
+<li>Choose a place to install Qt.</li>
+<li>Choose the components you want to install.
+<ul>
+<li>You need Qt 5.6.x 64-bit ticked.</li>
+<li>You need Tools/Qt Creator ticked.</li>
+<li>Other components are selected by default, you can untick them if you don't need them.</li>
+</ul>
+</li>
+<li>Accept the license agreements.</li>
+<li>Double check the install details and then click &quot;Install&quot;.
+<ul>
+<li>Installation can take a very long time, go grab a cup of tea or something and let it work.</li>
+</ul>
+</li>
+</ol>
+<h3 id="loading-the-project-in-qt-creator-(optional)" tabindex="-1">Loading the project in Qt Creator (optional) <a class="direct-link" href="#loading-the-project-in-qt-creator-(optional)" aria-hidden="true">#</a></h3>
+<ol>
+<li>Open Qt Creator.</li>
+<li>Choose <code>File-&gt;Open File or Project</code>.</li>
+<li>Navigate to the Launcher source folder you cloned and choose CMakeLists.txt.</li>
+<li>Read the instructions that just popped up about a build location and choose one.</li>
+<li>You should see &quot;Run CMake&quot; in the window.
+<ul>
+<li>Make sure that Generator is set to &quot;Unix Generator (Desktop Qt 5.6.x GCC 64bit)&quot;.</li>
+<li>Hit the &quot;Run CMake&quot; button.</li>
+<li>You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.</li>
+<li>Hit &quot;Finish&quot; if CMake ran successfully.</li>
+</ul>
+</li>
+<li>Cross your fingers and press the Run button (bottom left of Qt Creator).
+<ul>
+<li>If the project builds successfully it will run and the Launcher window will pop up.</li>
+</ul>
+</li>
+</ol>
+<p><strong>If this doesn't work for you, let us know on our Discord.</strong></p>
+<h1 id="windows" tabindex="-1">Windows <a class="direct-link" href="#windows" aria-hidden="true">#</a></h1>
+<p>Getting the project to build and run on Windows is easy if you use Qt's IDE, Qt Creator. The project will simply not compile using Microsoft build tools, because that's not something we do. If it does compile, it is by chance only.</p>
+<h2 id="dependencies" tabindex="-1">Dependencies <a class="direct-link" href="#dependencies" aria-hidden="true">#</a></h2>
+<ul>
+<li><a href="http://qt-project.org/downloads">Qt 5.6+ Development tools</a> -- Qt Online Installer for Windows
+<ul>
+<li><a href="http://download.qt.io/new_archive/qt/5.6/5.6.0/qt-opensource-windows-x86-mingw492-5.6.0.exe">http://download.qt.io/new_archive/qt/5.6/5.6.0/qt-opensource-windows-x86-mingw492-5.6.0.exe</a></li>
+<li>Download the MinGW version (MSVC version does not work).</li>
+</ul>
+</li>
+<li><a href="https://github.com/IndySockets/OpenSSL-Binaries/tree/master/Archive/">OpenSSL</a> -- Win32 OpenSSL, version 1.0.2g (from 2016)
+<ul>
+<li><a href="https://github.com/IndySockets/OpenSSL-Binaries/raw/master/Archive/openssl-1.0.2g-i386-win32.zip">https://github.com/IndySockets/OpenSSL-Binaries/raw/master/Archive/openssl-1.0.2g-i386-win32.zip</a></li>
+<li>the usual OpenSSL for Windows (<a href="http://slproweb.com/products/Win32OpenSSL.html">http://slproweb.com/products/Win32OpenSSL.html</a>) only provides the newest version of OpenSSL, and we need the 1.0.2g version</li>
+<li><strong>Download the 32-bit version, not 64-bit.</strong></li>
+<li>Microsoft Visual C++ 2008 Redist is required for this, there's a link on the OpenSSL download page above next to the main download.</li>
+<li>We use a custom build of OpenSSL that doesn't have this dependency. For normal development, the custom build is not necessary though.</li>
+</ul>
+</li>
+<li><a href="http://gnuwin32.sourceforge.net/packages/zlib.htm">zlib 1.2+</a> - the Setup is fine</li>
+<li><a href="https://adoptium.net/releases.html?variant=openjdk8">Java JDK 8</a> - Use the MSI installer.</li>
+<li><a href="http://www.cmake.org/cmake/resources/software.html">CMake</a> -- Windows (Win32 Installer)</li>
+</ul>
+<p>Ensure that OpenSSL, zlib, Java and CMake are on <code>PATH</code>.</p>
+<h2 id="getting-set-up" tabindex="-1">Getting set up <a class="direct-link" href="#getting-set-up" aria-hidden="true">#</a></h2>
+<h3 id="installing-qt" tabindex="-1">Installing Qt <a class="direct-link" href="#installing-qt" aria-hidden="true">#</a></h3>
+<ol>
+<li>Run the Qt installer</li>
+<li>Choose a place to install Qt (C:\Qt is the default),</li>
+<li>Choose the components you want to install
+<ul>
+<li>You need Qt 5.6 (32 bit) ticked,</li>
+<li>You need Tools/Qt Creator ticked,</li>
+<li>Other components are selected by default, you can untick them if you don't need them.</li>
+</ul>
+</li>
+<li>Accept the license agreements,</li>
+<li>Double check the install details and then click &quot;Install&quot;
+<ul>
+<li>Installation can take a very long time, go grab a cup of tea or something and let it work.</li>
+</ul>
+</li>
+</ol>
+<h3 id="installing-openssl" tabindex="-1">Installing OpenSSL <a class="direct-link" href="#installing-openssl" aria-hidden="true">#</a></h3>
+<ol>
+<li>Download .zip file from the link above.</li>
+<li>Unzip and add the directory to PATH, so CMake can find it.</li>
+</ol>
+<h3 id="installing-cmake" tabindex="-1">Installing CMake <a class="direct-link" href="#installing-cmake" aria-hidden="true">#</a></h3>
+<ol>
+<li>Run the CMake installer,</li>
+<li>It's easiest if you choose to add CMake to the PATH for all users,
+<ul>
+<li>If you don't choose to do this, remember where you installed CMake.</li>
+</ul>
+</li>
+</ol>
+<h3 id="loading-the-project" tabindex="-1">Loading the project <a class="direct-link" href="#loading-the-project" aria-hidden="true">#</a></h3>
+<ol>
+<li>Open Qt Creator,</li>
+<li>Choose File-&gt;Open File or Project,</li>
+<li>Navigate to the Launcher source folder you cloned and choose CMakeLists.txt,</li>
+<li>Read the instructions that just popped up about a build location and choose one,</li>
+<li>If you chose not to add CMake to the system PATH, tell Qt Creator where you installed it,
+<ul>
+<li>Otherwise you can skip this step.</li>
+</ul>
+</li>
+<li>You should see &quot;Run CMake&quot; in the window,
+<ul>
+<li>Make sure that Generator is set to &quot;MinGW Generator (Desktop Qt 5.6.x MinGW 32bit)&quot;,</li>
+<li>Hit the &quot;Run CMake&quot; button,</li>
+<li>You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.</li>
+<li>Hit &quot;Finish&quot; if CMake ran successfully.</li>
+</ul>
+</li>
+<li>Cross your fingers and press the Run button (bottom left of Qt Creator)!
+<ul>
+<li>If the project builds successfully it will run and the Launcher window will pop up,</li>
+<li>Test OpenSSL by making an instance and trying to log in. If Qt Creator couldn't find OpenSSL during the CMake stage, login will fail and you'll get an error.</li>
+</ul>
+</li>
+</ol>
+<p>The following .dlls are needed for the app to run (copy them to build directory if you want to be able to move the build to another pc):</p>
+<pre><code>
+platforms/qwindows.dll
+libeay32.dll
+libgcc_s_dw2-1.dll
+libssp-0.dll
+libstdc++-6.dll
+libwinpthread-1.dll
+Qt5Core.dll
+Qt5Gui.dll
+Qt5Network.dll
+Qt5Svg.dll
+Qt5Widgets.dll
+Qt5Xml.dll
+ssleay32.dll
+zlib1.dll
+
+</code></pre>
+<p><strong>These build instructions worked for me (Drayshak) on a fresh Windows 8 x64 Professional install. If they don't work for you, let us know on our Discord.</strong></p>
+<h3 id="compile-from-command-line-on-windows" tabindex="-1">Compile from command line on Windows <a class="direct-link" href="#compile-from-command-line-on-windows" aria-hidden="true">#</a></h3>
+<ol>
+<li>If you installed Qt with the web installer, there should be a shortcut called <code>Qt 5.4 for Desktop (MinGW 4.9 32-bit)</code> in the Start menu on Windows 7 and 10. Best way to find it is to search for it. Do note you cannot just use cmd.exe, you have to use the shortcut, otherwise the proper MinGW software will not be on the PATH.</li>
+<li>Once that is open, change into your user directory, and clone PolyMC by doing <code>git clone --recursive https://github.com/PolyMC/PolyMC.git</code>, and change directory to the folder you cloned to.</li>
+<li>Make a build directory, and change directory to the directory and do <code>cmake -G &quot;MinGW Makefiles&quot; -DCMAKE_INSTALL_PREFIX=C:\Path\that\makes\sense\for\you</code>. By default, it will install to C:\Program Files (x86), which you might not want, if you want a local installation. If you want to install it to that directory, make sure to run the command window as administrator.</li>
+<li>If you want PolyMC to store its data in <code>%APPDATA%</code>, append <code>-DLauncher_PORTABLE=OFF</code> to the previous command.</li>
+<li>Do <code>mingw32-make -j$(nproc)</code>, where X is the number of cores your CPU has plus one.</li>
+<li>Now to wait for it to compile. This could take some time. Hopefully it compiles properly.</li>
+<li>Run the command <code>mingw32-make install</code>, and it should install PolyMC, to whatever the <code>-DCMAKE_INSTALL_PREFIX</code> was.</li>
+<li>In most cases, whenever compiling, the OpenSSL dll's aren't put into the directory to where PolyMC installs, meaning you cannot log in. The best way to fix this is just to do <code>copy C:\OpenSSL-Win32\*.dll C:\Where\you\installed\PolyMC\to</code>. This should copy the required OpenSSL dll's to log in.</li>
+</ol>
+<h1 id="macos" tabindex="-1">macOS <a class="direct-link" href="#macos" aria-hidden="true">#</a></h1>
+<h3 id="install-prerequisites:" tabindex="-1">Install prerequisites: <a class="direct-link" href="#install-prerequisites:" aria-hidden="true">#</a></h3>
+<ul>
+<li>Install XCode Command Line tools</li>
+<li>Install the official build of CMake (<a href="https://cmake.org/download/">https://cmake.org/download/</a>)</li>
+<li>Install JDK 8 (<a href="https://adoptium.net/releases.html?variant=openjdk8&amp;jvmVariant=hotspot">https://adoptium.net/releases.html?variant=openjdk8&amp;jvmVariant=hotspot</a>)</li>
+<li>Get Qt 5.6 and install it (<a href="https://download.qt.io/new_archive/qt/5.6/5.6.3/">https://download.qt.io/new_archive/qt/5.6/5.6.3/</a>) or higher (tested) (<a href="https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source">https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source</a>)</li>
+</ul>
+<p>You can use <code>homebrew</code> to simplify the installation of build dependencies</p>
+<h3 id="xcode-command-line-tools" tabindex="-1">XCode Command Line tools <a class="direct-link" href="#xcode-command-line-tools" aria-hidden="true">#</a></h3>
+<p>If you don't have XCode CommandLine tools installed, you can install them by using this command in the Terminal App</p>
+<pre class="language-bash"><code class="language-bash">xcode-select --install</code></pre>
+<h3 id="build" tabindex="-1">Build <a class="direct-link" href="#build" aria-hidden="true">#</a></h3>
+<p>Pick an installation path - this is where the final <code>PolyMC.app</code> will be constructed when you run <code>make install</code>. Supply it as the <code>CMAKE_INSTALL_PREFIX</code> argument during CMake configuration. By default, it's in the dist folder under PolyMC</p>
+<pre><code>mkdir build
+cd build
+cmake \
+ -DCMAKE_C_COMPILER=/usr/bin/clang \
+ -DCMAKE_CXX_COMPILER=/usr/bin/clang++ \
+ -DCMAKE_BUILD_TYPE=Release \
+ -DCMAKE_INSTALL_PREFIX:PATH=&quot;$(dirname $PWD)/dist/&quot; \
+ -DCMAKE_PREFIX_PATH=&quot;/path/to/Qt/&quot; \
+ -DQt5_DIR=&quot;/path/to/Qt/&quot; \
+ -DCMAKE_OSX_DEPLOYMENT_TARGET=10.7 \
+ ..
+make install
+</code></pre>
+<p>Remember to replace <code>/path/to/Qt/</code> with the actual path. For newer Qt installations, it is often in your home directory.</p>
+<p><strong>Note:</strong> The final app bundle may not run due to code signing issues, which<br>
+need to be fixed with <code>codesign -fs -</code>.</p>
+<h1 id="openbsd" tabindex="-1">OpenBSD <a class="direct-link" href="#openbsd" aria-hidden="true">#</a></h1>
+<p>Tested on OpenBSD 7.0-alpha i386, on older should work too</p>
+<h2 id="build-dependencies-1" tabindex="-1">Build dependencies <a class="direct-link" href="#build-dependencies-1" aria-hidden="true">#</a></h2>
+<ul>
+<li>A C++ compiler capable of building C++11 code (included in base system)</li>
+<li>Qt Development tools 5.6 or newer (<a href="https://openports.se/meta/qt5">meta/qt5</a>)</li>
+<li>cmake 3.1 or newer (<a href="https://openports.se/devel/cmake">devel/cmake</a>)</li>
+<li>zlib (included in base system)</li>
+<li>Java JDK (<a href="https://openports.se/devel/jdk/1.8">devel/jdk-1.8</a>)</li>
+<li>GL headers (included in base system)</li>
+<li>lwjgl (<a href="https://openports.se/games/lwjgl">games/lwjgl</a> and <a href="https://openports.se/games/lwjgl3">games/lwjgl3</a>)</li>
+</ul>
+<p>You can use IDEs like KDevelop or QtCreator to open the CMake project if you want to work on the code.</p>
+<h3 id="building-a-portable-binary-1" tabindex="-1">Building a portable binary <a class="direct-link" href="#building-a-portable-binary-1" aria-hidden="true">#</a></h3>
+<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> <span class="token function">install</span><br><span class="token comment"># configure the project</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span>./install -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake<br><span class="token comment"># build</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span></code></pre>
+<h3 id="building-and-installing-to-the-system-1" tabindex="-1">Building &amp; Installing to the System <a class="direct-link" href="#building-and-installing-to-the-system-1" aria-hidden="true">#</a></h3>
+<p>This is the preferred method for installation, and is suitable for packages.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># configure everything</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span><span class="token string">"/usr/local"</span> <span class="token punctuation">\</span> <span class="token comment"># /usr/local is default in OpenBSD and FreeBSD</span><br>   -DLauncher_PORTABLE<span class="token operator">=</span>OFF -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake <span class="token comment"># use linux layout and point to qt5 libs</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span> <span class="token comment"># Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})</span></code></pre>
+
+    
+    
+    <hr>
+    <h3>Pages in Development:</h3>
+    <ul><li><a href="/wiki/development/development-builds/">Development Builds</a></li>
+<li><a href="/wiki/development/build-instructions/">Build instructions</a></li></ul>
+    
+
+    
+  </div>
+  <div> 
+    <div class="wiki-toc">
+      <ul>
+        
+        <li class="wiki-category">
+          <a href="/wiki/">Overview</a><ul>
+            <li class="wiki-item">
+              <a href="/wiki/overview/code-of-conduct/">Code of conduct</a>
+            </li>
+            </ul></li>
+        <li class="wiki-category">
+          <a href="/wiki/faq/">FAQ</a><ul>
+            <li class="wiki-item">
+              <a href="/wiki/faq/why/">Why was this fork made?</a>
+            </li>
+            </ul></li>
+        <li class="wiki-category">
+          <a href="/wiki/installing/">Installing</a><ul>
+            <li class="wiki-item">
+              <a href="/wiki/installing/arch/">Arch / Manjaro</a>
+            </li>
+            
+            <li class="wiki-item">
+              <a href="/wiki/installing/fedora/">Fedora</a>
+            </li>
+            
+            <li class="wiki-item">
+              <a href="/wiki/installing/free-bsd/">FreeBSD</a>
+            </li>
+            
+            <li class="wiki-item">
+              <a href="/wiki/installing/gentoo/">Gentoo</a>
+            </li>
+            
+            <li class="wiki-item">
+              <a href="/wiki/installing/nixOS/">NixOS</a>
+            </li>
+            
+            <li class="wiki-item">
+              <a href="/wiki/installing/open-bsd/">OpenBSD</a>
+            </li>
+            
+            <li class="wiki-item">
+              <a href="/wiki/installing/slackware/">Slackware</a>
+            </li>
+            
+            <li class="wiki-item">
+              <a href="/wiki/installing/ubuntu/">Ubuntu / Debian</a>
+            </li>
+            
+            <li class="wiki-item">
+              <a href="/wiki/installing/windows/">Windows</a>
+            </li>
+            </ul></li>
+        <li class="wiki-category">
+          <a href="/wiki/development/">Development</a><ul>
+            <li class="wiki-item">
+              <a href="/wiki/development/development-builds/">Development Builds</a>
+            </li>
+            
+            <li class="wiki-item wiki-item-active">
+              <a href="/wiki/development/build-instructions/">Build instructions</a>
+            </li>
+            </ul></li>
+        <li class="wiki-category">
+          <a href="/wiki/todo/">ToDo</a></li>
+        <li class="wiki-category">
+          <a href="/wiki/translations/">Translations</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="footer">
+    <div class="container">
+        <a href="https://github.com/PolyMC/polymc.github.io/blob/master/./src/wiki/development/build-instructions.md" class="elv-externalexempt">Edit this page</a>
+        © 2021-2022 PolyMC Contributors
+        </h1>
+    </div>
+</div>
+</footer>
+
+  </body>
+</html>

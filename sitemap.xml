@@ -47,17 +47,17 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/feature/</loc>
-    <lastmod>2022-03-08</lastmod>
-  </url>
-  
-  <url>
     <loc>https://polymc.org/tags/multimc/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.org/tags/news/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/tags/feature/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
@@ -73,6 +73,16 @@
   
   <url>
     <loc>https://polymc.org/wiki/development/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/development/build-instructions/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/development/development-builds/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
@@ -102,7 +112,7 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/wiki/installing/freeBSD/</loc>
+    <loc>https://polymc.org/wiki/installing/free-bsd/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
@@ -117,7 +127,7 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/wiki/installing/openBSD/</loc>
+    <loc>https://polymc.org/wiki/installing/open-bsd/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
@@ -142,12 +152,17 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/wiki/overview/codeofconduct/</loc>
+    <loc>https://polymc.org/wiki/overview/code-of-conduct/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.org/wiki/todo/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/translations/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
 </urlset>
