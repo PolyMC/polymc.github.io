@@ -4,7 +4,9 @@ eleventyNavigation:
   parent: Getting Started
   order: 7
 ---
+# Preamble
 
+You should use optifine alternatives when possible. éSee the wiki page about it](../install-of-alternatives.md)
 # Installing optifine
 
 Make sure you know how to [download-mods](../download-mods) before attempting to install optifine.
