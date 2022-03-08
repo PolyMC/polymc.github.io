@@ -72,11 +72,6 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/wiki/copying/</loc>
-    <lastmod>2022-03-08</lastmod>
-  </url>
-  
-  <url>
     <loc>https://polymc.org/wiki/development/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
@@ -98,6 +93,41 @@
   
   <url>
     <loc>https://polymc.org/wiki/faq/why/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/getting-started/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/getting-started/create-instance/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/getting-started/download-modpacks/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/getting-started/download-mods/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/getting-started/installing-java/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/getting-started/installing-optifine/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/getting-started/installing-polymc/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
@@ -142,6 +172,11 @@
   </url>
   
   <url>
+    <loc>https://polymc.org/wiki/installing/steam-deck/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
     <loc>https://polymc.org/wiki/installing/ubuntu/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
@@ -162,12 +197,17 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/wiki/todo/</loc>
+    <loc>https://polymc.org/wiki/overview/copying/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
   <url>
-    <loc>https://polymc.org/wiki/translations/</loc>
+    <loc>https://polymc.org/wiki/overview/translations/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/todo/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
 </urlset>
