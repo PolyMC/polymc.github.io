@@ -7,11 +7,6 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/news/testingrssbot/</loc>
-    <lastmod>2022-02-06</lastmod>
-  </url>
-  
-  <url>
     <loc>https://polymc.org/news/mod-download/</loc>
     <lastmod>2022-02-07</lastmod>
   </url>
@@ -47,17 +42,17 @@
   </url>
   
   <url>
+    <loc>https://polymc.org/tags/feature/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
     <loc>https://polymc.org/tags/multimc/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.org/tags/news/</loc>
-    <lastmod>2022-03-08</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://polymc.org/tags/feature/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
@@ -94,5 +89,10 @@
   <url>
     <loc>https://polymc.org/wiki/todo/</loc>
     <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/news/testbotrss/</loc>
+    <lastmod>2024-02-06</lastmod>
   </url>
 </urlset>
