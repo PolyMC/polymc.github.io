@@ -19,3 +19,9 @@ To install in PolyMC, create a fabric instance, the go to the mods tab and click
 
 ## other mods
 I can't list every mod here, you can find a big list of optifine alternatives [here](https://lambdaurora.dev/optifine_alternatives/)
+
+# Fabulosly Optimized
+
+If you don't want to search and install these mods manually, the [Fabulosly Optimized](https://github.com/Fabulously-Optimized/fabulously-optimized) modpack is for you!
+
+See the MultiMC/MultiMC (auto-update) guide to install it, they work on PolyMC too.
