@@ -12,12 +12,15 @@ Once opon a time, OF was the best way to make your game better. Things changed.
 ## Sodium
 
 Sodium is the best client side optimization mod at the moment and it's highly raccomended.
+
 To install in PolyMC, create a fabric instance, then go to the mods tab and click "Download Mods". There, click on Sodium, click mod for download and then Ok
 
 ## Iris
 
 Iris allows you to run OF Shaders while using Sodium. It works great, but it doesn't support every shaderpack at the moment.
+
 Click [here](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md) for a list of currently supported shaderpacks
+
 To install in PolyMC, create a fabric instance, then go to the mods tab and click "Download Mods". There, click on Iris, click mod for download and then Ok
 
 ## Other Mods
