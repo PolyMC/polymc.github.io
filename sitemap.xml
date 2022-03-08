@@ -52,12 +52,12 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/news/</loc>
+    <loc>https://polymc.org/tags/multimc/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/multimc/</loc>
+    <loc>https://polymc.org/tags/news/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
@@ -72,12 +72,62 @@
   </url>
   
   <url>
+    <loc>https://polymc.org/wiki/development/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
     <loc>https://polymc.org/wiki/faq/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.org/wiki/faq/why/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/arch/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/fedora/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/freeBSD/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/gentoo/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/nixOS/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/openBSD/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/slackware/</loc>
+    <lastmod>2022-03-08</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/ubuntu/</loc>
     <lastmod>2022-03-08</lastmod>
   </url>
   
