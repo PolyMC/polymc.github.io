@@ -52,12 +52,12 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/news/</loc>
+    <loc>https://polymc.org/tags/multimc/</loc>
     <lastmod>2022-03-09</lastmod>
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/multimc/</loc>
+    <loc>https://polymc.org/tags/news/</loc>
     <lastmod>2022-03-09</lastmod>
   </url>
   
@@ -188,11 +188,6 @@
   
   <url>
     <loc>https://polymc.org/wiki/installing/ubuntu/</loc>
-    <lastmod>2022-03-09</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://polymc.org/wiki/installing/windows/</loc>
     <lastmod>2022-03-09</lastmod>
   </url>
   
