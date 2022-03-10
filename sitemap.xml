@@ -52,12 +52,12 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/news/</loc>
+    <loc>https://polymc.org/tags/multimc/</loc>
     <lastmod>2022-03-10</lastmod>
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/multimc/</loc>
+    <loc>https://polymc.org/tags/news/</loc>
     <lastmod>2022-03-10</lastmod>
   </url>
   
@@ -152,47 +152,52 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/wiki/installing/arch/</loc>
-    <lastmod>2022-03-10</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://polymc.org/wiki/installing/fedora/</loc>
-    <lastmod>2022-03-10</lastmod>
-  </url>
-  
-  <url>
     <loc>https://polymc.org/wiki/installing/free-bsd/</loc>
     <lastmod>2022-03-10</lastmod>
   </url>
   
   <url>
-    <loc>https://polymc.org/wiki/installing/gentoo/</loc>
+    <loc>https://polymc.org/wiki/installing/linux/</loc>
     <lastmod>2022-03-10</lastmod>
   </url>
   
   <url>
-    <loc>https://polymc.org/wiki/installing/nixOS/</loc>
+    <loc>https://polymc.org/wiki/installing/linux/arch/</loc>
+    <lastmod>2022-03-10</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/linux/fedora/</loc>
+    <lastmod>2022-03-10</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/linux/gentoo/</loc>
+    <lastmod>2022-03-10</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/linux/nixOS/</loc>
+    <lastmod>2022-03-10</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/linux/slackware/</loc>
+    <lastmod>2022-03-10</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/linux/steam-deck/</loc>
+    <lastmod>2022-03-10</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/linux/ubuntu/</loc>
     <lastmod>2022-03-10</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.org/wiki/installing/open-bsd/</loc>
-    <lastmod>2022-03-10</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://polymc.org/wiki/installing/slackware/</loc>
-    <lastmod>2022-03-10</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://polymc.org/wiki/installing/steam-deck/</loc>
-    <lastmod>2022-03-10</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://polymc.org/wiki/installing/ubuntu/</loc>
     <lastmod>2022-03-10</lastmod>
   </url>
   
