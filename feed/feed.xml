@@ -5,12 +5,73 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2022-03-06T00:00:00Z</updated>
+	<updated>2022-03-12T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>Release 1.1.0</title>
+		<link href="https://polymc.org/news/release-1.1.0/"/>
+		<updated>2022-03-12T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-1.1.0/</id>
+		<content type="html">&lt;p&gt;We are pleased to annouce, that PolyMC version 1.1.0 is now available!&lt;br /&gt;
+This is a major milestone, as this marks the first release since deciding to move on from our origins as a MultiMC fork.&lt;br /&gt;
+You can &lt;a href=&quot;https://polymc.org/news/moving-on&quot;&gt;read more about that here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.1.0/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.1.0/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;New option to close PolyMC after launch by @binex-dsk in #79&lt;/li&gt;
+&lt;li&gt;Now detects Java from environment by @muscaln in #46&lt;/li&gt;
+&lt;li&gt;New &lt;code&gt;Open page &amp;amp; copy code&lt;/code&gt; button in MSA login dialog by @Scrumplex  in #88&lt;/li&gt;
+&lt;li&gt;Added StartupWMClass to .desktop file so DEs can behave by @danielhuang in #95&lt;/li&gt;
+&lt;li&gt;Added PolyMC news by @dada513 in #151&lt;/li&gt;
+&lt;li&gt;Added CurseForge and Modrinth mod downloader by @timoreo22 in #64 #129 #183 #205 #207 and @flowln in #193 #221&lt;/li&gt;
+&lt;li&gt;New CC BY-NC-SA 4.0 license for PolyMC logos and branding by @ZekeSmith in #149&lt;/li&gt;
+&lt;li&gt;Added MSA-Client-ID override in UI by @Scrumplex in #161&lt;/li&gt;
+&lt;li&gt;Added missing tooltip for instance export in #176&lt;/li&gt;
+&lt;li&gt;Added MSA Client ID change detection and prompt by @Scrumplex in #180&lt;/li&gt;
+&lt;li&gt;Added Matrix space link by @dada513 in #243&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.1.0/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Default to the system locale on first startup by @oynqr in #52&lt;/li&gt;
+&lt;li&gt;Replaced &lt;code&gt;paste.ee&lt;/code&gt; with &lt;code&gt;0x0.st&lt;/code&gt; and &lt;code&gt;paste.polymc.org&lt;/code&gt; by @binex-dsk in #67&lt;/li&gt;
+&lt;li&gt;Updated information in the About dialog by @redstrate in #108&lt;/li&gt;
+&lt;li&gt;Migrated to upstream QuaZip 1.2 by @Scrumplex in #92&lt;/li&gt;
+&lt;li&gt;QuaZip is now linked statically by @Scrumplex in #126&lt;/li&gt;
+&lt;li&gt;Internal libraries are now linked statically by @Scrumplex in #143&lt;/li&gt;
+&lt;li&gt;PolyMC specific translations now hosted on weblate by @Scrumplex in #152 #199&lt;/li&gt;
+&lt;li&gt;Update metadata by @dada513 in #145&lt;/li&gt;
+&lt;li&gt;Version string now shows the branch that PolyMC was built from by @Scrumplex in #160&lt;/li&gt;
+&lt;li&gt;New MSA Client ID by @Scrumplex in #172&lt;/li&gt;
+&lt;li&gt;Replace old build layout system with new &lt;code&gt;Launcher_PORTABLE&lt;/code&gt; cmake flag by @txtsd in #163&lt;/li&gt;
+&lt;li&gt;Reorganized icon themes by @Scrumplex in #230&lt;/li&gt;
+&lt;li&gt;[Windows] Now runs on WSL by @TheGlitch76 in #186&lt;/li&gt;
+&lt;li&gt;[macOS] Move app data to &lt;code&gt;Application Support&lt;/code&gt; by @dada513 in #146&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.1.0/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add some logging to profile fetching failures in #96&lt;/li&gt;
+&lt;li&gt;Ignore invalid lines altogether in java checker in #96&lt;/li&gt;
+&lt;li&gt;Correctly set http status code in auth reply in #96&lt;/li&gt;
+&lt;li&gt;Log server response when failing to fetch profile in #96&lt;/li&gt;
+&lt;li&gt;Fix error message in #96&lt;/li&gt;
+&lt;li&gt;Fixed inconsistent behavior of icons when exiting the settings screen by @redstrate in #107&lt;/li&gt;
+&lt;li&gt;Fixed freedesktop icons by @dada513 in #150&lt;/li&gt;
+&lt;li&gt;[macOS] Fixed GUI identifier by @DioEgizio in #171&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.1.0/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed MultiMC news by @Scrumplex in #105&lt;/li&gt;
+&lt;li&gt;Removed legacy instance support by @Scrumplex in #192 #201&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.0.6...1.1.0&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.0.6...1.1.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Moving on</title>
