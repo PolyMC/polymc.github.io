@@ -56,15 +56,26 @@
    --->
   
   <h3 id="gentoo" tabindex="-1"><img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo <a class="direct-link" href="#gentoo" aria-hidden="true">#</a></h3>
-<p>A Gentoo ebuild is available in the <a href="https://git.swurl.xyz/swirl/ebuilds">swirl</a> overlay, named <code>games-action/polymc</code>.</p>
-<pre><code># as root:
-emerge --oneshot eselect-repository
-eselect-repository enable swirl
-emaint sync -r swirl
+<p>A Gentoo ebuild is available in the <a href="https://gitlab.com/flowln/flowln-overlay">flowln</a> overlay, named <code>games-action/polymc</code>.</p>
+<pre><code># May require root access
+
+echo &quot;[flowln]
+location = /var/db/repos/flowln
+sync-type = git
+sync-uri = https://gitlab.com/flowln/flowln-overlay.git&quot; &gt; /etc/portage/repos.conf/flowln.conf
+
+emerge --sync flowln
+
 emerge polymc
+
 # to use latest git version:
 sudo tee -a /etc/portage/package.accept_keywords &lt;&lt;&lt; &quot;=games-action/polymc-9999 **&quot;
 </code></pre>
+<p>The USE flags currently available are:</p>
+<ul>
+<li>debug: Enable debug output, useful for development and troubleshooting</li>
+<li>xrandr: Minecraft &lt;= 1.12.2 need this to work properly (See <a href="https://github.com/PolyMC/PolyMC/issues/227">this issue</a>)</li>
+</ul>
 
   
   
