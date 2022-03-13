@@ -52,11 +52,6 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/feature/</loc>
-    <lastmod>2022-03-13</lastmod>
-  </url>
-  
-  <url>
     <loc>https://polymc.org/tags/multimc/</loc>
     <lastmod>2022-03-13</lastmod>
   </url>
@@ -68,6 +63,11 @@
   
   <url>
     <loc>https://polymc.org/tags/release/</loc>
+    <lastmod>2022-03-13</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/tags/feature/</loc>
     <lastmod>2022-03-13</lastmod>
   </url>
   
