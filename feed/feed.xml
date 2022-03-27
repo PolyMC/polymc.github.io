@@ -5,12 +5,57 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2022-03-12T00:00:00Z</updated>
+	<updated>2022-03-27T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>Release 1.1.1</title>
+		<link href="https://polymc.org/news/release-1.1.1/"/>
+		<updated>2022-03-27T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-1.1.1/</id>
+		<content type="html">&lt;p&gt;We are pleased to annouce, that PolyMC version 1.1.1 is now available.&lt;br /&gt;
+This release mainly contains bug fixes.&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.1.1/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.1.1/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support builds without Git by @oynqr in #280&lt;/li&gt;
+&lt;li&gt;Limit offline username to 16 characters by @lack in #292&lt;/li&gt;
+&lt;li&gt;[Windows] Support 64-Bit builds by @oynqr in #294&lt;/li&gt;
+&lt;li&gt;Allow fractional DPI scaling by @txtsd in #315&lt;/li&gt;
+&lt;li&gt;[Windows] Provide portable and system builds by @DioEgizio in #330&lt;/li&gt;
+&lt;li&gt;Improve release workflow by @oynqr in #337&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.1.1/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add license headers by @Scrumplex in #200&lt;/li&gt;
+&lt;li&gt;Improve mod downloads by @flowln in #270 #296 #334&lt;/li&gt;
+&lt;li&gt;Bundle JRE 8u312 for AppImage by @DioEgizio in #297&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.1.1/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[Linux] Update metainfo URLs by @Scrumplex in #254&lt;/li&gt;
+&lt;li&gt;[Linux] Fix JavaCheck for AppImage by @Scrumplex in #265&lt;/li&gt;
+&lt;li&gt;[macOS] Fix branding by @DioEgizio in #273&lt;/li&gt;
+&lt;li&gt;Clarify license by @Scrumplex in #278&lt;/li&gt;
+&lt;li&gt;[Windows] Fix portable builds by @Scrumplex in #295&lt;/li&gt;
+&lt;li&gt;Improve translations by @Scrumplex in #298 #323&lt;/li&gt;
+&lt;li&gt;Limit instance names&#39; length by @Scrumplex in #306&lt;/li&gt;
+&lt;li&gt;[macOS] Fix loading of WebP images by @DioEgizio in #311&lt;/li&gt;
+&lt;li&gt;Fix buttons on mods page when instance is running by @Scrumplex in #316&lt;/li&gt;
+&lt;li&gt;Statically link remaining internal libraries by @oynqr in #322&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.1.1/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove &lt;a href=&quot;http://paste.polymc.org/&quot;&gt;paste.polymc.org&lt;/a&gt; by @flowln in #299&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.1.0...1.1.1&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.1.0...1.1.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Release 1.1.0</title>
