@@ -197,10 +197,17 @@ sudo /sbin/installpkg /tmp/polymc-version-arch-1_SBo.tgz # install the created p
 <p>We recommend using a build workflow based on MSYS2, as it's the easiest way to get all the build dependencies.</p>
 <h2 id="dependencies" tabindex="-1">Dependencies <a class="direct-link" href="#dependencies" aria-hidden="true">#</a></h2>
 <ul>
-<li><a href="https://www.msys2.org/">MSYS2</a> -- Software Distribution and Building Platform for Windows</li>
-<li><a href="https://adoptium.net/releases.html?variant=openjdk8">Java JDK 8 or later</a> - Use the MSI installer.</li>
+<li><a href="https://www.msys2.org/">MSYS2</a> - Software Distribution and Building Platform for Windows
+<ul>
+<li>Make sure to follow all instructions on the webpage.</li>
 </ul>
-<p>Make sure that the JAVA_HOME environment variable is set (Adoptium will ask you on installation).</p>
+</li>
+<li><a href="https://adoptium.net/">Java JDK 8 or later</a>
+<ul>
+<li>Make sure that &quot;Set JAVA_HOME variable&quot; is enabled in the Adoptium installer.</li>
+</ul>
+</li>
+</ul>
 <h2 id="getting-set-up" tabindex="-1">Getting set up <a class="direct-link" href="#getting-set-up" aria-hidden="true">#</a></h2>
 <h3 id="preparing-msys2" tabindex="-1">Preparing MSYS2 <a class="direct-link" href="#preparing-msys2" aria-hidden="true">#</a></h3>
 <ol>
@@ -219,7 +226,7 @@ sudo /sbin/installpkg /tmp/polymc-version-arch-1_SBo.tgz # install the created p
 </ul>
 <h3 id="compile-from-command-line-on-windows" tabindex="-1">Compile from command line on Windows <a class="direct-link" href="#compile-from-command-line-on-windows" aria-hidden="true">#</a></h3>
 <ol>
-<li>Open the right <strong>MSYS2 MinGW</strong> shell and alone PolyMC by doing <code>git clone --recursive https://github.com/PolyMC/PolyMC.git</code>, and change directory to the folder you cloned to.</li>
+<li>Open the right <strong>MSYS2 MinGW</strong> shell and clone PolyMC by doing <code>git clone --recursive https://github.com/PolyMC/PolyMC.git</code>, and change directory to the folder you cloned to.</li>
 <li>Now we can prepare the build itself: Run <code>cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install</code>. These options will copy the final build to <code>C:\msys64\home\&lt;your username&gt;\PolyMC\install</code> after the build.</li>
 <li>If you want PolyMC to store its data in <code>%APPDATA%</code>, append <code>-DLauncher_PORTABLE=OFF</code> to the previous command.</li>
 <li>Now you need to run the build itself: Run <code>cmake --build build -jX</code>, where X is the number of cores your CPU has.</li>
