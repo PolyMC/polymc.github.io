@@ -57,6 +57,11 @@
   </url>
   
   <url>
+    <loc>https://polymc.org/tags/feature/</loc>
+    <lastmod>2022-03-29</lastmod>
+  </url>
+  
+  <url>
     <loc>https://polymc.org/tags/multimc/</loc>
     <lastmod>2022-03-29</lastmod>
   </url>
@@ -68,11 +73,6 @@
   
   <url>
     <loc>https://polymc.org/tags/release/</loc>
-    <lastmod>2022-03-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://polymc.org/tags/feature/</loc>
     <lastmod>2022-03-29</lastmod>
   </url>
   
@@ -102,12 +102,7 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/wiki/faq/</loc>
-    <lastmod>2022-03-29</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://polymc.org/wiki/faq/why/</loc>
+    <loc>https://polymc.org/wiki/development/translating/</loc>
     <lastmod>2022-03-29</lastmod>
   </url>
   
@@ -247,7 +242,12 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/wiki/overview/translations/</loc>
+    <loc>https://polymc.org/wiki/overview/faq/</loc>
+    <lastmod>2022-03-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/overview/feedback-bugs/</loc>
     <lastmod>2022-03-29</lastmod>
   </url>
 </urlset>
