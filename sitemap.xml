@@ -62,17 +62,17 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/multimc/</loc>
-    <lastmod>2022-03-30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://polymc.org/tags/news/</loc>
     <lastmod>2022-03-30</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.org/tags/release/</loc>
+    <lastmod>2022-03-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/tags/multimc/</loc>
     <lastmod>2022-03-30</lastmod>
   </url>
   
