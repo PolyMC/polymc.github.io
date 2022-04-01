@@ -17,10 +17,7 @@
 		<link href="https://polymc.org/news/polymc2/"/>
 		<updated>2022-04-01T00:00:00Z</updated>
 		<id>https://polymc.org/news/polymc2/</id>
-		<content type="html">&lt;p&gt;&lt;audio controls=&quot;&quot; autoplay=&quot;&quot;&gt;
-  &lt;source src=&quot;https://polymc.org/img/af/vineboom.mp3&quot; type=&quot;audio/mp3&quot; /&gt;
-  Your browser does not support the audio element.
-&lt;/audio&gt;&lt;/p&gt;
+		<content type="html">&lt;p&gt;&lt;audio src=&quot;https://polymc.org/img/af/vineboom.mp3&quot; autoplay=&quot;&quot;&gt;&lt;/audio&gt;&lt;/p&gt;
 &lt;p&gt;Here at PolyMC, we have always been very proud of our community, and this release is just the latest example of that. A sincere thank you goes out to all our maintainers, and community members, who made this possible.&lt;/p&gt;
 &lt;p&gt;&lt;img width=&quot;200px&quot; src=&quot;https://polymc.org/img/af/arrow.png&quot; /&gt;&lt;a class=&quot;button&quot; href=&quot;https://polymc.org/download/2/&quot;&gt;Download NOW!&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;brand-new-ui&quot; tabindex=&quot;-1&quot;&gt;Brand new UI &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/polymc2/#brand-new-ui&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
