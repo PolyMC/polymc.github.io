@@ -100,6 +100,16 @@
 <p>After you download the required java binary for your architecture, <em>extract</em> the zip, and move the folder to your PolyMC data folder (%appdata%/PolyMC for notportable, the PolyMC folder for portable builds), you need to go to the <em>PolyMC java settings</em>, then to <em>browse</em>, then go to the folder with this particular java, click <em>java.exe</em> then <em>open</em>.<br>
 This should fix your issue.<br>
 Unfortunately there's no workaround for java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.</p>
+<h2 id="older-minecraft-on-macos" tabindex="-1">Older Minecraft on MacOS <a class="direct-link" href="#older-minecraft-on-macos" aria-hidden="true">#</a></h2>
+<p>If you use some older Minecraft versions, you might have had this error:</p>
+<pre><code>Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'NSWindow drag regions should only be invalidated on the Main Thread!'
+</code></pre>
+<p>Well, for you there's a resolution too!</p>
+<ul>
+<li>first, remove, if you had, <a href="https://explainjava.com/uninstall-java-macos/">your current oracle java</a></li>
+<li>then download and install <a href="https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg">this java binary</a></li>
+<li>select this java binary on PolyMC and it should fix your issue!</li>
+</ul>
 
   
   
