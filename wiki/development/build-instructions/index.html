@@ -193,6 +193,37 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 </li>
 </ol>
 <p><strong>If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.</strong></p>
+<h3 id="loading-the-project-in-clion-(optional)" tabindex="-1">Loading the project in CLion (optional) <a class="direct-link" href="#loading-the-project-in-clion-(optional)" aria-hidden="true">#</a></h3>
+<ol>
+<li>Open CLion</li>
+<li>Choose <code>File-&gt;Open</code></li>
+<li>Navigate to the source folder</li>
+<li>Go to settings <code>Ctrl+Alt+S</code></li>
+<li>Navigate to <code>Toolchains</code> in <code>Build, Execution, Deployment</code>
+<ul>
+<li>Set the correct build tools (<a href="https://i.imgur.com/daFAdVe.png">see here</a>)</li>
+<li>CMake: <code>cmake</code> (optional)</li>
+<li>Make: <code>make</code> (optional)</li>
+<li>C Compiler: <code>gcc</code></li>
+<li>C++ Compiler: <code>g++</code></li>
+<li>Debugger: <code>gdb</code> (optional)</li>
+</ul>
+</li>
+<li>Navigate to <code>CMake</code> in <code>Build, Execution, Deployment</code>
+<ul>
+<li>Set <code>Build directory</code> to <code>build</code></li>
+</ul>
+</li>
+<li>Navigate to <code>Edit Configurations</code>  (<a href="https://i.imgur.com/fu53nc3.png">see here</a>)
+<ul>
+<li>Create a new configuration</li>
+<li>Name: <code>All</code></li>
+<li>Target: <code>All targets</code></li>
+<li>Choose the newly added configuration as default</li>
+</ul>
+</li>
+</ol>
+<p>Now you should be able to build and test PolyMC with the <code>Build</code> and <code>Run</code> buttons.</p>
 <h1 id="windows" tabindex="-1">Windows <a class="direct-link" href="#windows" aria-hidden="true">#</a></h1>
 <p>We recommend using a build workflow based on MSYS2, as it's the easiest way to get all of the build dependencies.</p>
 <h2 id="dependencies" tabindex="-1">Dependencies <a class="direct-link" href="#dependencies" aria-hidden="true">#</a></h2>
