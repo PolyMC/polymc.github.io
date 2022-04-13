@@ -82,12 +82,12 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/release/</loc>
+    <loc>https://polymc.org/tags/news/</loc>
     <lastmod>2022-04-13</lastmod>
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/news/</loc>
+    <loc>https://polymc.org/tags/release/</loc>
     <lastmod>2022-04-13</lastmod>
   </url>
   
@@ -233,6 +233,11 @@
   
   <url>
     <loc>https://polymc.org/wiki/installing/linux/ubuntu/</loc>
+    <lastmod>2022-04-13</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/wiki/installing/linux/void/</loc>
     <lastmod>2022-04-13</lastmod>
   </url>
   
