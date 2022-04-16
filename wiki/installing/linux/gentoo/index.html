@@ -77,8 +77,10 @@
    --->
   
   <h3 id="gentoo" tabindex="-1"><img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo <a class="direct-link" href="#gentoo" aria-hidden="true">#</a></h3>
-<p>Gentoo ebuilds are available in the <a href="https://gitlab.com/flowln/polymc-gentoo">polymc-gentoo</a> overlay, named <code>games-action/polymc</code>. If you encounter any problems with those, please open an issue on that repository first, since it is maintained by third-parties!</p>
-<p>More information, such as installation instructions, and USE flag usage, is <a href="https://gitlab.com/flowln/polymc-gentoo/-/blob/main/README.md">laid out in the README</a>. Have fun! :)</p>
+<p>Ebuilds are available in the official Gentoo repository, under <a href="https://packages.gentoo.org/packages/games-action/polymc"><code>games-action/polymc</code></a>.<br>
+Note that, for the time being, it is not stabilized, so it's masked for <code>~amd64</code> only.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> emaint <span class="token function">sync</span> -a<br><br><span class="token comment"># If you need to unmask the package, and considering `package.accept_keywords` to be a folder.</span><br><span class="token builtin class-name">echo</span> <span class="token string">">=games-action/polymc-1.1.1"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> -a /etc/portage/package.accept_keywords/polymc<br><span class="token comment"># Or do this if you want to build from the latest commit instead of a release</span><br><span class="token builtin class-name">echo</span> <span class="token string">"=games-action/polymc-9999 **"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> -a /etc/portage/package.accept_keywords/polymc<br><br>emerge games-action/polymc</code></pre>
+<p>Old ebuilds, as well as additional information, can be found <a href="https://gitlab.com/flowln/polymc-gentoo/">in the old polymc overlay repository</a>. Have fun! :)</p>
 
   
   
