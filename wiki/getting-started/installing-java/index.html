@@ -84,6 +84,9 @@
 </ul>
 <p>If you aren't sure which version you will need, <strong>it is recommended to just install both.</strong></p>
 <p><strong>NOTE:</strong> You can use any OpenJDK build you want. <a href="https://www.azul.com/downloads/?package=jdk#download-openjdk">Azul Zulu</a> is a popular alternative to Temurin, and will work just as well.</p>
+<p>You can also use Oracle Java, but openjdk is better here. Also to download Oracle Java 9+ you need an Oracle account which is not a good thing.</p>
+<h2 id="forge-1.16.5-and-java-8u321+" tabindex="-1">Forge 1.16.5 and Java 8u321+ <a class="direct-link" href="#forge-1.16.5-and-java-8u321+" aria-hidden="true">#</a></h2>
+<p>Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is reccomended</p>
 <h2 id="using-java" tabindex="-1">Using Java <a class="direct-link" href="#using-java" aria-hidden="true">#</a></h2>
 <p>Once you have <strong>installed</strong> Java, PolyMC will be able to detect it during the first time set-up wizard.</p>
 <p>If you installed Java after already completing the first time setup process, you can access and modify your Java configuration through:</p>
@@ -99,7 +102,8 @@
 </ul>
 <p>After you download the required java binary for your architecture, <em>extract</em> the zip, and move the folder to your PolyMC data folder (%appdata%/PolyMC for notportable, the PolyMC folder for portable builds), you need to go to the <em>PolyMC java settings</em>, then to <em>browse</em>, then go to the folder with this particular java, click <em>java.exe</em> then <em>open</em>.<br>
 This should fix your issue.<br>
-Unfortunately there's no workaround for java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.</p>
+Unfortunately there's no workaround for java 17 (and so newer Minecraft), so you can only downgrade your Windows or switch to Linux there.<br>
+If you want to try, <a href="https://gist.github.com/rb-dahlb/26f316c5b6089807a139fc44ee69f0d1">there's this guide that could work</a>. Nothing is guaranteed here, thought.</p>
 <h2 id="older-minecraft-on-macos" tabindex="-1">Older Minecraft on MacOS <a class="direct-link" href="#older-minecraft-on-macos" aria-hidden="true">#</a></h2>
 <p>If you use some older Minecraft versions, you might have had this error:</p>
 <pre><code>Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'NSWindow drag regions should only be invalidated on the Main Thread!'
