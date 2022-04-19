@@ -86,11 +86,7 @@
 </ul>
 <h1 id="getting-the-source" tabindex="-1">Getting the source <a class="direct-link" href="#getting-the-source" aria-hidden="true">#</a></h1>
 <p>Clone the source code using git, and grab all the submodules:</p>
-<pre><code>git clone https://github.com/PolyMC/PolyMC.git
-cd PolyMC
-git submodule init
-git submodule update
-</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/PolyMC/PolyMC.git<br><span class="token builtin class-name">cd</span> PolyMC<br><span class="token function">git</span> submodule init<br><span class="token function">git</span> submodule update</code></pre>
 <p><strong>The rest of the documentation assumes you have already cloned the repository.</strong></p>
 <h1 id="linux-and-freebsd" tabindex="-1">Linux and FreeBSD <a class="direct-link" href="#linux-and-freebsd" aria-hidden="true">#</a></h1>
 <p>Getting the project to build and run on Linux is easy if you use any modern and up-to-date linux distribution. If you're using FreeBSD you should use 13.0-RELEASE or newer.</p>
@@ -106,46 +102,24 @@ git submodule update
 </ul>
 <p>You can use IDEs, like KDevelop or QtCreator to open the CMake project, if you want to work on the code.</p>
 <h3 id="building-a-portable-binary" tabindex="-1">Building a portable binary <a class="direct-link" href="#building-a-portable-binary" aria-hidden="true">#</a></h3>
-<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> <span class="token function">install</span><br><span class="token comment"># configure the project</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span>./install<br><span class="token comment"># build</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> <span class="token function">install</span><br><span class="token comment"># configure the project</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span>./install<br><span class="token comment"># build</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span><br>cmake --install <span class="token builtin class-name">.</span> --prefix <span class="token function">install</span> --component portable</code></pre>
 <h3 id="building-and-installing-to-the-system" tabindex="-1">Building &amp; installing to the system <a class="direct-link" href="#building-and-installing-to-the-system" aria-hidden="true">#</a></h3>
 <p>This is the preferred method of installation, and is suitable for packages.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token comment"># configure everything</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span><span class="token string">"/usr"</span> <span class="token punctuation">\</span> <span class="token comment"># Use "/usr" when building Linux packages. If building on FreeBSD or not for package, use "/usr/local"</span><br>   -DLauncher_PORTABLE<span class="token operator">=</span>OFF<br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span> <span class="token comment"># Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># configure everything</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span><span class="token string">"/usr"</span> <span class="token punctuation">\</span> <span class="token comment"># Use "/usr" when building Linux packages. If building on FreeBSD or not for package, use "/usr/local"</span><br>   -DENABLE_LTO<span class="token operator">=</span>ON <span class="token comment"># if you want to enable LTO/IPO</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span> <span class="token comment"># Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})</span></code></pre>
 <h3 id="building-a-.deb" tabindex="-1">Building a .deb <a class="direct-link" href="#building-a-.deb" aria-hidden="true">#</a></h3>
 <p>Requirements: <a href="https://docs.makedeb.org/">makedeb</a> installed on your system.</p>
-<pre><code>git clone https://mpr.makedeb.org/polymc.git
-cd polymc
-makedeb -s
-</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> clone https://mpr.makedeb.org/polymc.git<br><span class="token builtin class-name">cd</span> polymc<br>makedeb -s</code></pre>
 <p>The .deb will be located in the directory the repo was cloned in.</p>
 <h3 id="building-an-.rpm" tabindex="-1">Building an .rpm <a class="direct-link" href="#building-an-.rpm" aria-hidden="true">#</a></h3>
 <p>Build dependencies are automatically installed using <code>DNF</code>, however, you will also need the <code>rpmdevtools</code> package (on Fedora),<br>
 in order to fetch sources and setup your tree.<br>
 You don't need to clone the repo for this; the spec file handles that.</p>
-<pre><code>cd ~
-# setup your ~/rpmbuild directory, required for rpmbuild to work.
-rpmdev-setuptree
-# get the rpm spec file from the polymc-misc repo
-wget https://copr-dist-git.fedorainfracloud.org/cgit/sentry/polymc/polymc.git/plain/polymc.spec
-# install build dependencies
-sudo dnf builddep polymc.spec
-# download build sources
-spectool -g -R polymc.spec
-# now build!
-rpmbuild -bb polymc.spec
-</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~<br><span class="token comment"># setup your ~/rpmbuild directory, required for rpmbuild to work.</span><br>rpmdev-setuptree<br><span class="token comment"># get the rpm spec file from the polymc-misc repo</span><br><span class="token function">wget</span> https://copr-dist-git.fedorainfracloud.org/cgit/sentry/polymc/polymc.git/plain/polymc.spec<br><span class="token comment"># install build dependencies</span><br><span class="token function">sudo</span> dnf builddep polymc.spec<br><span class="token comment"># download build sources</span><br>spectool -g -R polymc.spec<br><span class="token comment"># now build!</span><br>rpmbuild -bb polymc.spec</code></pre>
 <p>The path to the .rpm packages will be printed once the build is complete.</p>
 <h3 id="building-a-slackware-package" tabindex="-1">Building a Slackware package <a class="direct-link" href="#building-a-slackware-package" aria-hidden="true">#</a></h3>
 <p>To build a Slackware package, first install <a href="http://slackbuilds.org/repository/14.2/libraries/qt5/">qt5 SlackBuild</a> (on 15.0 and newer installed by defualt), then set up a <a href="https://codeberg.org/glowiak/SlackBuilds/raw/branch/master/tgz/adoptium-jdk8.tar.gz">JDK</a>.</p>
 <p>If you're using Slackware 14.2, update CMake with these commands:</p>
-<pre><code>mkdir -p /tmp/SBo
-cd /tmp/SBo
-wget -c https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2.tar.gz
-tar xzvf cmake-3.22.2.tar.gz
-cd cmake-3.22.2
-./configure --prefix=/usr
-make
-sudo make install
-</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> -p /tmp/SBo<br><span class="token builtin class-name">cd</span> /tmp/SBo<br><span class="token function">wget</span> -c https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2.tar.gz<br><span class="token function">tar</span> xzvf cmake-3.22.2.tar.gz<br><span class="token builtin class-name">cd</span> cmake-3.22.2<br>./configure --prefix<span class="token operator">=</span>/usr<br><span class="token function">make</span><br><span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span></code></pre>
 <p>Next, download the <a href="https://codeberg.org/glowiak/SlackBuilds/raw/branch/master/tgz/polymc.tar.gz">SlackBuild</a>, unpack it, and then type the following in the extracted directory:</p>
 <pre><code>sudo ./polymc.SlackBuild # script will do everything, just sit up and wait
 sudo /sbin/installpkg /tmp/polymc-version-arch-1_SBo.tgz # install the created package
@@ -258,11 +232,11 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 <h3 id="compile-from-command-line-on-windows" tabindex="-1">Compile from command line on Windows <a class="direct-link" href="#compile-from-command-line-on-windows" aria-hidden="true">#</a></h3>
 <ol>
 <li>Open the right <strong>MSYS2 MinGW</strong> shell and clone PolyMC by doing <code>git clone --recursive https://github.com/PolyMC/PolyMC.git</code>, and change directory to the folder you cloned to.</li>
-<li>Now we can prepare the build itself: Run <code>cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install</code>. These options will copy the final build to <code>C:\msys64\home\&lt;your username&gt;\PolyMC\install</code> after the build.</li>
-<li>If you want PolyMC to store its data in <code>%APPDATA%</code>, append <code>-DLauncher_PORTABLE=OFF</code> to the previous command.</li>
+<li>Now we can prepare the build itself: Run <code>cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON</code>. These options will copy the final build to <code>C:\msys64\home\&lt;your username&gt;\PolyMC\install</code> after the build.</li>
 <li>Now you need to run the build itself: Run <code>cmake --build build -jX</code>, where <em>X</em> is the number of cores your CPU has.</li>
 <li>Now, wait for it to compile. This could take some time, so hopefully it compiles properly.</li>
 <li>Run the command <code>cmake --install build</code>, and it should install PolyMC to whatever the <code>-DCMAKE_INSTALL_PREFIX</code> was.</li>
+<li>If you don't want PolyMC to store its data in <code>%APPDATA%</code>, run <code>cmake --install build --component portable</code> after the install process</li>
 <li>In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do <code>cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install</code>. This should copy the required OpenSSL DLLs to log in.</li>
 </ol>
 <h1 id="macos" tabindex="-1">macOS <a class="direct-link" href="#macos" aria-hidden="true">#</a></h1>
@@ -273,26 +247,17 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 <li>Install JDK 8 (<a href="https://adoptium.net/releases.html?variant=openjdk8&amp;jvmVariant=hotspot">https://adoptium.net/releases.html?variant=openjdk8&amp;jvmVariant=hotspot</a>).</li>
 <li>Get Qt 5.6, and install it (<a href="https://download.qt.io/new_archive/qt/5.6/5.6.3/">https://download.qt.io/new_archive/qt/5.6/5.6.3/</a>) or higher (tested) (<a href="https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source">https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source</a>).</li>
 </ul>
-<p>You can use <code>homebrew</code> to simplify the installation of build dependencies.</p>
+<p>Using <a href="https://brew.sh">homebrew</a> you can install these dependencies with a single command:</p>
+<pre><code>brew update # in the case your repositories weren't updated
+brew install qt@5 openjdk@17 cmake ninja 
+</code></pre>
 <h3 id="xcode-command-line-tools" tabindex="-1">XCode Command Line tools <a class="direct-link" href="#xcode-command-line-tools" aria-hidden="true">#</a></h3>
 <p>If you don't have XCode Command Line tools installed, you can install them with this command:</p>
 <pre class="language-bash"><code class="language-bash">xcode-select --install</code></pre>
 <h3 id="build" tabindex="-1">Build <a class="direct-link" href="#build" aria-hidden="true">#</a></h3>
 <p>Choose an installation path.</p>
 <p>This is where the final <code>PolyMC.app</code> will be constructed when you run <code>make install</code>. Supply it as the <code>CMAKE_INSTALL_PREFIX</code> argument during CMake configuration. By default, it's in the dist folder, under PolyMC.</p>
-<pre><code>mkdir build
-cd build
-cmake \
- -DCMAKE_C_COMPILER=/usr/bin/clang \
- -DCMAKE_CXX_COMPILER=/usr/bin/clang++ \
- -DCMAKE_BUILD_TYPE=Release \
- -DCMAKE_INSTALL_PREFIX:PATH=&quot;$(dirname $PWD)/dist/&quot; \
- -DCMAKE_PREFIX_PATH=&quot;/path/to/Qt/&quot; \
- -DQt5_DIR=&quot;/path/to/Qt/&quot; \
- -DCMAKE_OSX_DEPLOYMENT_TARGET=10.7 \
- ..
-make install
-</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> build<br><span class="token builtin class-name">cd</span> build<br>cmake <span class="token punctuation">\</span><br> -DCMAKE_C_COMPILER<span class="token operator">=</span>/usr/bin/clang <span class="token punctuation">\</span><br> -DCMAKE_CXX_COMPILER<span class="token operator">=</span>/usr/bin/clang++ <span class="token punctuation">\</span><br> -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br> -DCMAKE_INSTALL_PREFIX:<span class="token environment constant">PATH</span><span class="token operator">=</span><span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">dirname</span> <span class="token environment constant">$PWD</span><span class="token variable">)</span></span>/dist/"</span> <span class="token punctuation">\</span><br> -DCMAKE_PREFIX_PATH<span class="token operator">=</span><span class="token string">"/path/to/Qt/"</span> <span class="token punctuation">\</span><br> -DQt5_DIR<span class="token operator">=</span><span class="token string">"/path/to/Qt/"</span> <span class="token punctuation">\</span><br> -DCMAKE_OSX_DEPLOYMENT_TARGET<span class="token operator">=</span><span class="token number">10.7</span> <span class="token punctuation">\</span><br> -DENABLE_LTO<span class="token operator">=</span>ON <span class="token comment"># if you want to enable LTO/IPO \</span><br> <span class="token punctuation">..</span><br><span class="token function">make</span> <span class="token function">install</span></code></pre>
 <p>Remember to replace <code>/path/to/Qt/</code> with the actual path. For newer Qt installations, it is often in your home directory.</p>
 <p><strong>Note:</strong> The final app bundle may not run due to code signing issues, which<br>
 need to be fixed with <code>codesign -fs -</code>.</p>
@@ -310,10 +275,10 @@ need to be fixed with <code>codesign -fs -</code>.</p>
 </ul>
 <p>You can use IDEs, like KDevelop or QtCreator, to open the CMake project if you want to work on the code.</p>
 <h3 id="building-a-portable-binary-1" tabindex="-1">Building a portable binary <a class="direct-link" href="#building-a-portable-binary-1" aria-hidden="true">#</a></h3>
-<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> <span class="token function">install</span><br><span class="token comment"># configure the project</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span>./install -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake<br><span class="token comment"># build</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> <span class="token function">install</span><br><span class="token comment"># configure the project</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span>./install -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake -DENABLE_LTO<span class="token operator">=</span>ON <br><span class="token comment"># build</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span><br>cmake --install <span class="token function">install</span> --component portable</code></pre>
 <h3 id="building-and-installing-to-the-system-1" tabindex="-1">Building &amp; installing to the system <a class="direct-link" href="#building-and-installing-to-the-system-1" aria-hidden="true">#</a></h3>
 <p>This is the preferred method of installation, and is suitable for packages.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token comment"># configure everything</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span><span class="token string">"/usr/local"</span> <span class="token punctuation">\</span> <span class="token comment"># /usr/local is default in OpenBSD and FreeBSD</span><br>   -DLauncher_PORTABLE<span class="token operator">=</span>OFF -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake <span class="token comment"># use linux layout and point to qt5 libs</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span> <span class="token comment"># Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})</span></code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># configure everything</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span><span class="token string">"/usr/local"</span> <span class="token punctuation">\</span> <span class="token comment"># /usr/local is default in OpenBSD and FreeBSD</span><br>   -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake <span class="token comment"># use linux layout and point to qt5 libs</span><br>   -DENABLE_LTO<span class="token operator">=</span>ON <span class="token comment"># if you want to enable LTO/IPO</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span> <span class="token comment"># Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})</span></code></pre>
 
   
   
