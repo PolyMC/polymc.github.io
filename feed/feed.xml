@@ -5,12 +5,49 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2022-04-17T00:00:00Z</updated>
+	<updated>2022-04-20T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>Release 1.2.1</title>
+		<link href="https://polymc.org/news/release-1.2.1/"/>
+		<updated>2022-04-20T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-1.2.1/</id>
+		<content type="html">&lt;p&gt;We have found some bugs in our last release on Sunday, which is why we are bringing you a truckload of bug fixes.&lt;br /&gt;
+Also check our friends&#39; launch of the Quilt Beta over at &lt;a href=&quot;https://quiltmc.org/&quot;&gt;quiltmc.org&lt;/a&gt;!&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.2.1/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.2.1/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Specify build platform for about page by @DioEgizio in #449&lt;/li&gt;
+&lt;li&gt;[macOS] Enable hardened runtime by @kthchew in #454&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.2.1/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.2.1/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix typos and capitalization by @kthchew in #442&lt;/li&gt;
+&lt;li&gt;Fix placeholder translations for mod downloader by @flowln in #443&lt;/li&gt;
+&lt;li&gt;Fix missing files in release workflow by @Scrumplex in #444&lt;/li&gt;
+&lt;li&gt;Fix Modrinth search if Quilt is used by @Scrumplex in #450&lt;/li&gt;
+&lt;li&gt;Fix crashes when creating a new instance by @Scrumplex in #451&lt;/li&gt;
+&lt;li&gt;Fix crash when mod downloader has network issues by @Scrumplex in #452&lt;/li&gt;
+&lt;li&gt;Fix sort-by-size in world list by @Scrumplex in #462&lt;/li&gt;
+&lt;li&gt;Fix crash when trying to create an instance without a Minecraft version by @kthchew in #470&lt;/li&gt;
+&lt;li&gt;Fix crash when opening the mod downloader with snapshots by @Scrumplex in #472&lt;/li&gt;
+&lt;li&gt;[macOS] Fix version string by @kthchew in #455&lt;/li&gt;
+&lt;li&gt;[macOS] Fix instance rename using return-key @txtsd in #463&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.2.1/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[FreeBSD] Revert &amp;quot;Force system LWJGL natives&amp;quot; by @Scrumplex in #467&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.2.0...1.2.1&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.2.0...1.2.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Release 1.2.0</title>
