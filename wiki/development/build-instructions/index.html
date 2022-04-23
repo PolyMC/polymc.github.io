@@ -107,9 +107,11 @@
 <h3 id="building-and-installing-to-the-system" tabindex="-1">Building &amp; installing to the system <a class="direct-link" href="#building-and-installing-to-the-system" aria-hidden="true">#</a></h3>
 <p>This is the preferred method of installation, and is suitable for packages.</p>
 <pre class="language-bash"><code class="language-bash"><span class="token comment"># configure everything</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span><span class="token string">"/usr"</span> <span class="token punctuation">\</span> <span class="token comment"># Use "/usr" when building Linux packages. If building on FreeBSD or not for package, use "/usr/local"</span><br>   -DENABLE_LTO<span class="token operator">=</span>ON <span class="token comment"># if you want to enable LTO/IPO</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span> <span class="token comment"># Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})</span></code></pre>
-<h2 id="notes" tabindex="-1">Notes <a class="direct-link" href="#notes" aria-hidden="true">#</a></h2>
+<h3 id="notes" tabindex="-1">Notes <a class="direct-link" href="#notes" aria-hidden="true">#</a></h3>
 <ul>
-<li>At the time of writing, when building on FreeBSD or arm64, you may need to use an alternate meta repository for your system. The only way to do so is to add <code>-DLauncher_META_URL:STRING=&quot;[METAURL]&quot;</code> to your cmake command. There are plans to make this changeable post build in the next release.</li>
+<li>At the time of writing, when building on FreeBSD or arm64, you may need to use an alternate meta repository for your system.<br>
+The only way to do so is to add <code>-DLauncher_META_URL:STRING=&quot;[METAURL]&quot;</code> to your cmake command. There are plans to make this<br>
+an in-launcher setting the next release.</li>
 </ul>
 <h3 id="building-a-.deb" tabindex="-1">Building a .deb <a class="direct-link" href="#building-a-.deb" aria-hidden="true">#</a></h3>
 <p>Requirements: <a href="https://docs.makedeb.org/">makedeb</a> installed on your system.</p>
