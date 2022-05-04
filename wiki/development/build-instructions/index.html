@@ -84,14 +84,15 @@
 <li><a href="#windows">Windows</a></li>
 <li><a href="#macos">macOS</a></li>
 <li><a href="#openbsd">OpenBSD</a></li>
+<li><a href="#ides-and-tooling">IDEs and Tooling</a></li>
 </ul>
-<h1 id="getting-the-source" tabindex="-1">Getting the source <a class="direct-link" href="#getting-the-source" aria-hidden="true">#</a></h1>
+<h2 id="getting-the-source" tabindex="-1">Getting the source <a class="direct-link" href="#getting-the-source" aria-hidden="true">#</a></h2>
 <p>Clone the source code using git, and grab all the submodules:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/PolyMC/PolyMC.git<br><span class="token builtin class-name">cd</span> PolyMC<br><span class="token function">git</span> submodule init<br><span class="token function">git</span> submodule update</code></pre>
 <p><strong>The rest of the documentation assumes you have already cloned the repository.</strong></p>
-<h1 id="linux-and-freebsd" tabindex="-1">Linux and FreeBSD <a class="direct-link" href="#linux-and-freebsd" aria-hidden="true">#</a></h1>
+<h2 id="linux-and-freebsd" tabindex="-1">Linux and FreeBSD <a class="direct-link" href="#linux-and-freebsd" aria-hidden="true">#</a></h2>
 <p>Getting the project to build and run on Linux is easy if you use any modern and up-to-date linux distribution. If you're using FreeBSD you should use 13.0-RELEASE or newer.</p>
-<h2 id="build-dependencies" tabindex="-1">Build dependencies <a class="direct-link" href="#build-dependencies" aria-hidden="true">#</a></h2>
+<h3 id="build-dependencies" tabindex="-1">Build dependencies <a class="direct-link" href="#build-dependencies" aria-hidden="true">#</a></h3>
 <ul>
 <li>A C++ compiler capable of building C++11 code.</li>
 <li>Qt Development tools 5.6 or newer (<code>qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5</code> on Debian-based system)</li>
@@ -174,7 +175,104 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 </li>
 </ol>
 <p><strong>If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.</strong></p>
-<h3 id="loading-the-project-in-clion-(optional)" tabindex="-1">Loading the project in CLion (optional) <a class="direct-link" href="#loading-the-project-in-clion-(optional)" aria-hidden="true">#</a></h3>
+<h2 id="windows" tabindex="-1">Windows <a class="direct-link" href="#windows" aria-hidden="true">#</a></h2>
+<p>We recommend using a build workflow based on MSYS2, as it's the easiest way to get all of the build dependencies.</p>
+<h3 id="dependencies" tabindex="-1">Dependencies <a class="direct-link" href="#dependencies" aria-hidden="true">#</a></h3>
+<ul>
+<li><a href="https://www.msys2.org/">MSYS2</a> - Software Distribution and Building Platform for Windows
+<ul>
+<li>Make sure to follow all instructions on the webpage.</li>
+</ul>
+</li>
+<li><a href="https://adoptium.net/">Java JDK 8 or later</a>
+<ul>
+<li>Make sure that &quot;Set JAVA_HOME variable&quot; is enabled in the Adoptium installer.</li>
+</ul>
+</li>
+</ul>
+<h3 id="preparing-msys2" tabindex="-1">Preparing MSYS2 <a class="direct-link" href="#preparing-msys2" aria-hidden="true">#</a></h3>
+<ol>
+<li>Open the <em>MSYS2 MinGW x64</em> shortcut from the start menu</li>
+</ol>
+<ul>
+<li>NOTE: There are multiple different MSYS2 related shortcuts. Make sure you actually opened the right <strong>MinGW</strong> version.</li>
+<li>If you are on a 32-bit Windows machine, you probably need to start <em>MSYS2 MinGW x86</em> instead.</li>
+</ul>
+<ol start="2">
+<li>Install helpers: Run <code>pacman -Syu pactoys git</code> in the MSYS2 shell.</li>
+<li>Install all build dependencies using <code>pacboy</code>: Run <code>pacboy -S toolchain:p cmake:p ninja:p qt5:p</code>.</li>
+</ol>
+<ul>
+<li>This might take a while, as it will install Qt and all the build tools required.</li>
+</ul>
+<h3 id="compile-from-command-line-on-windows" tabindex="-1">Compile from command line on Windows <a class="direct-link" href="#compile-from-command-line-on-windows" aria-hidden="true">#</a></h3>
+<ol>
+<li>Open the right <strong>MSYS2 MinGW</strong> shell and clone PolyMC by doing <code>git clone --recursive https://github.com/PolyMC/PolyMC.git</code>, and change directory to the folder you cloned to.</li>
+<li>Now we can prepare the build itself: Run <code>cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON</code>. These options will copy the final build to <code>C:\msys64\home\&lt;your username&gt;\PolyMC\install</code> after the build.</li>
+<li>Now you need to run the build itself: Run <code>cmake --build build -jX</code>, where <em>X</em> is the number of cores your CPU has.</li>
+<li>Now, wait for it to compile. This could take some time, so hopefully it compiles properly.</li>
+<li>Run the command <code>cmake --install build</code>, and it should install PolyMC to whatever the <code>-DCMAKE_INSTALL_PREFIX</code> was.</li>
+<li>If you don't want PolyMC to store its data in <code>%APPDATA%</code>, run <code>cmake --install build --component portable</code> after the install process</li>
+<li>In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do <code>cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install</code>. This should copy the required OpenSSL DLLs to log in.</li>
+</ol>
+<h2 id="macos" tabindex="-1">macOS <a class="direct-link" href="#macos" aria-hidden="true">#</a></h2>
+<h3 id="install-prerequisites:" tabindex="-1">Install prerequisites: <a class="direct-link" href="#install-prerequisites:" aria-hidden="true">#</a></h3>
+<ul>
+<li>Install XCode Command Line tools.</li>
+<li>Install the official build of CMake (<a href="https://cmake.org/download/">https://cmake.org/download/</a>).</li>
+<li>Install JDK 8 (<a href="https://adoptium.net/releases.html?variant=openjdk8&amp;jvmVariant=hotspot">https://adoptium.net/releases.html?variant=openjdk8&amp;jvmVariant=hotspot</a>).</li>
+<li>Get Qt 5.6, and install it (<a href="https://download.qt.io/new_archive/qt/5.6/5.6.3/">https://download.qt.io/new_archive/qt/5.6/5.6.3/</a>) or higher (tested) (<a href="https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source">https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source</a>).</li>
+</ul>
+<p>Using <a href="https://brew.sh">homebrew</a> you can install these dependencies with a single command:</p>
+<pre><code>brew update # in the case your repositories weren't updated
+brew install qt@5 openjdk@17 cmake ninja 
+</code></pre>
+<h3 id="xcode-command-line-tools" tabindex="-1">XCode Command Line tools <a class="direct-link" href="#xcode-command-line-tools" aria-hidden="true">#</a></h3>
+<p>If you don't have XCode Command Line tools installed, you can install them with this command:</p>
+<pre class="language-bash"><code class="language-bash">xcode-select --install</code></pre>
+<h3 id="build" tabindex="-1">Build <a class="direct-link" href="#build" aria-hidden="true">#</a></h3>
+<p>Choose an installation path.</p>
+<p>This is where the final <code>PolyMC.app</code> will be constructed when you run <code>make install</code>. Supply it as the <code>CMAKE_INSTALL_PREFIX</code> argument during CMake configuration. By default, it's in the dist folder, under PolyMC.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> build<br><span class="token builtin class-name">cd</span> build<br>cmake <span class="token punctuation">\</span><br> -DCMAKE_C_COMPILER<span class="token operator">=</span>/usr/bin/clang <span class="token punctuation">\</span><br> -DCMAKE_CXX_COMPILER<span class="token operator">=</span>/usr/bin/clang++ <span class="token punctuation">\</span><br> -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br> -DCMAKE_INSTALL_PREFIX:<span class="token environment constant">PATH</span><span class="token operator">=</span><span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">dirname</span> <span class="token environment constant">$PWD</span><span class="token variable">)</span></span>/dist/"</span> <span class="token punctuation">\</span><br> -DCMAKE_PREFIX_PATH<span class="token operator">=</span><span class="token string">"/path/to/Qt/"</span> <span class="token punctuation">\</span><br> -DQt5_DIR<span class="token operator">=</span><span class="token string">"/path/to/Qt/"</span> <span class="token punctuation">\</span><br> -DCMAKE_OSX_DEPLOYMENT_TARGET<span class="token operator">=</span><span class="token number">10.7</span> <span class="token punctuation">\</span><br> -DENABLE_LTO<span class="token operator">=</span>ON <span class="token punctuation">\</span> <span class="token comment"># if you want to enable LTO/IPO</span><br> <span class="token punctuation">..</span><br><span class="token function">make</span> <span class="token function">install</span></code></pre>
+<p>Remember to replace <code>/path/to/Qt/</code> with the actual path. For newer Qt installations, it is often in your home directory. (For the Homebrew installation, it's likely to be in <code>/opt/homebrew/opt/qt@5</code>.</p>
+<p><strong>Note:</strong> The final app bundle may not run due to code signing issues, which<br>
+need to be fixed with <code>codesign -fs -</code>.</p>
+<h2 id="openbsd" tabindex="-1">OpenBSD <a class="direct-link" href="#openbsd" aria-hidden="true">#</a></h2>
+<p>Tested on OpenBSD 7.0-alpha i386. It should also work on older versions.</p>
+<h3 id="build-dependencies-1" tabindex="-1">Build dependencies <a class="direct-link" href="#build-dependencies-1" aria-hidden="true">#</a></h3>
+<ul>
+<li>A C++ compiler capable of building C++11 code (included in base system).</li>
+<li>Qt Development tools 5.6 or newer (<a href="https://openports.se/meta/qt5">meta/qt5</a>).</li>
+<li>cmake 3.1 or newer (<a href="https://openports.se/devel/cmake">devel/cmake</a>).</li>
+<li>zlib (included in base system).</li>
+<li>Java JDK (<a href="https://openports.se/devel/jdk/1.8">devel/jdk-1.8</a>).</li>
+<li>GL headers (included in base system).</li>
+<li>lwjgl (<a href="https://openports.se/games/lwjgl">games/lwjgl</a> and <a href="https://openports.se/games/lwjgl3">games/lwjgl3</a>).</li>
+</ul>
+<p>You can use IDEs, like KDevelop or QtCreator, to open the CMake project if you want to work on the code.</p>
+<h3 id="building-a-portable-binary-1" tabindex="-1">Building a portable binary <a class="direct-link" href="#building-a-portable-binary-1" aria-hidden="true">#</a></h3>
+<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> <span class="token function">install</span><br><span class="token comment"># configure the project</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span>./install -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake -DENABLE_LTO<span class="token operator">=</span>ON <br><span class="token comment"># build</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span><br>cmake --install <span class="token function">install</span> --component portable</code></pre>
+<h3 id="building-and-installing-to-the-system-1" tabindex="-1">Building &amp; installing to the system <a class="direct-link" href="#building-and-installing-to-the-system-1" aria-hidden="true">#</a></h3>
+<p>This is the preferred method of installation, and is suitable for packages.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># configure everything</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span><span class="token string">"/usr/local"</span> <span class="token punctuation">\</span> <span class="token comment"># /usr/local is default in OpenBSD and FreeBSD</span><br>   -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake <span class="token comment"># use linux layout and point to qt5 libs</span><br>   -DENABLE_LTO<span class="token operator">=</span>ON <span class="token comment"># if you want to enable LTO/IPO</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span> <span class="token comment"># Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})</span></code></pre>
+<h2 id="ides-and-tooling" tabindex="-1">IDEs and Tooling <a class="direct-link" href="#ides-and-tooling" aria-hidden="true">#</a></h2>
+<p>There are a few tools that you can set up to make your development workflow smoother. In addition, some IDEs also require a bit more setup to work with Qt and CMake.</p>
+<h3 id="ccache" tabindex="-1">ccache <a class="direct-link" href="#ccache" aria-hidden="true">#</a></h3>
+<p><strong>ccache</strong> is a compiler cache. It speeds up recompilation by caching previous compilations and detecting when the same compilation is being done again.</p>
+<p>You can <a href="https://ccache.dev/download.html">download it here</a>. After setting up, builds will be incremental, and the builds after the first one will be much faster.</p>
+<h3 id="vs-code" tabindex="-1">VS Code <a class="direct-link" href="#vs-code" aria-hidden="true">#</a></h3>
+<p>To set up VS Code, you can download <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">the C/C++ extension</a>, since it provides IntelliSense auto complete, linting, formatting, and various other features.</p>
+<p>Then, you need to setup the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for PolyMC.</p>
+<ol>
+<li>Add the path to your Qt <code>include</code> folder to <code>includePath</code></li>
+<li>Add <code>-L/{path to your Qt installation}/lib</code> to <code>compilerArgs</code></li>
+<li>Set <code>compileCommands</code> to <code>${workspaceFolder}/build/compile_commands.json</code> (this will only work after you configure CMake)</li>
+<li>Set <code>cppStandard</code> to <code>c++14</code> or higher.</li>
+</ol>
+<p>Now the VS Code setup should be fully working. To test, open up some files and see if any error squiggles appear. If there are none, it's working properly!</p>
+<p>Here is an example of what <code>.vscode/c_cpp_properties.json</code> looks like on macOS with Qt installed via Homebrew:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>    <span class="token property">"configurations"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token punctuation">{</span><br>            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Mac (PolyMC)"</span><span class="token punctuation">,</span><br>            <span class="token property">"includePath"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>                <span class="token string">"${workspaceFolder}/**"</span><span class="token punctuation">,</span><br>                <span class="token string">"/opt/homebrew/opt/qt@5/include/**"</span><br>            <span class="token punctuation">]</span><span class="token punctuation">,</span><br>            <span class="token property">"defines"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>            <span class="token property">"macFrameworkPath"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>                <span class="token string">"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"</span><br>            <span class="token punctuation">]</span><span class="token punctuation">,</span><br>            <span class="token property">"compilerPath"</span><span class="token operator">:</span> <span class="token string">"/usr/bin/clang"</span><span class="token punctuation">,</span><br>            <span class="token property">"compilerArgs"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>                <span class="token string">"-L/opt/homebrew/opt/qt@5/lib"</span><br>            <span class="token punctuation">]</span><span class="token punctuation">,</span><br>            <span class="token property">"compileCommands"</span><span class="token operator">:</span> <span class="token string">"${workspaceFolder}/build/compile_commands.json"</span><span class="token punctuation">,</span><br>            <span class="token property">"cStandard"</span><span class="token operator">:</span> <span class="token string">"c17"</span><span class="token punctuation">,</span><br>            <span class="token property">"cppStandard"</span><span class="token operator">:</span> <span class="token string">"c++14"</span><span class="token punctuation">,</span><br>            <span class="token property">"intelliSenseMode"</span><span class="token operator">:</span> <span class="token string">"macos-clang-arm64"</span><br>        <span class="token punctuation">}</span><br>    <span class="token punctuation">]</span><span class="token punctuation">,</span><br>    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">4</span><br><span class="token punctuation">}</span></code></pre>
+<h3 id="clion" tabindex="-1">CLion <a class="direct-link" href="#clion" aria-hidden="true">#</a></h3>
 <ol>
 <li>Open CLion</li>
 <li>Choose <code>File-&gt;Open</code></li>
@@ -205,87 +303,6 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 </li>
 </ol>
 <p>Now you should be able to build and test PolyMC with the <code>Build</code> and <code>Run</code> buttons.</p>
-<h1 id="windows" tabindex="-1">Windows <a class="direct-link" href="#windows" aria-hidden="true">#</a></h1>
-<p>We recommend using a build workflow based on MSYS2, as it's the easiest way to get all of the build dependencies.</p>
-<h2 id="dependencies" tabindex="-1">Dependencies <a class="direct-link" href="#dependencies" aria-hidden="true">#</a></h2>
-<ul>
-<li><a href="https://www.msys2.org/">MSYS2</a> - Software Distribution and Building Platform for Windows
-<ul>
-<li>Make sure to follow all instructions on the webpage.</li>
-</ul>
-</li>
-<li><a href="https://adoptium.net/">Java JDK 8 or later</a>
-<ul>
-<li>Make sure that &quot;Set JAVA_HOME variable&quot; is enabled in the Adoptium installer.</li>
-</ul>
-</li>
-</ul>
-<h2 id="getting-set-up" tabindex="-1">Getting set up <a class="direct-link" href="#getting-set-up" aria-hidden="true">#</a></h2>
-<h3 id="preparing-msys2" tabindex="-1">Preparing MSYS2 <a class="direct-link" href="#preparing-msys2" aria-hidden="true">#</a></h3>
-<ol>
-<li>Open the <em>MSYS2 MinGW x64</em> shortcut from the start menu</li>
-</ol>
-<ul>
-<li>NOTE: There are multiple different MSYS2 related shortcuts. Make sure you actually opened the right <strong>MinGW</strong> version.</li>
-<li>If you are on a 32-bit Windows machine, you probably need to start <em>MSYS2 MinGW x86</em> instead.</li>
-</ul>
-<ol start="2">
-<li>Install helpers: Run <code>pacman -Syu pactoys git</code> in the MSYS2 shell.</li>
-<li>Install all build dependencies using <code>pacboy</code>: Run <code>pacboy -S toolchain:p cmake:p ninja:p qt5:p</code>.</li>
-</ol>
-<ul>
-<li>This might take a while, as it will install Qt and all the build tools required.</li>
-</ul>
-<h3 id="compile-from-command-line-on-windows" tabindex="-1">Compile from command line on Windows <a class="direct-link" href="#compile-from-command-line-on-windows" aria-hidden="true">#</a></h3>
-<ol>
-<li>Open the right <strong>MSYS2 MinGW</strong> shell and clone PolyMC by doing <code>git clone --recursive https://github.com/PolyMC/PolyMC.git</code>, and change directory to the folder you cloned to.</li>
-<li>Now we can prepare the build itself: Run <code>cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON</code>. These options will copy the final build to <code>C:\msys64\home\&lt;your username&gt;\PolyMC\install</code> after the build.</li>
-<li>Now you need to run the build itself: Run <code>cmake --build build -jX</code>, where <em>X</em> is the number of cores your CPU has.</li>
-<li>Now, wait for it to compile. This could take some time, so hopefully it compiles properly.</li>
-<li>Run the command <code>cmake --install build</code>, and it should install PolyMC to whatever the <code>-DCMAKE_INSTALL_PREFIX</code> was.</li>
-<li>If you don't want PolyMC to store its data in <code>%APPDATA%</code>, run <code>cmake --install build --component portable</code> after the install process</li>
-<li>In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do <code>cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install</code>. This should copy the required OpenSSL DLLs to log in.</li>
-</ol>
-<h1 id="macos" tabindex="-1">macOS <a class="direct-link" href="#macos" aria-hidden="true">#</a></h1>
-<h2 id="install-prerequisites:" tabindex="-1">Install prerequisites: <a class="direct-link" href="#install-prerequisites:" aria-hidden="true">#</a></h2>
-<ul>
-<li>Install XCode Command Line tools.</li>
-<li>Install the official build of CMake (<a href="https://cmake.org/download/">https://cmake.org/download/</a>).</li>
-<li>Install JDK 8 (<a href="https://adoptium.net/releases.html?variant=openjdk8&amp;jvmVariant=hotspot">https://adoptium.net/releases.html?variant=openjdk8&amp;jvmVariant=hotspot</a>).</li>
-<li>Get Qt 5.6, and install it (<a href="https://download.qt.io/new_archive/qt/5.6/5.6.3/">https://download.qt.io/new_archive/qt/5.6/5.6.3/</a>) or higher (tested) (<a href="https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source">https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source</a>).</li>
-</ul>
-<p>Using <a href="https://brew.sh">homebrew</a> you can install these dependencies with a single command:</p>
-<pre><code>brew update # in the case your repositories weren't updated
-brew install qt@5 openjdk@17 cmake ninja 
-</code></pre>
-<h3 id="xcode-command-line-tools" tabindex="-1">XCode Command Line tools <a class="direct-link" href="#xcode-command-line-tools" aria-hidden="true">#</a></h3>
-<p>If you don't have XCode Command Line tools installed, you can install them with this command:</p>
-<pre class="language-bash"><code class="language-bash">xcode-select --install</code></pre>
-<h3 id="build" tabindex="-1">Build <a class="direct-link" href="#build" aria-hidden="true">#</a></h3>
-<p>Choose an installation path.</p>
-<p>This is where the final <code>PolyMC.app</code> will be constructed when you run <code>make install</code>. Supply it as the <code>CMAKE_INSTALL_PREFIX</code> argument during CMake configuration. By default, it's in the dist folder, under PolyMC.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> build<br><span class="token builtin class-name">cd</span> build<br>cmake <span class="token punctuation">\</span><br> -DCMAKE_C_COMPILER<span class="token operator">=</span>/usr/bin/clang <span class="token punctuation">\</span><br> -DCMAKE_CXX_COMPILER<span class="token operator">=</span>/usr/bin/clang++ <span class="token punctuation">\</span><br> -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br> -DCMAKE_INSTALL_PREFIX:<span class="token environment constant">PATH</span><span class="token operator">=</span><span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">dirname</span> <span class="token environment constant">$PWD</span><span class="token variable">)</span></span>/dist/"</span> <span class="token punctuation">\</span><br> -DCMAKE_PREFIX_PATH<span class="token operator">=</span><span class="token string">"/path/to/Qt/"</span> <span class="token punctuation">\</span><br> -DQt5_DIR<span class="token operator">=</span><span class="token string">"/path/to/Qt/"</span> <span class="token punctuation">\</span><br> -DCMAKE_OSX_DEPLOYMENT_TARGET<span class="token operator">=</span><span class="token number">10.7</span> <span class="token punctuation">\</span><br> -DENABLE_LTO<span class="token operator">=</span>ON <span class="token punctuation">\</span> <span class="token comment"># if you want to enable LTO/IPO</span><br> <span class="token punctuation">..</span><br><span class="token function">make</span> <span class="token function">install</span></code></pre>
-<p>Remember to replace <code>/path/to/Qt/</code> with the actual path. For newer Qt installations, it is often in your home directory. (For the Homebrew installation, it's likely to be in <code>/opt/homebrew/opt/qt@5</code>.</p>
-<p><strong>Note:</strong> The final app bundle may not run due to code signing issues, which<br>
-need to be fixed with <code>codesign -fs -</code>.</p>
-<h1 id="openbsd" tabindex="-1">OpenBSD <a class="direct-link" href="#openbsd" aria-hidden="true">#</a></h1>
-<p>Tested on OpenBSD 7.0-alpha i386. It should also work on older versions.</p>
-<h2 id="build-dependencies-1" tabindex="-1">Build dependencies <a class="direct-link" href="#build-dependencies-1" aria-hidden="true">#</a></h2>
-<ul>
-<li>A C++ compiler capable of building C++11 code (included in base system).</li>
-<li>Qt Development tools 5.6 or newer (<a href="https://openports.se/meta/qt5">meta/qt5</a>).</li>
-<li>cmake 3.1 or newer (<a href="https://openports.se/devel/cmake">devel/cmake</a>).</li>
-<li>zlib (included in base system).</li>
-<li>Java JDK (<a href="https://openports.se/devel/jdk/1.8">devel/jdk-1.8</a>).</li>
-<li>GL headers (included in base system).</li>
-<li>lwjgl (<a href="https://openports.se/games/lwjgl">games/lwjgl</a> and <a href="https://openports.se/games/lwjgl3">games/lwjgl3</a>).</li>
-</ul>
-<p>You can use IDEs, like KDevelop or QtCreator, to open the CMake project if you want to work on the code.</p>
-<h3 id="building-a-portable-binary-1" tabindex="-1">Building a portable binary <a class="direct-link" href="#building-a-portable-binary-1" aria-hidden="true">#</a></h3>
-<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> <span class="token function">install</span><br><span class="token comment"># configure the project</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span>./install -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake -DENABLE_LTO<span class="token operator">=</span>ON <br><span class="token comment"># build</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span><br>cmake --install <span class="token function">install</span> --component portable</code></pre>
-<h3 id="building-and-installing-to-the-system-1" tabindex="-1">Building &amp; installing to the system <a class="direct-link" href="#building-and-installing-to-the-system-1" aria-hidden="true">#</a></h3>
-<p>This is the preferred method of installation, and is suitable for packages.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token comment"># configure everything</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span><span class="token string">"/usr/local"</span> <span class="token punctuation">\</span> <span class="token comment"># /usr/local is default in OpenBSD and FreeBSD</span><br>   -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake <span class="token comment"># use linux layout and point to qt5 libs</span><br>   -DENABLE_LTO<span class="token operator">=</span>ON <span class="token comment"># if you want to enable LTO/IPO</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span> <span class="token comment"># Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})</span></code></pre>
 
   
   
