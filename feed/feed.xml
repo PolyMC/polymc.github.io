@@ -13,6 +13,30 @@
 	</author>
 	
 	<entry>
+		<title>Release 1.2.2 (CurseForge Hotfix)</title>
+		<link href="https://polymc.org/news/release-1.2.2/"/>
+		<updated>2022-04-20T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-1.2.2/</id>
+		<content type="html">&lt;p&gt;The old API we used for CurseForge will stop working soon.&lt;br /&gt;
+This update switches to the new CurseForge Core API to keep modpacks and mod downloads working.&lt;/p&gt;
+&lt;p&gt;Thanks to everyone who collaborated on this solution in our community channels.&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.2.2/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.2.2/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.2.2/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.2.2/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hide sensitive tokens from logs by @Scrumplex in #475&lt;/li&gt;
+&lt;li&gt;Implemented a workaround to allow Mojang logins by @TheCodex6824 in #482&lt;/li&gt;
+&lt;li&gt;Move to new CurseForge Core API by @ryanccn in #530&lt;/li&gt;
+&lt;li&gt;[Linux] Fix AppImage scaling issues ny @DioEgizio in #492&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.2.2/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.2.1...1.2.2&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.2.1...1.2.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Release 1.2.1</title>
 		<link href="https://polymc.org/news/release-1.2.1/"/>
 		<updated>2022-04-20T00:00:00Z</updated>
