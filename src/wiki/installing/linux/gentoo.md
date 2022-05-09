@@ -12,7 +12,7 @@ Note that, for the time being, it is not stabilized, so it's masked for `~amd64`
 sudo emaint sync -a
 
 # If you need to unmask the package, and considering `package.accept_keywords` to be a folder.
-echo ">=games-action/polymc-1.1.1" | sudo tee -a /etc/portage/package.accept_keywords/polymc
+echo ">=games-action/polymc-1.2.2" | sudo tee -a /etc/portage/package.accept_keywords/polymc
 # Or do this if you want to build from the latest commit instead of a release
 echo "=games-action/polymc-9999 **" | sudo tee -a /etc/portage/package.accept_keywords/polymc
 
