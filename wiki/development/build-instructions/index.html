@@ -95,7 +95,7 @@
 <h3 id="build-dependencies" tabindex="-1">Build dependencies <a class="direct-link" href="#build-dependencies" aria-hidden="true">#</a></h3>
 <ul>
 <li>A C++ compiler capable of building C++11 code.</li>
-<li>Qt Development tools 5.6 or newer (<code>qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5</code> on Debian-based system)</li>
+<li>Qt Development tools 5.12 or newer (<code>qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5</code> on Debian-based system)</li>
 <li>cmake 3.1 or newer (<code>cmake</code> on Debian-based system)</li>
 <li>zlib (<code>zlib1g-dev</code> on Debian-based system)</li>
 <li>Java JDK (<code>openjdk-17-jdk</code>on Debian-based system)</li>
@@ -142,7 +142,7 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 <li>Choose a place to install Qt.</li>
 <li>Choose the components that you wish install.
 <ul>
-<li>You need Qt 5.6.x 64-bit ticked.</li>
+<li>You need Qt 5.12.x 64-bit ticked. (or a newer version)</li>
 <li>You need Tools/Qt Creator ticked.</li>
 <li>Other components are selected by default, you can un-tick them if you don't need them.</li>
 </ul>
@@ -162,7 +162,7 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 <li>Read the instructions that just popped up about a build location and choose one.</li>
 <li>You should see &quot;Run CMake&quot; in the window.
 <ul>
-<li>Make sure that Generator is set to &quot;Unix Generator (Desktop Qt 5.6.x GCC 64bit)&quot;.</li>
+<li>Make sure that Generator is set to &quot;Unix Generator (Desktop Qt 5.12.x GCC 64bit)&quot;.</li>
 <li>Hit the &quot;Run CMake&quot; button.</li>
 <li>You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.</li>
 <li>Hit &quot;Finish&quot; if CMake ran successfully.</li>
@@ -221,7 +221,7 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 <li>Install XCode Command Line tools.</li>
 <li>Install the official build of CMake (<a href="https://cmake.org/download/">https://cmake.org/download/</a>).</li>
 <li>Install JDK 8 (<a href="https://adoptium.net/releases.html?variant=openjdk8&amp;jvmVariant=hotspot">https://adoptium.net/releases.html?variant=openjdk8&amp;jvmVariant=hotspot</a>).</li>
-<li>Get Qt 5.6, and install it (<a href="https://download.qt.io/new_archive/qt/5.6/5.6.3/">https://download.qt.io/new_archive/qt/5.6/5.6.3/</a>) or higher (tested) (<a href="https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source">https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source</a>).</li>
+<li>Install Qt 5.12 or newer</li>
 </ul>
 <p>Using <a href="https://brew.sh">homebrew</a> you can install these dependencies with a single command:</p>
 <pre><code>brew update # in the case your repositories weren't updated
@@ -242,7 +242,7 @@ need to be fixed with <code>codesign -fs -</code>.</p>
 <h3 id="build-dependencies-1" tabindex="-1">Build dependencies <a class="direct-link" href="#build-dependencies-1" aria-hidden="true">#</a></h3>
 <ul>
 <li>A C++ compiler capable of building C++11 code (included in base system).</li>
-<li>Qt Development tools 5.6 or newer (<a href="https://openports.se/meta/qt5">meta/qt5</a>).</li>
+<li>Qt Development tools 5.12 or newer (<a href="https://openports.se/meta/qt5">meta/qt5</a>).</li>
 <li>cmake 3.1 or newer (<a href="https://openports.se/devel/cmake">devel/cmake</a>).</li>
 <li>zlib (included in base system).</li>
 <li>Java JDK (<a href="https://openports.se/devel/jdk/1.8">devel/jdk-1.8</a>).</li>
