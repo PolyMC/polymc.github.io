@@ -23,6 +23,7 @@ Initially this release should have included a workaround for download issues wit
 - Modrinth modpack support by @flowln and @Scrumplex in #565
 - Quilt mod metadata support by @Scrumplex in #567
 - Support Mojang's new split natives by @Scrumplex in #594
+- Allow using custom CurseForge key by @dada513 in #607
 - [macOS] Add Big Sur-style icon by @ryanccn in #495
 - [Windows] Add Windows installer by @kthchew in #576
 
@@ -41,14 +42,19 @@ Initially this release should have included a workaround for download issues wit
 ### Fixed
 - Always build iconfix as static library by @flowln in #477
 - Added and fixed mnemonics by @dschemp in #480 and @txtsd in #503
+- Allow unmigrated Mojang accounts to authenticate by @TheCodex6824 in #482
+- Fix HiDPI on AppImage by bundling newer Qt by @DioEgizio in #492
 - Fix selection of .zip files by @flowln in #528
 - Fix graphical issue when moving toolbars by @flowln in #529
 - Fix missing translations when switching languages by @kthchew in #539
 - Fix missing screenshots in screenshot manager by @kthchew in #540
 - Fix website link in CurseForge modpacks by @DioEgizio in #545
+- Fix icons not showing in some FTB modpacks by @flowln in #564
 - Fix toolbar disappearing in a certain circumstance by @LennyMcLennington in #577
+- Show correct metadata for Quilt-only mods by @DioEgizio in #590
 - Fix issue with Solder.cf Technic packs by @flowln in #592
 - [Windows] Hide temporary directory inside instances directory by @kthchew in #547
+- [macOS] Fix Steam overlay on macOS by @kthchew in #568
 
 ### Removed
 - Remove unneeded build files by @Scrumplex in #519
