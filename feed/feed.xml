@@ -5,12 +5,79 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2022-05-08T00:00:00Z</updated>
+	<updated>2022-05-22T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>Release 1.3.0</title>
+		<link href="https://polymc.org/news/release-1.3.0/"/>
+		<updated>2022-05-22T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-1.3.0/</id>
+		<content type="html">&lt;p&gt;Hey!&lt;br /&gt;
+It&#39;s update-time again. This time we bring you some highlights, like Modrinth modpack support, a Windows installer, more paste services and improvements around our ATLauncher support.&lt;br /&gt;
+There is also a breaking change affecting older platforms.&lt;br /&gt;
+We have bumped our Qt dependency requirement to version 5.12.&lt;br /&gt;
+If you user an older platform, you might still be able to run PolyMC through our existing distribution methods (AppImage, Flatpak on Linux).&lt;/p&gt;
+&lt;p&gt;Initially this release should have included a workaround for download issues with CurseForge mods and modpacks, but we were contacted by CurseForge to remove our workaround.&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.3.0/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.3.0/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support ATLauncher share codes by @jamierocks in #408&lt;/li&gt;
+&lt;li&gt;Allow changing metadata-server settings by @dada513 in #425&lt;/li&gt;
+&lt;li&gt;Add PolyMC icon as instance icon by @ryanccn in #498&lt;/li&gt;
+&lt;li&gt;Add option to always hide Java setup wizard by @dada513 in #511&lt;/li&gt;
+&lt;li&gt;Add support for &lt;a href=&quot;http://paste.gg/&quot;&gt;paste.gg&lt;/a&gt;, hastebin and &lt;a href=&quot;http://mclo.gs/&quot;&gt;mclo.gs&lt;/a&gt; paste services by @LennyMcLennington in #554&lt;/li&gt;
+&lt;li&gt;Add instance overrides for miscellaneous settings by @kthchew in #560&lt;/li&gt;
+&lt;li&gt;Modrinth modpack support by @flowln and @Scrumplex in #565&lt;/li&gt;
+&lt;li&gt;Quilt mod metadata support by @Scrumplex in #567 and @DioEgizio in #590&lt;/li&gt;
+&lt;li&gt;Support Mojang&#39;s new split natives by @Scrumplex in #594&lt;/li&gt;
+&lt;li&gt;Allow changing CurseForge api key settings by @dada513 in #607&lt;/li&gt;
+&lt;li&gt;[macOS] Add Big Sur-style icon by @ryanccn in #495&lt;/li&gt;
+&lt;li&gt;[Windows] Add Windows installer by @kthchew in #576&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.3.0/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump Qt requirement to 5.12 by @Scrumplex in #127&lt;/li&gt;
+&lt;li&gt;Refactor launcher code by @icelimetea in #486 #520&lt;/li&gt;
+&lt;li&gt;Refactor network code by @flowln in #500&lt;/li&gt;
+&lt;li&gt;Speedup automatic builds by @txtsd in #510 #614&lt;/li&gt;
+&lt;li&gt;Make profile selection menu scrollable by @kthchew in #546&lt;/li&gt;
+&lt;li&gt;Switch to new CurseForge API Key by @ZekeSmith in #557&lt;/li&gt;
+&lt;li&gt;Improve behavior when multiple mod loaders are in use by @Scrumplex in #597&lt;/li&gt;
+&lt;li&gt;Various improvements to ATLauncher support by @jamierocks in #605&lt;/li&gt;
+&lt;li&gt;Switch to a better CurseForge icon by @DioEgizio in #612&lt;/li&gt;
+&lt;li&gt;Improve compile parameters by @Scrumplex in #616 #620&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.3.0/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Always build iconfix as static library by @flowln in #477&lt;/li&gt;
+&lt;li&gt;Added and fixed mnemonics by @dschemp in #480 and @txtsd in #503&lt;/li&gt;
+&lt;li&gt;Fix selection of .zip files by @flowln in #528&lt;/li&gt;
+&lt;li&gt;Fix graphical issue when moving toolbars by @flowln in #529&lt;/li&gt;
+&lt;li&gt;Fix missing translations when switching languages by @kthchew in #539&lt;/li&gt;
+&lt;li&gt;Fix missing screenshots in screenshot manager by @kthchew in #540&lt;/li&gt;
+&lt;li&gt;Fix website link in CurseForge modpacks by @DioEgizio in #545&lt;/li&gt;
+&lt;li&gt;Hide temporary directory inside instances directory by @kthchew in #547&lt;/li&gt;
+&lt;li&gt;Fix icons not showing in some FTB modpacks by @flowln in #564&lt;/li&gt;
+&lt;li&gt;Fix toolbar disappearing in a certain circumstance by @LennyMcLennington in #577&lt;/li&gt;
+&lt;li&gt;Fix issue with &lt;a href=&quot;http://solder.cf/&quot;&gt;Solder.cf&lt;/a&gt; Technic packs by @flowln in #592&lt;/li&gt;
+&lt;li&gt;[macOS] Fix Steam overlay on macOS by @kthchew in #568&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.3.0/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove unneeded build files by @Scrumplex in #519&lt;/li&gt;
+&lt;li&gt;Remove references to legacy Minecraft accounts by @Ozynt in #531&lt;/li&gt;
+&lt;li&gt;Remove self-promotion from game client to reduce fingerprinting by @jamierocks in #606&lt;/li&gt;
+&lt;li&gt;[macOS] Remove old macOS migration code by @kthchew in #489&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.2.2...1.3.0&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.2.2...1.3.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Release 1.2.2 (CurseForge Hotfix)</title>
