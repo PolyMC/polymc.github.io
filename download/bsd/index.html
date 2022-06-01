@@ -168,6 +168,13 @@
 <div class="infobox top">
 <h1 id="freebsd" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/freebsd/freebsd-icon.svg" height="20" /> FreeBSD <a class="direct-link" href="#freebsd" aria-hidden="true">#</a></h1>
 <p>There are community-maintained binary packages available:</p>
+<p>The port:</p>
+<p><code>mkdir -p /usr/local/etc/pkg/repos</code><br>
+<code>fetch -o /usr/local/etc/pkg/repos/delports.conf http://codeberg.org/glowiak/delports/raw/branch/master/delports.conf</code><br>
+<code>pkg update</code><br>
+<code>pkg install polymc</code></p>
+<p>You can find runtimes in /usr/local/share/mc-rts</p>
+<p>Alternatively you can use portable packages:</p>
 <ul>
 <li>
 <p><a href="http://glowiak.github.io/file/polymc-latest-fbsd64-raw">Gzipped binaries</a> - traditional way to distribute, unpack and run.</p>
