@@ -133,8 +133,7 @@
 <ul class="download-tab-list"><li><a href="/download/"><i class="fa fa-windows" aria-hidden="true"></i> Windows</a></li>
 <li><a href="/download/mac/"><i class="fa fa-apple" aria-hidden="true"></i> macOS</a></li>
 <li class="download-tab-active"><a href="/download/linux/"><i class="fa fa-linux" aria-hidden="true"></i>Linux</a></li>
-<li><a href="/download/steam-deck/"><i class="fa fa-steam-square" aria-hidden="true"></i> Steam Deck</a></li>
-<li><a href="/download/bsd/">BSD</a></li></ul>
+<li><a href="/download/steam-deck/"><i class="fa fa-steam-square" aria-hidden="true"></i> Steam Deck</a></li></ul>
 
 <div class="download-content">
   <div class="row">
@@ -228,23 +227,12 @@ curl &quot;https://copr.fedorainfracloud.org/coprs/sentry/polymc/repo/$ID/sentry
 </code></pre>
 </div>
 <div class="infobox top">
-<h2 id="slackware" tabindex="-1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Slackware_logo.svg/256px-Slackware_logo.svg.png" height="20" /> Slackware <a class="direct-link" href="#slackware" aria-hidden="true">#</a></h2>
-<p>A <a href="https://codeberg.org/glowiak/SlackBuilds/src/branch/master/repository/polymc.md">SlackBuild</a> is available. You will need <a href="http://slackbuilds.org/repository/14.2/libraries/qt5/">qt5</a> (on 15.0 installed by default), a <a href="https://codeberg.org/glowiak/SlackBuilds/src/branch/master/repository/adoptium-jdk8.md">JDK</a>, and if you're on 14.2, you will need to compile a newer CMake version manually. To build, type this in extracted directory, with all dependiences met:</p>
-<pre><code>sudo ./polymc.SlackBuild
-sudo installpkg /tmp/polymc-version-arch-1_SBo.tgz
-</code></pre>
-<p>You can also download a community-maintained <a href="http://glowiak.github.io/file/polymc-latest-slackware">prebuilt x86_64 package</a>, and install it with /sbin/installpkg:</p>
-<pre><code>sudo /sbin/installpkg ~/Downloads/polymc-version-x86_64-1_SBo.tgz
-</code></pre>
-<p>If you want to enjoy the latest, but yet untested features of PolyMC, try the <a href="https://codeberg.org/glowiak/SlackBuilds/src/branch/master/repository/polymc-edge.md">polymc-edge</a> SlackBuild. Dependiences and build instructions are the same, but as a new commit is pushed to the develop branch every hour, there's no sense to build binary packages for it, sorry :/</p>
-<p><strong>NOTE:</strong> The -edge SBo conflicts with the normal, stable version, and the -edge version does not have a desktop entry.</p>
-</div>
-<div class="infobox top">
 <h2 id="void-linux" tabindex="-1"><img src="https://bitcu.co/en/wp-content/uploads/2020/07/Void_Linux_logo.svg_.png" height="20"> Void Linux <a class="direct-link" href="#void-linux" aria-hidden="true">#</a></h2>
 <p>PolyMC is available on the official Void repository.</p>
 <pre><code>sudo xbps-install PolyMC
 </code></pre>
 </div>
+
 </main>
 
 <footer>
