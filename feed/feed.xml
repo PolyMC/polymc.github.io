@@ -146,7 +146,7 @@ This update switches to the new CurseForge Core API to keep modpacks and mod dow
 &lt;li&gt;Hide sensitive tokens from logs by @Scrumplex in #475&lt;/li&gt;
 &lt;li&gt;Implemented a workaround to allow Mojang logins by @TheCodex6824 in #482&lt;/li&gt;
 &lt;li&gt;Move to new CurseForge Core API by @ryanccn in #530&lt;/li&gt;
-&lt;li&gt;[Linux] Fix AppImage scaling issues ny @DioEgizio in #492&lt;/li&gt;
+&lt;li&gt;[Linux] Fix AppImage scaling issues by @DioEgizio in #492&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.2.2/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.2.1...1.2.2&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.2.1...1.2.2&lt;/a&gt;&lt;/p&gt;
