@@ -5,7 +5,7 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2022-05-29T00:00:00Z</updated>
+	<updated>2022-05-22T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
@@ -13,58 +13,7 @@
 	</author>
 	
 	<entry>
-		<title>PolyMC Update 1.3.1, now available</title>
-		<link href="https://polymc.org/news/release-1.3.1/"/>
-		<updated>2022-05-29T00:00:00Z</updated>
-		<id>https://polymc.org/news/release-1.3.1/</id>
-		<content type="html">&lt;p&gt;Hey, it&#39;s that time again!&lt;br /&gt;
-This time you only get some small tweaks and fixes.&lt;br /&gt;
-With this release downloading CurseForge packs should be a better experience, as now the launcher will tell you what mods could not be downloaded.&lt;br /&gt;
-Please make sure to download all those mods, otherwise you won&#39;t have the full modpack.&lt;/p&gt;
-&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.3.1/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.3.1/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Add code style configuration by @ryanccn in #623&lt;/li&gt;
-&lt;li&gt;Add modpack version in the name for FTB legacy packs by @Scrumplex in #672&lt;/li&gt;
-&lt;li&gt;[Windows] Add desktop shortcut in the installer by @kthchew in #629&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.3.1/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Clarify T&amp;amp;C for API keys by @Scrumplex in #659&lt;/li&gt;
-&lt;li&gt;Improve download speed when using the CurseForge API by @timoreo in #611&lt;/li&gt;
-&lt;li&gt;Improve whitelisted hosts filtering code by @LennyMcLennington in #661&lt;/li&gt;
-&lt;li&gt;Make JVM arguments text-field multi-line by @ryanccn in #624&lt;/li&gt;
-&lt;li&gt;Remove CurseForge API workaround on modpacks by @Scrumplex in #645&lt;/li&gt;
-&lt;li&gt;Show metaserver URL instead of &lt;code&gt;(default)&lt;/code&gt; by @ryanccn in #642&lt;/li&gt;
-&lt;li&gt;Update Nix support by @muscaln in #653 and #675&lt;/li&gt;
-&lt;li&gt;Warn the user of non-whitelisted hosts in mrpacks by @flowln in #661&lt;/li&gt;
-&lt;li&gt;[macOS] Switch background of icon to white by @ryanccn in #625&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.3.1/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Correctly handle ATL packs when &lt;code&gt;mainClass&lt;/code&gt; has a &lt;code&gt;depends&lt;/code&gt; field by @jamierocks in #630&lt;/li&gt;
-&lt;li&gt;Fix crash when aborting instance import by @JJL772 in #657&lt;/li&gt;
-&lt;li&gt;Fix icon importing when using non-standard icon paths by @flowln in #650&lt;/li&gt;
-&lt;li&gt;Fix missing mnemonics in the API page by @Scrumplex in #651&lt;/li&gt;
-&lt;li&gt;Fix modpack&#39;s type inference when importing by @Scrumplex in #639 and #671&lt;/li&gt;
-&lt;li&gt;Fix search filters for Modrinth by @timoreo22 in #677&lt;/li&gt;
-&lt;li&gt;Properly fix CurseForge modpack installation by @timoreo22 in #611 and @Scrumplex in #674&lt;/li&gt;
-&lt;li&gt;Silence unimportant build warnings by @kthchew in #631&lt;/li&gt;
-&lt;li&gt;[Linux] Add missing image-format libraries for the AppImage by @DioEgizio in #618&lt;/li&gt;
-&lt;li&gt;[Linux] Fix image sizes in Flathub by @byquanton in #637&lt;/li&gt;
-&lt;li&gt;[Windows] Correctly set PolyMC&#39;s version for binaries by @Scrumplex in #669&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.3.1/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;[Windows] Remove explicit Vista support by @DioEgizio in #667&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.3.0...1.3.1&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.3.0...1.3.1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>PolyMC Update 1.3.0, now available</title>
+		<title>Release 1.3.0</title>
 		<link href="https://polymc.org/news/release-1.3.0/"/>
 		<updated>2022-05-22T00:00:00Z</updated>
 		<id>https://polymc.org/news/release-1.3.0/</id>
@@ -131,7 +80,7 @@ If you user an older platform, you might still be able to run PolyMC through our
 	</entry>
 	
 	<entry>
-		<title>PolyMC Update 1.2.2, now available (CurseForge Hotfix)</title>
+		<title>Release 1.2.2 (CurseForge Hotfix)</title>
 		<link href="https://polymc.org/news/release-1.2.2/"/>
 		<updated>2022-05-08T00:00:00Z</updated>
 		<id>https://polymc.org/news/release-1.2.2/</id>
@@ -146,7 +95,7 @@ This update switches to the new CurseForge Core API to keep modpacks and mod dow
 &lt;li&gt;Hide sensitive tokens from logs by @Scrumplex in #475&lt;/li&gt;
 &lt;li&gt;Implemented a workaround to allow Mojang logins by @TheCodex6824 in #482&lt;/li&gt;
 &lt;li&gt;Move to new CurseForge Core API by @ryanccn in #530&lt;/li&gt;
-&lt;li&gt;[Linux] Fix AppImage scaling issues by @DioEgizio in #492&lt;/li&gt;
+&lt;li&gt;[Linux] Fix AppImage scaling issues ny @DioEgizio in #492&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.2.2/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.2.1...1.2.2&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.2.1...1.2.2&lt;/a&gt;&lt;/p&gt;
@@ -155,7 +104,7 @@ This update switches to the new CurseForge Core API to keep modpacks and mod dow
 	</entry>
 	
 	<entry>
-		<title>PolyMC Update 1.2.1, now available</title>
+		<title>Release 1.2.1</title>
 		<link href="https://polymc.org/news/release-1.2.1/"/>
 		<updated>2022-04-20T00:00:00Z</updated>
 		<id>https://polymc.org/news/release-1.2.1/</id>
@@ -192,7 +141,7 @@ Also check our friends&#39; launch of the Quilt Beta over at &lt;a href=&quot;ht
 	</entry>
 	
 	<entry>
-		<title>PolyMC Update 1.2.0, now available</title>
+		<title>Release 1.2.0</title>
 		<link href="https://polymc.org/news/release-1.2.0/"/>
 		<updated>2022-04-17T00:00:00Z</updated>
 		<id>https://polymc.org/news/release-1.2.0/</id>
@@ -283,7 +232,7 @@ Download PolyMC 2.0.0 today, and watch it break a sweat!&lt;/p&gt;
 	</entry>
 	
 	<entry>
-		<title>PolyMC Update 1.1.1, now available</title>
+		<title>Release 1.1.1</title>
 		<link href="https://polymc.org/news/release-1.1.1/"/>
 		<updated>2022-03-27T00:00:00Z</updated>
 		<id>https://polymc.org/news/release-1.1.1/</id>
@@ -328,7 +277,7 @@ This release mainly contains bug fixes.&lt;/p&gt;
 	</entry>
 	
 	<entry>
-		<title>PolyMC Update 1.1.0, now available</title>
+		<title>Release 1.1.0</title>
 		<link href="https://polymc.org/news/release-1.1.0/"/>
 		<updated>2022-03-12T00:00:00Z</updated>
 		<id>https://polymc.org/news/release-1.1.0/</id>
