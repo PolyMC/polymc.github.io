@@ -131,6 +131,30 @@
 <p>If you aren't sure which version you will need, <strong>it is recommended to just install both.</strong></p>
 <p><strong>NOTE:</strong> You can use any OpenJDK build you want. <a href="https://www.azul.com/downloads/?package=jre#download-openjdk">Azul Zulu</a> is a popular alternative to Temurin, and will work just as well.</p>
 <p>You can also use Oracle Java, but openjdk is better here. Also to download Oracle Java 9+ you need an Oracle account which is not a good thing.</p>
+<h1 id="java-on-linux" tabindex="-1">Java on linux <a class="direct-link" href="#java-on-linux" aria-hidden="true">#</a></h1>
+<p>On Linux, it's recommended to use your package manager for installing Java.</p>
+<h2 id="fedora" tabindex="-1">Fedora <a class="direct-link" href="#fedora" aria-hidden="true">#</a></h2>
+<p>On the COPR package all required java versions should be installed, but this is the command to install it:</p>
+<pre><code>sudo dnf install java-1.8.0-openjdk java-17-openjdk
+</code></pre>
+<h2 id="void-linux" tabindex="-1">Void Linux <a class="direct-link" href="#void-linux" aria-hidden="true">#</a></h2>
+<pre><code>sudo xbps-install openjdk17-jre openjdk8-jre
+</code></pre>
+<h2 id="arch-linux" tabindex="-1">Arch Linux <a class="direct-link" href="#arch-linux" aria-hidden="true">#</a></h2>
+<pre><code>sudo pacman -S jre17-openjdk jre8-openjdk
+</code></pre>
+<h2 id="ubuntu" tabindex="-1">Ubuntu <a class="direct-link" href="#ubuntu" aria-hidden="true">#</a></h2>
+<pre><code>sudo apt install openjdk-17-jre openjdk-8-jre
+</code></pre>
+<h2 id="debian" tabindex="-1">Debian <a class="direct-link" href="#debian" aria-hidden="true">#</a></h2>
+<pre><code>sudo apt install openjdk-17-jre 
+</code></pre>
+<p>Java 8 is not available from Debian repos for unknown reasons, but you can <a href="https://www.azul.com/downloads/?version=java-8-lts&amp;os=debian&amp;package=jre&amp;show-old-builds=true">get a deb from Azul</a></p>
+<h2 id="flatpak" tabindex="-1">Flatpak <a class="direct-link" href="#flatpak" aria-hidden="true">#</a></h2>
+<p>The PolyMC flatpak already bundles java.</p>
+<h2 id="nixos" tabindex="-1">NixOS <a class="direct-link" href="#nixos" aria-hidden="true">#</a></h2>
+<p>The PolyMC NixOS package already bundles java.</p>
+<h1 id="special-cases" tabindex="-1">Special cases <a class="direct-link" href="#special-cases" aria-hidden="true">#</a></h1>
 <h2 id="forge-1.16.5-and-java-8u321+" tabindex="-1">Forge 1.16.5 and Java 8u321+ <a class="direct-link" href="#forge-1.16.5-and-java-8u321+" aria-hidden="true">#</a></h2>
 <p>Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is reccomended</p>
 <h2 id="using-java" tabindex="-1">Using Java <a class="direct-link" href="#using-java" aria-hidden="true">#</a></h2>
