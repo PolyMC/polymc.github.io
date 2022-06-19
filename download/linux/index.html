@@ -210,9 +210,13 @@ una install polymc-git
 </div>
 <div class="infobox top">
 <h1 id="fedora-and-centos-stream" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora &amp; CentOS Stream <a class="direct-link" href="#fedora-and-centos-stream" aria-hidden="true">#</a></h1>
-<p>An RPM package is available on <a href="https://copr.fedorainfracloud.org/coprs/sentry/polymc/">Copr</a>.</p>
-<pre><code>sudo dnf copr enable sentry/polymc
+<p>Two RPM packages are available on <a href="https://copr.fedorainfracloud.org/coprs/sentry/polymc/">Copr</a>.</p>
+<pre><code># enables copr repo
+sudo dnf copr enable sentry/polymc
+# stable releases
 sudo dnf install polymc
+# nightly releases (git master)
+sudo dnf install polymc-nightly
 </code></pre>
 </div>
 <div class="infobox top">
