@@ -157,7 +157,7 @@ If you user an older platform, you might still be able to run PolyMC through our
 &lt;li&gt;Hide temporary directory inside instances directory by @kthchew in #547&lt;/li&gt;
 &lt;li&gt;Fix icons not showing in some FTB modpacks by @flowln in #564&lt;/li&gt;
 &lt;li&gt;Fix toolbar disappearing in a certain circumstance by @LennyMcLennington in #577&lt;/li&gt;
-&lt;li&gt;Fix issue with &lt;a href=&quot;http://solder.cf/&quot;&gt;Solder.cf&lt;/a&gt; Technic packs by @flowln in #592&lt;/li&gt;
+&lt;li&gt;Fix issue with &lt;a href=&quot;https://solder.io/&quot;&gt;Solder.cf Technic packs&lt;/a&gt; by @flowln in #592&lt;/li&gt;
 &lt;li&gt;[macOS] Fix Steam overlay on macOS by @kthchew in #568&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.3.0/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
@@ -501,7 +501,7 @@ While we are working on getting 1.1.0 out, check out our future plans:&lt;/p&gt;
 &lt;p&gt;Additionally, due to mental health and other personal reasons, I will be taking a break from--and generally will be unavailable for--contributing to the project.&lt;/p&gt;
 &lt;p&gt;Thank you all for providing me a great community to work with. I pray for PolyMC to have a good future and for all of you to continue to do good for the Free Software community.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Quote in news: &lt;a href=&quot;https://discordapp.com/channels/923671181020766230/923672379144671263/939731859431100416&quot;&gt;Discord&lt;/a&gt;, &lt;a href=&quot;https://matrix.to/#/!oOkwnJBCfVOMgEOp:polymc.org/$yGu0hoOB36_bSVPnV8msXAHl7or12JHch7axAoCe-RY?via=polymc.org&amp;amp;via=swirl.funny.cl&amp;amp;via=matrix.org&quot;&gt;Element&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Quote in news: &lt;a href=&quot;https://discordapp.com/channels/923671181020766230/923672379144671263/939731859431100416&quot;&gt;Discord&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Swirl contributed a lot to PolyMC and we hope to see more contributions in the future.&lt;/p&gt;
 &lt;p&gt;In lighter news, congratulations to our new Core Team consisting of:&lt;/p&gt;
 &lt;ul&gt;
