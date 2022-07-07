@@ -142,6 +142,7 @@
 <li>A C++ compiler capable of building C++11 code.</li>
 <li>Qt Development tools 5.12 or newer (<code>qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5</code> on Debian-based system)</li>
 <li>cmake 3.1 or newer (<code>cmake</code> on Debian-based system)</li>
+<li>extra-cmake-modules (<code>extra-cmake-modules</code> on Debian-based system)</li>
 <li>zlib (<code>zlib1g-dev</code> on Debian-based system)</li>
 <li>Java JDK (<code>openjdk-17-jdk</code> on Debian-based system)</li>
 <li>GL headers (<code>libgl1-mesa-dev</code> on Debian-based system)</li>
@@ -237,7 +238,7 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 </ul>
 <ol start="2">
 <li>Install helpers: Run <code>pacman -Syu pactoys git</code> in the MSYS2 shell.</li>
-<li>Install all build dependencies using <code>pacboy</code>: Run <code>pacboy -S toolchain:p cmake:p ninja:p qt5:p</code>.</li>
+<li>Install all build dependencies using <code>pacboy</code>: Run <code>pacboy -S toolchain:p cmake:p ninja:p qt5:p extra-cmake-modules:p</code>.</li>
 </ol>
 <ul>
 <li>This might take a while, as it will install Qt and all the build tools required.</li>
@@ -257,12 +258,13 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 <ul>
 <li>Install XCode Command Line tools.</li>
 <li>Install the official build of CMake (<a href="https://cmake.org/download/">https://cmake.org/download/</a>).</li>
+<li>Install extra-cmake-modules</li>
 <li>Install JDK 8 (<a href="https://adoptium.net/temurin/releases/?variant=openjdk8&amp;jvmVariant=hotspot">https://adoptium.net/temurin/releases/?variant=openjdk8&amp;jvmVariant=hotspot</a>).</li>
 <li>Install Qt 5.12 or newer</li>
 </ul>
 <p>Using <a href="https://brew.sh">homebrew</a> you can install these dependencies with a single command:</p>
 <pre><code>brew update # in the case your repositories weren't updated
-brew install qt@5 openjdk@17 cmake ninja 
+brew install qt@5 openjdk@17 cmake ninja extra-cmake-modules
 </code></pre>
 <h3 id="xcode-command-line-tools" tabindex="-1">XCode Command Line tools <a class="direct-link" href="#xcode-command-line-tools" aria-hidden="true">#</a></h3>
 <p>If you don't have XCode Command Line tools installed, you can install them with this command:</p>
@@ -281,6 +283,7 @@ need to be fixed with <code>codesign -fs -</code>.</p>
 <li>A C++ compiler capable of building C++11 code (included in base system).</li>
 <li>Qt Development tools 5.12 or newer (<a href="https://openports.se/meta/qt5">meta/qt5</a>).</li>
 <li>cmake 3.1 or newer (<a href="https://openports.se/devel/cmake">devel/cmake</a>).</li>
+<li>extra-cmake-modules (<a href="https://openports.se/devel/kf5/extra-cmake-modules">devel/kf5/extra-cmake-modules</a>)</li>
 <li>zlib (included in base system).</li>
 <li>Java JDK (<a href="https://openports.se/devel/jdk/1.8">devel/jdk-1.8</a>).</li>
 <li>GL headers (included in base system).</li>
