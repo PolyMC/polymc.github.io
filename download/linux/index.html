@@ -179,7 +179,8 @@
 <h1 id="arch-linux-manjaro" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro <a class="direct-link" href="#arch-linux-manjaro" aria-hidden="true">#</a></h1>
 <p>There are several AUR packages available:<br>
 <a href="https://aur.archlinux.org/packages/polymc/"><img src="https://img.shields.io/badge/aur-polymc-blue" alt="polymc"></a><br>
-<a href="https://aur.archlinux.org/packages/polymc-bin/"><img src="https://img.shields.io/badge/aur-polymc--bin-blue" alt="polymc-bin"></a></p>
+<a href="https://aur.archlinux.org/packages/polymc-bin/"><img src="https://img.shields.io/badge/aur-polymc--bin-blue" alt="polymc-bin"></a><br>
+<a href="https://aur.archlinux.org/packages/polymc-git/"><img src="https://img.shields.io/badge/aur-polymc--git-blue" alt="polymc-git"></a></p>
 <pre><code># stable source package:
 yay -S polymc
 # stable binary package:
@@ -194,7 +195,8 @@ yay -S polymc-git
 <p>We use <a href="https://docs.makedeb.org/">makedeb</a> for our Debian packages.<br>
 Several MPR packages are available:</p>
 <p><a href="https://mpr.makedeb.org/packages/polymc"><img src="https://img.shields.io/badge/mpr-polymc-orange" alt="polymc"></a><br>
-<a href="https://mpr.makedeb.org/packages/polymc-bin"><img src="https://img.shields.io/badge/mpr-polymc--bin-orange" alt="polymc-bin"></a></p>
+<a href="https://mpr.makedeb.org/packages/polymc-bin"><img src="https://img.shields.io/badge/mpr-polymc--bin-orange" alt="polymc-bin"></a><br>
+<a href="https://mpr.makedeb.org/packages/polymc-git"><img src="https://img.shields.io/badge/mpr-polymc--git-orange" alt="polymc-git"></a></p>
 <h2 id="installation-using-prebuilt-mpr-(recommended)" tabindex="-1">Installation using Prebuilt MPR (recommended) <a class="direct-link" href="#installation-using-prebuilt-mpr-(recommended)" aria-hidden="true">#</a></h2>
 <pre><code>curl -q 'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1&gt; /dev/null
 echo &quot;deb [signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr $(lsb_release -cs)&quot; | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list
