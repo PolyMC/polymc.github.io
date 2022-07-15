@@ -191,6 +191,11 @@ yay -S polymc-git
 <p>You can replace yay -S with your preferred <a href="https://wiki.archlinux.org/title/AUR_helpers">AUR helper's</a> install command.</p>
 </div>
 <div class="infobox top">
+<h1 id="centos-stream-red-hat-enterprise-linux" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux <a class="direct-link" href="#centos-stream-red-hat-enterprise-linux" aria-hidden="true">#</a></h1>
+<p>Two RPM packages are available on <a href="https://copr.fedorainfracloud.org/coprs/sentry/polymc/">Copr</a>.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># load in system information</span><br><span class="token builtin class-name">source</span> /etc/os-release<br><span class="token comment"># enables the copr repo</span><br><span class="token function">sudo</span> dnf copr <span class="token builtin class-name">enable</span> sentry/polymc epel-<span class="token variable">${VERSION}</span>-<span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> -m<span class="token variable">)</span></span><br><span class="token comment"># stable releases</span><br><span class="token function">sudo</span> dnf <span class="token function">install</span> polymc<br><span class="token comment"># nightly releases (git master)</span><br><span class="token function">sudo</span> dnf <span class="token function">install</span> polymc-nightly</code></pre>
+</div>
+<div class="infobox top">
 <h1 id="debian-ubuntu" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / Ubuntu <a class="direct-link" href="#debian-ubuntu" aria-hidden="true">#</a></h1>
 <p>We use <a href="https://docs.makedeb.org/">makedeb</a> for our Debian packages.<br>
 Several MPR packages are available:</p>
@@ -221,15 +226,9 @@ una install polymc-git
 <p>You can replace una install with your preferred <a href="https://docs.makedeb.org/using-the-mpr/list-of-mpr-helpers/">MPR helper's</a> install command.</p>
 </div>
 <div class="infobox top">
-<h1 id="fedora-and-centos-stream" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora &amp; CentOS Stream <a class="direct-link" href="#fedora-and-centos-stream" aria-hidden="true">#</a></h1>
+<h1 id="fedora" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora <a class="direct-link" href="#fedora" aria-hidden="true">#</a></h1>
 <p>Two RPM packages are available on <a href="https://copr.fedorainfracloud.org/coprs/sentry/polymc/">Copr</a>.</p>
-<pre><code># enables copr repo
-sudo dnf copr enable sentry/polymc
-# stable releases
-sudo dnf install polymc
-# nightly releases (git master)
-sudo dnf install polymc-nightly
-</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># enables the copr repo</span><br><span class="token function">sudo</span> dnf copr <span class="token builtin class-name">enable</span> sentry/polymc<br><span class="token comment"># stable releases</span><br><span class="token function">sudo</span> dnf <span class="token function">install</span> polymc<br><span class="token comment"># nightly releases (git master)</span><br><span class="token function">sudo</span> dnf <span class="token function">install</span> polymc-nightly</code></pre>
 </div>
 <div class="infobox top">
 <h1 id="gentoo" tabindex="-1"><img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo <a class="direct-link" href="#gentoo" aria-hidden="true">#</a></h1>
@@ -245,10 +244,7 @@ Note that, for the time being, it is not stabilized, so it's masked for <code>~a
 <div class="infobox top">
 <h1 id="opensuse" tabindex="-1"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSuse <a class="direct-link" href="#opensuse" aria-hidden="true">#</a></h1>
 <p>An RPM package is available on <a href="https://copr.fedorainfracloud.org/coprs/sentry/polymc/">Copr</a>.</p>
-<pre><code>. /etc/os-release
-
-curl &quot;https://copr.fedorainfracloud.org/coprs/sentry/polymc/repo/$ID/sentry-polymc-$ID.repo&quot; | sudo tee &quot;/etc/zypp/repos.d/sentry-polymc-$ID.repo&quot;
-</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># load in system information</span><br><span class="token builtin class-name">source</span> /etc/os-release<br><span class="token comment"># enables the copr repo</span><br><span class="token function">sudo</span> <span class="token function">zypper</span> ar -f <span class="token string">"https://copr.fedorainfracloud.org/coprs/sentry/polymc/repo/<span class="token variable">${ID}</span>/sentry-polymc-<span class="token variable">${ID}</span>.repo"</span><br><span class="token comment"># stable releases</span><br><span class="token function">sudo</span> <span class="token function">zypper</span> <span class="token function">install</span> polymc<br><span class="token comment"># nightly releases (git master)</span><br><span class="token function">sudo</span> <span class="token function">zypper</span> <span class="token function">install</span> polymc-nightly</code></pre>
 </div>
 <div class="infobox top">
 <h1 id="void-linux" tabindex="-1"><img src="https://bitcu.co/en/wp-content/uploads/2020/07/Void_Linux_logo.svg_.png" height="20"> Void Linux <a class="direct-link" href="#void-linux" aria-hidden="true">#</a></h1>
