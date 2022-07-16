@@ -146,30 +146,28 @@
 <pre class="language-bash"><code class="language-bash"><span class="token function">git</span> clone --recursive https://github.com/PolyMC/PolyMC.git<br><span class="token builtin class-name">cd</span> PolyMC</code></pre>
 <p><strong>The rest of the documentation assumes you have already cloned the repository.</strong></p>
 <h2 id="linux" tabindex="-1">Linux <a class="direct-link" href="#linux" aria-hidden="true">#</a></h2>
-<p>Getting the project to build and run on Linux is easy if you use any modern and up-to-date linux distribution.</p>
+<p>Getting the project to build and run on Linux is easy if you use any modern and up-to-date Linux distribution.</p>
 <h3 id="build-dependencies" tabindex="-1">Build dependencies <a class="direct-link" href="#build-dependencies" aria-hidden="true">#</a></h3>
 <ul>
 <li>A C++ compiler capable of building C++11 code.</li>
-<li>Qt Development tools 5.12 or newer (<code>qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5</code> on Debian-based system)</li>
-<li>cmake 3.1 or newer (<code>cmake</code> on Debian-based system)</li>
+<li>Qt Development tools 5.12 or newer (<code>qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5</code> on Debian-based systems)
+<ul>
+<li>Alternatively you can also use Qt 6.0 or newer (<code>qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6 libqt6network6 libqt6network6</code> on Debian (testing/unstable) based systems), if you prefer it.</li>
+</ul>
+</li>
+<li>cmake 3.15 or newer (<code>cmake</code> on Debian-based system)</li>
 <li>extra-cmake-modules (<code>extra-cmake-modules</code> on Debian-based system)</li>
 <li>zlib (<code>zlib1g-dev</code> on Debian-based system)</li>
 <li>Java JDK (<code>openjdk-17-jdk</code> on Debian-based system)</li>
 <li>GL headers (<code>libgl1-mesa-dev</code> on Debian-based system)</li>
-<li>games/lwjgl port if using FreeBSD</li>
+<li>scdoc if you want to generate manpages (<code>scdoc</code> on Debian-based system)</li>
 </ul>
-<p>You can use IDEs, like KDevelop or QtCreator to open the CMake project, if you want to work on the code.</p>
+<p>You can use IDEs, like KDevelop, QtCreator or CLion to open the CMake project, if you want to work on the code.</p>
 <h3 id="building-a-portable-binary" tabindex="-1">Building a portable binary <a class="direct-link" href="#building-a-portable-binary" aria-hidden="true">#</a></h3>
-<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> <span class="token function">install</span><br><span class="token comment"># configure the project</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span>./install<br><span class="token comment"># build</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span><br>cmake --install <span class="token builtin class-name">.</span> --prefix <span class="token punctuation">..</span>/install --component portable</code></pre>
+<pre class="language-bash"><code class="language-bash">cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span>install<br><span class="token comment">#  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6</span><br><br>cmake --build build -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span><br>cmake --install build<br>cmake --install build --component portable</code></pre>
 <h3 id="building-and-installing-to-the-system" tabindex="-1">Building &amp; installing to the system <a class="direct-link" href="#building-and-installing-to-the-system" aria-hidden="true">#</a></h3>
 <p>This is the preferred method of installation, and is suitable for packages.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token comment"># configure everything</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span><span class="token string">"/usr"</span> <span class="token punctuation">\</span> <span class="token comment"># Use "/usr" when building Linux packages. If building not for package, use "/usr/local"</span><br>   -DENABLE_LTO<span class="token operator">=</span>ON <span class="token comment"># if you want to enable LTO/IPO</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span> <span class="token comment"># Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})</span></code></pre>
-<h3 id="notes" tabindex="-1">Notes <a class="direct-link" href="#notes" aria-hidden="true">#</a></h3>
-<ul>
-<li>At the time of writing, when building on FreeBSD or arm64, you may need to use an alternate meta repository for your system.<br>
-The only way to do so is to add <code>-DLauncher_META_URL:STRING=&quot;[METAURL]&quot;</code> to your cmake command. There are plans to make this<br>
-an in-launcher setting the next release.</li>
-</ul>
+<pre class="language-bash"><code class="language-bash">cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span><span class="token string">"/usr"</span> <span class="token punctuation">\</span> <span class="token comment"># Use "/usr" when building Linux packages. If building not for package, use "/usr/local"</span><br>   -DENABLE_LTO<span class="token operator">=</span>ON <span class="token comment"># if you want to enable LTO/IPO</span><br><span class="token comment">#  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6</span><br><br>cmake --build build -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span><br>cmake --install build <span class="token comment"># Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir} cmake --install ...)</span></code></pre>
 <h3 id="building-a-.deb" tabindex="-1">Building a .deb <a class="direct-link" href="#building-a-.deb" aria-hidden="true">#</a></h3>
 <p>Requirements: <a href="https://docs.makedeb.org/">makedeb</a> installed on your system.</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">git</span> clone https://mpr.makedeb.org/polymc.git<br><span class="token builtin class-name">cd</span> polymc<br>makedeb -s</code></pre>
@@ -188,40 +186,48 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 <ol>
 <li>Run the Qt installer.</li>
 <li>Choose a place to install Qt.</li>
-<li>Choose the components that you wish install.
+<li>Choose the components that you wish install.</li>
+</ol>
 <ul>
-<li>You need Qt 5.12.x 64-bit ticked. (or a newer version)</li>
+<li>You need Qt 5.12.x 64-bit ticked. (or a newer version)
+<ul>
+<li>Alternatively you can choose Qt 6.0 or newer</li>
+</ul>
+</li>
 <li>You need Tools/Qt Creator ticked.</li>
 <li>Other components are selected by default, you can un-tick them if you don't need them.</li>
 </ul>
-</li>
+<ol start="4">
 <li>Accept the license agreements.</li>
-<li>Double-check the install details and then click &quot;Install&quot;.
+<li>Double-check the install details and then click &quot;Install&quot;.</li>
+</ol>
 <ul>
 <li>Installation can take a very long time, go grab a cup of tea or something and let it work.</li>
 </ul>
-</li>
-</ol>
 <h3 id="loading-the-project-in-qt-creator-(optional)" tabindex="-1">Loading the project in Qt Creator (optional) <a class="direct-link" href="#loading-the-project-in-qt-creator-(optional)" aria-hidden="true">#</a></h3>
 <ol>
 <li>Open Qt Creator.</li>
 <li>Choose <code>File-&gt;Open File or Project</code>.</li>
 <li>Navigate to the Launcher source folder you cloned and choose CMakeLists.txt.</li>
 <li>Read the instructions that just popped up about a build location and choose one.</li>
-<li>You should see &quot;Run CMake&quot; in the window.
+<li>You should see &quot;Run CMake&quot; in the window.</li>
+</ol>
 <ul>
-<li>Make sure that Generator is set to &quot;Unix Generator (Desktop Qt 5.12.x GCC 64bit)&quot;.</li>
+<li>Make sure that Generator is set to &quot;Unix Generator (Desktop Qt 5.12.x GCC 64bit)&quot;.
+<ul>
+<li>Alternatively this is probably &quot;Unix Generator (Desktop Qt 6.x.x GCC 64bit)&quot;</li>
+</ul>
+</li>
 <li>Hit the &quot;Run CMake&quot; button.</li>
 <li>You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.</li>
 <li>Hit &quot;Finish&quot; if CMake ran successfully.</li>
 </ul>
-</li>
-<li>Cross your fingers, and press the &quot;Run&quot; button (bottom left of Qt Creator).
+<ol start="6">
+<li>Cross your fingers, and press the &quot;Run&quot; button (bottom left of Qt Creator).</li>
+</ol>
 <ul>
 <li>If the project builds successfully it will run and the Launcher window will pop up.</li>
 </ul>
-</li>
-</ol>
 <p><strong>If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.</strong></p>
 <h2 id="windows" tabindex="-1">Windows <a class="direct-link" href="#windows" aria-hidden="true">#</a></h2>
 <p>We recommend using a build workflow based on MSYS2, as it's the easiest way to get all of the build dependencies.</p>
@@ -240,28 +246,34 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 </ul>
 <h3 id="preparing-msys2" tabindex="-1">Preparing MSYS2 <a class="direct-link" href="#preparing-msys2" aria-hidden="true">#</a></h3>
 <ol>
-<li>Open the <em>MSYS2 MinGW x64</em> shortcut from the start menu</li>
+<li>Open the <em>MSYS2 MinGW x86</em> shortcut from the start menu</li>
 </ol>
 <ul>
 <li>NOTE: There are multiple different MSYS2 related shortcuts. Make sure you actually opened the right <strong>MinGW</strong> version.</li>
-<li>If you are on a 32-bit Windows machine, you probably need to start <em>MSYS2 MinGW x86</em> instead.</li>
+<li>We recommend building using the 32-bit distribution of MSYS2, as the 64-bit distribution is known to cause problems with PolyMC.</li>
 </ul>
 <ol start="2">
 <li>Install helpers: Run <code>pacman -Syu pactoys git</code> in the MSYS2 shell.</li>
-<li>Install all build dependencies using <code>pacboy</code>: Run <code>pacboy -S toolchain:p cmake:p ninja:p qt5:p extra-cmake-modules:p</code>.</li>
+<li>Install all build dependencies using <code>pacboy</code>: Run <code>pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p</code>.</li>
 </ol>
 <ul>
+<li>Alternatively you can use Qt 5 (for older Windows versions), by running the following command instead: <code>pacboy -S toolchain:p cmake:p ninja:p qt5-base:p qt5-svg:p qt5-imageformats:p quazip-qt5:p extra-cmake-modules:p</code></li>
 <li>This might take a while, as it will install Qt and all the build tools required.</li>
 </ul>
 <h3 id="compile-from-command-line-on-windows" tabindex="-1">Compile from command line on Windows <a class="direct-link" href="#compile-from-command-line-on-windows" aria-hidden="true">#</a></h3>
 <ol>
-<li>Open the right <strong>MSYS2 MinGW</strong> shell and clone PolyMC by doing <code>git clone --recursive https://github.com/PolyMC/PolyMC.git</code>, and change directory to the folder you cloned to.</li>
-<li>Now we can prepare the build itself: Run <code>cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON</code>. These options will copy the final build to <code>C:\msys64\home\&lt;your username&gt;\PolyMC\install</code> after the build.</li>
+<li>Open the correct <strong>MSYS2 MinGW x86</strong> shell and clone PolyMC by doing <code>git clone --recursive https://github.com/PolyMC/PolyMC.git</code>, and change directory to the folder you cloned to.</li>
+<li>Now we can prepare the build itself: Run <code>cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6</code>. These options will copy the final build to <code>C:\msys64\home\&lt;your username&gt;\PolyMC\install</code> after the build.</li>
+</ol>
+<ul>
+<li>NOTE: If you want to build using Qt 5, then remove the <code>-DLauncher_QT_VERSION_MAJOR=6</code> parameter</li>
+</ul>
+<ol start="3">
 <li>Now you need to run the build itself: Run <code>cmake --build build -jX</code>, where <em>X</em> is the number of cores your CPU has.</li>
 <li>Now, wait for it to compile. This could take some time, so hopefully it compiles properly.</li>
 <li>Run the command <code>cmake --install build</code>, and it should install PolyMC to whatever the <code>-DCMAKE_INSTALL_PREFIX</code> was.</li>
 <li>If you don't want PolyMC to store its data in <code>%APPDATA%</code>, run <code>cmake --install build --component portable</code> after the install process</li>
-<li>In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do <code>cp /mingw64/bin/libcrypto-1_1-x64.dll /mingw64/bin/libssl-1_1-x64.dll install</code>. This should copy the required OpenSSL DLLs to log in.</li>
+<li>In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do <code>cp /mingw32/bin/libcrypto-1_1.dll /mingw32/bin/libssl-1_1.dll install</code>. This should copy the required OpenSSL DLLs to log in.</li>
 </ol>
 <h2 id="macos" tabindex="-1">macOS <a class="direct-link" href="#macos" aria-hidden="true">#</a></h2>
 <h3 id="install-prerequisites:" tabindex="-1">Install prerequisites: <a class="direct-link" href="#install-prerequisites:" aria-hidden="true">#</a></h3>
