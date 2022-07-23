@@ -5,12 +5,88 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2022-06-12T00:00:00Z</updated>
+	<updated>2022-07-23T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>PolyMC Update 1.4.0, now available</title>
+		<link href="https://polymc.org/news/release-1.4.0/"/>
+		<updated>2022-07-23T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-1.4.0/</id>
+		<content type="html">&lt;p&gt;Whoa! There have been a few things since our last feature release almost two months ago!&lt;/p&gt;
+&lt;p&gt;Major new features include the new mod updater and Qt 6 support.&lt;br /&gt;
+Don&#39;t worry, Qt 5 will still be supported and packages using it will still be available for some time.&lt;/p&gt;
+&lt;p&gt;If you are a macOS user, you might be delighted to hear, that this will be the first version that ships with an updater!&lt;/p&gt;
+&lt;p&gt;As a Linux user, you should definitely take a look at the new &lt;code&gt;Performance&lt;/code&gt; tab in the settings.&lt;br /&gt;
+No longer should you need to deal with wrapper commands to enable &lt;a href=&quot;https://github.com/flightlessmango/MangoHud&quot;&gt;MangoHud&lt;/a&gt;, &lt;a href=&quot;https://github.com/FeralInteractive/gamemode&quot;&gt;GameMode&lt;/a&gt; or to utilize your dedicated GPU in a hybrid GPU setup.&lt;/p&gt;
+&lt;p&gt;Thanks to all contributors, who have worked on this release!&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.0/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.0/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add concurrent tasks by @flowln in #786&lt;/li&gt;
+&lt;li&gt;Add more links to mod and modpack descriptions by @flowln and @DioEgizio in #634 #799&lt;/li&gt;
+&lt;li&gt;Add news reader in the launcher by @flowln in #845&lt;/li&gt;
+&lt;li&gt;Add on-disk mod metadata information by @flowln and @Scrumplex in #426 #714 #716 #759&lt;/li&gt;
+&lt;li&gt;Implement mod updater by @flowln in #588&lt;/li&gt;
+&lt;li&gt;Preliminary work for modpack updates by @jamierocks in #665&lt;/li&gt;
+&lt;li&gt;Qt 6 support by @Scrumplex and @DioEgizio in #575 #902 #911 #922 #936&lt;/li&gt;
+&lt;li&gt;[Linux] Add Performance settings (MangoHud, GameMode and PRIME) by @Jan200101 in #707&lt;/li&gt;
+&lt;li&gt;[Linux] Add more metadata to Nix package by @TheOPtimal in #930&lt;/li&gt;
+&lt;li&gt;[macOS] Implement updater using Sparkle by @kthchew and @Scrumplex in #479&lt;/li&gt;
+&lt;li&gt;[OpenBSD] Readd support for OpenBSD by @Technous285 in #694&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.0/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Allow the cape to be changed without changing the skin by @Gingeh in #913&lt;/li&gt;
+&lt;li&gt;Cleanup Java code by @Scrumplex and @icelimetea in #778 #785 #800 #863&lt;/li&gt;
+&lt;li&gt;Hide channel from version for tagged commits by @Scrumplex in #810&lt;/li&gt;
+&lt;li&gt;Improve handling of environment variables by @Scrumplex in #893&lt;/li&gt;
+&lt;li&gt;Improve resolving of JARs by @Scrumplex in #794&lt;/li&gt;
+&lt;li&gt;Improve the account selection window by @Gingeh and @Scrumplex in #855 #870&lt;/li&gt;
+&lt;li&gt;Improve UX in the mod downloader by @flowln in #505&lt;/li&gt;
+&lt;li&gt;Improvements for Modrinth/CurseForge modpacks by @flowln in #839&lt;/li&gt;
+&lt;li&gt;Improvements around APIs page by @Scrumplex in #678&lt;/li&gt;
+&lt;li&gt;Improvements to Windows installer by @kthchew in #788 #797&lt;/li&gt;
+&lt;li&gt;Make version labels in About dialog selectable by @jn64 in #812&lt;/li&gt;
+&lt;li&gt;Make FTB Classic layout the same as other platforms by @jopejoe1 in #884&lt;/li&gt;
+&lt;li&gt;Refactor instance resources pages by @flowln and @Scrumplex in #652&lt;/li&gt;
+&lt;li&gt;Refactor tests by @Scrumplex and @DarkKirb in #784 #869&lt;/li&gt;
+&lt;li&gt;Replace old reference to &lt;a href=&quot;http://launchermeta.mojang.com/&quot;&gt;launchermeta.mojang.com&lt;/a&gt; by @Scrumplex in #830&lt;/li&gt;
+&lt;li&gt;Reword CurseForge warning by @DioEgizio in #834&lt;/li&gt;
+&lt;li&gt;Separate launch and kill instance actions by @kthchew in #826&lt;/li&gt;
+&lt;li&gt;Update license information by @DioEgizio in #905&lt;/li&gt;
+&lt;li&gt;[Linux] Cleanup flake.nix by @gytis-ivaskevicius in #881&lt;/li&gt;
+&lt;li&gt;[Linux] Rewrite polymc.6 in scdoc by @EliteTK in #847 #901&lt;/li&gt;
+&lt;li&gt;[macOS] Build on macOS 12 in CI by @DioEgizio in #787&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.0/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Always scale mod icons to the right size by @flowln in #818&lt;/li&gt;
+&lt;li&gt;Don&#39;t censor offline access token by @ivanpu in #864&lt;/li&gt;
+&lt;li&gt;Don&#39;t create unnecessary folders when extracting ZIPs by @flowln in #817&lt;/li&gt;
+&lt;li&gt;Fix broken output in mod list by @flowln in #947&lt;/li&gt;
+&lt;li&gt;Fix contrast of placeholder text with dark theme by @flowln in #929&lt;/li&gt;
+&lt;li&gt;Fix duplicate name in window title by @jn64 in #811&lt;/li&gt;
+&lt;li&gt;Fix hangs when aborting some tasks by @flowln in #831&lt;/li&gt;
+&lt;li&gt;Fix missing instance version in status bar by @kthchew in #860&lt;/li&gt;
+&lt;li&gt;Fix permanent mod-loaders for some modpacks by @Scrumplex in #880&lt;/li&gt;
+&lt;li&gt;Fix &amp;quot;Play Offline&amp;quot; not working when auth servers are partially offline by @Scrumplex in #877&lt;/li&gt;
+&lt;li&gt;Fix sorting for Modrinth resources by @DioEgizio in #837&lt;/li&gt;
+&lt;li&gt;Fix Technic instances using Forge by @Scrumplex in #890&lt;/li&gt;
+&lt;li&gt;Fix translations by @Scrumplex in #917 #938&lt;/li&gt;
+&lt;li&gt;Fix warnings reported by &lt;a href=&quot;http://lgtm.com/&quot;&gt;LGTM.com&lt;/a&gt; by @Scrumplex in #808&lt;/li&gt;
+&lt;li&gt;[Linux] Fix mods relying on &lt;code&gt;libstdc++&lt;/code&gt; on Nix by @virchau13 in #904 #934&lt;/li&gt;
+&lt;li&gt;[Linux] Use our fork of libnbtplusplus on Nix by @Scrumplex in #932&lt;/li&gt;
+&lt;li&gt;[macOS] Workaround Qt bug to fix menu bar separators by @kthchew in #827&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.3.2...1.4.0&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.3.2...1.4.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>PolyMC Update 1.3.2, now available</title>
