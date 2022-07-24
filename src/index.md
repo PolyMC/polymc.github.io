@@ -73,49 +73,53 @@ hero:
       {% image "Mod Installer", "./src/img/screenshots/CustomizeLight.png", "./src/img/screenshots/CustomizeDark.png" %}
     </div>
   </div>
-</div>
 
-<h1 style="text-align: center">Getting Involved</h1>
-
----
-
+  <h1 style="text-align: center">Want to Get Involved?</h1>
 <div class="row">
-	<div class="column">
-		{% image "Reddit Logo", "./src/img/brands/Reddit_Mark.svg", "./src/img/brands/Reddit_Mark.svg" %}	
-		<div>
-			<h1>Reddit</h1>
-			<div class="subtitle">
-				Post and read posts all about PolyMc
+			<div class="column">
+				<div class="brand-icon">
+					{% image "Reddit Logo", "./src/img/brands/Reddit_Mark.svg", "./src/img/brands/Reddit_Mark.svg" %}	
+				</div>
+				<div>
+					<h2>Reddit</h2>
+					<div class="subicon">
+						Post and read posts all about PolyMc
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="brand-icon" >
+					{% image "Discord Logo", "./src/img/brands/Discord-Logo-Color.svg", "./src/img/brands/Discord-Logo-Color.svg" %}
+				</div>
+				<div>
+					<h2>Discord</h2>
+					<div class="subicon">
+						To talk directly to us and get involved with development.
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="brand-icon" >
+				{% image "Matrix Logo", "./src/img/brands/matrix-logo-light.svg", "./src/img/brands/matrix-logo-dark.svg" %}</div>
+				<div>
+					<h2>Matrix</h2>
+					<div class="subicon">
+						We have a Matrix Space which is bridged to the Discord server.
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="brand-icon">
+					{% image "Github Logo", "./src/img/brands/Github_Mark_Light.svg", "./src/img/brands/Github_Mark_Dark.svg" %}
+				</div>
+				<div>
+					<h2>Github</h2>
+					<div class="subicon">
+						PolyMC is focused on user freedom and free redistributability all code is available on Github.
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="column">
-		{% image "Discord Logo", "./src/img/brands/Discord-Logo-Color.svg", "./src/img/brands/Discord-Logo-Color.svg" %}	
-		<div>
-			<h1>Discord</h1>
-			<div class="subtitle">
-				To talk directly to us and get involved with development.
-			</div>
-		</div>
-	</div>
-	<div class="column">
-		{% image "Matrix Logo", "./src/img/brands/matrix-logo-light.svg", "./src/img/brands/matrix-logo-dark.svg" %}	
-		<div>
-			<h1>Matrix/Element</h1>
-			<div class="subtitle">
-				For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server.
-			</div>
-		</div>
-	</div>
-	<div class="column">
-		{% image "Github Logo", "./src/img/brands/Github_Mark_Light.svg", "./src/img/brands/Github_Mark_Dark.svg" %}	
-		<div>
-			<h1>Github source code</h1>
-			<div class="subtitle">
-				PolyMC is focused on user freedom and free redistributability all code is available on Github.
-			</div>
-		</div>
-	</div>
-
 </div>
+
 
