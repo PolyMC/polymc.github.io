@@ -9,7 +9,7 @@ hero:
     dark: ./src/img/screenshots/LauncherDark.png
     light: ./src/img/screenshots/LauncherLight.png
   background: ./src/img/forest.png
-  download: true
+download: true
 ---
 
 <h1 style="text-align: center">Main Features</h1>
@@ -76,7 +76,46 @@ hero:
   </div>
 </div>
 
-<div class="infobox">
+<h1 style="text-align: center">Getting Involved</h1>
+
+---
+
+<div class="row">
+	<div class="column">
+		{% image "Reddit Logo", "./src/img/brands/Reddit_Mark.svg", "./src/img/brands/Reddit_Mark.svg" %}	
+		<div>
+			<h1>Reddit</h1>
+			<div class="subtitle">
+				Post and read posts all about PolyMc
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		{% image "Discord Logo", "./src/img/brands/Discord-Logo-Color.svg", "./src/img/brands/Discord-Logo-Color.svg" %}	
+		<div>
+			<h1>Discord</h1>
+			<div class="subtitle">
+				To talk directly to us and get involved with development.
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		{% image "Matrix Logo", "./src/img/brands/matrix-logo-light.svg", "./src/img/brands/matrix-logo-dark.svg" %}	
+		<div>
+			<h1>Matrix/Element</h1>
+			<div class="subtitle">
+				For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="display: flex" class="row" >
+
+
+</div>
+
+
 
   # Get involved
   ---
@@ -90,6 +129,9 @@ hero:
   to talk directly to us and get involved with development:
   
   [![PolyMC Discord](https://img.shields.io/discord/923671181020766230?label=PolyMC%20Discord)](https://discord.gg/xq7fxrgtMP)
+
+
+{% image "Discord logo", "https://discord.com/assets/2d20a45d79110dc5bf947137e9d99b66.svg", "https://discord.com/assets/145dc557845548a36a82337912ca3ac5.svg" %}
 
   ## Element
 
@@ -107,6 +149,8 @@ hero:
   ![Offtopic](https://img.shields.io/matrix/polymc-offtopic:matrix.org?label=PolyMC%20Offtopic)
   ![Support](https://img.shields.io/matrix/polymc-support:matrix.org?label=PolyMC%20Support)
   ![Voice](https://img.shields.io/matrix/polymc-voice:matrix.org?label=PolyMC%20Voice)
+
+<div class="infobox">
 
   # Source code
   ---
