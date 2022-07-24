@@ -77,9 +77,9 @@ hero:
   <h1 style="text-align: center">Want to Get Involved?</h1>
 <div class="row">
 			<div class="column">
-				<div class="brand-icon">
+				<a class="brand-icon" href="https://www.reddit.com/r/PolyMCLauncher/">
 					{% image "Reddit Logo", "./src/img/brands/Reddit_Mark.svg", "./src/img/brands/Reddit_Mark.svg" %}	
-				</div>
+				</a>
 				<div>
 					<h2>Reddit</h2>
 					<div class="subicon">
@@ -88,9 +88,9 @@ hero:
 				</div>
 			</div>
 			<div class="column">
-				<div class="brand-icon" >
+				<a class="brand-icon" href="https://discord.gg/xq7fxrgtMP">
 					{% image "Discord Logo", "./src/img/brands/Discord-Logo-Color.svg", "./src/img/brands/Discord-Logo-Color.svg" %}
-				</div>
+				</a>
 				<div>
 					<h2>Discord</h2>
 					<div class="subicon">
@@ -99,8 +99,9 @@ hero:
 				</div>
 			</div>
 			<div class="column">
-				<div class="brand-icon" >
-				{% image "Matrix Logo", "./src/img/brands/matrix-logo-light.svg", "./src/img/brands/matrix-logo-dark.svg" %}</div>
+				<a class="brand-icon" href="/wiki/getting-involved/matrix/">
+					{% image "Matrix Logo", "./src/img/brands/matrix-logo-light.svg", "./src/img/brands/matrix-logo-dark.svg" %}
+				</a>
 				<div>
 					<h2>Matrix</h2>
 					<div class="subicon">
@@ -109,9 +110,9 @@ hero:
 				</div>
 			</div>
 			<div class="column">
-				<div class="brand-icon">
+				<a class="brand-icon" href="/wiki/development/">
 					{% image "Github Logo", "./src/img/brands/Github_Mark_Light.svg", "./src/img/brands/Github_Mark_Dark.svg" %}
-				</div>
+				</a>
 				<div>
 					<h2>Github</h2>
 					<div class="subicon">

@@ -1,6 +1,7 @@
 ---
 eleventyNavigation:
   key: Matrix
+  parent: Getting Involved
   order: 4
 --- 
 
