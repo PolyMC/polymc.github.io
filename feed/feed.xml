@@ -5,12 +5,38 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2022-07-23T00:00:00Z</updated>
+	<updated>2022-07-28T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>PolyMC Update 1.4.1, now available</title>
+		<link href="https://polymc.org/news/release-1.4.1/"/>
+		<updated>2022-07-28T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-1.4.1/</id>
+		<content type="html">&lt;p&gt;We have noticed that some things from our recent 1.4.0 release weren&#39;t working quite well.&lt;br /&gt;
+This update should fix some of the issues you might have faced with 1.4.0.&lt;/p&gt;
+&lt;p&gt;Thanks to all contributors, who have worked on this release!&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.1/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.1/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hide empty &amp;quot;Performance&amp;quot; settings on non-Linux builds by @flowln in #951&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.1/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix crash when JAR-mods are applied by @flowln in #956&lt;/li&gt;
+&lt;li&gt;Fix filter on resources pages (e.g. Mods page) by @flowln in #961&lt;/li&gt;
+&lt;li&gt;Fix variables in pre launch/post exit hooks by @Scrumplex in #952&lt;/li&gt;
+&lt;li&gt;Make adding multiple accounts possible again by @flowln in #974&lt;/li&gt;
+&lt;li&gt;Resolve CurseForge mods for FTB modpacks by @flowln and @Scrumplex in #699&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.4.0...1.4.1&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.4.0...1.4.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>PolyMC Update 1.4.0, now available</title>

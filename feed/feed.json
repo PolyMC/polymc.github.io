@@ -10,6 +10,12 @@
     "url": "https://polymc.org/about/"
   },
   "items": [{
+      "id": "https://polymc.org/news/release-1.4.1/",
+      "url": "https://polymc.org/news/release-1.4.1/",
+      "title": "PolyMC Update 1.4.1, now available",
+      "content_html": "<p>We have noticed that some things from our recent 1.4.0 release weren't working quite well.<br />\nThis update should fix some of the issues you might have faced with 1.4.0.</p>\n<p>Thanks to all contributors, who have worked on this release!</p>\n<h2 id=\"changelog\" tabindex=\"-1\">Changelog <a class=\"direct-link\" href=\"https://polymc.org/news/release-1.4.1/#changelog\" aria-hidden=\"true\">#</a></h2>\n<h3 id=\"changed\" tabindex=\"-1\">Changed <a class=\"direct-link\" href=\"https://polymc.org/news/release-1.4.1/#changed\" aria-hidden=\"true\">#</a></h3>\n<ul>\n<li>Hide empty &quot;Performance&quot; settings on non-Linux builds by @flowln in #951</li>\n</ul>\n<h3 id=\"fixed\" tabindex=\"-1\">Fixed <a class=\"direct-link\" href=\"https://polymc.org/news/release-1.4.1/#fixed\" aria-hidden=\"true\">#</a></h3>\n<ul>\n<li>Fix crash when JAR-mods are applied by @flowln in #956</li>\n<li>Fix filter on resources pages (e.g. Mods page) by @flowln in #961</li>\n<li>Fix variables in pre launch/post exit hooks by @Scrumplex in #952</li>\n<li>Make adding multiple accounts possible again by @flowln in #974</li>\n<li>Resolve CurseForge mods for FTB modpacks by @flowln and @Scrumplex in #699</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/PolyMC/PolyMC/compare/1.4.0...1.4.1\">https://github.com/PolyMC/PolyMC/compare/1.4.0...1.4.1</a></p>\n<p>You can <a href=\"https://polymc.org/download\">grab the latest download here</a> for your respective platform.</p>\n",
+      "date_published": "2022-07-28T00:00:00Z"
+    },{
       "id": "https://polymc.org/news/release-1.4.0/",
       "url": "https://polymc.org/news/release-1.4.0/",
       "title": "PolyMC Update 1.4.0, now available",
