@@ -73,45 +73,54 @@ hero:
       {% image "Mod Installer", "./src/img/screenshots/CustomizeLight.png", "./src/img/screenshots/CustomizeDark.png" %}
     </div>
   </div>
+
+  <h1 style="text-align: center">Want to Get Involved?</h1>
+<div class="row">
+			<div class="column">
+				<a class="brand-icon" href="https://www.reddit.com/r/PolyMCLauncher/">
+					{% image "Reddit Logo", "./src/img/brands/Reddit_Mark.svg", "./src/img/brands/Reddit_Mark.svg" %}	
+				</a>
+				<div>
+					<h2>Reddit</h2>
+					<div class="subicon">
+						Post and read posts all about PolyMc
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<a class="brand-icon" href="https://discord.gg/xq7fxrgtMP">
+					{% image "Discord Logo", "./src/img/brands/Discord-Logo-Color.svg", "./src/img/brands/Discord-Logo-Color.svg" %}
+				</a>
+				<div>
+					<h2>Discord</h2>
+					<div class="subicon">
+						To talk directly to us and get involved with development.
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<a class="brand-icon" href="/wiki/getting-involved/matrix/">
+					{% image "Matrix Logo", "./src/img/brands/matrix-logo-light.svg", "./src/img/brands/matrix-logo-dark.svg" %}
+				</a>
+				<div>
+					<h2>Matrix</h2>
+					<div class="subicon">
+						We have a Matrix Space which is bridged to the Discord server.
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<a class="brand-icon" href="/wiki/development/">
+					{% image "Github Logo", "./src/img/brands/Github_Mark_Light.svg", "./src/img/brands/Github_Mark_Dark.svg" %}
+				</a>
+				<div>
+					<h2>Github</h2>
+					<div class="subicon">
+						PolyMC is focused on user freedom and free redistributability all code is available on Github.
+					</div>
+				</div>
+			</div>
+		</div>
 </div>
-<div class="infobox top">
 
-  # Get involved
-  ---
 
-  ## Reddit
-  
-  [![r/PolyMCLauncher](https://img.shields.io/reddit/subreddit-subscribers/PolyMCLauncher?label=r%2FPolyMCLauncher)](https://www.reddit.com/r/PolyMCLauncher/)
-
-  ## Discord
-
-  To talk directly to us and get involved with development:
-  
-  [![PolyMC Discord](https://img.shields.io/discord/923671181020766230?label=PolyMC%20Discord)](https://discord.gg/xq7fxrgtMP)
-
-  ## Element
-
-  For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server:
-
-  [![PolyMC Space](https://img.shields.io/matrix/polymc:matrix.org?label=PolyMC%20space)](https://matrix.to/#/#polymc:matrix.org)
-
-  If there are any issues with the space or you are using a client that does not support the feature, here are the individual rooms:
-
-  [![Development](https://img.shields.io/matrix/polymc-development:matrix.org?label=PolyMC%20Development)](https://matrix.to/#/#polymc-development:matrix.org)
-  [![Discussion](https://img.shields.io/matrix/polymc-discussion:matrix.org?label=PolyMC%20Discussion)](https://matrix.to/#/#polymc-discussion:matrix.org)
-  [![Github](https://img.shields.io/matrix/polymc-github:matrix.org?label=PolyMC%20Github)](https://matrix.to/#/#polymc-github:matrix.org)
-  [![Maintainers](https://img.shields.io/matrix/polymc-maintainers:matrix.org?label=PolyMC%20Maintainers)](https://matrix.to/#/#polymc-maintainers:matrix.org)
-  [![News](https://img.shields.io/matrix/polymc-news:matrix.org?label=PolyMC%20News)](https://matrix.to/#/#polymc-news:matrix.org)
-  [![Offtopic](https://img.shields.io/matrix/polymc-offtopic:matrix.org?label=PolyMC%20Offtopic)](https://matrix.to/#/#polymc-offtopic:matrix.org)
-  [![Support](https://img.shields.io/matrix/polymc-support:matrix.org?label=PolyMC%20Support)](https://matrix.to/#/#polymc-support:matrix.org)
-  [![Voice](https://img.shields.io/matrix/polymc-voice:matrix.org?label=PolyMC%20Voice)](https://matrix.to/#/#polymc-voice:matrix.org)
-
-  # Source code
-  ---
-
-  PolyMC is focused on user freedom and free redistributability. All code is available on [the GitHub](https://github.com/PolyMC/PolyMC/) under the GPL-3 license.
-  
-  [Source for this website](https://github.com/PolyMC/polymc.github.io) is hosted under the AGPL-3 License.
-
-  The logo and related assets are under the CC BY-SA 4.0 license.
-</div>

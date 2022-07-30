@@ -321,6 +321,15 @@ a.direct-link:focus:visited,
   text-align: center;
 }
 
+.subicon {
+  font-size: 1em;
+  text-align: center;
+}
+
+.brand-icon > picture > img {
+	width: 70%;
+}
+
 /* card */
 .cards {
   display: flex;
