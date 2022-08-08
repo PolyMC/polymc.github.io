@@ -188,16 +188,11 @@ You can download it here:</p>
 </ul>
 <h3 id="cli-(community-maintained)" tabindex="-1">CLI (community-maintained) <a class="direct-link" href="#cli-(community-maintained)" aria-hidden="true">#</a></h3>
 <h4 id="winget-package" tabindex="-1">Winget Package <a class="direct-link" href="#winget-package" aria-hidden="true">#</a></h4>
-<pre><code>winget install -e PolyMC.PolyMC
-</code></pre>
+<pre class="language-powershell"><code class="language-powershell">winget install <span class="token operator">-</span>e PolyMC<span class="token punctuation">.</span>PolyMC</code></pre>
 <h4 id="scoop-package" tabindex="-1">Scoop Package <a class="direct-link" href="#scoop-package" aria-hidden="true">#</a></h4>
-<pre><code>scoop bucket add games
-scoop install polymc 
-scoop install polymc-qt5 #if you want Windows-Legacy instead
-</code></pre>
+<pre class="language-powershell"><code class="language-powershell">scoop bucket add games<br>scoop install polymc <br>scoop install polymc-qt5 <span class="token comment">#if you want Windows-Legacy instead</span></code></pre>
 <h4 id="chocolatey-package" tabindex="-1">Chocolatey Package <a class="direct-link" href="#chocolatey-package" aria-hidden="true">#</a></h4>
-<pre><code>choco install polymc
-</code></pre>
+<pre class="language-powershell"><code class="language-powershell"><span class="token comment"># Install standard version</span><br>choco install polymc<br><span class="token comment"># Install legacy version</span><br>choco install polymc <span class="token operator">--</span>params=<span class="token string">'/legacy'</span></code></pre>
 <p><em>Chocolatey and Scoop packages are community-maintained, PolyMC is not responsible for outdated versions.</em></p>
 <h4 id="portableapps.com-installer" tabindex="-1"><a href="https://portableapps.com">PortableApps.com</a> Installer <a class="direct-link" href="#portableapps.com-installer" aria-hidden="true">#</a></h4>
 <p>A community maintained portable installer for PolyMC can be found <a href="https://FayneAldan.github.io/PolyMCPortable/">here</a>.</p>

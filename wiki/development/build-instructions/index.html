@@ -184,10 +184,14 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 <pre class="language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/flathub/org.polymc.PolyMC<br><span class="token builtin class-name">cd</span> org.polymc.PolyMC<br><span class="token comment"># remove --user --install if you want to build without installing</span><br>flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml</code></pre>
 <h3 id="installing-qt-using-the-installer-(optional)" tabindex="-1">Installing Qt using the installer (optional) <a class="direct-link" href="#installing-qt-using-the-installer-(optional)" aria-hidden="true">#</a></h3>
 <ol>
-<li>Run the Qt installer.</li>
-<li>Choose a place to install Qt.</li>
-<li>Choose the components that you wish install.</li>
-</ol>
+<li>
+<p>Run the Qt installer.</p>
+</li>
+<li>
+<p>Choose a place to install Qt.</p>
+</li>
+<li>
+<p>Choose the components that you wish install.</p>
 <ul>
 <li>You need Qt 5.12.x 64-bit ticked. (or a newer version)
 <ul>
@@ -197,21 +201,33 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 <li>You need Tools/Qt Creator ticked.</li>
 <li>Other components are selected by default, you can un-tick them if you don't need them.</li>
 </ul>
-<ol start="4">
-<li>Accept the license agreements.</li>
-<li>Double-check the install details and then click &quot;Install&quot;.</li>
+</li>
+<li>
+<p>Accept the license agreements.</p>
+</li>
+<li>
+<p>Double-check the install details and then click &quot;Install&quot;.</p>
+</li>
 </ol>
 <ul>
 <li>Installation can take a very long time, go grab a cup of tea or something and let it work.</li>
 </ul>
 <h3 id="loading-the-project-in-qt-creator-(optional)" tabindex="-1">Loading the project in Qt Creator (optional) <a class="direct-link" href="#loading-the-project-in-qt-creator-(optional)" aria-hidden="true">#</a></h3>
 <ol>
-<li>Open Qt Creator.</li>
-<li>Choose <code>File-&gt;Open File or Project</code>.</li>
-<li>Navigate to the Launcher source folder you cloned and choose CMakeLists.txt.</li>
-<li>Read the instructions that just popped up about a build location and choose one.</li>
-<li>You should see &quot;Run CMake&quot; in the window.</li>
-</ol>
+<li>
+<p>Open Qt Creator.</p>
+</li>
+<li>
+<p>Choose <code>File-&gt;Open File or Project</code>.</p>
+</li>
+<li>
+<p>Navigate to the Launcher source folder you cloned and choose CMakeLists.txt.</p>
+</li>
+<li>
+<p>Read the instructions that just popped up about a build location and choose one.</p>
+</li>
+<li>
+<p>You should see &quot;Run CMake&quot; in the window.</p>
 <ul>
 <li>Make sure that Generator is set to &quot;Unix Generator (Desktop Qt 5.12.x GCC 64bit)&quot;.
 <ul>
@@ -222,12 +238,14 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 <li>You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.</li>
 <li>Hit &quot;Finish&quot; if CMake ran successfully.</li>
 </ul>
-<ol start="6">
-<li>Cross your fingers, and press the &quot;Run&quot; button (bottom left of Qt Creator).</li>
-</ol>
+</li>
+<li>
+<p>Cross your fingers, and press the &quot;Run&quot; button (bottom left of Qt Creator).</p>
 <ul>
 <li>If the project builds successfully it will run and the Launcher window will pop up.</li>
 </ul>
+</li>
+</ol>
 <p><strong>If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.</strong></p>
 <h2 id="windows" tabindex="-1">Windows <a class="direct-link" href="#windows" aria-hidden="true">#</a></h2>
 <p>We recommend using a build workflow based on MSYS2, as it's the easiest way to get all of the build dependencies.</p>
@@ -246,37 +264,53 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 </ul>
 <h3 id="preparing-msys2" tabindex="-1">Preparing MSYS2 <a class="direct-link" href="#preparing-msys2" aria-hidden="true">#</a></h3>
 <ol>
-<li>Open the <em>MSYS2 MinGW x86</em> shortcut from the start menu</li>
-</ol>
+<li>
+<p>Open the <em>MSYS2 MinGW x86</em> shortcut from the start menu</p>
 <ul>
 <li>NOTE: There are multiple different MSYS2 related shortcuts. Make sure you actually opened the right <strong>MinGW</strong> version.</li>
 <li>We recommend building using the 32-bit distribution of MSYS2, as the 64-bit distribution is known to cause problems with PolyMC.</li>
 </ul>
-<ol start="2">
-<li>Install helpers: Run <code>pacman -Syu pactoys git</code> in the MSYS2 shell.</li>
-<li>Install all build dependencies using <code>pacboy</code>: Run <code>pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p</code>.</li>
-</ol>
+</li>
+<li>
+<p>Install helpers: Run <code>pacman -Syu pactoys git</code> in the MSYS2 shell.</p>
+</li>
+<li>
+<p>Install all build dependencies using <code>pacboy</code>: Run <code>pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p</code>.</p>
 <ul>
 <li>Alternatively you can use Qt 5 (for older Windows versions), by running the following command instead: <code>pacboy -S toolchain:p cmake:p ninja:p qt5-base:p qt5-svg:p qt5-imageformats:p quazip-qt5:p extra-cmake-modules:p</code></li>
 <li>This might take a while, as it will install Qt and all the build tools required.</li>
 </ul>
+</li>
+</ol>
 <h3 id="compile-from-command-line-on-windows" tabindex="-1">Compile from command line on Windows <a class="direct-link" href="#compile-from-command-line-on-windows" aria-hidden="true">#</a></h3>
 <ol>
-<li>Open the correct <strong>MSYS2 MinGW x86</strong> shell and clone PolyMC by doing <code>git clone --recursive https://github.com/PolyMC/PolyMC.git</code>, and change directory to the folder you cloned to.</li>
-<li>Now we can prepare the build itself: Run <code>cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6</code>. These options will copy the final build to <code>C:\msys64\home\&lt;your username&gt;\PolyMC\install</code> after the build.</li>
-</ol>
+<li>
+<p>Open the correct <strong>MSYS2 MinGW x86</strong> shell and clone PolyMC by doing <code>git clone --recursive https://github.com/PolyMC/PolyMC.git</code>, and change directory to the folder you cloned to.</p>
+</li>
+<li>
+<p>Now we can prepare the build itself: Run <code>cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6</code>. These options will copy the final build to <code>C:\msys64\home\&lt;your username&gt;\PolyMC\install</code> after the build.</p>
 <ul>
 <li>NOTE: If you want to build using Qt 5, then remove the <code>-DLauncher_QT_VERSION_MAJOR=6</code> parameter</li>
 </ul>
-<ol start="3">
-<li>Now you need to run the build itself: Run <code>cmake --build build -jX</code>, where <em>X</em> is the number of cores your CPU has.</li>
-<li>Now, wait for it to compile. This could take some time, so hopefully it compiles properly.</li>
-<li>Run the command <code>cmake --install build</code>, and it should install PolyMC to whatever the <code>-DCMAKE_INSTALL_PREFIX</code> was.</li>
-<li>If you don't want PolyMC to store its data in <code>%APPDATA%</code>, run <code>cmake --install build --component portable</code> after the install process</li>
-<li>In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do <code>cp /mingw32/bin/libcrypto-1_1.dll /mingw32/bin/libssl-1_1.dll install</code>. This should copy the required OpenSSL DLLs to log in.</li>
+</li>
+<li>
+<p>Now you need to run the build itself: Run <code>cmake --build build -jX</code>, where <em>X</em> is the number of cores your CPU has.</p>
+</li>
+<li>
+<p>Now, wait for it to compile. This could take some time, so hopefully it compiles properly.</p>
+</li>
+<li>
+<p>Run the command <code>cmake --install build</code>, and it should install PolyMC to whatever the <code>-DCMAKE_INSTALL_PREFIX</code> was.</p>
+</li>
+<li>
+<p>If you don't want PolyMC to store its data in <code>%APPDATA%</code>, run <code>cmake --install build --component portable</code> after the install process</p>
+</li>
+<li>
+<p>In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do <code>cp /mingw32/bin/libcrypto-1_1.dll /mingw32/bin/libssl-1_1.dll install</code>. This should copy the required OpenSSL DLLs to log in.</p>
+</li>
 </ol>
 <h2 id="macos" tabindex="-1">macOS <a class="direct-link" href="#macos" aria-hidden="true">#</a></h2>
-<h3 id="install-prerequisites:" tabindex="-1">Install prerequisites: <a class="direct-link" href="#install-prerequisites:" aria-hidden="true">#</a></h3>
+<h3 id="install-prerequisites" tabindex="-1">Install prerequisites <a class="direct-link" href="#install-prerequisites" aria-hidden="true">#</a></h3>
 <ul>
 <li>Install XCode Command Line tools.</li>
 <li>Install the official build of CMake (<a href="https://cmake.org/download/">https://cmake.org/download/</a>).</li>
