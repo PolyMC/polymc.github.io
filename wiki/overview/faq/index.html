@@ -139,7 +139,13 @@
 <p>The philosophy behind the PolyMC project, and wider community as a whole, is to not take a hostile stance on those who wish to use, modify, or re-distribute our software in a way that works for them. In-keeping with these values, the source code of the launcher is distributed under the GNU General Public License Version 3.</p>
 <h3 id="what-does-this-mean-for-the-future" tabindex="-1">What does this mean for the future? <a class="direct-link" href="#what-does-this-mean-for-the-future" aria-hidden="true">#</a></h3>
 <p>PolyMC looks to be accessible to everyone on all platforms, so no one is left behind. We do this by officially maintaining packages across a wide range of operating systems such as Windows, macOS, and both native as well as Flatpak and AppImage releases on Linux. And, where there are gaps in official distribution, 3rd party builds will always welcome in our community.</p>
-<p>Furthermore, while the MultiMC project is stated to focus on “predictability” without seeking to incorporate any “flashy features”, PolyMC is already shaping up to be quite the opposite. This can already be seen in our recent 1.1.0 release, which brings our new in-launcher mod installer. And this, is just the first of many new changes and features to come.</p>
+<p>Furthermore, while the MultiMC project is stated to focus on “predictability” without seeking to incorporate any “flashy features”, PolyMC is already shaping up to be quite the opposite. This can already be seen in our recent 1.1.0 release, which brings our new in-launcher mod installer. And this, is just the first of many new changes and features to come. PolyMC 1.4.0 also added the Mod Updater.</p>
+<h3 id="theming-not-working" tabindex="-1">Theming not working <a class="direct-link" href="#theming-not-working" aria-hidden="true">#</a></h3>
+<p>PolyMC switched to Qt 6 in the 1.4.0 update.<br>
+This means that some themes, like Breeze from KDE will not work.<br>
+If you have this issue, check if your theme has a Qt 6 version. If it does not, you need to switch to a Qt 5 build.<br>
+You can find a Qt 5 build on the <a href="https://polymc.org/download/">download page</a><br>
+If you are using Gnome, install the <code>adwaita-qt6</code> and <code>qt6ct</code> packages (package names might differ between distros), then run <code>qt6c</code> from the terminal and select <code>Adwaita</code> as the theme. PolyMC should now use it.</p>
 
     
     
