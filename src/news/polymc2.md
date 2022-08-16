@@ -21,9 +21,9 @@ PolyMC has been fully re-written from the ground up in **Electron**! Not just is
 
 <img width="200px" src="/img/af/arrow.png"><a class="button" href="/download/2/">Download NOW!</a></img>
 
-## Revolutionary extension and theming support *image redacted*
+## Revolutionary extension and theming support *image un-redacted*
 
-![ThemingPolyMCSS](/img/af/polymc-themes.jpg)
+![ThemingPolyMCSS](/img/af/polymc-themes-censored.png)
 
 Whatever your style, express it with PolyMC 2.0.0! We have full support for all Chrome extensions, and themes, so you can really make *your* launcher your own.
 
