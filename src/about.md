@@ -1,24 +1,62 @@
 ---
 layout: layouts/main.njk
 title: About
+background: ./src/img/background/about.png
 templateClass: tmpl-post
+tags: nav
+hero:
+  title: About PolyMC
 eleventyNavigation:
   key: About
   order: 3
 ---
-## About PolyMC
+<div class="content">
 
-PolyMC is a custom launcher for Minecraft forked from MultiMC that allows to manage more instances at once.
-While this fork was made for packaging/redistribution concerns, now this fork has a lot of more features developed by the community for the community.
-In fact, unlike other launchers, PolyMC has pure freedom about redistribution: it has reproducible builds, it allows everyone to package it, and we don't care if you fork (if you respect General Public License v3).
+# What is PolyMC?
 
-It includes many features, such has:
-- Managing multiple isolated instances of Minecraft,
-- Simple access management about logs/mods and a simple way to install mods from curseforge and modrinth
-- Kill Minecraft easily if it crashes / freezes.
-- Unlike other launchers, PolyMC uses Qt, a simple and lightweight toolkit that doesn't use much system resources
-- Easy installation of mod loaders, such as  Forge, Fabric, LiteLoader and Quilt (WIP).
-- Manage your worlds and resource/texture packs with just some clicks 
-- Install modpacks from many platforms such as Curseforge, Technic, FTB, Modrinth (WIP) and more
-- Install individual mods to match your loader and version from Curseforge and Modrinth.
-- And many, many other features
+PolyMC is a custom launcher for Minecraft that was forked from MultiMC. It allows the creation, and management of multiple installations of the game, or "instances" rather, each having their own separate mods, resource packs, settings, and more. While originally being forked over packaging/redistribution concerns, PolyMC brings new and exciting features developed by the community for the community. Furthermore, PolyMC is still just as true to its roots as ever in providing a project that vows to never bring hostility to those looking to fork, redistribute, or repackage, so long as the terms of our license are respected.
+
+## I'm in! Now tell me more about these features?
+
+- Managing multiple, isolated instances of Minecraft.
+- Easy installation of mod loaders, such as Forge, Fabric, LiteLoader and Quilt.
+- Manage your worlds, resource packs, and shader packs in just a few clicks.
+- Install modpacks from many platforms such as CurseForge, Technic, FTB, FTB Legacy and Modrinth.
+- Install individual mods from CurseForge and Modrinth, automatically tailored to match your loader and game version.
+- Kill Minecraft easily in the event of a crash or freeze.
+- Access all your logs easily.
+- Built using Qt technologies, allowing the launcher to be both very performant, as well as light on system resources.
+- And much, much more.
+
+</div>
+<div class="infobox top">
+
+# Maintainers
+
+<ul class="user-list">
+  {% for user in people.users %}
+  <li class="user-info">
+    <a href="{{user[2]}}">
+      <img src="{{user[1]}}" alt="Avatar">
+      <div class="user-info-overlay">
+        <div class="user-name">{{user[0]}}</div>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+</div>
+<div class="content top">
+
+# Contributors
+
+<ul class="user-list">
+  {% for user in contributors.users %}
+  <li class="user-info user-contrib">
+    <a href="{{user[1]}}">
+      <img src="{{user[0]}}" alt="Avatar">
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+</div>

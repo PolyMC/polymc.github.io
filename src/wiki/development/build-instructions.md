@@ -6,40 +6,43 @@ eleventyNavigation:
 ---
 # Build Instructions
 
-# Contents
+## Contents
 
 - [Getting the source](#getting-the-source)
 - [Linux](#linux)
 - [Windows](#windows)
 - [macOS](#macos)
+- [OpenBSD](#openbsd)
+- [IDEs and Tooling](#ides-and-tooling)
 
-# Getting the source
+## Getting the source
 
-Clone the source code using git and grab all the submodules:
+Clone the source code using git, and grab all the submodules:
 
-```
-git clone https://github.com/PolyMC/PolyMC.git
+```bash
+git clone --recursive https://github.com/PolyMC/PolyMC.git
 cd PolyMC
-git submodule init
-git submodule update
 ```
 
-The rest of the documentation assumes you have already cloned the repository.
+**The rest of the documentation assumes you have already cloned the repository.**
 
-# Linux and FreeBSD
+## Linux
 
-Getting the project to build and run on Linux is easy if you use any modern and up-to-date linux distribution. If you're using FreeBSD you should use 13.0-RELEASE or newer.
+Getting the project to build and run on Linux is easy if you use any modern and up-to-date Linux distribution.
 
-## Build dependencies
+### Build dependencies
+
 - A C++ compiler capable of building C++11 code.
-- Qt Development tools 5.6 or newer
-- cmake 3.1 or newer
+- Qt Development tools 5.12 or newer
+  - Alternatively you can also use Qt 6.0 or newer
+- cmake 3.15 or newer
+- extra-cmake-modules
 - zlib
 - Java JDK
 - GL headers
-- games/lwjgl port if using FreeBSD
+- scdoc if you want to generate manpages
 
-You can use IDEs like KDevelop or QtCreator to open the CMake project if you want to work on the code.
+You can use IDEs, like KDevelop, QtCreator or CLion to open the CMake project, if you want to work on the code.
 
 ## Distributions
 
@@ -48,39 +51,52 @@ The following distribution instructions are with fresh instances of itself with 
 ### Fedora, CentOS Stream/RHEL
 
 ```
-sudo dnf install git gcc-c++ cmake java-latest-openjdk-devel zlib-devel extra-cmake-modules qt5-qtbase-devel qtchooser
+sudo dnf install git gcc-c++ cmake java-latest-openjdk-devel zlib-devel extra-cmake-modules qtchooser
+
+# Qt 5
+sudo dnf install qt5-qtbase-devel
+
+# Qt 6
+sudo dnf install qt6-qtbase-devel
 ```
 
 ### Debian, Ubuntu, Mint
 ```
 sudo apt update
-sudo apt install git cmake build-essential openjdk-17-jdk zlib1g-dev extra-cmake-modules qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5 libgl1-mesa-dev
+sudo apt install git cmake build-essential openjdk-17-jdk zlib1g-dev extra-cmake-modules libgl1-mesa-dev scdoc
+
+# Qt 5
+sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5
+
+# Qt 6
+sudo apt install
 ```
 
 ### Building a portable binary
 
 ```bash
-mkdir install
-# configure the project
 cmake -S . -B build \
-   -DCMAKE_INSTALL_PREFIX=./install
-# build
-cd build
-make -j$(nproc) install
+   -DCMAKE_INSTALL_PREFIX=install
+#  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
+
+cmake --build build -j$(nproc)
+cmake --install build
+cmake --install build --component portable
 ```
 
-### Building & Installing to the System
+### Building & installing to the system
 
-This is the preferred method for installation, and is suitable for packages.
+This is the preferred method of installation, and is suitable for packages.
 
 ```bash
-# configure everything
 cmake -S . -B build \
    -DCMAKE_BUILD_TYPE=Release \
-   -DCMAKE_INSTALL_PREFIX="/usr" \ # Use "/usr" when building Linux packages. If building on FreeBSD or not for package, use "/usr/local"
-   -DLauncher_PORTABLE=OFF
-cd build
-make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})
+   -DCMAKE_INSTALL_PREFIX="/usr" \ # Use "/usr" when building Linux packages. If building not for package, use "/usr/local"
+   -DENABLE_LTO=ON # if you want to enable LTO/IPO
+#  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
+
+cmake --build build -j$(nproc)
+cmake --install build # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir} cmake --install ...)
 ```
 
 This will build an application at install/bin/polymc
@@ -89,26 +105,26 @@ This will build an application at install/bin/polymc
 
 Requirements: [makedeb](https://docs.makedeb.org/) and [git](https://git-scm.com/) installed on your system.
 
-```
+```bash
 git clone https://mpr.makedeb.org/polymc.git
 cd polymc
 makedeb -s
 ```
 
-The deb will be located in the directory the repo was cloned in.
+The .deb will be located in the directory the repo was cloned in.
 
 ### Building an .rpm
 
-Build dependencies are automatically installed using `dnf`, but you do need the `rpmdevtools` package (on Fedora)
+Build dependencies are automatically installed using `DNF`, however, you will also need the `rpmdevtools` package (on Fedora),
 in order to fetch sources and setup your tree.  
-You don't need to clone the repo for this; the spec file handles that
+You don't need to clone the repo for this; the spec file handles that.
 
-```
+```bash
 cd ~
 # setup your ~/rpmbuild directory, required for rpmbuild to work.
 rpmdev-setuptree
 # get the rpm spec file from the polymc-misc repo
-wget https://raw.githubusercontent.com/PolyMC/polymc-misc/master/rpm/polymc.spec
+wget https://copr-dist-git.fedorainfracloud.org/cgit/sentry/polymc/polymc.git/plain/polymc.spec
 # install build dependencies
 sudo dnf builddep polymc.spec
 # download build sources
@@ -117,36 +133,12 @@ spectool -g -R polymc.spec
 rpmbuild -bb polymc.spec
 ```
 
-The path to the rpm packages will be printed when the build is complete.
+The path to the .rpm packages will be printed once the build is complete.
 
-### Building a Slackware package
+### Building a Flatpak
 
-To build a Slackware package, first install [qt5 SlackBuild](http://slackbuilds.org/repository/14.2/libraries/qt5/) (on 15.0 and newer installed by defualt), then set up a [JDK](https://codeberg.org/glowiak/SlackBuilds/raw/branch/master/tgz/adoptium-jdk8.tar.gz).
-
-If you're using Slackware 14.2, update cmake with these commands:
-
-```
-mkdir -p /tmp/SBo
-cd /tmp/SBo
-wget -c https://github.com/Kitware/CMake/releases/download/v3.22.2/cmake-3.22.2.tar.gz
-tar xzvf cmake-3.22.2.tar.gz
-cd cmake-3.22.2
-./configure --prefix=/usr
-make
-sudo make install
-```
-
-Next, download the [SlackBuild](https://codeberg.org/glowiak/SlackBuilds/raw/branch/master/tgz/polymc.tar.gz), unpack it and type in extracted directory:
-
-```
-sudo ./polymc.SlackBuild # script will do everything, just sit up and wait
-sudo /sbin/installpkg /tmp/polymc-version-arch-1_SBo.tgz # install the created package
-```
-
-### Building a flatpak
-
-You don't need to clone the entire PolyMC repo for this; the flatpak file handles that.  
-`flatpak` and `flatpak-builder` need to be installed on your system
+You don't need to clone the entire PolyMC repo for this; the Flatpak file handles that.  
+Both `flatpak` and `flatpak-builder` must be installed on your system to proceed.
 
 ```bash
 git clone https://github.com/flathub/org.polymc.PolyMC
@@ -159,13 +151,17 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 
 1. Run the Qt installer.
 2. Choose a place to install Qt.
-3. Choose the components you want to install.
-   - You need Qt 5.6.x 64-bit ticked.
+3. Choose the components that you wish install.
+
+   - You need Qt 5.12.x 64-bit ticked. (or a newer version)
+      - Alternatively you can choose Qt 6.0 or newer
    - You need Tools/Qt Creator ticked.
-   - Other components are selected by default, you can untick them if you don't need them.
+   - Other components are selected by default, you can un-tick them if you don't need them.
+
 4. Accept the license agreements.
-5. Double check the install details and then click "Install".
-   - Installation can take a very long time, go grab a cup of tea or something and let it work.
+5. Double-check the install details and then click "Install".
+
+  - Installation can take a very long time, go grab a cup of tea or something and let it work.
 
 ### Loading the project in Qt Creator (optional)
 
@@ -174,126 +170,76 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 3. Navigate to the Launcher source folder you cloned and choose CMakeLists.txt.
 4. Read the instructions that just popped up about a build location and choose one.
 5. You should see "Run CMake" in the window.
-   - Make sure that Generator is set to "Unix Generator (Desktop Qt 5.6.x GCC 64bit)".
+
+   - Make sure that Generator is set to "Unix Generator (Desktop Qt 5.12.x GCC 64bit)".
+      - Alternatively this is probably "Unix Generator (Desktop Qt 6.x.x GCC 64bit)"
    - Hit the "Run CMake" button.
    - You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.
    - Hit "Finish" if CMake ran successfully.
-6. Cross your fingers and press the Run button (bottom left of Qt Creator).
+
+6. Cross your fingers, and press the "Run" button (bottom left of Qt Creator).
+
    - If the project builds successfully it will run and the Launcher window will pop up.
 
-**If this doesn't work for you, let us know on our Discord.**
+**If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.**
 
-# Windows
+## Windows
 
-Getting the project to build and run on Windows is easy if you use Qt's IDE, Qt Creator. The project will simply not compile using Microsoft build tools, because that's not something we do. If it does compile, it is by chance only.
+We recommend using a build workflow based on MSYS2, as it's the easiest way to get all of the build dependencies.
 
-## Dependencies
+### Dependencies
 
-- [Qt 5.6+ Development tools](http://qt-project.org/downloads) -- Qt Online Installer for Windows
-  - http://download.qt.io/new_archive/qt/5.6/5.6.0/qt-opensource-windows-x86-mingw492-5.6.0.exe
-  - Download the MinGW version (MSVC version does not work).
-- [OpenSSL](https://github.com/IndySockets/OpenSSL-Binaries/tree/master/Archive/) -- Win32 OpenSSL, version 1.0.2g (from 2016)
-  - https://github.com/IndySockets/OpenSSL-Binaries/raw/master/Archive/openssl-1.0.2g-i386-win32.zip
-  - the usual OpenSSL for Windows (http://slproweb.com/products/Win32OpenSSL.html) only provides the newest version of OpenSSL, and we need the 1.0.2g version
-  - **Download the 32-bit version, not 64-bit.**
-  - Microsoft Visual C++ 2008 Redist is required for this, there's a link on the OpenSSL download page above next to the main download.
-  - We use a custom build of OpenSSL that doesn't have this dependency. For normal development, the custom build is not necessary though.
-- [zlib 1.2+](http://gnuwin32.sourceforge.net/packages/zlib.htm) - the Setup is fine
-- [Java JDK 8](https://adoptium.net/releases.html?variant=openjdk8) - Use the MSI installer.
-- [CMake](http://www.cmake.org/cmake/resources/software.html) -- Windows (Win32 Installer)
+- [MSYS2](https://www.msys2.org/) - Software Distribution and Building Platform for Windows
+  - Make sure to follow all instructions on the webpage.
+- [Java JDK 8 or later](https://adoptium.net/)
+  - Make sure that "Set JAVA_HOME variable" is enabled in the Adoptium installer.
 
-Ensure that OpenSSL, zlib, Java and CMake are on `PATH`.
+### Preparing MSYS2
 
-## Getting set up
+1. Open the *MSYS2 MinGW x86* shortcut from the start menu
 
-### Installing Qt
+   - NOTE: There are multiple different MSYS2 related shortcuts. Make sure you actually opened the right **MinGW** version.
+   - We recommend building using the 32-bit distribution of MSYS2, as the 64-bit distribution is known to cause problems with PolyMC.
 
-1. Run the Qt installer
-2. Choose a place to install Qt (C:\Qt is the default),
-3. Choose the components you want to install
-   - You need Qt 5.6 (32 bit) ticked,
-   - You need Tools/Qt Creator ticked,
-   - Other components are selected by default, you can untick them if you don't need them.
-4. Accept the license agreements,
-5. Double check the install details and then click "Install"
-   - Installation can take a very long time, go grab a cup of tea or something and let it work.
+2. Install helpers: Run `pacman -Syu pactoys git` in the MSYS2 shell.
+3. Install all build dependencies using `pacboy`: Run `pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p`.
 
-### Installing OpenSSL
-
-1. Download .zip file from the link above.
-2. Unzip and add the directory to PATH, so CMake can find it.
-
-### Installing CMake
-
-1. Run the CMake installer,
-2. It's easiest if you choose to add CMake to the PATH for all users,
-   - If you don't choose to do this, remember where you installed CMake.
-
-### Loading the project
-
-1. Open Qt Creator,
-2. Choose File->Open File or Project,
-3. Navigate to the Launcher source folder you cloned and choose CMakeLists.txt,
-4. Read the instructions that just popped up about a build location and choose one,
-5. If you chose not to add CMake to the system PATH, tell Qt Creator where you installed it,
-   - Otherwise you can skip this step.
-6. You should see "Run CMake" in the window,
-   - Make sure that Generator is set to "MinGW Generator (Desktop Qt 5.6.x MinGW 32bit)",
-   - Hit the "Run CMake" button,
-   - You'll see warnings and it might not be clear that it succeeded until you scroll to the bottom of the window.
-   - Hit "Finish" if CMake ran successfully.
-7. Cross your fingers and press the Run button (bottom left of Qt Creator)!
-   - If the project builds successfully it will run and the Launcher window will pop up,
-   - Test OpenSSL by making an instance and trying to log in. If Qt Creator couldn't find OpenSSL during the CMake stage, login will fail and you'll get an error.
-
-The following .dlls are needed for the app to run (copy them to build directory if you want to be able to move the build to another pc):
-
-```
-
-platforms/qwindows.dll
-libeay32.dll
-libgcc_s_dw2-1.dll
-libssp-0.dll
-libstdc++-6.dll
-libwinpthread-1.dll
-Qt5Core.dll
-Qt5Gui.dll
-Qt5Network.dll
-Qt5Svg.dll
-Qt5Widgets.dll
-Qt5Xml.dll
-ssleay32.dll
-zlib1.dll
-
-```
-
-**These build instructions worked for me (Drayshak) on a fresh Windows 8 x64 Professional install. If they don't work for you, let us know on our Discord.**
+   - Alternatively you can use Qt 5 (for older Windows versions), by running the following command instead: `pacboy -S toolchain:p cmake:p ninja:p qt5-base:p qt5-svg:p qt5-imageformats:p quazip-qt5:p extra-cmake-modules:p`
+   - This might take a while, as it will install Qt and all the build tools required.
 
 ### Compile from command line on Windows
 
-1. If you installed Qt with the web installer, there should be a shortcut called `Qt 5.4 for Desktop (MinGW 4.9 32-bit)` in the Start menu on Windows 7 and 10. Best way to find it is to search for it. Do note you cannot just use cmd.exe, you have to use the shortcut, otherwise the proper MinGW software will not be on the PATH.
-2. Once that is open, change into your user directory, and clone PolyMC by doing `git clone --recursive https://github.com/PolyMC/PolyMC.git`, and change directory to the folder you cloned to.
-3. Make a build directory, and change directory to the directory and do `cmake -G "MinGW Makefiles" -DCMAKE_INSTALL_PREFIX=C:\Path\that\makes\sense\for\you`. By default, it will install to C:\Program Files (x86), which you might not want, if you want a local installation. If you want to install it to that directory, make sure to run the command window as administrator.
-4. If you want PolyMC to store its data in `%APPDATA%`, append `-DLauncher_PORTABLE=OFF` to the previous command.
-5. Do `mingw32-make -j$(nproc)`, where X is the number of cores your CPU has plus one.
-6. Now to wait for it to compile. This could take some time. Hopefully it compiles properly.
-7. Run the command `mingw32-make install`, and it should install PolyMC, to whatever the `-DCMAKE_INSTALL_PREFIX` was.
-8. In most cases, whenever compiling, the OpenSSL dll's aren't put into the directory to where PolyMC installs, meaning you cannot log in. The best way to fix this is just to do `copy C:\OpenSSL-Win32\*.dll C:\Where\you\installed\PolyMC\to`. This should copy the required OpenSSL dll's to log in.
+1. Open the correct **MSYS2 MinGW x86** shell and clone PolyMC by doing `git clone --recursive https://github.com/PolyMC/PolyMC.git`, and change directory to the folder you cloned to.
+2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DLauncher_QT_VERSION_MAJOR=6`. These options will copy the final build to `C:\msys64\home\<your username>\PolyMC\install` after the build.
 
-# macOS
+   - NOTE: If you want to build using Qt 5, then remove the `-DLauncher_QT_VERSION_MAJOR=6` parameter
 
-### Install prerequisites:
+3. Now you need to run the build itself: Run `cmake --build build -jX`, where *X* is the number of cores your CPU has.
+4. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
+5. Run the command `cmake --install build`, and it should install PolyMC to whatever the `-DCMAKE_INSTALL_PREFIX` was.
+6. If you don't want PolyMC to store its data in `%APPDATA%`, run `cmake --install build --component portable` after the install process
+7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do `cp /mingw32/bin/libcrypto-1_1.dll /mingw32/bin/libssl-1_1.dll install`. This should copy the required OpenSSL DLLs to log in.
 
-- Install XCode Command Line tools
-- Install the official build of CMake (https://cmake.org/download/)
-- Install JDK 8 (https://adoptium.net/releases.html?variant=openjdk8&jvmVariant=hotspot)
-- Get Qt 5.6 and install it (https://download.qt.io/new_archive/qt/5.6/5.6.3/) or higher (tested) (https://www.qt.io/download-qt-installer?utm_referrer=https%3A%2F%2Fwww.qt.io%2Fdownload-open-source)
+## macOS
 
-You can use `homebrew` to simplify the installation of build dependencies
+### Install prerequisites
+
+- Install XCode Command Line tools.
+- Install the official build of CMake (<https://cmake.org/download/>).
+- Install extra-cmake-modules
+- Install JDK 8 (<https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot>).
+- Install Qt 5.12 or newer or any version of Qt 6 (recommended)
+
+Using [homebrew](https://brew.sh) you can install these dependencies with a single command:
+
+```bash
+brew update # in the case your repositories weren't updated
+brew install qt openjdk@17 cmake ninja extra-cmake-modules # use qt@5 if you want to install qt5
+```
 
 ### XCode Command Line tools
 
-If you don't have XCode CommandLine tools installed, you can install them by using this command in the Terminal App
+If you don't have XCode Command Line tools installed, you can install them with this command:
 
 ```bash
 xcode-select --install
@@ -301,9 +247,11 @@ xcode-select --install
 
 ### Build
 
-Pick an installation path - this is where the final `PolyMC.app` will be constructed when you run `make install`. Supply it as the `CMAKE_INSTALL_PREFIX` argument during CMake configuration. By default, it's in the dist folder under PolyMC
+Choose an installation path.
 
-```
+This is where the final `PolyMC.app` will be constructed when you run `make install`. Supply it as the `CMAKE_INSTALL_PREFIX` argument during CMake configuration. By default, it's in the dist folder, under PolyMC.
+
+```bash
 mkdir build
 cd build
 cmake \
@@ -313,30 +261,34 @@ cmake \
  -DCMAKE_INSTALL_PREFIX:PATH="$(dirname $PWD)/dist/" \
  -DCMAKE_PREFIX_PATH="/path/to/Qt/" \
  -DQt5_DIR="/path/to/Qt/" \
- -DCMAKE_OSX_DEPLOYMENT_TARGET=10.7 \
+ -DCMAKE_OSX_DEPLOYMENT_TARGET=10.14 \
+ -DLauncher_QT_VERSION_MAJOR=6 \ # if you want to use Qt 6
+ -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
  ..
 make install
 ```
 
-Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory.
+Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory. (For the Homebrew installation, it's likely to be in `/opt/homebrew/opt/qt@5`.
 
 **Note:** The final app bundle may not run due to code signing issues, which
 need to be fixed with `codesign -fs -`.
 
-# OpenBSD
+## OpenBSD
 
-Tested on OpenBSD 7.0-alpha i386, on older should work too
+Tested on OpenBSD 7.0-alpha i386. It should also work on older versions.
 
-## Build dependencies
-- A C++ compiler capable of building C++11 code (included in base system)
-- Qt Development tools 5.6 or newer ([meta/qt5](https://openports.se/meta/qt5))
-- cmake 3.1 or newer ([devel/cmake](https://openports.se/devel/cmake))
-- zlib (included in base system)
-- Java JDK ([devel/jdk-1.8](https://openports.se/devel/jdk/1.8))
-- GL headers (included in base system)
-- lwjgl ([games/lwjgl](https://openports.se/games/lwjgl) and [games/lwjgl3](https://openports.se/games/lwjgl3))
+### Build dependencies
 
-You can use IDEs like KDevelop or QtCreator to open the CMake project if you want to work on the code.
+- A C++ compiler capable of building C++11 code (included in base system).
+- Qt Development tools 5.12 or newer ([meta/qt5](https://openports.se/meta/qt5)).
+- cmake 3.1 or newer ([devel/cmake](https://openports.se/devel/cmake)).
+- extra-cmake-modules ([devel/kf5/extra-cmake-modules](https://openports.se/devel/kf5/extra-cmake-modules))
+- zlib (included in base system).
+- Java JDK ([devel/jdk-1.8](https://openports.se/devel/jdk/1.8)).
+- GL headers (included in base system).
+- lwjgl ([games/lwjgl](https://openports.se/games/lwjgl) and [games/lwjgl3](https://openports.se/games/lwjgl3)).
+
+You can use IDEs, like KDevelop or QtCreator, to open the CMake project if you want to work on the code.
 
 ### Building a portable binary
 
@@ -344,22 +296,101 @@ You can use IDEs like KDevelop or QtCreator to open the CMake project if you wan
 mkdir install
 # configure the project
 cmake -S . -B build \
-   -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake
+   -DCMAKE_INSTALL_PREFIX=./install -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake -DENABLE_LTO=ON 
 # build
 cd build
 make -j$(nproc) install
+cmake --install install --component portable
 ```
 
-### Building & Installing to the System
+### Building & installing to the system
 
-This is the preferred method for installation, and is suitable for packages.
+This is the preferred method of installation, and is suitable for packages.
 
 ```bash
 # configure everything
 cmake -S . -B build \
    -DCMAKE_BUILD_TYPE=Release \
    -DCMAKE_INSTALL_PREFIX="/usr/local" \ # /usr/local is default in OpenBSD and FreeBSD
-   -DLauncher_PORTABLE=OFF -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake # use linux layout and point to qt5 libs
+   -DCMAKE_PREFIX_PATH=/usr/local/lib/qt5/cmake # use linux layout and point to qt5 libs
+   -DENABLE_LTO=ON # if you want to enable LTO/IPO
 cd build
 make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})
 ```
+
+## IDEs and Tooling
+
+There are a few tools that you can set up to make your development workflow smoother. In addition, some IDEs also require a bit more setup to work with Qt and CMake.
+
+### ccache
+
+**ccache** is a compiler cache. It speeds up recompilation by caching previous compilations and detecting when the same compilation is being done again.
+
+You can [download it here](https://ccache.dev/download.html). After setting up, builds will be incremental, and the builds after the first one will be much faster.
+
+### VS Code
+
+To set up VS Code, you can download [the C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools), since it provides IntelliSense auto complete, linting, formatting, and various other features.
+
+Then, you need to setup the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for PolyMC.
+
+1. Add the path to your Qt `include` folder to `includePath`
+2. Add `-L/{path to your Qt installation}/lib` to `compilerArgs`
+3. Set `compileCommands` to `${workspaceFolder}/build/compile_commands.json`
+4. Set `cppStandard` to `c++14` or higher.
+
+For step 3 to work, you also have to reconfigure CMake to generate a `compile_commands.json` file. To do this, add `-DCMAKE_EXPORT_COMPILE_COMMANDS=ON` to the end of your CMake configuration command and run it again. You should see a file at `build/compile_commands.json`.
+
+Now the VS Code setup should be fully working. To test, open up some files and see if any error squiggles appear. If there are none, it's working properly!
+
+Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS with Qt installed via Homebrew:
+
+```json
+{
+    "configurations": [
+        {
+            "name": "Mac (PolyMC)",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/opt/homebrew/opt/qt@5/include/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "compilerArgs": [
+                "-L/opt/homebrew/opt/qt@5/lib"
+            ],
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "macos-clang-arm64"
+        }
+    ],
+    "version": 4
+}
+```
+
+### CLion
+
+1. Open CLion
+2. Choose `File->Open`
+3. Navigate to the source folder
+4. Go to settings `Ctrl+Alt+S`
+5. Navigate to `Toolchains` in `Build, Execution, Deployment`
+   - Set the correct build tools ([see here](https://i.imgur.com/daFAdVe.png))
+   - CMake: `cmake` (optional)
+   - Make: `make` (optional)
+   - C Compiler: `gcc`
+   - C++ Compiler: `g++`
+   - Debugger: `gdb` (optional)
+6. Navigate to `CMake` in `Build, Execution, Deployment`
+   - Set `Build directory` to `build`
+7. Navigate to `Edit Configurations`  ([see here](https://i.imgur.com/fu53nc3.png))
+   - Create a new configuration
+   - Name: `All`
+   - Target: `All targets`
+   - Choose the newly added configuration as default
+
+Now you should be able to build and test PolyMC with the `Build` and `Run` buttons.
