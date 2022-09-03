@@ -32,14 +32,30 @@ Getting the project to build and run on Linux is easy if you use any modern and 
 
 ## Build dependencies
 - A C++ compiler capable of building C++11 code.
-- Qt Development tools 5.6 or newer (`qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5` on Debian-based system)
-- cmake 3.1 or newer (`cmake` on Debian-based system)
-- zlib (`zlib1g-dev` on Debian-based system)
-- Java JDK (`openjdk-17-jdk`on Debian-based system)
-- GL headers (`libgl1-mesa-dev` on Debian-based system)
+- Qt Development tools 5.6 or newer
+- cmake 3.1 or newer
+- zlib
+- Java JDK
+- GL headers
 - games/lwjgl port if using FreeBSD
 
 You can use IDEs like KDevelop or QtCreator to open the CMake project if you want to work on the code.
+
+## Distributions
+
+The following distribution instructions are with fresh instances of itself with podman. They are opinionated and use GCC for their C compiler.
+
+### Fedora, CentOS Stream/RHEL
+
+```
+sudo dnf install git gcc-c++ cmake java-latest-openjdk-devel zlib-devel extra-cmake-modules qt5-qtbase-devel qtchooser
+```
+
+### Debian, Ubuntu, Mint
+```
+sudo apt update
+sudo apt install git cmake build-essential openjdk-17-jdk zlib1g-dev extra-cmake-modules qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5 libgl1-mesa-dev
+```
 
 ### Building a portable binary
 
@@ -67,9 +83,11 @@ cd build
 make -j$(nproc) install # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})
 ```
 
+This will build an application at install/bin/polymc
+
 ### Building a .deb
 
-Requirements: [makedeb](https://docs.makedeb.org/) installed on your system.
+Requirements: [makedeb](https://docs.makedeb.org/) and [git](https://git-scm.com/) installed on your system.
 
 ```
 git clone https://mpr.makedeb.org/polymc.git
