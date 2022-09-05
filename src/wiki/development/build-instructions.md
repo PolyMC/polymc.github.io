@@ -46,7 +46,7 @@ You can use IDEs, like KDevelop, QtCreator or CLion to open the CMake project, i
 
 ## Distributions
 
-The following distribution instructions are with fresh instances of itself with podman. They are opinionated and use GCC for their C compiler.
+Commands to install the dependencies with the following package managers.
 
 ### Fedora, CentOS Stream/RHEL
 
