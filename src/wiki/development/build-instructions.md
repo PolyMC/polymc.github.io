@@ -48,7 +48,7 @@ You can use IDEs, like KDevelop, QtCreator or CLion to open the CMake project, i
 
 Commands to install the dependencies with the following package managers.
 
-### Fedora, CentOS Stream/RHEL
+### DNF (Fedora, CentOS Stream/RHEL)
 
 ```
 sudo dnf install git gcc-c++ cmake java-latest-openjdk-devel zlib-devel extra-cmake-modules qtchooser
