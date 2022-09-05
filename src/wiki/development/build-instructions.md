@@ -60,7 +60,7 @@ sudo dnf install qt5-qtbase-devel
 sudo dnf install qt6-qtbase-devel
 ```
 
-### Debian, Ubuntu, Mint
+### APT (Debian, Ubuntu, Mint and derivates)
 ```
 sudo apt update
 sudo apt install git cmake build-essential openjdk-17-jdk zlib1g-dev extra-cmake-modules libgl1-mesa-dev scdoc
