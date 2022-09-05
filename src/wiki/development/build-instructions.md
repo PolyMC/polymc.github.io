@@ -69,7 +69,7 @@ sudo apt install git cmake build-essential openjdk-17-jdk zlib1g-dev extra-cmake
 sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5
 
 # Qt 6
-sudo apt install
+sudo apt install qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6 libqt6network6
 ```
 
 ### Building a portable binary
