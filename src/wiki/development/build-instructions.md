@@ -57,7 +57,7 @@ sudo dnf install git gcc-c++ cmake java-latest-openjdk-devel zlib-devel extra-cm
 sudo dnf install qt5-qtbase-devel
 
 # Qt 6
-sudo dnf install qt6-qtbase-devel
+sudo dnf install qt6-qtbase-devel qt6-qt5compat
 ```
 
 ### APT (Debian, Ubuntu, Mint and derivates)
