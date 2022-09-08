@@ -7,6 +7,60 @@
     <language>en</language>
     
       <item>
+        <title>PolyMC Update 1.4.2, now available (macOS)</title>
+        <link>https://polymc.org/news/release-1.4.2/</link>
+        <sparkle:version>1.4.2</sparkle:version>
+        <description>
+            &lt;p&gt;It has been a while.&lt;br /&gt;
+With this wonderful new version you get many cool things, like bug fixes and also bug fixes!&lt;/p&gt;
+&lt;p&gt;If you were building PolyMC yourself, make sure your compiler supports C++17, as it is a requirement from now on.&lt;/p&gt;
+&lt;p&gt;Thanks to all contributors, who have worked on this release!&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.2/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.2/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;[OpenBSD] Add root path detection by @Scrumplex in #1019&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.2/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bump to C++17 by @Scrumplex and @LennyMcLennington in #941&lt;/li&gt;
+&lt;li&gt;Hide &#39;More news...&#39; button if the news aren&#39;t loaded yet by @flowln in #1049&lt;/li&gt;
+&lt;li&gt;Make &#39;About&#39; dialog smaller by @DioEgizio in #1107&lt;/li&gt;
+&lt;li&gt;Make Coremods / Mods seperation more clear by @Scrumplex in #1035&lt;/li&gt;
+&lt;li&gt;Update copyright notices by @DioEgizio in #1073&lt;/li&gt;
+&lt;li&gt;[macOS] Downgrade to Qt 6.3.0 by @DioEgizio in #1014&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.2/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Allow user to interrupt launch after 3 tries by @Scrumplex in #1018&lt;/li&gt;
+&lt;li&gt;Cleanup old mod metadata by @flowln in #1017 #1044&lt;/li&gt;
+&lt;li&gt;Disable &amp;quot;Check for Updates&amp;quot; while the game is running or if all mods are removed by @Gingeh in #1007&lt;/li&gt;
+&lt;li&gt;Fix crashes in mod updater by @flowln in #965&lt;/li&gt;
+&lt;li&gt;Fix errors when extracting some modpacks by @flowln in #1095&lt;/li&gt;
+&lt;li&gt;Fix major version filter in mod downloader by @flowln in #997 #1118&lt;/li&gt;
+&lt;li&gt;Fix some icon cache problems by @flowln in #920 #1080&lt;/li&gt;
+&lt;li&gt;Fix UTF-8 decoding in log by @magneticflux- in #968&lt;/li&gt;
+&lt;li&gt;Make world safety nag popup title text match the action by @budak7273 in #1039&lt;/li&gt;
+&lt;li&gt;Make URLs in the FTB Legacy browser clickable by @DioEgizio in #1087&lt;/li&gt;
+&lt;li&gt;[Linux] Implement workaround for Ubuntu 22.04 OpenSSL issues by @DioEgizio in #1006&lt;/li&gt;
+&lt;li&gt;[Linux] Update AppStream info by @DioEgizio in #1058&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.4.1...1.4.2&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.4.1...1.4.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+
+        </description>
+        <pubDate>2022-09-08T00:00:00Z</pubDate>
+        <sparkle:minimumSystemVersion>10.14.0</sparkle:minimumSystemVersion>
+        
+        
+        
+        <enclosure sparkle:os="macos"
+            url="https://github.com/PolyMC/PolyMC/releases/download/1.4.2/PolyMC-macOS-1.4.2.tar.gz"
+            length="0"
+            type="application/octet-stream"
+            sparkle:edSignature="dU+pOB6d8WvEROprt/tx3Fx3bda8NjbRAEBbpIhvM3es9BPGtfJTv/9hiXDDKBRBvNPtoCbWvuBnFAKmtMJKDA=="/>
+      </item>
+    
+      <item>
         <title>PolyMC Update 1.4.1, now available (macOS)</title>
         <link>https://polymc.org/news/release-1.4.1/</link>
         <sparkle:version>1.4.1</sparkle:version>
