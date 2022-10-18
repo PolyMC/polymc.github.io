@@ -18,7 +18,9 @@ If you aren't sure which version you will need, **it is recommended to just inst
 
 **NOTE:** You can use any OpenJDK build you want. [Azul Zulu](https://www.azul.com/downloads/?package=jre#download-openjdk) is a popular alternative to Temurin, and will work just as well.
 
-You can also use Oracle Java, but openjdk is better here. Also to download Oracle Java 9+ you need an Oracle account which is not a good thing.
+You can also use Oracle Java, but OpenJDK is better here. Also to download Oracle Java 9+ you need an Oracle account which is not a good thing.
+
+[GraalVM](https://www.graalvm.org/downloads/) is another option, [reported](https://github.com/brucethemoose/Minecraft-Performance-Flags-Benchmarks) to improve Minecraft performance. Like Oracle Java the enterprise edition requires an Oracle account however and Java 8 support has been mostly deprecated. 
 
 ## Java on linux
 
