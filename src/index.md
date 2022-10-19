@@ -81,10 +81,6 @@ hero:
 
 ---
 
-## Reddit
-  
-[![r/PolyMCLauncher](https://img.shields.io/reddit/subreddit-subscribers/PolyMCLauncher?label=r%2FPolyMCLauncher)](https://www.reddit.com/r/PolyMCLauncher/)
-
 ## Discord
 
 To talk directly to us and get involved with development:
