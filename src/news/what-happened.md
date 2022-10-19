@@ -6,7 +6,7 @@ tags:
   - announcement
 ---
 # What happened?
-A team restructure occured, that unfortunatly lead people to spread false information about the state of our metadata servers
+A team restructure occured, that unfortunately lead people to spread false information about the state of our metadata servers
 and update servers, these remain safe to users and we're dedicated to the security of users of PolyMC now and in the future.
 
 # What's next for PolyMC?
