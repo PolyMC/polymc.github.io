@@ -6,8 +6,11 @@ tags:
   - announcement
 ---
 # What happened?
-Describe what happened in a nuetral form.
+A team restructure occured, that unfortunatly lead people to spread false information about the state of our metadata servers
+and update servers, these remain safe to users and we're dedicated to the security of users of PolyMC now and in the future.
 
 # What's next for PolyMC?
 
-Include some good info for what's next.
+Well we're on the same path, bringing you cool and new features, and looking at your feedback to plan new features.
+We are looking forward to the future, and wishing the best to all the forks out there.
+~PolyMC Team
