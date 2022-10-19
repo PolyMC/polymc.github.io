@@ -81,14 +81,16 @@ hero:
 
 ---
 
-## Discord
-
+## Discord (Locked)
+Please note, the PolyMC Discord now serves as an announcements only hub for the time being.
+  
 To talk directly to us and get involved with development:
 
 [![PolyMC Discord](https://img.shields.io/discord/923671181020766230?label=PolyMC%20Discord)](https://discord.gg/xq7fxrgtMP)
 
-## Matrix
-
+## Matrix (Locked)
+Please note, Matrix channels are locked temporarily, and the site will be updated to reflect when they have been unlocked to the public.
+  
 For people who don't want to use Discord, we have a Matrix Space which is bridged to the Discord server:
 
 [![PolyMC Space](https://img.shields.io/matrix/polymc:matrix.org?label=PolyMC%20space)](https://matrix.to/#/#polymc:matrix.org)
