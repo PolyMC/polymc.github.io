@@ -80,11 +80,6 @@ hero:
 # Get involved
 
 ---
-  
-## Reddit
-View the latest important news on the PolyMC Launcher:
-
-[![r/PolyMCLauncher](https://img.shields.io/reddit/subreddit-subscribers/PolyMCLauncher?label=r%2FPolyMCLauncher)](https://www.reddit.com/r/PolyMCLauncher/)
 
 ## Discord (Locked)
 Please note, the PolyMC Discord now serves as an announcements only hub for the time being.
