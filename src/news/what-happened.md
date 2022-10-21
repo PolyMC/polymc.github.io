@@ -1,7 +1,7 @@
 ---
 title: What happened, and the next step.
 description: Let's talk about what happened, and what we're doing next.
-date: 2022-10-20	
+date: 2022-10-21	
 tags:
   - announcement
 ---
