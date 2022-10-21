@@ -81,9 +81,18 @@ hero:
 
 ---
 
+<<<<<<< HEAD
 ## Discord (Locked)
 Please note, the PolyMC Discord now serves as an announcements only hub for the time being.
   
+=======
+## Reddit
+  
+[![r/PolyMCLauncher](https://img.shields.io/reddit/subreddit-subscribers/PolyMCLauncher?label=r%2FPolyMCLauncher)](https://www.reddit.com/r/PolyMCLauncher/)
+
+## Discord
+
+>>>>>>> parent of bf2a47d (Remove dead "Get Involved" Links)
 To talk directly to us and get involved with development:
 
 [![PolyMC Discord](https://img.shields.io/discord/923671181020766230?label=PolyMC%20Discord)](https://discord.gg/xq7fxrgtMP)
