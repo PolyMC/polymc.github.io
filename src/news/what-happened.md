@@ -12,7 +12,8 @@ and update servers. However, these remain safe to users, and we're dedicated to 
 
 # How can I get updates to PolyMC going forward?
 
-The following platforms (repositories) are unable to receive updates as of now, these are: Flathub, AUR, COPR, Scoop, and Gentoo.
+The following platforms (repositories) are unable to receive updates as of now along with a few others that are not listed, these are: Flathub, AUR, COPR, Scoop, and Gentoo.
+
 To get the latest updates to the software please consult the Github releases page (Found at https://github.com/PolyMC/PolyMC/releases).
 If you were on Scoop, the best option currently is to switch to the Windows installer, which can be found at the Github releases page for PolyMC.
 We're working on bringing most of these back up, but it will take time and we may not be able to regain control of a few.
