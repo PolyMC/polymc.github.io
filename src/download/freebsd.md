@@ -7,7 +7,7 @@ eleventyNavigation:
 
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/archlinux/freebsd-icon.svg" height="20"/> FreeBSD
+# <img src="https://www.vectorlogo.zone/logos/freebsd/freebsd-icon.svg" height="20"/> FreeBSD
 
 Source compilation:
   
