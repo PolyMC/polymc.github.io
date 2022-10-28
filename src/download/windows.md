@@ -36,35 +36,5 @@ You can download it here:
 
 - [System Install (.zip)](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-{{version.current}}.zip)
 - [Legacy system install (.zip)](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Windows-Legacy-{{version.current}}.zip)
-
-### CLI (community-maintained)
-
-#### Winget Package
-
-```powershell
-winget install -e PolyMC.PolyMC
-```
-
-#### Scoop Package
-
-```powershell
-scoop bucket add games
-scoop install polymc 
-scoop install polymc-qt5 #if you want Windows-Legacy instead
-```
-
-#### Chocolatey Package
-
-```powershell
-# Install standard version
-choco install polymc
-# Install legacy version
-choco install polymc --params='/legacy'
-```
-
-*Chocolatey and Scoop packages are community-maintained, PolyMC is not responsible for outdated versions.*
-
-#### [PortableApps.com](https://portableapps.com) Installer
-
-A community maintained portable installer for PolyMC can be found [here](https://FayneAldan.github.io/PolyMCPortable/).
+  
 </div>
