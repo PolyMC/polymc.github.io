@@ -45,7 +45,7 @@ There's also another way to do this: open your Mac's **System Preferences** appl
 
 #### How do I install the PolyMC Flatpak on my Linux system?
 
-Detailed instructions on setting-up your system to install Flatpak applications from Flathub, can be found [here](https://flatpak.org/setup/).
+Until the PolyMC Flatpak is back on Flathub, we have instructions to install the Flatpak on our [Download page](../../../download/linux#flatpak)
 
 #### How do I open the PolyMC AppImage on my Linux system?
 

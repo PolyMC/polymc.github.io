@@ -11,7 +11,7 @@ eleventyNavigation:
       <div>
         <h1>Steam Deck Download</h1>
         <br>
-        <a class="button is-big" href="https://flathub.org/apps/details/org.polymc.PolyMC">Install from FlatHub</a>
+        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-{{version.current}}.flatpak">Download (Flatpak)</a>
       </div>
     </div>
     <div class="column">
@@ -25,9 +25,7 @@ eleventyNavigation:
 ## Installation infomation
 
 It is recommended to install third-party software via Flatpak on the Steam Deck.
-This can be done by searching for `PolyMC` in the Discover software center, in *Desktop Mode*.
-
-<a href='https://flathub.org/apps/details/org.polymc.PolyMC'><img width='240' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/></a>
+This can be done by following the [linux flatpak instructions](../linux#flatpak).
 
 After installing PolyMC, set it up as usual.
 When you are done, open up Steam (still in *Desktop Mode*), click on `Games` in the menubar, and then click on `Add a Non-Steam Game to My Library...`.
