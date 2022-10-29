@@ -152,7 +152,7 @@
       <div>
         <h1>Linux Download</h1>
         <br>
-        <a class="button is-big" href="https://flathub.org/apps/details/org.polymc.PolyMC">Install from FlatHub</a>
+        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/1.4.3/PolyMC-1.4.3.flatpak">Download (Flatpak)</a>
         <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/1.4.3/PolyMC-Linux-1.4.3-x86_64.AppImage">Download (AppImage)</a>
         <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/1.4.3/PolyMC-Linux-1.4.3.tar.gz">Download (tar.gz)</a>
         <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/1.4.3/PolyMC-Linux-portable-1.4.3.tar.gz">Download Portable (tar.gz)</a>
@@ -179,6 +179,12 @@
   </div>
 </div>
 <div class="infobox top">
+<h1 id="notice" tabindex="-1">Notice <a class="direct-link" href="#notice" aria-hidden="true">#</a></h1>
+<p>Some of these packages (other than the flatpak) may be outdated as they are not controlled by PolyMC. If you're having trouble getting PolyMC getting installed you can ask for support in one of the places listed in the <a href="../../#get-involved">&quot;get involved&quot; section of the main page</a>.</p>
+<h1 id="flatpak" tabindex="-1">Flatpak <a class="direct-link" href="#flatpak" aria-hidden="true">#</a></h1>
+<p>We have a flatpak package that you can install by downloading and then using the <code>flatpak install</code> command: <a href="https://github.com/PolyMC/PolyMC/releases/download/1.4.3/PolyMC-1.4.3.flatpak">PolyMC-1.4.3.flatpak</a></p>
+<p>You need to run these commands in a terminal (on Steam Deck, that's Konsole)</p>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># Download the file</span><br><span class="token function">curl</span> -O https://github.com/PolyMC/PolyMC/releases/download/1.4.3/PolyMC-1.4.3.flatpak<br><br><span class="token comment"># For a per-user install:</span><br>flatpak <span class="token function">install</span> --user PolyMC-1.4.3.flatpak<br><br><span class="token comment"># Alternatively, for a system-wide install:</span><br>flatpak <span class="token function">install</span> --system PolyMC-1.4.3.flatpak<br><br><span class="token comment"># (Optional) delete the file now that it's been installed:</span><br><span class="token function">rm</span> PolyMC-1.4.3.flatpak</code></pre>
 <h1 id="arch-linux-manjaro" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro <a class="direct-link" href="#arch-linux-manjaro" aria-hidden="true">#</a></h1>
 <p>There are several AUR packages available:<br>
 <a href="https://aur.archlinux.org/packages/polymc/"><img src="https://img.shields.io/badge/aur-polymc-blue" alt="polymc"></a><br>
