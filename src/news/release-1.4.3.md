@@ -26,6 +26,7 @@ More features are on the way, just not in this release.
 
 ### Fixed
 - Simplify abort handling and add missing emits by @flowln in d50f954
+- Replaced the MSA Client ID, so Microsoft login works again by @LennyMcLennington in 95eac86
 - Curseforge-related fixes by @LennyMcLennington in #1477 and #1482
   - Fixed an issue with the user agent being blocked by the Curseforge API
   - Fixed a crash caused by an unhandled JSON exception during instance importing
@@ -33,7 +34,7 @@ More features are on the way, just not in this release.
   - Fixed a bug where the instance import dialog would not close after failure / being aborted
 
 ## Installation
-The methods of installation have been temporarily limited, please see our github (below) to download the latest version, you can read more [here](/news/what-happened/).
+The methods of installation have been temporarily limited, please see our [Download page](/download) for the currently available installation methods, you may need to use a different installation than you previously used, especially if you are on Linux. You can read more about the situation [here](/news/what-happened/).
 
 **Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.4.2...1.4.3
 
