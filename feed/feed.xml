@@ -5,12 +5,80 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2022-09-08T00:00:00Z</updated>
+	<updated>2022-10-27T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>Major Bugfix 1.4.3, now available</title>
+		<link href="https://polymc.org/news/release-1.4.3/"/>
+		<updated>2022-10-27T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-1.4.3/</id>
+		<content type="html">&lt;p&gt;It has been a good minute.&lt;br /&gt;
+This release is a bugfix to address issues that have surfaced within the past week.&lt;br /&gt;
+Mostly pertaining to the online services used within the PolyMC client.&lt;br /&gt;
+More features are on the way, just not in this release.&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.3/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.3/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Curseforge workarounds by @LennyMcLennington in #1477 and #1482
+&lt;ul&gt;
+&lt;li&gt;Removed the non-working Curseforge key&lt;/li&gt;
+&lt;li&gt;Added a way to fetch a working Curseforge key at runtime&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.3/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added diagnostic logging for OAuth 2.0 token reply errors, and made it fail the activity by @Doggermelon in #1480&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.3/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Simplify abort handling and add missing emits by @flowln in d50f954&lt;/li&gt;
+&lt;li&gt;Curseforge-related fixes by @LennyMcLennington in #1477 and #1482
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue with the user agent being blocked by the Curseforge API&lt;/li&gt;
+&lt;li&gt;Fixed a crash caused by an unhandled JSON exception during instance importing&lt;/li&gt;
+&lt;li&gt;Fixed a bug that caused an event loop to never end when instance importing failed&lt;/li&gt;
+&lt;li&gt;Fixed a bug where the instance import dialog would not close after failure / being aborted&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.3/#installation&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The methods of installation have been temporarily limited, please see our github (below) to download the latest version, you can read more &lt;a href=&quot;https://polymc.org/news/what-happened/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.4.2...1.4.3&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.4.2...1.4.3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>What happened, and the next step.</title>
+		<link href="https://polymc.org/news/what-happened/"/>
+		<updated>2022-10-26T00:00:00Z</updated>
+		<id>https://polymc.org/news/what-happened/</id>
+		<content type="html">&lt;h1 id=&quot;what-happened&quot; tabindex=&quot;-1&quot;&gt;What happened? &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/what-happened/#what-happened&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;A team restructure occurred that unfortunately led people to spread false information about the state of our metadata&lt;br /&gt;
+and update servers. However, these remain safe to users, and we&#39;re dedicated to the privacy and security of PolyMC users now and in the future.&lt;/p&gt;
+&lt;h1 id=&quot;how-can-i-get-updates-to-polymc-going-forward&quot; tabindex=&quot;-1&quot;&gt;How can I get updates to PolyMC going forward? &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/what-happened/#how-can-i-get-updates-to-polymc-going-forward&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;The following platforms (repositories) are unable to receive updates as of now along with a few others that are not listed, these are: Flathub, AUR, COPR, Scoop, and Gentoo.&lt;/p&gt;
+&lt;p&gt;To get the latest updates to the software please consult the Github releases page (Found at &lt;a href=&quot;https://github.com/PolyMC/PolyMC/releases&quot;&gt;https://github.com/PolyMC/PolyMC/releases&lt;/a&gt;).&lt;br /&gt;
+If you were on Scoop, the best option currently is to switch to the Windows installer, which can be found at the Github releases page for PolyMC.&lt;br /&gt;
+We&#39;re working on bringing most of these back up, but it will take time and we may not be able to regain control of a few.&lt;br /&gt;
+If you need any help, be it with Migration from different install methods or general help with PolyMC, you can connect with us in the following channels.&lt;/p&gt;
+&lt;p&gt;Github - &lt;a href=&quot;https://github.com/PolyMC/PolyMC/issues&quot;&gt;https://github.com/PolyMC/PolyMC/issues&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Discord - &lt;a href=&quot;https://discord.com/invite/WMtwnF5Cbr&quot;&gt;https://discord.com/invite/WMtwnF5Cbr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Reddit - &lt;a href=&quot;https://www.reddit.com/r/PolyMCLauncher/&quot;&gt;https://www.reddit.com/r/PolyMCLauncher/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Matrix - &lt;a href=&quot;https://matrix.to/#/#polymc:matrix.org&quot;&gt;https://matrix.to/#/#polymc:matrix.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Again if you run into any issues don&#39;t hesitate to join any of these channels and ask for help.&lt;/p&gt;
+&lt;h1 id=&quot;what&#39;s-next-for-polymc&quot; tabindex=&quot;-1&quot;&gt;What&#39;s next for PolyMC? &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/what-happened/#what&#39;s-next-for-polymc&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Well, we&#39;re on the same path, bringing you cool new features and looking at your feedback to plan new features.&lt;br /&gt;
+We are looking forward to the future, and wishing the best to all the forks out there.&lt;/p&gt;
+&lt;p&gt;~PolyMC Team&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>PolyMC Update 1.4.2, now available</title>

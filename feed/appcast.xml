@@ -7,6 +7,59 @@
     <language>en</language>
     
       <item>
+        <title>Major Bugfix 1.4.3, now available (macOS)</title>
+        <link>https://polymc.org/news/release-1.4.3/</link>
+        <sparkle:version>1.4.3</sparkle:version>
+        <description>
+            &lt;p&gt;It has been a good minute.&lt;br /&gt;
+This release is a bugfix to address issues that have surfaced within the past week.&lt;br /&gt;
+Mostly pertaining to the online services used within the PolyMC client.&lt;br /&gt;
+More features are on the way, just not in this release.&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.3/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.3/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Curseforge workarounds by @LennyMcLennington in #1477 and #1482
+&lt;ul&gt;
+&lt;li&gt;Removed the non-working Curseforge key&lt;/li&gt;
+&lt;li&gt;Added a way to fetch a working Curseforge key at runtime&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.3/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added diagnostic logging for OAuth 2.0 token reply errors, and made it fail the activity by @Doggermelon in #1480&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.3/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Simplify abort handling and add missing emits by @flowln in d50f954&lt;/li&gt;
+&lt;li&gt;Curseforge-related fixes by @LennyMcLennington in #1477 and #1482
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue with the user agent being blocked by the Curseforge API&lt;/li&gt;
+&lt;li&gt;Fixed a crash caused by an unhandled JSON exception during instance importing&lt;/li&gt;
+&lt;li&gt;Fixed a bug that caused an event loop to never end when instance importing failed&lt;/li&gt;
+&lt;li&gt;Fixed a bug where the instance import dialog would not close after failure / being aborted&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.3/#installation&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The methods of installation have been temporarily limited, please see our github (below) to download the latest version, you can read more &lt;a href=&quot;https://polymc.org/news/what-happened/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.4.2...1.4.3&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.4.2...1.4.3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+
+        </description>
+        <pubDate>2022-10-27T00:00:00Z</pubDate>
+        <sparkle:minimumSystemVersion>10.14.0</sparkle:minimumSystemVersion>
+        
+        
+        
+        <enclosure sparkle:os="macos"
+            url="https://github.com/PolyMC/PolyMC/releases/download/1.4.3/PolyMC-macOS-1.4.3.tar.gz"
+            length="0"
+            type="application/octet-stream"
+            sparkle:edSignature="T9oVKld9HpjSCd3BbecRHUhyY8Yx4cLpWclvlE8+PYvNg7BQc6wnjFmxNYYWjAWUOv50WstOVG14Sm4hGLJzBg=="/>
+      </item>
+    
+      <item>
         <title>PolyMC Update 1.4.2, now available (macOS)</title>
         <link>https://polymc.org/news/release-1.4.2/</link>
         <sparkle:version>1.4.2</sparkle:version>

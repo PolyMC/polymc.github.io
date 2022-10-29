@@ -77,6 +77,16 @@
   </url>
   
   <url>
+    <loc>https://polymc.org/news/what-happened/</loc>
+    <lastmod>2022-10-26</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/news/release-1.4.3/</loc>
+    <lastmod>2022-10-27</lastmod>
+  </url>
+  
+  <url>
     <loc>https://polymc.org/about/</loc>
     <lastmod>2022-10-29</lastmod>
   </url>
@@ -148,6 +158,11 @@
   
   <url>
     <loc>https://polymc.org/tags/release/</loc>
+    <lastmod>2022-10-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/tags/announcement/</loc>
     <lastmod>2022-10-29</lastmod>
   </url>
   
