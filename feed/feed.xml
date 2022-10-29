@@ -38,6 +38,7 @@ More features are on the way, just not in this release.&lt;/p&gt;
 &lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.3/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Simplify abort handling and add missing emits by @flowln in d50f954&lt;/li&gt;
+&lt;li&gt;Replaced the MSA Client ID, so Microsoft login works again by @LennyMcLennington in 95eac86&lt;/li&gt;
 &lt;li&gt;Curseforge-related fixes by @LennyMcLennington in #1477 and #1482
 &lt;ul&gt;
 &lt;li&gt;Fixed an issue with the user agent being blocked by the Curseforge API&lt;/li&gt;
@@ -48,7 +49,7 @@ More features are on the way, just not in this release.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-1.4.3/#installation&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The methods of installation have been temporarily limited, please see our github (below) to download the latest version, you can read more &lt;a href=&quot;https://polymc.org/news/what-happened/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The methods of installation have been temporarily limited, please see our &lt;a href=&quot;https://polymc.org/download&quot;&gt;Download page&lt;/a&gt; for the currently available installation methods, you may need to use a different installation than you previously used, especially if you are on Linux. You can read more about the situation &lt;a href=&quot;https://polymc.org/news/what-happened/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.4.2...1.4.3&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.4.2...1.4.3&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
 </content>
