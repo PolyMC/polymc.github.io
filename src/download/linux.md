@@ -39,7 +39,7 @@ You need to run these commands in a terminal (on Steam Deck, that's Konsole)
 
 ```bash
 # Download the file
-curl -O https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-{{version.current}}.flatpak
+curl -OL https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-{{version.current}}.flatpak
 
 # For a per-user install:
 flatpak install --user PolyMC-{{version.current}}.flatpak
