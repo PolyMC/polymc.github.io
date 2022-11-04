@@ -196,51 +196,8 @@
 <p>You can replace yay -S with your preferred <a href="https://wiki.archlinux.org/title/AUR_helpers">AUR helper's</a> install command.</p>
 </div>
 <div class="infobox top">
-<h1 id="centos-stream-red-hat-enterprise-linux" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/centos/centos-icon.svg" height="20"> CentOS Stream / Red Hat Enterprise Linux <a class="direct-link" href="#centos-stream-red-hat-enterprise-linux" aria-hidden="true">#</a></h1>
-<p>Two RPM packages are available on <a href="https://copr.fedorainfracloud.org/coprs/sentry/polymc/">Copr</a>.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token comment"># load in system information</span><br><span class="token builtin class-name">source</span> /etc/os-release<br><span class="token comment"># enables the copr repo</span><br><span class="token function">sudo</span> dnf copr <span class="token builtin class-name">enable</span> sentry/polymc epel-<span class="token variable">${VERSION}</span>-<span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> -m<span class="token variable">)</span></span><br><span class="token comment"># stable releases</span><br><span class="token function">sudo</span> dnf <span class="token function">install</span> polymc<br><span class="token comment"># nightly releases (git master)</span><br><span class="token function">sudo</span> dnf <span class="token function">install</span> polymc-nightly</code></pre>
-</div>
-<div class="infobox top">
-<h1 id="debian-ubuntu" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/debian/debian-icon.svg" height="20" /> Debian / Ubuntu <a class="direct-link" href="#debian-ubuntu" aria-hidden="true">#</a></h1>
-<p>We use <a href="https://docs.makedeb.org/">makedeb</a> for our Debian packages.<br>
-Several MPR packages are available:</p>
-<p><a href="https://mpr.makedeb.org/packages/polymc"><img src="https://img.shields.io/badge/mpr-polymc-orange" alt="polymc"></a><br>
-<a href="https://mpr.makedeb.org/packages/polymc-bin"><img src="https://img.shields.io/badge/mpr-polymc--bin-orange" alt="polymc-bin"></a><br>
-<a href="https://mpr.makedeb.org/packages/polymc-git"><img src="https://img.shields.io/badge/mpr-polymc--git-orange" alt="polymc-git"></a></p>
-<h2 id="installation-using-prebuilt-mpr-(recommended)" tabindex="-1">Installation using Prebuilt MPR (recommended) <a class="direct-link" href="#installation-using-prebuilt-mpr-(recommended)" aria-hidden="true">#</a></h2>
-<pre class="language-bash"><code class="language-bash"><span class="token function">curl</span> -q <span class="token string">'https://proget.makedeb.org/debian-feeds/prebuilt-mpr.pub'</span> <span class="token operator">|</span> gpg --dearmor <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg <span class="token operator"><span class="token file-descriptor important">1</span>></span> /dev/null<br><span class="token builtin class-name">echo</span> <span class="token string">"deb [signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.makedeb.org prebuilt-mpr <span class="token variable"><span class="token variable">$(</span>lsb_release -cs<span class="token variable">)</span></span>"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> /etc/apt/sources.list.d/prebuilt-mpr.list<br><span class="token function">sudo</span> <span class="token function">apt</span> update<br><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> polymc</code></pre>
-<p>NOTE: Prebuilt MPR only officially supports Debian 11, Ubuntu 20.04 and Ubuntu 22.04.</p>
-<h2 id="installing-with-an-mpr-helper" tabindex="-1">Installing with an MPR helper <a class="direct-link" href="#installing-with-an-mpr-helper" aria-hidden="true">#</a></h2>
-<p>Installing UNA</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">bash</span> <span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token function">curl</span> -fsL https://github.com/AFK-OS/una/raw/main/install.sh<span class="token punctuation">)</span><br><br>una update</code></pre>
-<p>Installing PolyMC</p>
-<pre class="language-bash"><code class="language-bash"><span class="token comment"># stable source package:</span><br>una <span class="token function">install</span> polymc<br><span class="token comment"># stable binary package:</span><br>una <span class="token function">install</span> polymc-bin<br><span class="token comment"># latest git package:</span><br>una <span class="token function">install</span> polymc-git</code></pre>
-<p>You can replace una install with your preferred <a href="https://docs.makedeb.org/using-the-mpr/list-of-mpr-helpers/">MPR helper's</a> install command.</p>
-</div>
-<div class="infobox top">
-<h1 id="fedora" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"> Fedora <a class="direct-link" href="#fedora" aria-hidden="true">#</a></h1>
-<p>Two RPM packages are available on <a href="https://copr.fedorainfracloud.org/coprs/sentry/polymc/">Copr</a>.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token comment"># enables the copr repo</span><br><span class="token function">sudo</span> dnf copr <span class="token builtin class-name">enable</span> sentry/polymc<br><span class="token comment"># stable releases</span><br><span class="token function">sudo</span> dnf <span class="token function">install</span> polymc<br><span class="token comment"># nightly releases (git master)</span><br><span class="token function">sudo</span> dnf <span class="token function">install</span> polymc-nightly</code></pre>
-</div>
-<div class="infobox top">
-<h1 id="gentoo" tabindex="-1"><img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20" /> Gentoo <a class="direct-link" href="#gentoo" aria-hidden="true">#</a></h1>
-<p>Ebuilds are available in the official Gentoo repository, under <a href="https://packages.gentoo.org/packages/games-action/polymc"><code>games-action/polymc</code></a>.<br>
-Note that, for the time being, it is not stabilized, so it's masked for <code>~amd64</code> only.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> emaint <span class="token function">sync</span> -a<br><br><span class="token comment"># If you need to unmask the package, and considering `package.accept_keywords` to be a folder.</span><br><span class="token builtin class-name">echo</span> <span class="token string">">=games-action/polymc-1.1.1"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> -a /etc/portage/package.accept_keywords/polymc<br><span class="token comment"># Or do this if you want to build from the latest commit instead of a release</span><br><span class="token builtin class-name">echo</span> <span class="token string">"=games-action/polymc-9999 **"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> -a /etc/portage/package.accept_keywords/polymc<br><br>emerge games-action/polymc</code></pre>
-<p>Old ebuilds, as well as additional information, can be found <a href="https://gitlab.com/flowln/polymc-gentoo/">in the old polymc overlay repository</a>. Have fun! :)</p>
-</div>
-<div class="infobox top">
 <h1 id="nix" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix <a class="direct-link" href="#nix" aria-hidden="true">#</a></h1>
 <p>A <a href="https://github.com/PolyMC/PolyMC/blob/develop/nix/NIX.md">Nix derivation</a> is available.</p>
-</div>
-<div class="infobox top">
-<h1 id="opensuse" tabindex="-1"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" height="20"> openSuse <a class="direct-link" href="#opensuse" aria-hidden="true">#</a></h1>
-<p>PolyMC is available on the <a href="https://software.opensuse.org/download.html?project=games%3Atools&amp;package=polymc">game:tools</a> community repository.</p>
-</div>
-<div class="infobox top">
-<h1 id="void-linux" tabindex="-1"><img src="https://bitcu.co/en/wp-content/uploads/2020/07/Void_Linux_logo.svg_.png" height="20"> Void Linux <a class="direct-link" href="#void-linux" aria-hidden="true">#</a></h1>
-<p>PolyMC is available on the official Void repository.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> xbps-install PolyMC</code></pre>
 </div>
 
 </main>
