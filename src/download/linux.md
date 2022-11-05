@@ -86,4 +86,12 @@ You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux
 # <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix
 
 A [Nix derivation](https://github.com/PolyMC/PolyMC/blob/develop/nix/NIX.md) is available.
+
+# RPM
+
+An RPM package is available [on COPR](https://copr.fedorainfracloud.org/coprs/polymc/polymc/):
+  
+```bash
+dnf copr enable polymc/polymc
+```
 </div>
