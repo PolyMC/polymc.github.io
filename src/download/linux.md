@@ -31,6 +31,10 @@ eleventyNavigation:
 
 Some of these packages (other than the flatpak) may be outdated as they are not controlled by PolyMC. If you're having trouble getting PolyMC getting installed you can ask for support in one of the places listed in the ["get involved" section of the main page](../../#get-involved).
 
+</div>
+
+<div class="infobox top">
+
 # <img src="https://www.vectorlogo.zone/logos/flathub/flathub-icon.svg" height="20"/> Flatpak
 
 We have a flatpak package that you can install by downloading and then using the `flatpak install` command: [PolyMC-{{version.current}}.flatpak](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-{{version.current}}.flatpak)
@@ -50,6 +54,10 @@ flatpak install --system PolyMC-{{version.current}}.flatpak
 # (Optional) delete the file now that it's been installed:
 rm PolyMC-{{version.current}}.flatpak
 ```
+
+</div>
+
+<div class="infobox top">
 
 # <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro
 
@@ -79,6 +87,7 @@ yay -S polymc-qt5-git
 ```
 
 You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux.org/title/AUR_helpers) install command.
+
 </div>
 
 <div class="infobox top">
@@ -87,6 +96,10 @@ You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux
 
 A [Nix derivation](https://github.com/PolyMC/PolyMC/blob/develop/nix/NIX.md) is available.
 
+</div>
+
+<div class="infobox top">
+
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"/> RPM
 
 An RPM package is available [on COPR](https://copr.fedorainfracloud.org/coprs/polymc/polymc/):
@@ -94,7 +107,10 @@ An RPM package is available [on COPR](https://copr.fedorainfracloud.org/coprs/po
 ```bash
 dnf copr enable polymc/polymc
 ```
+
 </div>
+
+<div class="infobox top">
 
 # <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20"/> Gentoo Linux
 
@@ -111,7 +127,7 @@ sync-uri = https://git.swurl.xyz/PolyMC/overlay.git
 
 If you want to build and install the latest version from git, then unmask the 9999 ebuild:
 
-```sh
+```bash
 echo "=games-action/polymc-9999 ** | sudo tee -a /etc/portage/package.accept_keywords/polymc
 ```
 
@@ -119,12 +135,14 @@ If your `package.accept_keywords` is simply a file, remove the `/polymc` at the 
 
 Finally, sync the overlay:
 
-```sh
+```bash
 sudo emaint sync -r polymc
 ```
 
 And emerge:
 
-```sh
+```bash
 sudo emerge -a polymc
 ```
+
+</div>
