@@ -31,7 +31,7 @@ eleventyNavigation:
 
 Some of these packages (other than the flatpak) may be outdated as they are not controlled by PolyMC. If you're having trouble getting PolyMC getting installed you can ask for support in one of the places listed in the ["get involved" section of the main page](../../#get-involved).
 
-# Flatpak
+# <img src="https://www.vectorlogo.zone/logos/flathub/flathub-icon.svg" height="20"/> Flatpak
 
 We have a flatpak package that you can install by downloading and then using the `flatpak install` command: [PolyMC-{{version.current}}.flatpak](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-{{version.current}}.flatpak)
 
@@ -87,7 +87,7 @@ You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux
 
 A [Nix derivation](https://github.com/PolyMC/PolyMC/blob/develop/nix/NIX.md) is available.
 
-# RPM
+# <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"/> RPM
 
 An RPM package is available [on COPR](https://copr.fedorainfracloud.org/coprs/polymc/polymc/):
   
