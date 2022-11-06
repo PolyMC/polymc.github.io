@@ -87,3 +87,36 @@ You can replace yay -S with your preferred [AUR helper's](https://wiki.archlinux
 
 A [Nix derivation](https://github.com/PolyMC/PolyMC/blob/develop/nix/NIX.md) is available.
 </div>
+
+# <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20"/> Gentoo Linux
+
+ebuilds for PolyMC can be downloaded from the [polymc](https://git.swurl.xyz/PolyMC/overlay) overlay.
+
+Write the following to `/etc/portage/repos.conf/polymc.conf`:
+
+```ini
+[polymc]
+location = /var/db/repos/polymc
+sync-type = git
+sync-uri = https://git.swurl.xyz/PolyMC/overlay.git
+```
+
+If you want to build and install the latest version from git, then unmask the 9999 ebuild:
+
+```sh
+echo "=games-action/polymc-9999 ** | sudo tee -a /etc/portage/package.accept_keywords/polymc
+```
+
+If your `package.accept_keywords` is simply a file, remove the `/polymc` at the end.
+
+Finally, sync the overlay:
+
+```sh
+sudo emaint sync -r polymc
+```
+
+And emerge:
+
+```sh
+sudo emerge -a polymc
+```
