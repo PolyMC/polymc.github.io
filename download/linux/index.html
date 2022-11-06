@@ -181,10 +181,14 @@
 <div class="infobox top">
 <h1 id="notice" tabindex="-1">Notice <a class="direct-link" href="#notice" aria-hidden="true">#</a></h1>
 <p>Some of these packages (other than the flatpak) may be outdated as they are not controlled by PolyMC. If you're having trouble getting PolyMC getting installed you can ask for support in one of the places listed in the <a href="../../#get-involved">&quot;get involved&quot; section of the main page</a>.</p>
-<h1 id="flatpak" tabindex="-1">Flatpak <a class="direct-link" href="#flatpak" aria-hidden="true">#</a></h1>
+</div>
+<div class="infobox top">
+<h1 id="flatpak" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/flathub/flathub-icon.svg" height="20"/> Flatpak <a class="direct-link" href="#flatpak" aria-hidden="true">#</a></h1>
 <p>We have a flatpak package that you can install by downloading and then using the <code>flatpak install</code> command: <a href="https://github.com/PolyMC/PolyMC/releases/download/1.4.3/PolyMC-1.4.3.flatpak">PolyMC-1.4.3.flatpak</a></p>
 <p>You need to run these commands in a terminal (on Steam Deck, that's Konsole)</p>
 <pre class="language-bash"><code class="language-bash"><span class="token comment"># Download the file</span><br><span class="token function">curl</span> -OL https://github.com/PolyMC/PolyMC/releases/download/1.4.3/PolyMC-1.4.3.flatpak<br><br><span class="token comment"># For a per-user install:</span><br>flatpak <span class="token function">install</span> --user PolyMC-1.4.3.flatpak<br><br><span class="token comment"># Alternatively, for a system-wide install:</span><br>flatpak <span class="token function">install</span> --system PolyMC-1.4.3.flatpak<br><br><span class="token comment"># (Optional) delete the file now that it's been installed:</span><br><span class="token function">rm</span> PolyMC-1.4.3.flatpak</code></pre>
+</div>
+<div class="infobox top">
 <h1 id="arch-linux-manjaro" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro <a class="direct-link" href="#arch-linux-manjaro" aria-hidden="true">#</a></h1>
 <p>There are several AUR packages available:<br>
 <a href="https://aur.archlinux.org/packages/polymc/"><img src="https://img.shields.io/badge/aur-polymc-blue" alt="polymc"></a><br>
@@ -199,7 +203,24 @@
 <h1 id="nix" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" height="20" /> Nix <a class="direct-link" href="#nix" aria-hidden="true">#</a></h1>
 <p>A <a href="https://github.com/PolyMC/PolyMC/blob/develop/nix/NIX.md">Nix derivation</a> is available.</p>
 </div>
-
+<div class="infobox top">
+<h1 id="rpm" tabindex="-1"><img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"/> RPM <a class="direct-link" href="#rpm" aria-hidden="true">#</a></h1>
+<p>An RPM package is available <a href="https://copr.fedorainfracloud.org/coprs/polymc/polymc/">on COPR</a>:</p>
+<pre class="language-bash"><code class="language-bash">dnf copr <span class="token builtin class-name">enable</span> polymc/polymc</code></pre>
+</div>
+<div class="infobox top">
+<h1 id="gentoo-linux" tabindex="-1"><img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20"/> Gentoo Linux <a class="direct-link" href="#gentoo-linux" aria-hidden="true">#</a></h1>
+<p>ebuilds for PolyMC can be downloaded from the <a href="https://git.swurl.xyz/PolyMC/overlay">polymc</a> overlay.</p>
+<p>Write the following to <code>/etc/portage/repos.conf/polymc.conf</code>:</p>
+<pre class="language-ini"><code class="language-ini"><span class="token section"><span class="token punctuation">[</span><span class="token section-name selector">polymc</span><span class="token punctuation">]</span></span><br><span class="token key attr-name">location</span> <span class="token punctuation">=</span> <span class="token value attr-value">/var/db/repos/polymc</span><br><span class="token key attr-name">sync-type</span> <span class="token punctuation">=</span> <span class="token value attr-value">git</span><br><span class="token key attr-name">sync-uri</span> <span class="token punctuation">=</span> <span class="token value attr-value">https://git.swurl.xyz/PolyMC/overlay.git</span></code></pre>
+<p>If you want to build and install the latest version from git, then unmask the 9999 ebuild:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">echo</span> "<span class="token operator">=</span>games-action/polymc-9999 ** <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> -a /etc/portage/package.accept_keywords/polymc</code></pre>
+<p>If your <code>package.accept_keywords</code> is simply a file, remove the <code>/polymc</code> at the end.</p>
+<p>Finally, sync the overlay:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> emaint <span class="token function">sync</span> -r polymc</code></pre>
+<p>And emerge:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> emerge -a polymc</code></pre>
+</div>
 </main>
 
 <footer>
