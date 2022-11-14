@@ -214,13 +214,14 @@
 <p>Write the following to <code>/etc/portage/repos.conf/polymc.conf</code>:</p>
 <pre class="language-ini"><code class="language-ini"><span class="token section"><span class="token punctuation">[</span><span class="token section-name selector">polymc</span><span class="token punctuation">]</span></span><br><span class="token key attr-name">location</span> <span class="token punctuation">=</span> <span class="token value attr-value">/var/db/repos/polymc</span><br><span class="token key attr-name">sync-type</span> <span class="token punctuation">=</span> <span class="token value attr-value">git</span><br><span class="token key attr-name">sync-uri</span> <span class="token punctuation">=</span> <span class="token value attr-value">https://git.swurl.xyz/PolyMC/overlay.git</span></code></pre>
 <p>If you want to build and install the latest version from git, then unmask the 9999 ebuild:</p>
-<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">echo</span> "<span class="token operator">=</span>games-action/polymc-9999 ** <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> -a /etc/portage/package.accept_keywords/polymc</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">"=games-action/polymc-9999 **"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> -a /etc/portage/package.accept_keywords/polymc</code></pre>
 <p>If your <code>package.accept_keywords</code> is simply a file, remove the <code>/polymc</code> at the end.</p>
 <p>Finally, sync the overlay:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> emaint <span class="token function">sync</span> -r polymc</code></pre>
 <p>And emerge:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> emerge -a polymc</code></pre>
 </div>
+
 </main>
 
 <footer>
