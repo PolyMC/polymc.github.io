@@ -128,7 +128,7 @@ sync-uri = https://git.swurl.xyz/PolyMC/overlay.git
 If you want to build and install the latest version from git, then unmask the 9999 ebuild:
 
 ```bash
-echo "=games-action/polymc-9999 ** | sudo tee -a /etc/portage/package.accept_keywords/polymc
+echo "=games-action/polymc-9999 **" | sudo tee -a /etc/portage/package.accept_keywords/polymc
 ```
 
 If your `package.accept_keywords` is simply a file, remove the `/polymc` at the end.
