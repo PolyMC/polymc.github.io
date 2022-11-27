@@ -11,7 +11,7 @@ eleventyNavigation:
       <div>
         <h1>Linux Download</h1>
         <br>
-        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-{{version.current}}.flatpak">Download (Flatpak)</a>
+        <a class="button is-big" href="https://flathub.org/apps/details/org.polymc.PolyMC">Install from FlatHub</a>
         <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-{{version.current}}-x86_64.AppImage">Download (AppImage)</a>
         <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-{{version.current}}.tar.gz">Download (tar.gz)</a>
         <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
@@ -23,38 +23,6 @@ eleventyNavigation:
       {% image "Modpack Installer", "./src/img/screenshots/LauncherLight.png", "./src/img/screenshots/LauncherDark.png" %}
     </div>
   </div>
-</div>
-
-<div class="infobox top">
-
-# Notice
-
-Some of these packages (other than the flatpak) may be outdated as they are not controlled by PolyMC. If you're having trouble getting PolyMC getting installed you can ask for support in one of the places listed in the ["get involved" section of the main page](../../#get-involved).
-
-</div>
-
-<div class="infobox top">
-
-# <img src="https://www.vectorlogo.zone/logos/flathub/flathub-icon.svg" height="20"/> Flatpak
-
-We have a flatpak package that you can install by downloading and then using the `flatpak install` command: [PolyMC-{{version.current}}.flatpak](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-{{version.current}}.flatpak)
-
-You need to run these commands in a terminal (on Steam Deck, that's Konsole)
-
-```bash
-# Download the file
-curl -OL https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-{{version.current}}.flatpak
-
-# For a per-user install:
-flatpak install --user PolyMC-{{version.current}}.flatpak
-
-# Alternatively, for a system-wide install:
-flatpak install --system PolyMC-{{version.current}}.flatpak
-
-# (Optional) delete the file now that it's been installed:
-rm PolyMC-{{version.current}}.flatpak
-```
-
 </div>
 
 <div class="infobox top">
