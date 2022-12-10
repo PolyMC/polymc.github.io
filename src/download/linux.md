@@ -11,12 +11,12 @@ eleventyNavigation:
       <div>
         <h1>Linux Download</h1>
         <br>
-        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-{{version.current}}.flatpak">Download (Flatpak)</a>
+        <a class="button is-big" href="https://flathub.org/apps/details/org.polymc.PolyMC">Install from FlatHub</a>
         <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-{{version.current}}-x86_64.AppImage">Download (AppImage)</a>
         <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-{{version.current}}.tar.gz">Download (tar.gz)</a>
         <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
         <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-Qt6-{{version.current}}.tar.gz">Download (Qt 6, tar.gz)</a>
-        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-Qt6-portable-{{version.current}}.tar.gz">Download Portable (Qt 6, tar.gz)</a> 
+        <a class="button is-big" href="https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-Linux-Qt6-portable-{{version.current}}.tar.gz">Download Portable (Qt 6, tar.gz)</a>
      </div>
     </div>
     <div class="column">
@@ -35,35 +35,11 @@ Some of these packages (other than the flatpak) may be outdated as they are not 
 
 <div class="infobox top">
 
-# <img src="https://www.vectorlogo.zone/logos/flathub/flathub-icon.svg" height="20"/> Flatpak
-
-We have a flatpak package that you can install by downloading and then using the `flatpak install` command: [PolyMC-{{version.current}}.flatpak](https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-{{version.current}}.flatpak)
-
-You need to run these commands in a terminal (on Steam Deck, that's Konsole)
-
-```bash
-# Download the file
-curl -OL https://github.com/PolyMC/PolyMC/releases/download/{{version.current}}/PolyMC-{{version.current}}.flatpak
-
-# For a per-user install:
-flatpak install --user PolyMC-{{version.current}}.flatpak
-
-# Alternatively, for a system-wide install:
-flatpak install --system PolyMC-{{version.current}}.flatpak
-
-# (Optional) delete the file now that it's been installed:
-rm PolyMC-{{version.current}}.flatpak
-```
-
-</div>
-
-<div class="infobox top">
-
 # <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro
 
-There are several AUR packages available:  
-[![polymc](https://img.shields.io/badge/aur-polymc-blue)](https://aur.archlinux.org/packages/polymc/)  
-[![polymc-bin](https://img.shields.io/badge/aur-polymc--bin-blue)](https://aur.archlinux.org/packages/polymc-bin/)  
+There are several AUR packages available:
+[![polymc](https://img.shields.io/badge/aur-polymc-blue)](https://aur.archlinux.org/packages/polymc/)
+[![polymc-bin](https://img.shields.io/badge/aur-polymc--bin-blue)](https://aur.archlinux.org/packages/polymc-bin/)
 [![polymc-git](https://img.shields.io/badge/aur-polymc--git-blue)](https://aur.archlinux.org/packages/polymc-git/)
 
 ```bash
@@ -103,7 +79,7 @@ A [Nix derivation](https://github.com/PolyMC/PolyMC/blob/develop/nix/NIX.md) is 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"/> RPM
 
 An RPM package is available [on COPR](https://copr.fedorainfracloud.org/coprs/polymc/polymc/):
-  
+
 ```bash
 dnf copr enable polymc/polymc
 ```
