@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>header:after{content:"";display:table;clear:both}.home{color:var(--primary-text);height:3.5em}.home :link:not(:hover){text-decoration:none}nav{padding:.5em;overflow:auto;display:flex;justify-content:center;background-color:var(--background);border-radius:0 0 1em 1em}.nav{padding:0;margin:0;display:flex;justify-content:center;flex-wrap:wrap}.links,.navbar{display:flex;align-items:center;justify-content:center;padding:0;flex-wrap:wrap}.social-links i{font-size:1.75em;margin:.25em;color:var(--primary-text)}.social-links i:hover{color:var(--primary);cursor:pointer}.links .button{font-size:1.2em}.navbar{flex-direction:column}.nav-item{display:inline-block;font-size:1.2em;margin:.5em}.nav-item a{color:var(--primary-text);text-decoration:none}.nav-item-active{font-weight:700;font-size:1.25em}.hero{position:relative;color:#fff;z-index:0}.hero-title{font-size:3em}header .container{flex-direction:column}header .links{flex-direction:column}@media (min-width:64em){nav{justify-content:space-between}.navbar{flex-direction:row}header .container{flex-direction:row}header .links{flex-direction:row}}code[class*=language-],pre[class*=language-]{font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;background:var(--code);color:#f8f8f2}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#75715e}.token.punctuation{color:#f8f8f2}.token.namespace{opacity:.7}.token.boolean,.token.number,.token.operator{color:#fd971f}.token.property{color:#f4bf75}.token.tag{color:#66d9ef}.token.string{color:#a1efe4}.token.selector{color:#ae81ff}.token.attr-name{color:#fd971f}.language-css .token.string,.style .token.string,.token.entity,.token.url{color:#a1efe4}.token.attr-value,.token.control,.token.directive,.token.keyword,.token.unit{color:#a6e22e}.token.atrule,.token.regex,.token.statement{color:#a1efe4}.token.placeholder,.token.variable{color:#66d9ef}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #f9f8f5;text-decoration:none}.token.italic{font-style:italic}.token.bold,.token.important{font-weight:700}.token.important{color:#f92672}.token.entity{cursor:help}pre>code.highlight{outline:.4em solid #f92672;outline-offset:0.4em}.wiki-content,.wiki-toc{margin-top:1em}.wiki-toc{background-color:var(--accent);border-radius:1em;padding:1em;font-size:1rem;flex:1}.wiki-toc-list{display:flex;flex-wrap:wrap;justify-content:space-between;padding-left:0;padding-right:0;margin:0;list-style:none}.wiki-toc-list li{line-height:1.466666666667}.wiki-toc-list ul{padding:0 0 .75em 0;margin:0;list-style:none}.wiki-toc-list ul ul{padding-bottom:0;padding-left:.625rem}.wiki-toc-list ul ul>li:not(.wiki-toc-active)>ul>li:not(.wiki-toc-active){display:none}.wiki-toc-list a{padding:.15em .25em;display:block}.wiki-toc-list a:not(:hover){text-decoration:none}.wiki-toc-list li{margin:0;padding:0}.wiki-toc-list>li{flex-grow:1;flex-basis:14.375rem}.wiki-toc-list>li>a{color:var(--primary-text);font-weight:700;border-bottom:1px solid #ddd;margin-bottom:.25em}.wiki-toc-list li.wiki-toc-active>a{background-color:var(--accent)}.wiki-toc-list li.wiki-toc-active>ul,.wiki-toc-list ul.wiki-toc-active{display:block}.wiki-cat-list-active{font-weight:700}.inlinelist{padding:0}.inlinelist-no-nest ol,.inlinelist-no-nest ul{display:none}.wiki-tag{display:inline}.wiki-tag a{display:inline-flex;text-transform:uppercase;font-size:.75em;padding:.08333333333333em .3333333333333em;margin:.5em .5em .5em 0;color:var(--primary-text);border:1px solid var(--accent);border-radius:.25em;text-decoration:none;line-height:1.8}.wiki-tag:hover a{text-decoration:underline}.wiki-tag-active a{font-weight:700}@media (min-width:64em){.wiki-content{width:80%}.wiki-toc{margin-right:1em}}.download-tab-list{list-style:none;display:flex;justify-content:flex-start;list-style:none;padding:0;margin-bottom:0;border-radius:1em 1em 0 0;background-color:var(--accent);flex-wrap:wrap;overflow:hidden}.download-tab-list li{flex-grow:1;display:block}.download-tab-list a{color:var(--primary-text);font-size:1.2em;text-decoration:none;display:flex;justify-content:center;padding:.75em .5em}.download-tab-list a:hover{background-color:var(--accent-light)}.download-tab-list i{color:var(--primary-text);font-size:1.2em;text-decoration:none;display:flex;justify-content:center;margin-right:.25em}.download-tab-active a{background-color:var(--background)}.download-content{background-color:var(--background);padding:1em;border-radius:0 0 1em 1em}.download-content .column div{width:100%}.button-disabled,.download-content .button{width:100%;display:block;margin-bottom:1em;margin-left:0}@media (min-width:64em){.download-tab-list a{border-radius:1rem 1rem 0 0}.download-content .column div{width:80%}}.postlist{list-style:none;padding:0}.postlist-item{background-color:var(--background);border-radius:1em;padding:1em;display:flex;flex-wrap:wrap;align-items:baseline;counter-increment:start-from -1;line-height:1.8}.postlist :first-child{margin-top:0}.postlist{margin-top:0}.postlist-item:before{display:inline-block;pointer-events:none;content:"" counter(start-from,decimal-leading-zero) ". ";line-height:100%;text-align:right}.postlist-date,.postlist-item:before{font-size:.8125em;color:var(--darkgray)}.postlist-item:not(:first-child){margin-top:2em}.postlist-date{word-spacing:-0.5px}.postlist-link{font-size:1.2em;padding-left:.25em;padding-right:1em;text-underline-position:from-font;text-underline-offset:0;text-decoration-thickness:1px}.postlist-item-active .postlist-link{font-weight:500}.postlist-description{width:100%;border-left:var(--primary) .25em solid;padding:.5em;margin-top:.33em}.tmpl-home .postlist-link{font-size:1.1875em;font-weight:700}.post-tag{display:inline-flex;align-items:center;justify-content:center;text-transform:uppercase;font-size:.75em;padding:.08333333333333em .3333333333333em;margin-left:1em;color:var(--primary-text);border:1px solid var(--accent);border-radius:.25em;text-decoration:none;line-height:1.8}a.post-tag,a.post-tag:visited{color:inherit}a.post-tag:focus,a.post-tag:hover{background-color:var(--lightgray)}.postlist-item>.post-tag{align-self:center}.user-list{display:flex;flex-wrap:wrap;align-content:space-around;list-style:none;padding:0}.user-info{position:relative;margin:.5em;width:10em;border-radius:1em;overflow:hidden;background-color:var(--background);text-decoration:none;color:var(--primary-text);max-height:10em}.user-contrib{width:3em;background-color:var(--accent)}.user-contrib:hover{border:.2em solid var(--primary)}.user-info img{display:block;width:100%;height:auto}.user-name{color:#fff;font-size:1.2em;overflow-wrap:break-word;text-align:center}.user-info-overlay{position:absolute;display:flex;align-items:center;justify-content:center;top:0;bottom:0;left:0;right:0;opacity:0;transition:.3s ease;background-color:var(--primary)}.user-info:hover .user-info-overlay{opacity:1}:root{--grad-primary:linear-gradient(126deg, #88b858 0%, #72b147 25%, #5a9a30 50%);--grad-secondary:linear-gradient(126deg, #b7835a 0%, #765338 25%, #5b422d 50%);--grad-disabled:linear-gradient(126deg, #969696 0%, #cecece 25%, #bebebe 50%);--primary:#88b858;--secondary:#a87953;--background:#333333;--accent:#444444;--accent-light:#555555;--link:#88b858ff;--visited:#72b147ff;--primary-text:#ffffff;--code:#222;background-color:var(--background)}@media (prefers-color-scheme:light){:root{--primary-text:#333;--background:#ffffff;--accent:#e0e0e0;--accent-light:#d0d0d0}}*{box-sizing:border-box}body,html{padding:0;margin:0;font-family:Inter,-apple-system,system-ui,sans-serif;color:var(--primary-text)}.background{top:0;pointer-events:none;position:fixed;width:100%;height:100%;object-fit:cover;filter:brightness(50%);z-index:-1}*{box-sizing:border-box}p:last-child{margin-bottom:0}.tmpl-post li,iframe,img,p{max-width:min(100%)}.tmpl-post li,p{line-height:1.45}a{color:var(--link)}table{margin:1em 0}table td,table th{padding-right:1em}blockquote{border-left:var(--primary) .25em solid;padding:.5em;margin:0}code,pre{font-family:Consolas,Menlo,Monaco,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L","Courier New",Courier,monospace;line-height:1.5;border-radius:1em}.top{margin-top:1em}pre{font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;padding:1em;margin:.5em 0;background-color:var(--code);color:#fff;overflow:auto}code{word-break:break-all;color:#fff;background-color:var(--code)}.highlight-line{display:block;padding:.125em 1em;text-decoration:none;color:inherit}.highlight-line:empty:before{content:" "}.highlight-line+br{display:none}.highlight-line-isdir{color:#b0b0b0;background-color:#222}.highlight-line-active{background-color:#444;background-color:hsla(0,0%,27%,.8)}.highlight-line-add{background-color:#45844b}.highlight-line-remove{background-color:#902f2f}.container{max-width:90em;margin:0 auto;position:relative}.content{background-color:var(--background);border-radius:1em;padding:1em;-webkit-backdrop-filter:blur(2em);backdrop-filter:blur(10px)}.center{text-align:center;margin:auto}.infobox{background-color:var(--accent);padding:1em;border-radius:1em}.button-disabled{display:inline-block;position:relative;color:#fff;padding:.5em 1.5em;margin:.25em;list-style:none;font-size:1.2em;font-family:Inter,sans-serif;font-weight:600;text-decoration:none;background-color:var(--primary);background-image:var(--grad-disabled);background-size:200%;clip-path:polygon(0.6em 0,calc(100% - 0.6em) 0,100% 50%,calc(100% - 0.6em) 100%,0.6em 100%,0 50%);transition:250ms ease;background-position-x:100%}.button{display:inline-block;position:relative;color:#fff;padding:.5em 1.5em;margin:.25em;list-style:none;font-size:1.2em;font-family:Inter,sans-serif;font-weight:600;text-decoration:none;background-color:var(--primary);background-image:var(--grad-primary);background-size:200%;clip-path:polygon(0.6em 0,calc(100% - 0.6em) 0,100% 50%,calc(100% - 0.6em) 100%,0.6em 100%,0 50%);transition:250ms ease;background-position-x:100%}.button:focus,.button:hover{background-position-x:0%}.button{color:#fff}.is-big{font-size:1.5em}.button.secondary{background-color:var(--secondary);background-image:var(--grad-secondary)}.warning{background-color:#ffc;padding:1em .625em}.warning ol:only-child{margin:0}.direct-link{text-decoration:none;font-style:normal;margin-left:.1em}a.direct-link,a.direct-link:visited{color:transparent}:hover>a.direct-link,:hover>a.direct-link:visited,a.direct-link:focus,a.direct-link:focus:visited{color:#aaa}.download-links{padding:0}.download-links li{display:inline;margin:.25em}.row{display:flex;flex-direction:column}.column{display:flex;align-items:center;justify-content:center;padding:1em;text-align:center}.column img{height:auto}.subtitle{font-size:1.5em;text-align:center}.cards{display:flex;flex-wrap:wrap;flex-direction:column;gap:1em}.card{flex:1;padding:1em;text-align:center;background-color:var(--accent)}.card .button{width:100%;margin:0}.notification{position:relative;padding:1.25rem 2.5rem 1.25rem 1.5rem;margin-bottom:1em}.notification.is-info{background-color:var(--primary);color:#fff}.notification a{color:#fff}.footer{text-align:center;padding:2em;color:#fff}@media (min-width:64em){.row{flex-direction:row}.row-reverse{flex-direction:row-reverse}.column{flex:50%}.wiki-content{padding-left:1em}.cards{flex-direction:row;justify-content:space-between}.card{align-self:flex-start}}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyMC - (SECURITY PATCH - PLEASE READ THIS NEWS POST FULLY TO STAY SAFE) PolyMC 5.0, now available</title>
+    <meta name="description" content="New features, bug fixes and an important patch for a security vulnerability.">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="PolyMC">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="PolyMC">
+    <link rel="icon" type="image/png" sizes="128x128" href="/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/inter/index.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/inter/600.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/inter/700.css">
+    <link rel="stylesheet" href="/assets/forkawesome/css/fork-awesome.min.css">
+    <!-- incredibly based web app to make mod lists at https://moddermore.vercel.app -->
+  </head>
+  <body>
+    <header>
+  <section class="hero">
+    <div class="hero-head">
+      <nav class="container">
+        <div class="navbar">
+          <a href="/">
+            <svg viewBox="0 0 376.77 135.47" xmlns="http://www.w3.org/2000/svg" class="home" role="img" aria-label="PolyMC">
+              <defs>
+                <linearGradient id="a" x1="4.498" x2="12.435" y1="3.801" y2="9.568" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#88b858" offset="0"/>
+                  <stop stop-color="#72b147" offset=".5"/>
+                  <stop stop-color="#5a9a30" offset="1"/>
+                </linearGradient>
+              </defs>
+              <path d="M42.375 118.668s0-24.797 34.094-24.797c34.103 0 34.094 24.797 34.094 24.797z" fill="#765338"/>
+              <path d="M76.47 93.872 42.376 118.67 21.304 53.751z" fill="#b7835a"/>
+              <path d="m76.47 93.872 55.165-40.121-21.072 64.918z" fill="#5b422d"/>
+              <path d="m79 95.709-2.53 1.84-2.532-1.84c0-1.84 2.531-1.84 2.531-1.84s2.531 0 2.531 1.84z" fill="#72b147"/>
+              <path
+                d="M76.47 93.872s0-40.121 55.165-40.121l-1.564 4.819-6.384 8.324-6.384.962-6.383 8.324-6.384.961-6.384
+                  8.325-6.384.961-6.384 8.324-6.383.962z"
+                fill="#5a9a30"/>
+              <path
+                d="m73.938
+                  95.709-6.383-.961-6.384-8.325-6.384-.961-6.384-8.324-6.384-.962-6.383-8.324-6.384-.962-6.384-8.324-1.564-4.819c55.165 0
+                  55.165 40.121 55.165 40.121z"
+                fill="#88b858"/>
+              <path
+                d="m.53 6.685 7.937 5.766 7.937-5.766L8.467.918z"
+                fill="url(#a)"
+                transform="matrix(6.95 0 0 6.9572 17.626 7.241)"/>
+              <path d="m22.868 58.567-1.564-4.82L76.469 93.87l55.166-40.122-1.564 4.82L76.47 97.55z" fill="none"/>
+              <g fill="currentColor" stroke-width=".265">
+                <g stroke-width=".01">
+                  <path d="M168.153 47.323q5.434 0 9.287 1.858 3.852 1.788 5.916 5.228 2.133 3.44 2.133 8.324 0 2.958-.895 5.847-.894 2.82-2.889
+                  5.16-1.926 2.27-5.09 3.646t-7.705 1.375h-7.361v18.3h-6.673V47.322zm.688 25.041q2.958 0 4.884-.963 1.927-.963 3.027-2.408
+                  1.1-1.513 1.582-3.164.482-1.651.482-2.958
+                  0-1.514-.482-3.096-.481-1.651-1.65-2.958-1.101-1.376-2.959-2.202-1.788-.894-4.471-.894h-7.705v18.643zM187.49 82.6q0-4.265
+                  1.994-7.705 2.064-3.44 5.641-5.434 3.577-1.995 8.118-1.995 4.678 0 8.186 1.995 3.509 1.995 5.435 5.434 1.926 3.44 1.926
+                  7.705t-1.926 7.773q-1.926 3.44-5.503 5.435-3.509 1.995-8.187 1.995-4.54
+                  0-8.118-1.857-3.508-1.927-5.572-5.298-1.995-3.44-1.995-8.048zm6.397.07q0 2.751 1.238 5.021 1.238 2.202 3.302 3.509 2.133
+                  1.307 4.678 1.307 2.683 0 4.747-1.307 2.133-1.307 3.302-3.509 1.17-2.27 1.17-5.022
+                  0-2.752-1.17-4.953-1.17-2.27-3.302-3.577-2.064-1.376-4.747-1.376-2.614 0-4.747 1.376-2.063 1.376-3.302 3.646-1.17
+                  2.201-1.17 4.884zM223.251 43.858h6.398v53.246h-6.398zM238.914 110.808l18.78-42.17h5.917l-18.368
+                  42.17zm7.017-13.484-13.69-28.687h7.223l11.489 25.453zM266.775 97.085V51.2h.063l23.855 33.774-3.043-.67L311.384
+                  51.2h.122v45.885h-7.06v-29.88l.487 3.59-16.065 22.7h-.122l-16.31-22.7 1.218-3.286v29.576zM352.299 93.62q-.974.67-2.921
+                  1.643-1.887.973-4.564
+                  1.704-2.617.67-5.843.608-5.172-.062-9.31-1.825-4.138-1.826-6.999-4.869-2.86-3.104-4.442-7.06-1.522-4.016-1.522-8.52
+                  0-5.05 1.583-9.25t4.503-7.241q2.921-3.104 6.938-4.808 4.016-1.704 8.763-1.704 4.199 0 7.485 1.156 3.347 1.096 5.598
+                  2.496l-2.799 6.633q-1.704-1.156-4.26-2.313-2.556-1.156-5.781-1.156-2.921 0-5.599 1.217-2.678 1.156-4.686 3.347-2.008
+                  2.13-3.225 4.99-1.156 2.86-1.156 6.208 0 3.468 1.034 6.39 1.096 2.92 3.043 5.05 2.008 2.07 4.747 3.287 2.799 1.156 6.268
+                  1.156 3.408 0 5.964-1.035 2.616-1.095 4.199-2.434z"/>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <ul class="nav">
+              <li class="nav-item">
+                <a href="/news/">News</a>
+              </li>
+              <li class="nav-item">
+                <a href="/about/">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="/wiki/">Wiki</a>
+              </li>
+              <li class="nav-item">
+                <a href="/#get-involved">Community</a>
+              </li>
+          </ul>
+        </div>
+        <div class="links">
+          <div class="social-links">
+            <a href="https://discord.gg/WMtwnF5Cbr" target="_blank"><i class="fa fa-discord"></i></a>
+            <a href="https://matrix.to/#/#polymc:matrix.org" target="_blank"><i class="fa fa-matrix-org"></i></a>
+            <a href="https://www.reddit.com/r/PolyMCLauncher/" target="_blank"><i class="fa fa-reddit"></i></a>
+            <a href="https://github.com/PolyMC/PolyMC" target="_blank"><i class="fa fa-github"></i></a>
+          </div>
+          <div>
+            <a class="button" href="/download/">Download</a>
+            <a class="button" href="https://opencollective.com/polymc">Donate</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    
+  </section>
+</header>
+
+
+  <picture>
+    
+      <source type="image/webp" srcset="/img/built/BQs9Y0wY9U-3840.webp 3840w" sizes="100vw">
+  <source type="image/jpeg" srcset="/img/built/BQs9Y0wY9U-3840.jpeg 3840w" sizes="100vw">
+      <img
+        class="background"
+        src="/img/built/BQs9Y0wY9U-3840.jpeg"
+        width="3840"
+        height="2160"
+        alt="Background"
+        loading="lazy"
+        decoding="async">
+    </picture>
+
+
+<main class="container tmpl-post">
+  <div class="content top">
+  <h1>(SECURITY PATCH - PLEASE READ THIS NEWS POST FULLY TO STAY SAFE) PolyMC 5.0, now available</h1>
+
+  <time datetime="2023-02-04">04 Feb 2023</time><a href="/tags/release/" class="post-tag">release</a>
+
+  <p>This release brings all of the features that were only available in develop until now, and more importantly a patch to address a security vulnerability.</p>
+<h2 id="important-notice-regarding-a-security-vulnerability-in-previous-versions-of-the-software" tabindex="-1">IMPORTANT notice regarding a security vulnerability in previous versions of the software <a class="direct-link" href="#important-notice-regarding-a-security-vulnerability-in-previous-versions-of-the-software" aria-hidden="true">#</a></h2>
+<p>This version of PolyMC comes with a fix for a security vulnerability in the &quot;import from zip&quot; create instance option.</p>
+<p>If for any reason you haven't updated to version <strong>5.0 or above</strong> do not use the &quot;import from zip&quot; option unless you are 100% sure that the file you're importing is safe (meaning you analysed it yourself and determined that it's safe, or you're the one who authored the file).</p>
+<p><strong>Please</strong> ensure in 'Help &gt; About PolyMC' that you are running on at least version 5.0 before trying to use the &quot;import from zip&quot; option on any untrusted files.</p>
+<p>As of this news post being created, Flathub still hasn't updated to 5.0, so seriously do make sure that you're on 5.0 before using the &quot;import from zip&quot; option. Flatpak users will likely have to wait up to a few hours for the PolyMC Flatpak to be updated on Flathub.</p>
+<h2 id="what's-changed" tabindex="-1">What's Changed <a class="direct-link" href="#what's-changed" aria-hidden="true">#</a></h2>
+<ul>
+<li>Fix variable substitution in pre launch/post exit hooks by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/952">https://github.com/PolyMC/PolyMC/pull/952</a></li>
+<li>Hide the entire performance tab on the instance settings in non-Linux OSes by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/951">https://github.com/PolyMC/PolyMC/pull/951</a></li>
+<li>Fix segmentation fault when using jar mods by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/956">https://github.com/PolyMC/PolyMC/pull/956</a></li>
+<li>Fix filter in external resource pages not working by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/961">https://github.com/PolyMC/PolyMC/pull/961</a></li>
+<li>Fix broken url in readme by @jopejoe1 in <a href="https://github.com/PolyMC/PolyMC/pull/958">https://github.com/PolyMC/PolyMC/pull/958</a></li>
+<li>Fix adding multiple accounts in Qt6 by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/974">https://github.com/PolyMC/PolyMC/pull/974</a></li>
+<li>Implement mod resolving for FTB by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/699">https://github.com/PolyMC/PolyMC/pull/699</a></li>
+<li>Bump to C++17 by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/941">https://github.com/PolyMC/PolyMC/pull/941</a></li>
+<li>Trash instances instead of deleting by @ryanccn in <a href="https://github.com/PolyMC/PolyMC/pull/549">https://github.com/PolyMC/PolyMC/pull/549</a></li>
+<li>chore: update issue template to ask about Qt version by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1008">https://github.com/PolyMC/PolyMC/pull/1008</a></li>
+<li>fix: remove iconfix from libraries/README.MD by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1012">https://github.com/PolyMC/PolyMC/pull/1012</a></li>
+<li>Fix WinGet releaser by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/994">https://github.com/PolyMC/PolyMC/pull/994</a></li>
+<li>Add root path detection on OpenBSD by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1019">https://github.com/PolyMC/PolyMC/pull/1019</a></li>
+<li>fix: work around ubuntu 22.04 openssl appimage issues by copying openssl libs by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1006">https://github.com/PolyMC/PolyMC/pull/1006</a></li>
+<li>chore: downgrade to Qt 6.3.0 on macos by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1014">https://github.com/PolyMC/PolyMC/pull/1014</a></li>
+<li>Remove orphaned metadata to avoid problems with auto-updating instances by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1017">https://github.com/PolyMC/PolyMC/pull/1017</a></li>
+<li>Allow user to interrupt launch after 3 tries by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1018">https://github.com/PolyMC/PolyMC/pull/1018</a></li>
+<li>Fix some icon cache problems by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/920">https://github.com/PolyMC/PolyMC/pull/920</a></li>
+<li>Run markdownlint on the markdown files by @txtsd in <a href="https://github.com/PolyMC/PolyMC/pull/909">https://github.com/PolyMC/PolyMC/pull/909</a></li>
+<li>fix: Make world safety nag popup title text match the action by @budak7273 in <a href="https://github.com/PolyMC/PolyMC/pull/1039">https://github.com/PolyMC/PolyMC/pull/1039</a></li>
+<li>ATLauncher: Preliminary work towards pack updating by @jamierocks in <a href="https://github.com/PolyMC/PolyMC/pull/897">https://github.com/PolyMC/PolyMC/pull/897</a></li>
+<li>Decode process lines as UTF-8 by @magneticflux- in <a href="https://github.com/PolyMC/PolyMC/pull/968">https://github.com/PolyMC/PolyMC/pull/968</a></li>
+<li>Hide 'More news...' button if the news aren't loaded yet by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1049">https://github.com/PolyMC/PolyMC/pull/1049</a></li>
+<li>check for java installs in PATH on windows by @TayouVR in <a href="https://github.com/PolyMC/PolyMC/pull/1068">https://github.com/PolyMC/PolyMC/pull/1068</a></li>
+<li>fix: update <a href="http://org.polymc.PolyMC.metainfo.xml.in">org.polymc.PolyMC.metainfo.xml.in</a> to not make flatpak break next release by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1058">https://github.com/PolyMC/PolyMC/pull/1058</a></li>
+<li>Add &quot;Open All&quot; button to blocked mods dialog by @kumquat-ir in <a href="https://github.com/PolyMC/PolyMC/pull/919">https://github.com/PolyMC/PolyMC/pull/919</a></li>
+<li>Disable &quot;Check for Updates&quot; while the game is running or if all mods are removed by @Gingeh in <a href="https://github.com/PolyMC/PolyMC/pull/1007">https://github.com/PolyMC/PolyMC/pull/1007</a></li>
+<li>Switch to new versioning scheme by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/992">https://github.com/PolyMC/PolyMC/pull/992</a></li>
+<li>Only remove orphaned metadata once on mod page opening by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1044">https://github.com/PolyMC/PolyMC/pull/1044</a></li>
+<li>Use QSharedPointer instead of own impl. for shared_qobject_ptr by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1023">https://github.com/PolyMC/PolyMC/pull/1023</a></li>
+<li>Lazy-load type-specific instance settings by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/878">https://github.com/PolyMC/PolyMC/pull/878</a></li>
+<li>Make Coremods / Mods seperation more clear by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1035">https://github.com/PolyMC/PolyMC/pull/1035</a></li>
+<li>fix(COPYING): fix <a href="http://COPYING.md">COPYING.md</a> by adding some missing copyright notices by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1073">https://github.com/PolyMC/PolyMC/pull/1073</a></li>
+<li>fix: fix urls on ftb legacy by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1087">https://github.com/PolyMC/PolyMC/pull/1087</a></li>
+<li>Refactor a bit EnsureMetadataTask and calculate hashes in a incremental manner by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/965">https://github.com/PolyMC/PolyMC/pull/965</a></li>
+<li>Refactor resource models by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1052">https://github.com/PolyMC/PolyMC/pull/1052</a></li>
+<li>Fix build by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1094">https://github.com/PolyMC/PolyMC/pull/1094</a></li>
+<li>Never invalidate libraries cache entries by time elapsed by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1080">https://github.com/PolyMC/PolyMC/pull/1080</a></li>
+<li>Move classpath definition into NewLaunch itself by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1067">https://github.com/PolyMC/PolyMC/pull/1067</a></li>
+<li>Ensure individual destination file path exists in FS::overrideFolder by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1095">https://github.com/PolyMC/PolyMC/pull/1095</a></li>
+<li>Detect GameMode and MangoHud, disable if not present by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1034">https://github.com/PolyMC/PolyMC/pull/1034</a></li>
+<li>make the about dialog smaller by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1107">https://github.com/PolyMC/PolyMC/pull/1107</a></li>
+<li>Revert &quot;Move classpath definition into NewLaunch itself&quot; by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1111">https://github.com/PolyMC/PolyMC/pull/1111</a></li>
+<li>chore: update install-qt-action to v3 by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1114">https://github.com/PolyMC/PolyMC/pull/1114</a></li>
+<li>Fixed up a warning by @timoreo22 in <a href="https://github.com/PolyMC/PolyMC/pull/1113">https://github.com/PolyMC/PolyMC/pull/1113</a></li>
+<li>Reduce code duplication in tasks, fix some bugs and add some tests by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/966">https://github.com/PolyMC/PolyMC/pull/966</a></li>
+<li>Some more UI / UX improvements to the mod downloader! by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/939">https://github.com/PolyMC/PolyMC/pull/939</a></li>
+<li>Add basic resource pack parsing and fix issues by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1105">https://github.com/PolyMC/PolyMC/pull/1105</a></li>
+<li>Use MC versions list instead of ad-hoc logic to filter by major version in the mod downloader by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/997">https://github.com/PolyMC/PolyMC/pull/997</a></li>
+<li>Fix the mod updater not working as intended by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1117">https://github.com/PolyMC/PolyMC/pull/1117</a></li>
+<li>fix meta by @dada513 in <a href="https://github.com/PolyMC/PolyMC/pull/1129">https://github.com/PolyMC/PolyMC/pull/1129</a></li>
+<li>fix(actions, win): only copy openssl libs on qt5 builds by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1130">https://github.com/PolyMC/PolyMC/pull/1130</a></li>
+<li>Emit correct signals on NetJob abort by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1123">https://github.com/PolyMC/PolyMC/pull/1123</a></li>
+<li>Restructure tests by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1133">https://github.com/PolyMC/PolyMC/pull/1133</a></li>
+<li>Feature: Enable dark titlebar on Windows 10 (3) by @DavidoTek in <a href="https://github.com/PolyMC/PolyMC/pull/982">https://github.com/PolyMC/PolyMC/pull/982</a></li>
+<li>fix: allow starting rd- versions by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1146">https://github.com/PolyMC/PolyMC/pull/1146</a></li>
+<li>Added a button to launch in Demo mode by @jopejoe1 in <a href="https://github.com/PolyMC/PolyMC/pull/903">https://github.com/PolyMC/PolyMC/pull/903</a></li>
+<li>Use std::filesystem in some filesystem utils by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1142">https://github.com/PolyMC/PolyMC/pull/1142</a></li>
+<li>Fix crash and memory leak because of Resources by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1150">https://github.com/PolyMC/PolyMC/pull/1150</a></li>
+<li>Add basic texture pack parsing by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1108">https://github.com/PolyMC/PolyMC/pull/1108</a></li>
+<li>Allows double clicking to mark for download by @ErogigGit in <a href="https://github.com/PolyMC/PolyMC/pull/1165">https://github.com/PolyMC/PolyMC/pull/1165</a></li>
+<li>Improve language model by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1164">https://github.com/PolyMC/PolyMC/pull/1164</a></li>
+<li>Add early modpack updating system by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/894">https://github.com/PolyMC/PolyMC/pull/894</a></li>
+<li>Replaced tomlc99 with tomlplusplus by @Trial97 in <a href="https://github.com/PolyMC/PolyMC/pull/1162">https://github.com/PolyMC/PolyMC/pull/1162</a></li>
+<li>Add missing includes to fix Qt 6.4 build by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1172">https://github.com/PolyMC/PolyMC/pull/1172</a></li>
+<li>Switch to QCommandLineParser by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1167">https://github.com/PolyMC/PolyMC/pull/1167</a></li>
+<li>Update winget.yml by @vedantmgoyal2009 in <a href="https://github.com/PolyMC/PolyMC/pull/1171">https://github.com/PolyMC/PolyMC/pull/1171</a></li>
+<li>Support more formatting codes by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1154">https://github.com/PolyMC/PolyMC/pull/1154</a></li>
+<li>Fix mod icon issues and change delegate for Modrinth Modpacks by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1163">https://github.com/PolyMC/PolyMC/pull/1163</a></li>
+<li>Update capabilities before first-run wizard by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1183">https://github.com/PolyMC/PolyMC/pull/1183</a></li>
+<li>Improve default light and dark themes by @Protrikk in <a href="https://github.com/PolyMC/PolyMC/pull/1174">https://github.com/PolyMC/PolyMC/pull/1174</a></li>
+<li>fix: mod updating isn't upcoming anymore :p by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1185">https://github.com/PolyMC/PolyMC/pull/1185</a></li>
+<li>feat(actions): add codeql code scanning by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1177">https://github.com/PolyMC/PolyMC/pull/1177</a></li>
+<li>Multi-Arch Support by @Scrumplex in <a href="https://github.com/PolyMC/PolyMC/pull/1033">https://github.com/PolyMC/PolyMC/pull/1033</a></li>
+<li>Microsoft account only in <a href="https://github.com/PolyMC/PolyMC/pull/1175">https://github.com/PolyMC/PolyMC/pull/1175</a></li>
+<li>Merge Launch Buttons by @TayouVR in <a href="https://github.com/PolyMC/PolyMC/pull/1190">https://github.com/PolyMC/PolyMC/pull/1190</a></li>
+<li>Remove opted out versions from the download selector when using the 'Any' filter by @flowln in <a href="https://github.com/PolyMC/PolyMC/pull/1194">https://github.com/PolyMC/PolyMC/pull/1194</a></li>
+<li>make polymc build/work on platforms without std::filesystem, add macos-legacy package and remove old unnedeed hack by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1203">https://github.com/PolyMC/PolyMC/pull/1203</a></li>
+<li>fix: remove some unused libs by @DioEgizio in <a href="https://github.com/PolyMC/PolyMC/pull/1208">https://github.com/PolyMC/PolyMC/pull/1208</a></li>
+<li>change: Added diagnostic logging for OAuth 2.0 token reply errors, an… by @LennyMcLennington in <a href="https://github.com/PolyMC/PolyMC/pull/1480">https://github.com/PolyMC/PolyMC/pull/1480</a></li>
+<li>Curseforge workarounds and fixes by @LennyMcLennington in <a href="https://github.com/PolyMC/PolyMC/pull/1477">https://github.com/PolyMC/PolyMC/pull/1477</a></li>
+<li>Minor changes to curseforge workarounds by @LennyMcLennington in <a href="https://github.com/PolyMC/PolyMC/pull/1482">https://github.com/PolyMC/PolyMC/pull/1482</a></li>
+<li>Remove closed matrix rooms from README by @LennyMcLennington in <a href="https://github.com/PolyMC/PolyMC/pull/1490">https://github.com/PolyMC/PolyMC/pull/1490</a></li>
+<li>Have API key validators tolerate whitespace by @jdpatdiscord in <a href="https://github.com/PolyMC/PolyMC/pull/1494">https://github.com/PolyMC/PolyMC/pull/1494</a></li>
+<li>fix *bsd support by @unix-supremacist in <a href="https://github.com/PolyMC/PolyMC/pull/1500">https://github.com/PolyMC/PolyMC/pull/1500</a></li>
+<li>fix windows build by @binex-dsk in <a href="https://github.com/PolyMC/PolyMC/pull/1501">https://github.com/PolyMC/PolyMC/pull/1501</a></li>
+<li>Add Jinx by @HeyaGlitz in <a href="https://github.com/PolyMC/PolyMC/pull/1499">https://github.com/PolyMC/PolyMC/pull/1499</a></li>
+<li>fix: prevent stack overflow in ConcurrentTask by @LennyMcLennington in <a href="https://github.com/PolyMC/PolyMC/pull/1505">https://github.com/PolyMC/PolyMC/pull/1505</a></li>
+<li>Implement account per instance feature by @urFate in <a href="https://github.com/PolyMC/PolyMC/pull/1493">https://github.com/PolyMC/PolyMC/pull/1493</a></li>
+<li>Add Floppa :^) by @xslendix in <a href="https://github.com/PolyMC/PolyMC/pull/1510">https://github.com/PolyMC/PolyMC/pull/1510</a></li>
+<li>fix recursive crash on win64 by @jdpatdiscord in <a href="https://github.com/PolyMC/PolyMC/pull/1503">https://github.com/PolyMC/PolyMC/pull/1503</a></li>
+<li>Add a way to change the position of the cat. by @xslendix in <a href="https://github.com/PolyMC/PolyMC/pull/1508">https://github.com/PolyMC/PolyMC/pull/1508</a></li>
+<li>Add storage page to instances. by @xslendix in <a href="https://github.com/PolyMC/PolyMC/pull/1504">https://github.com/PolyMC/PolyMC/pull/1504</a></li>
+<li>Fix build fail on nix flake by @oluceps in <a href="https://github.com/PolyMC/PolyMC/pull/1531">https://github.com/PolyMC/PolyMC/pull/1531</a></li>
+<li>fix windows ci builds by @LennyMcLennington in <a href="https://github.com/PolyMC/PolyMC/pull/1538">https://github.com/PolyMC/PolyMC/pull/1538</a></li>
+<li>fix(ModrinthInstanceCreationTask): ignore files with invalid paths by @LennyMcLennington in <a href="https://github.com/PolyMC/PolyMC/pull/1537">https://github.com/PolyMC/PolyMC/pull/1537</a></li>
+<li>Fix Windows Qt6 builds by @LennyMcLennington in <a href="https://github.com/PolyMC/PolyMC/pull/1539">https://github.com/PolyMC/PolyMC/pull/1539</a></li>
+</ul>
+<h2 id="new-contributors" tabindex="-1">New Contributors <a class="direct-link" href="#new-contributors" aria-hidden="true">#</a></h2>
+<ul>
+<li>@budak7273 made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/1039">https://github.com/PolyMC/PolyMC/pull/1039</a></li>
+<li>@magneticflux- made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/968">https://github.com/PolyMC/PolyMC/pull/968</a></li>
+<li>@TayouVR made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/1068">https://github.com/PolyMC/PolyMC/pull/1068</a></li>
+<li>@kumquat-ir made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/919">https://github.com/PolyMC/PolyMC/pull/919</a></li>
+<li>@DavidoTek made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/982">https://github.com/PolyMC/PolyMC/pull/982</a></li>
+<li>@ErogigGit made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/1165">https://github.com/PolyMC/PolyMC/pull/1165</a></li>
+<li>@Trial97 made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/1162">https://github.com/PolyMC/PolyMC/pull/1162</a></li>
+<li>@vedantmgoyal2009 made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/1171">https://github.com/PolyMC/PolyMC/pull/1171</a></li>
+<li>@Protrikk made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/1174">https://github.com/PolyMC/PolyMC/pull/1174</a></li>
+<li>@jdpatdiscord made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/1494">https://github.com/PolyMC/PolyMC/pull/1494</a></li>
+<li>@unix-supremacist made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/1500">https://github.com/PolyMC/PolyMC/pull/1500</a></li>
+<li>@HeyaGlitz made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/1499">https://github.com/PolyMC/PolyMC/pull/1499</a></li>
+<li>@urFate made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/1493">https://github.com/PolyMC/PolyMC/pull/1493</a></li>
+<li>@xslendix made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/1510">https://github.com/PolyMC/PolyMC/pull/1510</a></li>
+<li>@oluceps made their first contribution in <a href="https://github.com/PolyMC/PolyMC/pull/1531">https://github.com/PolyMC/PolyMC/pull/1531</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/PolyMC/PolyMC/compare/1.4.0...5.0">https://github.com/PolyMC/PolyMC/compare/1.4.0...5.0</a></p>
+<p>You can <a href="/download">grab the latest download here</a> for your respective platform.</p>
+
+  <hr>
+  <ul><li>Previous: <a href="/news/release-1.4.3/">Major Bugfix 1.4.3, now available</a></li>
+  </ul>
+</div>
+
+</main>
+
+<footer>
+  <div class="footer">
+    <div class="container">
+        <a href="https://github.com/PolyMC/polymc.github.io/blob/master/./src/news/release-5.0.md" class="elv-externalexempt">Edit this page</a>
+        © 2021-2022 PolyMC Contributors
+        </h1>
+    </div>
+</div>
+</footer>
+
+  </body>
+</html>

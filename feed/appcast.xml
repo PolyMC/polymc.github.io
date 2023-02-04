@@ -7,6 +7,151 @@
     <language>en</language>
     
       <item>
+        <title>(SECURITY PATCH - PLEASE READ THIS NEWS POST FULLY TO STAY SAFE) PolyMC 5.0, now available (macOS)</title>
+        <link>https://polymc.org/news/release-5.0/</link>
+        <sparkle:version>5</sparkle:version>
+        <description>
+            &lt;p&gt;This release brings all of the features that were only available in develop until now, and more importantly a patch to address a security vulnerability.&lt;/p&gt;
+&lt;h2 id=&quot;important-notice-regarding-a-security-vulnerability-in-previous-versions-of-the-software&quot; tabindex=&quot;-1&quot;&gt;IMPORTANT notice regarding a security vulnerability in previous versions of the software &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-5.0/#important-notice-regarding-a-security-vulnerability-in-previous-versions-of-the-software&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This version of PolyMC comes with a fix for a security vulnerability in the &amp;quot;import from zip&amp;quot; create instance option.&lt;/p&gt;
+&lt;p&gt;If for any reason you haven&#39;t updated to version &lt;strong&gt;5.0 or above&lt;/strong&gt; do not use the &amp;quot;import from zip&amp;quot; option unless you are 100% sure that the file you&#39;re importing is safe (meaning you analysed it yourself and determined that it&#39;s safe, or you&#39;re the one who authored the file).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Please&lt;/strong&gt; ensure in &#39;Help &amp;gt; About PolyMC&#39; that you are running on at least version 5.0 before trying to use the &amp;quot;import from zip&amp;quot; option on any untrusted files.&lt;/p&gt;
+&lt;p&gt;As of this news post being created, Flathub still hasn&#39;t updated to 5.0, so seriously do make sure that you&#39;re on 5.0 before using the &amp;quot;import from zip&amp;quot; option. Flatpak users will likely have to wait up to a few hours for the PolyMC Flatpak to be updated on Flathub.&lt;/p&gt;
+&lt;h2 id=&quot;what&#39;s-changed&quot; tabindex=&quot;-1&quot;&gt;What&#39;s Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-5.0/#what&#39;s-changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix variable substitution in pre launch/post exit hooks by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/952&quot;&gt;https://github.com/PolyMC/PolyMC/pull/952&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hide the entire performance tab on the instance settings in non-Linux OSes by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/951&quot;&gt;https://github.com/PolyMC/PolyMC/pull/951&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix segmentation fault when using jar mods by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/956&quot;&gt;https://github.com/PolyMC/PolyMC/pull/956&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix filter in external resource pages not working by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/961&quot;&gt;https://github.com/PolyMC/PolyMC/pull/961&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix broken url in readme by @jopejoe1 in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/958&quot;&gt;https://github.com/PolyMC/PolyMC/pull/958&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix adding multiple accounts in Qt6 by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/974&quot;&gt;https://github.com/PolyMC/PolyMC/pull/974&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Implement mod resolving for FTB by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/699&quot;&gt;https://github.com/PolyMC/PolyMC/pull/699&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bump to C++17 by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/941&quot;&gt;https://github.com/PolyMC/PolyMC/pull/941&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Trash instances instead of deleting by @ryanccn in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/549&quot;&gt;https://github.com/PolyMC/PolyMC/pull/549&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore: update issue template to ask about Qt version by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1008&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1008&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: remove iconfix from libraries/README.MD by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1012&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1012&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix WinGet releaser by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/994&quot;&gt;https://github.com/PolyMC/PolyMC/pull/994&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add root path detection on OpenBSD by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1019&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1019&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: work around ubuntu 22.04 openssl appimage issues by copying openssl libs by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1006&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1006&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore: downgrade to Qt 6.3.0 on macos by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1014&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1014&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remove orphaned metadata to avoid problems with auto-updating instances by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1017&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1017&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Allow user to interrupt launch after 3 tries by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1018&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1018&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix some icon cache problems by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/920&quot;&gt;https://github.com/PolyMC/PolyMC/pull/920&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Run markdownlint on the markdown files by @txtsd in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/909&quot;&gt;https://github.com/PolyMC/PolyMC/pull/909&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: Make world safety nag popup title text match the action by @budak7273 in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1039&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1039&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ATLauncher: Preliminary work towards pack updating by @jamierocks in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/897&quot;&gt;https://github.com/PolyMC/PolyMC/pull/897&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Decode process lines as UTF-8 by @magneticflux- in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/968&quot;&gt;https://github.com/PolyMC/PolyMC/pull/968&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hide &#39;More news...&#39; button if the news aren&#39;t loaded yet by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1049&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1049&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;check for java installs in PATH on windows by @TayouVR in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1068&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1068&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: update &lt;a href=&quot;http://org.polymc.polymc.metainfo.xml.in/&quot;&gt;org.polymc.PolyMC.metainfo.xml.in&lt;/a&gt; to not make flatpak break next release by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1058&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1058&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add &amp;quot;Open All&amp;quot; button to blocked mods dialog by @kumquat-ir in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/919&quot;&gt;https://github.com/PolyMC/PolyMC/pull/919&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Disable &amp;quot;Check for Updates&amp;quot; while the game is running or if all mods are removed by @Gingeh in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1007&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1007&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Switch to new versioning scheme by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/992&quot;&gt;https://github.com/PolyMC/PolyMC/pull/992&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Only remove orphaned metadata once on mod page opening by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1044&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1044&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use QSharedPointer instead of own impl. for shared_qobject_ptr by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1023&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1023&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lazy-load type-specific instance settings by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/878&quot;&gt;https://github.com/PolyMC/PolyMC/pull/878&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Make Coremods / Mods seperation more clear by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1035&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1035&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(COPYING): fix &lt;a href=&quot;http://copying.md/&quot;&gt;COPYING.md&lt;/a&gt; by adding some missing copyright notices by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1073&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1073&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: fix urls on ftb legacy by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1087&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1087&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Refactor a bit EnsureMetadataTask and calculate hashes in a incremental manner by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/965&quot;&gt;https://github.com/PolyMC/PolyMC/pull/965&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Refactor resource models by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1052&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1052&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix build by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1094&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1094&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Never invalidate libraries cache entries by time elapsed by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1080&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1080&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Move classpath definition into NewLaunch itself by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1067&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1067&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ensure individual destination file path exists in FS::overrideFolder by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1095&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1095&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Detect GameMode and MangoHud, disable if not present by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1034&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1034&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;make the about dialog smaller by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1107&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1107&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Revert &amp;quot;Move classpath definition into NewLaunch itself&amp;quot; by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1111&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1111&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;chore: update install-qt-action to v3 by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1114&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1114&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed up a warning by @timoreo22 in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1113&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1113&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Reduce code duplication in tasks, fix some bugs and add some tests by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/966&quot;&gt;https://github.com/PolyMC/PolyMC/pull/966&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Some more UI / UX improvements to the mod downloader! by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/939&quot;&gt;https://github.com/PolyMC/PolyMC/pull/939&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add basic resource pack parsing and fix issues by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1105&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1105&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use MC versions list instead of ad-hoc logic to filter by major version in the mod downloader by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/997&quot;&gt;https://github.com/PolyMC/PolyMC/pull/997&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix the mod updater not working as intended by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1117&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1117&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix meta by @dada513 in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1129&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1129&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(actions, win): only copy openssl libs on qt5 builds by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1130&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1130&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Emit correct signals on NetJob abort by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1123&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1123&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Restructure tests by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1133&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1133&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Feature: Enable dark titlebar on Windows 10 (3) by @DavidoTek in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/982&quot;&gt;https://github.com/PolyMC/PolyMC/pull/982&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: allow starting rd- versions by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1146&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1146&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added a button to launch in Demo mode by @jopejoe1 in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/903&quot;&gt;https://github.com/PolyMC/PolyMC/pull/903&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Use std::filesystem in some filesystem utils by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1142&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1142&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix crash and memory leak because of Resources by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1150&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1150&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add basic texture pack parsing by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1108&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1108&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Allows double clicking to mark for download by @ErogigGit in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1165&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1165&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Improve language model by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1164&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1164&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add early modpack updating system by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/894&quot;&gt;https://github.com/PolyMC/PolyMC/pull/894&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Replaced tomlc99 with tomlplusplus by @Trial97 in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1162&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1162&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add missing includes to fix Qt 6.4 build by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1172&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1172&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Switch to QCommandLineParser by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1167&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1167&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update winget.yml by @vedantmgoyal2009 in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1171&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1171&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support more formatting codes by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1154&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1154&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix mod icon issues and change delegate for Modrinth Modpacks by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1163&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1163&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update capabilities before first-run wizard by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1183&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1183&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Improve default light and dark themes by @Protrikk in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1174&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1174&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: mod updating isn&#39;t upcoming anymore :p by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1185&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1185&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;feat(actions): add codeql code scanning by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1177&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1177&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Multi-Arch Support by @Scrumplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1033&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1033&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Microsoft account only in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1175&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1175&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Merge Launch Buttons by @TayouVR in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1190&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1190&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remove opted out versions from the download selector when using the &#39;Any&#39; filter by @flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1194&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1194&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;make polymc build/work on platforms without std::filesystem, add macos-legacy package and remove old unnedeed hack by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1203&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1203&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: remove some unused libs by @DioEgizio in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1208&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1208&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;change: Added diagnostic logging for OAuth 2.0 token reply errors, an… by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1480&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1480&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Curseforge workarounds and fixes by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1477&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1477&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Minor changes to curseforge workarounds by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1482&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1482&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remove closed matrix rooms from README by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1490&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1490&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Have API key validators tolerate whitespace by @jdpatdiscord in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1494&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1494&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix *bsd support by @unix-supremacist in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1500&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1500&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix windows build by @binex-dsk in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1501&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1501&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add Jinx by @HeyaGlitz in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1499&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1499&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: prevent stack overflow in ConcurrentTask by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1505&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1505&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Implement account per instance feature by @urFate in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1493&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1493&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add Floppa :^) by @xslendix in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1510&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1510&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix recursive crash on win64 by @jdpatdiscord in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1503&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1503&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add a way to change the position of the cat. by @xslendix in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1508&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1508&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add storage page to instances. by @xslendix in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1504&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1504&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix build fail on nix flake by @oluceps in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1531&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1531&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix windows ci builds by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1538&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1538&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix(ModrinthInstanceCreationTask): ignore files with invalid paths by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1537&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1537&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix Windows Qt6 builds by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1539&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1539&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;new-contributors&quot; tabindex=&quot;-1&quot;&gt;New Contributors &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-5.0/#new-contributors&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;@budak7273 made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1039&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1039&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@magneticflux- made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/968&quot;&gt;https://github.com/PolyMC/PolyMC/pull/968&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@TayouVR made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1068&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1068&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@kumquat-ir made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/919&quot;&gt;https://github.com/PolyMC/PolyMC/pull/919&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@DavidoTek made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/982&quot;&gt;https://github.com/PolyMC/PolyMC/pull/982&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@ErogigGit made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1165&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1165&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@Trial97 made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1162&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1162&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@vedantmgoyal2009 made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1171&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1171&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@Protrikk made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1174&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1174&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@jdpatdiscord made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1494&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1494&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@unix-supremacist made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1500&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1500&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@HeyaGlitz made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1499&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1499&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@urFate made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1493&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1493&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@xslendix made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1510&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1510&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@oluceps made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1531&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1531&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/1.4.0...5.0&quot;&gt;https://github.com/PolyMC/PolyMC/compare/1.4.0...5.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+
+        </description>
+        <pubDate>2023-02-04T00:00:00Z</pubDate>
+        <sparkle:minimumSystemVersion>10.14.0</sparkle:minimumSystemVersion>
+        
+        
+        
+        <enclosure sparkle:os="macos"
+            url="https://github.com/PolyMC/PolyMC/releases/download/5/PolyMC-macOS-5.tar.gz"
+            length="0"
+            type="application/octet-stream"
+            sparkle:edSignature="RmmJbGOAMTt2Q1ixvyYOLtYvBsCQhaY5+p8iNVM3l+AW4tlvHn4WV5uK1UIAhniTp5Um2yqXjFlJjk8IBhQHCw=="/>
+      </item>
+    
+      <item>
         <title>Major Bugfix 1.4.3, now available (macOS)</title>
         <link>https://polymc.org/news/release-1.4.3/</link>
         <sparkle:version>1.4.3</sparkle:version>
