@@ -137,6 +137,6 @@ As of this news post being created, Flathub still hasn't updated to 5.0, so seri
 * @xslendix made their first contribution in https://github.com/PolyMC/PolyMC/pull/1510
 * @oluceps made their first contribution in https://github.com/PolyMC/PolyMC/pull/1531
 
-**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.4.0...5.0
+**Full Changelog**: https://github.com/PolyMC/PolyMC/compare/1.4.3...5.0
 
 You can [grab the latest download here](/download) for your respective platform.
