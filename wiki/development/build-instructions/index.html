@@ -151,9 +151,9 @@
 <h3 id="build-dependencies" tabindex="-1">Build dependencies <a class="direct-link" href="#build-dependencies" aria-hidden="true">#</a></h3>
 <ul>
 <li>A C++ compiler capable of building C++17 code.</li>
-<li>Qt Development tools 5.12 or newer (<code>qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5</code> on Debian-based systems)
+<li>Qt Development tools 5.12 or newer (<code>qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5 libqt5charts5-dev</code> on Debian-based systems)
 <ul>
-<li>Alternatively you can also use Qt 6.0 or newer (<code>qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6-dev libqt6network6</code> on Debian (testing/unstable) based systems), if you prefer it.</li>
+<li>Alternatively you can also use Qt 6.0 or newer (<code>qt6-base-dev qtchooser qt6-base-dev-tools libqt6core6 libqt6core5compat6-dev libqt6network6 libqt6charts6-dev</code> on Debian (testing/unstable) based systems), if you prefer it.</li>
 </ul>
 </li>
 <li>cmake 3.15 or newer (<code>cmake</code> on Debian-based system)</li>
@@ -276,9 +276,9 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 <p>Install helpers: Run <code>pacman -Syu pactoys git</code> in the MSYS2 shell.</p>
 </li>
 <li>
-<p>Install all build dependencies using <code>pacboy</code>: Run <code>pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p quazip-qt6:p extra-cmake-modules:p</code>.</p>
+<p>Install all build dependencies using <code>pacboy</code>: Run <code>pacboy -S toolchain:p cmake:p ninja:p qt6-base:p qt6-5compat:p qt6-svg:p qt6-imageformats:p qt6-charts:p quazip-qt6:p extra-cmake-modules:p</code>.</p>
 <ul>
-<li>Alternatively you can use Qt 5 (for older Windows versions), by running the following command instead: <code>pacboy -S toolchain:p cmake:p ninja:p qt5-base:p qt5-svg:p qt5-imageformats:p quazip-qt5:p extra-cmake-modules:p</code></li>
+<li>Alternatively you can use Qt 5 (for older Windows versions), by running the following command instead: <code>pacboy -S toolchain:p cmake:p ninja:p qt5-base:p qt5-svg:p qt5-imageformats:p qt5-charts:p quazip-qt5:p extra-cmake-modules:p</code></li>
 <li>This might take a while, as it will install Qt and all the build tools required.</li>
 </ul>
 </li>
