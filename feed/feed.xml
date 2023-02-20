@@ -5,12 +5,37 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2023-02-04T00:00:00Z</updated>
+	<updated>2023-02-19T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>(ANOTHER SECURITY VULNERABILITY - READ TO STAY SAFE) PolyMC 5.1, now available</title>
+		<link href="https://polymc.org/news/release-5.1/"/>
+		<updated>2023-02-19T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-5.1/</id>
+		<content type="html">&lt;p&gt;This new version of PolyMC patches a security vulnerability in the software&#39;s zip file handling. Don&#39;t use the &#39;import from zip&#39; option on versions of the software older than 5.1.&lt;/p&gt;
+&lt;p&gt;Other changes are a fix to importing FTB packs, a fix for the modrinth pack list being formatted wrong, and a fix for copying instances on Unix-like systems.&lt;/p&gt;
+&lt;h2 id=&quot;what&#39;s-changed&quot; tabindex=&quot;-1&quot;&gt;What&#39;s Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-5.1/#what&#39;s-changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix(MMCZip): ignore invalid file paths in extractSubDir by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1546&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1546&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: handle single files in copy tasks by @Doggermelon in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1526&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1526&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: Make modrinth text layout not be weird by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1548&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1548&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Clean &amp;amp; Compress Floppas by @KaspianDev in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1541&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1541&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix instance copy on Linux and macOS by flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1552&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1552&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;new-contributors&quot; tabindex=&quot;-1&quot;&gt;New Contributors &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-5.1/#new-contributors&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;@Doggermelon made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1526&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1526&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@KaspianDev made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1541&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1541&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/5.0...5.1&quot;&gt;https://github.com/PolyMC/PolyMC/compare/5.0...5.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>(SECURITY PATCH - PLEASE READ THIS NEWS POST FULLY TO STAY SAFE) PolyMC 5.0, now available</title>

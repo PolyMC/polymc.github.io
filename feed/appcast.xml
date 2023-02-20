@@ -7,6 +7,42 @@
     <language>en</language>
     
       <item>
+        <title>(ANOTHER SECURITY VULNERABILITY - READ TO STAY SAFE) PolyMC 5.1, now available (macOS)</title>
+        <link>https://polymc.org/news/release-5.1/</link>
+        <sparkle:version>5.1</sparkle:version>
+        <description>
+            &lt;p&gt;This new version of PolyMC patches a security vulnerability in the software&#39;s zip file handling. Don&#39;t use the &#39;import from zip&#39; option on versions of the software older than 5.1.&lt;/p&gt;
+&lt;p&gt;Other changes are a fix to importing FTB packs, a fix for the modrinth pack list being formatted wrong, and a fix for copying instances on Unix-like systems.&lt;/p&gt;
+&lt;h2 id=&quot;what&#39;s-changed&quot; tabindex=&quot;-1&quot;&gt;What&#39;s Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-5.1/#what&#39;s-changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fix(MMCZip): ignore invalid file paths in extractSubDir by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1546&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1546&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: handle single files in copy tasks by @Doggermelon in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1526&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1526&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix: Make modrinth text layout not be weird by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1548&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1548&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Clean &amp;amp; Compress Floppas by @KaspianDev in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1541&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1541&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix instance copy on Linux and macOS by flowln in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1552&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1552&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;new-contributors&quot; tabindex=&quot;-1&quot;&gt;New Contributors &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-5.1/#new-contributors&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;@Doggermelon made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1526&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1526&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@KaspianDev made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1541&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1541&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/5.0...5.1&quot;&gt;https://github.com/PolyMC/PolyMC/compare/5.0...5.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+
+        </description>
+        <pubDate>2023-02-19T00:00:00Z</pubDate>
+        <sparkle:minimumSystemVersion>10.14.0</sparkle:minimumSystemVersion>
+        
+        
+        
+        <enclosure sparkle:os="macos"
+            url="https://github.com/PolyMC/PolyMC/releases/download/5.1/PolyMC-macOS-5.1.tar.gz"
+            length="0"
+            type="application/octet-stream"
+            sparkle:edSignature="r0T8ecyH7XTXD+3ZbgcUVRP6vxvoAWD8EqtHz67WqEY1yuDuGQH+q2XsmaSpV/dGsvVKnYJLIsk+VUgXe+iOCA=="/>
+      </item>
+    
+      <item>
         <title>(SECURITY PATCH - PLEASE READ THIS NEWS POST FULLY TO STAY SAFE) PolyMC 5.0, now available (macOS)</title>
         <link>https://polymc.org/news/release-5.0/</link>
         <sparkle:version>5</sparkle:version>
