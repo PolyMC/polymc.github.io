@@ -114,3 +114,22 @@ sudo emerge -a polymc
 ```
 
 </div>
+
+<div class="infobox top">
+
+# <img src="https://voidlinux.org/assets/img/void_bg.png" height="20"/> Void Linux
+
+First you need to get the repo:
+```bash
+echo 'repository=https://xslendi.xyz/void' | sudo tee /etc/xbps.d/69-polymc.conf
+```
+Then you need to sync and install:
+```bash
+sudo xbps-install -S PolyMC-qt5
+```
+Or, if you have `xtools` installed:
+```bash
+xi PolyMC-qt5
+```
+
+</div>
