@@ -157,22 +157,22 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/news/</loc>
-    <lastmod>2023-12-20</lastmod>
-  </url>
-  
-  <url>
     <loc>https://polymc.org/tags/multimc/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/april-fools/</loc>
+    <loc>https://polymc.org/tags/news/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
   <url>
     <loc>https://polymc.org/tags/release/</loc>
+    <lastmod>2023-12-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/tags/april-fools/</loc>
     <lastmod>2023-12-20</lastmod>
   </url>
   
