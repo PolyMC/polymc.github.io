@@ -5,12 +5,50 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2023-02-19T00:00:00Z</updated>
+	<updated>2023-12-20T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>PolyMC 6.0, now available</title>
+		<link href="https://polymc.org/news/release-6.0/"/>
+		<updated>2023-12-20T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-6.0/</id>
+		<content type="html">&lt;h2 id=&quot;what&#39;s-changed&quot; tabindex=&quot;-1&quot;&gt;What&#39;s Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-6.0/#what&#39;s-changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-6.0/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add support for authlibinjector by @Kaydax in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1598&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1598&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-6.0/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add CMake option to enable stricter DRM by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1595&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1595&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;don&#39;t set arbitrary minimum for jvm memory by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1615&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1615&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-6.0/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;fix: change windows legacy builds to 64 bit by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1555&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1555&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix compile error on FreeBSD by @glowiak in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1560&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1560&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Clean up codebase and fix bug by @jdpatdiscord in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1575&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1575&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix bug, fix more warnings (See commit description) by @jdpatdiscord in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1576&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1576&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update to Java 8 by @HeyaGlitz in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1581&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1581&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix build on Qt 6.6.0 by @binex-dsk in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1612&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1612&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Allow compilation on 32-bit by @jdpatdiscord in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1608&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1608&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix hang when importing certain modpacks by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1616&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1616&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix MSA profile fetching by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1621&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1621&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Create offline mode accounts with consistent Uuids by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1622&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1622&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;new-contributors&quot; tabindex=&quot;-1&quot;&gt;New Contributors &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-6.0/#new-contributors&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;@Spongecade made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1605&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1605&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@Kaydax made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1598&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1598&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/5.1...6.0&quot;&gt;https://github.com/PolyMC/PolyMC/compare/5.1...6.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>(ANOTHER SECURITY VULNERABILITY - READ TO STAY SAFE) PolyMC 5.1, now available</title>
