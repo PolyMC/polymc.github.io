@@ -194,51 +194,59 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 
 ### Install prerequisites
 
-- Install XCode Command Line tools.
-- Install the official build of CMake (<https://cmake.org/download/>).
-- Install extra-cmake-modules
-- Install JDK 8 (<https://adoptium.net/temurin/releases/?variant=openjdk8&jvmVariant=hotspot>).
-- Install Qt 5.12 or newer or any version of Qt 6 (recommended)
-
-Using [homebrew](https://brew.sh) you can install these dependencies with a single command:
-
-```bash
-brew update # in the case your repositories weren't updated
-brew install qt openjdk@17 cmake ninja extra-cmake-modules # use qt@5 if you want to install qt5
-```
-
-### XCode Command Line tools
-
-If you don't have XCode Command Line tools installed, you can install them with this command:
+1. Install XCode Command Line tools.
 
 ```bash
 xcode-select --install
 ```
 
-### Build
-
-Choose an installation path.
-
-This is where the final `PolyMC.app` will be constructed when you run `make install`. Supply it as the `CMAKE_INSTALL_PREFIX` argument during CMake configuration. By default, it's in the dist folder, under PolyMC.
+2. Install CMake, extra-cmake-modules, OpenJDK 17, and Qt 6 with homebrew:
 
 ```bash
-mkdir build
-cd build
+brew update
+# specify qt@5 if you want to use qt5
+brew install qt openjdk@17 cmake extra-cmake-modules ninja
+```
+
+### Build
+
+1. Create the `build` directory
+
+```bash
+mkdir build && cd build
+```
+
+2. Add OpenJDK 17 binaries and includes to the environment
+
+```bash
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+```
+
+3. Configure the build with CMake
+   - By default, `make install` will construct the final package to `PolyMC/dist/PolyMC.app`. You can change the `-DCMAKE_INSTALL_PREFIX` argument if you want the app installed to a different directory. You can also copy the constructed `PolyMC.app` to your `Applications` folder.
+   - If you are building using Qt 5, add the argument `-DQt5_DIR="/opt/homebrew/opt/qt"`
+   - This example CMake command enables link time/interprocedural optimization. If you would like to disable LTO/IPO, set `-DENABLE_LTO=OFF`.
+   - If you want to build a combined binary, add the argument `-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64"`. This is not recommended for development.
+
+```bash
 cmake \
  -DCMAKE_BUILD_TYPE=Release \
  -DCMAKE_INSTALL_PREFIX:PATH="$(dirname $PWD)/dist/" \
- -DCMAKE_PREFIX_PATH="/path/to/Qt/" \
- -DQt5_DIR="/path/to/Qt/" \
- -DCMAKE_OSX_DEPLOYMENT_TARGET=10.14 \
- -DLauncher_QT_VERSION_MAJOR=6 \ # if you want to use Qt 6
- -DENABLE_LTO=ON \ # if you want to enable LTO/IPO
- -DLauncher_BUILD_PLATFORM=macOS
-#-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not reccomended for development)
- ..
-make install
+ -DCMAKE_PREFIX_PATH="/opt/homebrew/opt/qt" \
+ -DCMAKE_OSX_DEPLOYMENT_TARGET=14.2 \
+ -DLauncher_QT_VERSION_MAJOR=6 \
+ -DENABLE_LTO=ON \
+ -DLauncher_BUILD_PLATFORM=macOS \
+ -S .. -B .
 ```
 
-Remember to replace `/path/to/Qt/` with the actual path. For newer Qt installations, it is often in your home directory. (For the Homebrew installation, it's likely to be in `/opt/homebrew/opt/qt`.
+4. Build the package
+   - Change `-j4` to `-j<num of processor cores>`, i.e. `-j8`
+
+```
+make -j4 install
+```
 
 **Note:** The final app bundle may not run due to code signing issues, which
 need to be fixed with `codesign -fs -`.
