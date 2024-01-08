@@ -7,6 +7,38 @@
     <language>en</language>
     
       <item>
+        <title>PolyMC 6.1, now available (macOS)</title>
+        <link>https://polymc.org/news/release-6.1/</link>
+        <sparkle:version>6.1</sparkle:version>
+        <description>
+            &lt;h2 id=&quot;what&#39;s-changed&quot; tabindex=&quot;-1&quot;&gt;What&#39;s Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-6.1/#what&#39;s-changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-6.1/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix storage page chart legend not respecting theme by @HeyaGlitz in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1629&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1629&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix instance import by @LennyMcLennington in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1633&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1633&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-6.1/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Make Java auto-detect find sdkman Java installations by @HeyaGlitz in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1631&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1631&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Make Christmas cat last longer by @HeyaGlitz in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1627&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1627&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/6.0...6.1&quot;&gt;https://github.com/PolyMC/PolyMC/compare/6.0...6.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+
+        </description>
+        <pubDate>2024-01-07T00:00:00Z</pubDate>
+        <sparkle:minimumSystemVersion>10.14.0</sparkle:minimumSystemVersion>
+        
+        
+        
+        <enclosure sparkle:os="macos"
+            url="https://github.com/PolyMC/PolyMC/releases/download/6.1/PolyMC-macOS-6.1.tar.gz"
+            length="0"
+            type="application/octet-stream"
+            sparkle:edSignature="hm+OBvbAvJyewQq4p6j5KHg25QlLB7M5AE3x01v3fnkvBFk2pXRxEiH2aY1JGXUQJdLtKn+9Afi+xg81DifgAA=="/>
+      </item>
+    
+      <item>
         <title>PolyMC 6.0, now available (macOS)</title>
         <link>https://polymc.org/news/release-6.0/</link>
         <sparkle:version>6</sparkle:version>
