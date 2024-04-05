@@ -44,6 +44,18 @@ sudo xbps-install openjdk17-jre openjdk8-jre
 sudo pacman -S jre17-openjdk jre8-openjdk
 ```
 
+### Gentoo
+
+```bash
+sudo emerge -a dev-java/openjdk:17 dev-java/openjdk:8
+```
+
+Alternatively, you can install binary versions by running:
+
+```bash
+sudo emerge -a dev-java/openjdk-bin:17 dev-java/openjdk-bin:8
+```
+
 ### Ubuntu
 
 ```bash
