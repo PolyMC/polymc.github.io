@@ -25,8 +25,6 @@ Discord - https://discord.com/invite/WMtwnF5Cbr
 
 Reddit - https://www.reddit.com/r/PolyMCLauncher/
 
-Matrix - https://matrix.to/#/#polymc:matrix.org
-
 Again if you run into any issues don't hesitate to join any of these channels and ask for help.
 
 # What's next for PolyMC?
