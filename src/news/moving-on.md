@@ -50,7 +50,6 @@ If you want to be involved in PolyMC, check out the following links:
 - [PolyMC GitHub Organization][gh-org]
 - [PolyMC Source Code][gh-poly]
 - [PolyMC Discord server][discord]
-- [PolyMC Matrix Space][matrix-space] (bridged with Discord)
 
 ---
 
@@ -65,6 +64,5 @@ If you want to be involved in PolyMC, check out the following links:
 [gh-poly-meta-sabotage]: https://github.com/PolyMC/PolyMC/issues/75#issuecomment-1023571223
 [gh-polymorphosis]: https://github.com/PolyMC/polymorphosis
 [gpl3]: https://en.wikipedia.org/wiki/GNU_General_Public_License
-[matrix-space]: https://matrix.to/#/#polymc:matrix.org
 [mmc-drops-aur]: https://www.reddit.com/r/linux_gaming/comments/riitbs/multimc_is_dropping_all_support_for_aur_packages/
 [rfc-0001]: https://github.com/PolyMC/PolyMC/issues/167

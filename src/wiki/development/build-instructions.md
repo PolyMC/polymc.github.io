@@ -151,7 +151,7 @@ flatpak-builder --user --install flatbuild org.polymc.PolyMC.yml
 
    - If the project builds successfully it will run and the Launcher window will pop up.
 
-**If this doesn't work for you, please let us know on our Discord sever, or Matrix Space.**
+**If this doesn't work for you, please let us know on our Discord sever.**
 
 ## Windows
 
