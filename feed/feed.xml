@@ -5,12 +5,59 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2024-01-07T00:00:00Z</updated>
+	<updated>2025-02-14T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>PolyMC 7.0, now available</title>
+		<link href="https://polymc.org/news/release-7.0/"/>
+		<updated>2025-02-14T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-7.0/</id>
+		<content type="html">&lt;p&gt;Apparently there&#39;s NeoForge support in this one or something, idk I don&#39;t play Minecraft.&lt;/p&gt;
+&lt;h2 id=&quot;what&#39;s-changed&quot; tabindex=&quot;-1&quot;&gt;What&#39;s Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-7.0/#what&#39;s-changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Improve SDKMAN support; add ASDF support by @Nik-mmzd in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1635&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1635&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix nix build by @LordMZTE in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1649&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1649&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix circular dependency and typos in metainfo. by @ZebulanStanphill in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1651&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1651&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix nix package on wayland by @LordMZTE in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1652&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1652&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Include JDK 21 into the nix derivation by @hustlerone in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1661&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1661&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add NeoForge support by @62832 in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1659&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1659&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update Nix package by @LordMZTE in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1665&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1665&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;switch minecraft page to use tabs by @Sneedplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1680&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1680&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;add option for default mod download platform by @Sneedplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1679&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1679&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;confirm instance deletion even if it&#39;s only trashed by @Sneedplex in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1678&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1678&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add Pallas&#39;s cat (Otocolobus manul) :3 by @Sightem in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1556&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1556&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Update copyright years by @HeyaGlitz in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1639&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1639&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix Java auto-detect so it finds Gentoo installed JDKs by @Richard-Rogalski in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1657&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1657&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remove Matrix related links by @xslendix in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1668&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1668&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open paths directly by @Nik-mmzd in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1636&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1636&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add additional architecture + OS checks by @Richard-Rogalski in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1597&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1597&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add &amp;quot;Create desktop shortcut&amp;quot; feature. by @xslendix in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1516&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1516&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add option to disable mod update check by @Erogig in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1170&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1170&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add vulkan-loader by @nonetrix in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1650&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1650&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;fix nix build by @LordMZTE in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1682&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1682&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;nix: Update to latest nixpkgs-unstable by @LordMZTE in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1686&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1686&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;new-contributors&quot; tabindex=&quot;-1&quot;&gt;New Contributors &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-7.0/#new-contributors&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;@Nik-mmzd made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1635&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1635&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@LordMZTE made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1649&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1649&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@ZebulanStanphill made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1651&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1651&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@hustlerone made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1661&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1661&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@62832 made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1659&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1659&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@Sneedplex made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1680&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1680&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@Sightem made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1556&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1556&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@Richard-Rogalski made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1657&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1657&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;@nonetrix made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1650&quot;&gt;https://github.com/PolyMC/PolyMC/pull/1650&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/6.1...7.0&quot;&gt;https://github.com/PolyMC/PolyMC/compare/6.1...7.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>PolyMC 6.1, now available</title>
