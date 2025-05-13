@@ -21,7 +21,7 @@ To install in PolyMC, create an instance with the **Fabric (or Quilt)** loader, 
 
 ### <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/src/main/resources/assets/iris/iris-logo.png" height="20"> Iris
 
-[Iris](https://irisshaders.net/) allows you to use OptiFine shaderpacks, while also running Sodium. It works well, but doesn't yet support every shader.
+[Iris](https://irisshaders.dev/) allows you to use OptiFine shaderpacks, while also running Sodium. It works well, but doesn't yet support every shader.
 
 You can find a list of currently supported shaderpacks [here](https://github.com/IrisShaders/Iris/blob/trunk/docs/supportedshaders.md).
 
