@@ -64,7 +64,7 @@ This is the preferred method of installation, and is suitable for packages.
 cmake -S . -B build \
    -DCMAKE_BUILD_TYPE=Release \
    -DCMAKE_INSTALL_PREFIX="/usr" \ # Use "/usr" when building Linux packages. If building not for package, use "/usr/local"
-   -DENABLE_LTO=ON # if you want to enable LTO/IPO
+   -DENABLE_LTO=ON # if you want to enable LTO/IPO. On FreeBSD disable it, or the launcher will segfault
 #  -DLauncher_QT_VERSION_MAJOR="6" # if you want to use Qt 6
 
 cmake --build build -j$(nproc)
