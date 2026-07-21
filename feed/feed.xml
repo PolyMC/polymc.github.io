@@ -5,12 +5,46 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2025-02-14T00:00:00Z</updated>
+	<updated>2026-07-14T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>PolyMC 7.1 has been released</title>
+		<link href="https://polymc.org/news/release-7.1/"/>
+		<updated>2026-07-14T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-7.1/</id>
+		<content type="html">&lt;p&gt;This is just to fix support for CurseForge after July 16th... &lt;sup&gt;&lt;sub&gt;god i hate curseforge&lt;/sub&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h2 id=&quot;notice&quot; tabindex=&quot;-1&quot;&gt;Notice &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-7.1/#notice&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Linux builds are now exclusively AppImage. The prebuilt binaries are useless. Also Removed Qt 5 builds from Linux&lt;/p&gt;
+&lt;h2 id=&quot;what&#39;s-changed&quot; tabindex=&quot;-1&quot;&gt;What&#39;s Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-7.1/#what&#39;s-changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix compiling for Qt 6.9.0 (Nice) and QTBUG-135800 workaround by &lt;a href=&quot;https://github.com/Kaydax&quot;&gt;@Kaydax&lt;/a&gt; in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1693&quot;&gt;#1693&lt;/a&gt;, &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1703&quot;&gt;#1703&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Skip empty and non-executable Java paths when probing by &lt;a href=&quot;https://github.com/byte-chan&quot;&gt;@byte-chan&lt;/a&gt; in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1696&quot;&gt;#1696&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Windows on ARM support: architecture detection, workflow matrix, NSIS fixes by &lt;a href=&quot;https://github.com/crueter&quot;&gt;@crueter&lt;/a&gt; and &lt;a href=&quot;https://github.com/Kaydax&quot;&gt;@Kaydax&lt;/a&gt; in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1743&quot;&gt;#1743&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix GitHub workflow: Ubuntu 22.04, CMake, ccache-action by &lt;a href=&quot;https://github.com/Kaydax&quot;&gt;@Kaydax&lt;/a&gt; in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1705&quot;&gt;#1705&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;macOS CI: update to macOS 15, fix macos-legacy by &lt;a href=&quot;https://github.com/Kaydax&quot;&gt;@Kaydax&lt;/a&gt; in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1731&quot;&gt;#1731&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;nix: add JDK 25, migrate from deprecated xorg namespace by &lt;a href=&quot;https://github.com/rusty-tendrils&quot;&gt;@rusty-tendrils&lt;/a&gt; in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1755&quot;&gt;#1755&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CMake: add USE_CCACHE option by &lt;a href=&quot;https://github.com/crueter&quot;&gt;@crueter&lt;/a&gt; in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1744&quot;&gt;#1744&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Refactor workflows: extensible scripts, quick-sharun, new action structure by &lt;a href=&quot;https://github.com/crueter&quot;&gt;@crueter&lt;/a&gt; in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1746&quot;&gt;#1746&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CI: move CodeQL to separate job, add versioned artifacts by &lt;a href=&quot;https://github.com/crueter&quot;&gt;@crueter&lt;/a&gt; in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1747&quot;&gt;#1747&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CI: add aarch64 AppImage, remove Quazip-qt5 by &lt;a href=&quot;https://github.com/crueter&quot;&gt;@crueter&lt;/a&gt; in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1751&quot;&gt;#1751&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add patchelf to &lt;a href=&quot;http://deps.sh/&quot;&gt;deps.sh&lt;/a&gt; by &lt;a href=&quot;https://github.com/Samueru-sama&quot;&gt;@Samueru-sama&lt;/a&gt; in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1765&quot;&gt;#1765&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;mangohud: update to shim DLL by &lt;a href=&quot;https://github.com/hustlerone&quot;&gt;@hustlerone&lt;/a&gt; in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1729&quot;&gt;#1729&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;new-contributors&quot; tabindex=&quot;-1&quot;&gt;New Contributors &lt;a class=&quot;direct-link&quot; href=&quot;https://polymc.org/news/release-7.1/#new-contributors&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/byte-chan&quot;&gt;@byte-chan&lt;/a&gt; made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1696&quot;&gt;#1696&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/rusty-tendrils&quot;&gt;@rusty-tendrils&lt;/a&gt; made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1755&quot;&gt;#1755&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/Samueru-sama&quot;&gt;@Samueru-sama&lt;/a&gt; made their first contribution in &lt;a href=&quot;https://github.com/PolyMC/PolyMC/pull/1765&quot;&gt;#1765&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/7.0...7.1&quot;&gt;https://github.com/PolyMC/PolyMC/compare/7.0...7.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>PolyMC 7.0, now available</title>
