@@ -177,12 +177,7 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/april-fools/</loc>
-    <lastmod>2026-10-02</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://polymc.org/tags/news/</loc>
+    <loc>https://polymc.org/tags/multimc/</loc>
     <lastmod>2026-10-02</lastmod>
   </url>
   
@@ -192,7 +187,12 @@
   </url>
   
   <url>
-    <loc>https://polymc.org/tags/multimc/</loc>
+    <loc>https://polymc.org/tags/april-fools/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://polymc.org/tags/news/</loc>
     <lastmod>2026-10-02</lastmod>
   </url>
   

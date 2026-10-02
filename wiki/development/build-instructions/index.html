@@ -312,23 +312,39 @@ Both <code>flatpak</code> and <code>flatpak-builder</code> must be installed on 
 </ol>
 <h2 id="macos" tabindex="-1">macOS <a class="direct-link" href="#macos" aria-hidden="true">#</a></h2>
 <h3 id="install-prerequisites" tabindex="-1">Install prerequisites <a class="direct-link" href="#install-prerequisites" aria-hidden="true">#</a></h3>
-<ul>
+<ol>
 <li>Install XCode Command Line tools.</li>
-<li>Install the official build of CMake (<a href="https://cmake.org/download/">https://cmake.org/download/</a>).</li>
-<li>Install extra-cmake-modules</li>
-<li>Install JDK 8 (<a href="https://adoptium.net/temurin/releases/?variant=openjdk8&amp;jvmVariant=hotspot">https://adoptium.net/temurin/releases/?variant=openjdk8&amp;jvmVariant=hotspot</a>).</li>
-<li>Install Qt 5.12 or newer or any version of Qt 6 (recommended)</li>
-</ul>
-<p>Using <a href="https://brew.sh">homebrew</a> you can install these dependencies with a single command:</p>
-<pre class="language-bash"><code class="language-bash">brew update <span class="token comment"># in the case your repositories weren't updated</span><br>brew <span class="token function">install</span> qt openjdk@17 cmake ninja extra-cmake-modules <span class="token comment"># use qt@5 if you want to install qt5</span></code></pre>
-<h3 id="xcode-command-line-tools" tabindex="-1">XCode Command Line tools <a class="direct-link" href="#xcode-command-line-tools" aria-hidden="true">#</a></h3>
-<p>If you don't have XCode Command Line tools installed, you can install them with this command:</p>
+</ol>
 <pre class="language-bash"><code class="language-bash">xcode-select --install</code></pre>
+<ol start="2">
+<li>Install CMake, extra-cmake-modules, OpenJDK 17, and Qt 6 with homebrew:</li>
+</ol>
+<pre class="language-bash"><code class="language-bash">brew update<br><span class="token comment"># specify qt@5 if you want to use qt5</span><br>brew <span class="token function">install</span> qt openjdk@17 cmake extra-cmake-modules ninja</code></pre>
 <h3 id="build" tabindex="-1">Build <a class="direct-link" href="#build" aria-hidden="true">#</a></h3>
-<p>Choose an installation path.</p>
-<p>This is where the final <code>PolyMC.app</code> will be constructed when you run <code>make install</code>. Supply it as the <code>CMAKE_INSTALL_PREFIX</code> argument during CMake configuration. By default, it's in the dist folder, under PolyMC.</p>
-<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> build<br><span class="token builtin class-name">cd</span> build<br>cmake <span class="token punctuation">\</span><br> -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br> -DCMAKE_INSTALL_PREFIX:<span class="token environment constant">PATH</span><span class="token operator">=</span><span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">dirname</span> <span class="token environment constant">$PWD</span><span class="token variable">)</span></span>/dist/"</span> <span class="token punctuation">\</span><br> -DCMAKE_PREFIX_PATH<span class="token operator">=</span><span class="token string">"/path/to/Qt/"</span> <span class="token punctuation">\</span><br> -DQt5_DIR<span class="token operator">=</span><span class="token string">"/path/to/Qt/"</span> <span class="token punctuation">\</span><br> -DCMAKE_OSX_DEPLOYMENT_TARGET<span class="token operator">=</span><span class="token number">10.14</span> <span class="token punctuation">\</span><br> -DLauncher_QT_VERSION_MAJOR<span class="token operator">=</span><span class="token number">6</span> <span class="token punctuation">\</span> <span class="token comment"># if you want to use Qt 6</span><br> -DENABLE_LTO<span class="token operator">=</span>ON <span class="token punctuation">\</span> <span class="token comment"># if you want to enable LTO/IPO</span><br> -DLauncher_BUILD_PLATFORM<span class="token operator">=</span>macOS<br><span class="token comment">#-DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" # to build a universal binary (not reccomended for development)</span><br> <span class="token punctuation">..</span><br><span class="token function">make</span> <span class="token function">install</span></code></pre>
-<p>Remember to replace <code>/path/to/Qt/</code> with the actual path. For newer Qt installations, it is often in your home directory. (For the Homebrew installation, it's likely to be in <code>/opt/homebrew/opt/qt</code>.</p>
+<ol>
+<li>Create the <code>build</code> directory</li>
+</ol>
+<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> build <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> build</code></pre>
+<ol start="2">
+<li>You may need to add OpenJDK 17 binaries and includes to the environment.</li>
+</ol>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token string">"/opt/homebrew/opt/openjdk@17/bin:<span class="token environment constant">$PATH</span>"</span><br><span class="token builtin class-name">export</span> <span class="token assign-left variable">CPPFLAGS</span><span class="token operator">=</span><span class="token string">"-I/opt/homebrew/opt/openjdk@17/include"</span></code></pre>
+<ol start="3">
+<li>Configure the build with CMake
+<ul>
+<li>By default, <code>make install</code> will construct the final package to <code>PolyMC/dist/PolyMC.app</code>. You can change the <code>-DCMAKE_INSTALL_PREFIX</code> argument if you want the app installed to a different directory. You can also copy the constructed <code>PolyMC.app</code> to your <code>Applications</code> folder.</li>
+<li>If you are building using Qt 5, add the argument <code>-DQt5_DIR=&quot;/opt/homebrew/opt/qt&quot;</code></li>
+<li>This example CMake command enables link time/interprocedural optimization. If you would like to disable LTO/IPO, set <code>-DENABLE_LTO=OFF</code>.</li>
+<li>If you want to build a combined binary, add the argument <code>-DCMAKE_OSX_ARCHITECTURES=&quot;x86_64;arm64&quot;</code>. This is not recommended for development.</li>
+</ul>
+</li>
+</ol>
+<pre class="language-bash"><code class="language-bash">cmake <span class="token punctuation">\</span><br> -GNinja <span class="token punctuation">\</span><br> -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br> -DCMAKE_INSTALL_PREFIX:<span class="token environment constant">PATH</span><span class="token operator">=</span><span class="token string">"<span class="token variable"><span class="token variable">$(</span><span class="token function">dirname</span> <span class="token environment constant">$PWD</span><span class="token variable">)</span></span>/dist/"</span> <span class="token punctuation">\</span><br> -DCMAKE_PREFIX_PATH<span class="token operator">=</span><span class="token string">"/opt/homebrew/opt/qt"</span> <span class="token punctuation">\</span><br> -DCMAKE_OSX_DEPLOYMENT_TARGET<span class="token operator">=</span><span class="token number">11.7</span> <span class="token punctuation">\</span><br> -DLauncher_QT_VERSION_MAJOR<span class="token operator">=</span><span class="token number">6</span> <span class="token punctuation">\</span><br> -DENABLE_LTO<span class="token operator">=</span>ON <span class="token punctuation">\</span><br> -DLauncher_BUILD_PLATFORM<span class="token operator">=</span>macOS <span class="token punctuation">\</span><br> -S <span class="token punctuation">..</span> -B <span class="token builtin class-name">.</span></code></pre>
+<ol start="4">
+<li>Build the package</li>
+</ol>
+<pre><code>make install
+</code></pre>
 <p><strong>Note:</strong> The final app bundle may not run due to code signing issues, which<br>
 need to be fixed with <code>codesign -fs -</code>.</p>
 <h2 id="openbsd" tabindex="-1">OpenBSD <a class="direct-link" href="#openbsd" aria-hidden="true">#</a></h2>
@@ -346,7 +362,7 @@ need to be fixed with <code>codesign -fs -</code>.</p>
 </ul>
 <p>You can use IDEs, like KDevelop or QtCreator, to open the CMake project if you want to work on the code.</p>
 <h3 id="building-a-portable-binary-1" tabindex="-1">Building a portable binary <a class="direct-link" href="#building-a-portable-binary-1" aria-hidden="true">#</a></h3>
-<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> <span class="token function">install</span><br><span class="token comment"># configure the project</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span>./install -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake -DENABLE_LTO<span class="token operator">=</span>ON <br><span class="token comment"># build</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span><br>cmake --install <span class="token function">install</span> --component portable</code></pre>
+<pre class="language-bash"><code class="language-bash"><span class="token function">mkdir</span> <span class="token function">install</span><br><span class="token comment"># configure the project</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span>./install -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake -DENABLE_LTO<span class="token operator">=</span>ON<br><span class="token comment"># build</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span><br>cmake --install <span class="token function">install</span> --component portable</code></pre>
 <h3 id="building-and-installing-to-the-system-1" tabindex="-1">Building &amp; installing to the system <a class="direct-link" href="#building-and-installing-to-the-system-1" aria-hidden="true">#</a></h3>
 <p>This is the preferred method of installation, and is suitable for packages.</p>
 <pre class="language-bash"><code class="language-bash"><span class="token comment"># configure everything</span><br>cmake -S <span class="token builtin class-name">.</span> -B build <span class="token punctuation">\</span><br>   -DCMAKE_BUILD_TYPE<span class="token operator">=</span>Release <span class="token punctuation">\</span><br>   -DCMAKE_INSTALL_PREFIX<span class="token operator">=</span><span class="token string">"/usr/local"</span> <span class="token punctuation">\</span> <span class="token comment"># /usr/local is default in OpenBSD and FreeBSD</span><br>   -DCMAKE_PREFIX_PATH<span class="token operator">=</span>/usr/local/lib/qt5/cmake <span class="token comment"># use linux layout and point to qt5 libs</span><br>   -DENABLE_LTO<span class="token operator">=</span>ON <span class="token comment"># if you want to enable LTO/IPO</span><br><span class="token builtin class-name">cd</span> build<br><span class="token function">make</span> -j<span class="token variable"><span class="token variable">$(</span>nproc<span class="token variable">)</span></span> <span class="token function">install</span> <span class="token comment"># Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir})</span></code></pre>
