@@ -4,56 +4,68 @@ eleventyNavigation:
   parent: Getting Started
   order: 2
 ---
-
 # Installing Java
-
 Java is **required** in order to run Minecraft. As such, until Java downloading is implemented, you **will** need to **manually** install Java to run Minecraft with PolyMC.
 
-Currently, we recommend heading over to [Adoptium](https://adoptium.net/) to install the latest versions of Java. Minecraft 1.17 and upwards will require **Temurin 17 (LTS)**, while anything below will require **Temurin 8 (LTS).**
+Currently, we recommend heading over to [Adoptium](https://adoptium.net/) to install the latest versions of Java (Eclipse Temurin).
 
-* 1.17 or newer: **Temurin 17 (LTS)**
-* 1.16.5 or older: **Temurin 8 (LTS)**
+Minecraft version requirements:
 
-If you aren't sure which version you will need, **it is recommended to just install both.**
+* **26.1 or newer**: **Temurin 25 (LTS)**
+* **1.20.5 to 1.21.x**: **Temurin 21 (LTS)**
+* **1.17 to 1.20.4**: **Temurin 17 (LTS)**
+* **1.16.5 or older**: **Temurin 8 (LTS)**
+
+If you aren't sure which version you will need, **it is recommended to install 8, 17, 21, and 25**.
 
 **NOTE:** You can use any OpenJDK build you want. [Azul Zulu](https://www.azul.com/downloads/?package=jre#download-openjdk) is a popular alternative to Temurin, and will work just as well.
 
-You can also use Oracle Java, but openjdk is better here. Also to download Oracle Java 9+ you need an Oracle account which is not a good thing.
+You can also use Oracle Java, but OpenJDK is better here. Also, to download Oracle Java 9+ you need an Oracle account which is not a good thing.
 
-## Java on linux
-
+## Java on Linux
 On Linux, it's recommended to use your package manager for installing Java.
 
 ### Fedora
-
-On the COPR package all required java versions should be installed, but this is the command to install it:
+On the COPR package all required Java versions should be installed, but this is the command to install the common ones:
 
 ```bash
-sudo dnf install java-1.8.0-openjdk java-17-openjdk
+sudo dnf install java-1.8.0-openjdk java-17-openjdk java-21-openjdk java-25-openjdk
 ```
 
 ### Void Linux
 
 ```bash
-sudo xbps-install openjdk17-jre openjdk8-jre
+sudo xbps-install openjdk8-jre openjdk17-jre openjdk21-jre openjdk25-jre
 ```
 
 ### Arch Linux
 
 ```bash
-sudo pacman -S jre17-openjdk jre8-openjdk
+sudo pacman -S jre8-openjdk jre17-openjdk jre21-openjdk jre25-openjdk
+```
+
+### Gentoo
+
+```bash
+sudo emerge -a dev-java/openjdk:8 dev-java/openjdk:17 dev-java/openjdk:21 dev-java/openjdk:25
+```
+
+Alternatively, you can install binary versions by running:
+
+```bash
+sudo emerge -a dev-java/openjdk-bin:8 dev-java/openjdk-bin:17 dev-java/openjdk-bin:21 dev-java/openjdk-bin:25
 ```
 
 ### Ubuntu
 
 ```bash
-sudo apt install openjdk-17-jre openjdk-8-jre
+sudo apt install openjdk-8-jre openjdk-17-jre openjdk-21-jre openjdk-25-jre
 ```
 
 ### Debian
 
 ```bash
-sudo apt install openjdk-17-jre 
+sudo apt install openjdk-17-jre openjdk-21-jre openjdk-25-jre
 ```
 
 Java 8 is not available from Debian repos for unknown reasons, but you can [get a deb from Azul](https://www.azul.com/downloads/?version=java-8-lts&os=debian&package=jre&show-old-builds=true)
@@ -70,7 +82,7 @@ The PolyMC NixOS package already bundles java.
 
 ### Forge 1.16.5 and Java 8u321+
 
-Old versions of Forge crash with Java 8u321+. For this reason, using Java 8u312 or lower is reccomended
+Old versions of Forge crash with Java 8u321+. You can bypass this by enabling `Ignore Forge security errors` in your instance's Java settings. Minecraft 1.6.x should also install Legacy Java Fixer from CurseForge.
 
 ### Using Java
 
