@@ -2,7 +2,13 @@
 layout: layouts/main.njk
 templateClass: tmpl-wiki
 ---
-<div class="row row-reverse">
+<div class="wiki-layout">
+  <div class="wiki-toc">
+    {%- if eleventyNavigation -%}
+      {%- set navKey = eleventyNavigation.key -%}
+    {%- endif -%}
+    {{ collections.wiki | eleventyNavigation | eleventyNavigationToHtml({ activeKey: navKey, listClass: 'wiki-toc-list', activeListItemClass: 'wiki-toc-active' }) | safe }}
+  </div>
   <div class="wiki-content content">
   <!---  {% if eleventyNavigation and eleventyNavigation.parent %}
     <nav class="breadcrumb" aria-labelledby="breadcrumb">
@@ -23,11 +29,5 @@ templateClass: tmpl-wiki
     {% endif %}
 
     {% endif %}
-  </div>
-  <div class="wiki-toc">
-    {%- if eleventyNavigation -%}
-      {%- set navKey = eleventyNavigation.key -%}
-    {%- endif -%}
-    {{ collections.wiki | eleventyNavigation | eleventyNavigationToHtml({ activeKey: navKey, listClass: 'wiki-toc-list', activeListItemClass: 'wiki-toc-active' }) | safe }}
   </div>
 </div>

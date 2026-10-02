@@ -59,4 +59,17 @@ PolyMC is a custom launcher for Minecraft that was forked from MultiMC. It allow
   </li>
   {% endfor %}
 </ul>
+
+<style>
+.user-contrib a[href="https://github.com/staFF6773"] img {
+  border: 0.2em solid var(--primary);
+  border-radius: var(--radius-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+.user-contrib a[href="https://github.com/staFF6773"]:hover img,
+.user-contrib a[href="https://github.com/staFF6773"]:focus img {
+  transform: scale(1.15);
+  box-shadow: 0 0 0.75em var(--primary);
+}
+</style>
 </div>

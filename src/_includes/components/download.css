@@ -1,69 +1,93 @@
+/* ============================================================
+   Download page
+   ============================================================ */
 .download-tab-list {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 0;
-    border-radius: 1em 1em 0 0;
-    background-color: var(--accent);
-    flex-wrap: wrap;
-    overflow: hidden;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-bottom: 0;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .download-tab-list li {
-    flex-grow: 1;
-    display: block;
+  flex-grow: 1;
+  display: block;
 }
 
 .download-tab-list a {
-    color: var(--primary-text);
-    font-size: 1.2em;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    padding: 0.75em 0.5em;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-md) var(--space-sm);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
 }
 
-.download-tab-list a:hover {
-    background-color: var(--accent-light);
+.download-tab-list a:visited {
+  color: var(--color-text-muted);
+}
+
+.download-tab-list a:hover,
+.download-tab-list a:focus-visible {
+  background-color: var(--color-surface-elevated);
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 .download-tab-list i {
-    color: var(--primary-text);
-    font-size: 1.2em;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    margin-right: 0.25em;
+  font-size: 1.2em;
 }
 
-.download-tab-active a {
-    background-color: var(--background);
+.download-tab-active a,
+.download-tab-active a:visited {
+  background-color: var(--color-bg);
+  color: var(--primary);
+}
+
+.download-tab-active a:hover,
+.download-tab-active a:focus-visible {
+  color: var(--primary-hover);
 }
 
 .download-content {
-    background-color: var(--background);
-    padding: 1em;
-    border-radius: 0 0 1em 1em;
+  background-color: var(--color-bg);
+  padding: var(--space-lg);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  border: 1px solid var(--color-border);
+  border-top: 0;
 }
 
 .download-content .column div {
-    width: 100%;
+  width: 100%;
 }
 
-.download-content .button, .button-disabled {
-    width: 100%;
-    display: block;
-    margin-bottom: 1em;
-    margin-left: 0;
+.download-content .button,
+.download-content .button-disabled {
+  width: 100%;
+  display: block;
+  margin: 0 0 var(--space-md) 0;
+}
+
+.download-content .button:last-child {
+  margin-bottom: 0;
 }
 
 @media (min-width: 64em) {
-    .download-tab-list a {
-        border-radius: 1rem 1rem 0 0;
-    }
-    .download-content .column div {
-        width: 80%;
-    }
+  .download-tab-list a {
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+  }
+
+  .download-content .column div {
+    width: 80%;
+  }
 }

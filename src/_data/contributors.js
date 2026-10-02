@@ -21,6 +21,11 @@ module.exports = async function () {
 		info.push([pages[i].avatar_url, pages[i].html_url])
 	}
 
+	info.push([
+		"https://avatars.githubusercontent.com/u/108166164?v=4",
+		"https://github.com/staFF6773"
+	]);
+
 	return {
 		users: info,
 	};
