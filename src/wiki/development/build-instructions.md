@@ -188,7 +188,7 @@ We recommend using a build workflow based on MSYS2, as it's the easiest way to g
 4. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
 5. Run the command `cmake --install build`, and it should install PolyMC to whatever the `-DCMAKE_INSTALL_PREFIX` was.
 6. If you don't want PolyMC to store its data in `%APPDATA%`, run `cmake --install build --component portable` after the install process
-7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do `cp /mingw32/bin/libcrypto-1_1.dll /mingw32/bin/libssl-1_1.dll install`. This should copy the required OpenSSL DLLs to log in.
+7. In most cases, whenever compiling, the OpenSSL DLLs aren't put into the directory to where PolyMC installs, meaning that you cannot log in. The best way to fix this, is just to do `cp /mingw32/bin/libcrypto-*.dll /mingw32/bin/libssl-*.dll install`. This should copy the required OpenSSL DLLs to log in.
 
 ## macOS
 
