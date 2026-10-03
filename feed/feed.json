@@ -10,6 +10,12 @@
     "url": "https://polymc.org/about/"
   },
   "items": [{
+      "id": "https://polymc.org/news/release-8.1/",
+      "url": "https://polymc.org/news/release-8.1/",
+      "title": "PolyMC 8.1 has been released",
+      "content_html": "<p>This is an amendment release to 8.0 that fixes older Minecraft versions being unable to join servers.</p>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/PolyMC/PolyMC/compare/8.0...8.1\">https://github.com/PolyMC/PolyMC/compare/8.0...8.1</a></p>\n<p>You can <a href=\"https://polymc.org/download\">grab the latest download here</a> for your respective platform.</p>\n",
+      "date_published": "2026-10-03T00:00:00Z"
+    },{
       "id": "https://polymc.org/news/release-8.0/",
       "url": "https://polymc.org/news/release-8.0/",
       "title": "PolyMC 8.0 has been released",

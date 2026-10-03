@@ -5,12 +5,23 @@
 	
 	<link href="https://polymc.org/feed/feed.xml" rel="self"/>
 	<link href="https://polymc.org/"/>
-	<updated>2026-10-02T00:00:00Z</updated>
+	<updated>2026-10-03T00:00:00Z</updated>
 	<id>https://polymc.org/</id>
 	<author>
 		<name>PolyMC</name>
 		<email>youremailaddress@example.com</email>
 	</author>
+	
+	<entry>
+		<title>PolyMC 8.1 has been released</title>
+		<link href="https://polymc.org/news/release-8.1/"/>
+		<updated>2026-10-03T00:00:00Z</updated>
+		<id>https://polymc.org/news/release-8.1/</id>
+		<content type="html">&lt;p&gt;This is an amendment release to 8.0 that fixes older Minecraft versions being unable to join servers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/8.0...8.1&quot;&gt;https://github.com/PolyMC/PolyMC/compare/8.0...8.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>PolyMC 8.0 has been released</title>

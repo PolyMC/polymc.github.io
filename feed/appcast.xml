@@ -7,6 +7,33 @@
     <language>en</language>
     
       <item>
+        <title>PolyMC 8.1 has been released (macOS)</title>
+        <link>https://polymc.org/news/release-8.1/</link>
+        <sparkle:version>8.1</sparkle:version>
+        <description>
+            &lt;p&gt;This is an amendment release to 8.0 that fixes older Minecraft versions being unable to join servers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/PolyMC/PolyMC/compare/8.0...8.1&quot;&gt;https://github.com/PolyMC/PolyMC/compare/8.0...8.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://polymc.org/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+
+        </description>
+        <pubDate>2026-10-03T00:00:00Z</pubDate>
+        <sparkle:minimumSystemVersion>11.0.0</sparkle:minimumSystemVersion>
+        
+        
+        
+        <enclosure sparkle:os="macos"
+            url="https://github.com/PolyMC/PolyMC/releases/download/8.1/PolyMC-macOS-8.1.tar.gz"
+            length="0"
+            type="application/octet-stream"
+            sparkle:edSignature="vDcIW1yNr8mYPX+G3YG42Pf/lfx3f0H7zjJ8iaLoQRSvFOP515BGRhXsdciA2wf82DJEoxd0mcdyAYv+hggKBw=="/>
+        <enclosure sparkle:os="macos"
+            url="https://github.com/PolyMC/PolyMC/releases/download/8.1/PolyMC-macOS-Legacy-8.1.tar.gz"
+            length="0"
+            type="application/octet-stream"
+            sparkle:edSignature="9+8Wyx0b83gKVhZZ06MJm75OzbmICiSP9Pk78heU0eJ6+ytPBC7tDaL/iBj6Tq3/idPb6JpcHOVU4178lQBwCg=="/>
+      </item>
+    
+      <item>
         <title>PolyMC 8.0 has been released (macOS)</title>
         <link>https://polymc.org/news/release-8.0/</link>
         <sparkle:version>8</sparkle:version>
