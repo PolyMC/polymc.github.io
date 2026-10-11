@@ -9,7 +9,7 @@ const cleanCSS = require("clean-css");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const Image = require("@11ty/eleventy-img");
 
-async function image(alt, filepath, darkpath, classes, lossless = true, sizes = "100vw") {
+async function image(alt, filepath, darkpath, classes, lossless = true, sizes = "100vw", lazy = true) {
   if (alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
@@ -63,12 +63,12 @@ async function image(alt, filepath, darkpath, classes, lossless = true, sizes = 
       })
       .join("\n")}
       <img
-        class="${classes}"
+        class="${classes || ""}"
         src="${lowsrc.url}"
         width="${highsrc.width}"
         height="${highsrc.height}"
         alt="${alt}"
-        loading="lazy"
+        loading="${lazy ? "lazy" : "eager"}"${lazy ? "" : ' fetchpriority="high"'}
         decoding="async">
     </picture>`;
 }

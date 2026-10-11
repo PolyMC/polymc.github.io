@@ -2,13 +2,14 @@
 layout: layouts/base.njk
 templateClass: tmpl-home
 ---
+{% include "partials/nav.njk" %}
 {% include "partials/header.njk" %}
 
 {% if background %}
-  {% image "Background", background, "", "background", false %}
+  {% image "Background", background, "", "background", false, "100vw", false %}
 {% endif %}
 
-<main class="container {{ templateClass }}">
+<main class="{% if templateClass == 'tmpl-wiki' %}wiki-main{% else %}container{% endif %} {{ templateClass }}">
   {{ content | safe }}
 </main>
 
