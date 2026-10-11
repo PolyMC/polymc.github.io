@@ -26,9 +26,9 @@ eleventyNavigation:
 
 # <img src="https://www.vectorlogo.zone/logos/archlinux/archlinux-icon.svg" height="20"/> Arch Linux / Manjaro
 
-There are several AUR packages available:  
-[![polymc](https://img.shields.io/badge/aur-polymc-blue)](https://aur.archlinux.org/packages/polymc/)  
-[![polymc-bin](https://img.shields.io/badge/aur-polymc--bin-blue)](https://aur.archlinux.org/packages/polymc-bin/)  
+There are several AUR packages available:
+[![polymc](https://img.shields.io/badge/aur-polymc-blue)](https://aur.archlinux.org/packages/polymc/)
+[![polymc-bin](https://img.shields.io/badge/aur-polymc--bin-blue)](https://aur.archlinux.org/packages/polymc-bin/)
 [![polymc-git](https://img.shields.io/badge/aur-polymc--git-blue)](https://aur.archlinux.org/packages/polymc-git/)
 
 ```bash
@@ -68,7 +68,7 @@ A [Nix derivation](https://github.com/PolyMC/PolyMC/blob/develop/nix/NIX.md) is 
 # <img src="https://www.vectorlogo.zone/logos/getfedora/getfedora-icon.svg" height="20"/> RPM
 
 An RPM package is available [on COPR](https://copr.fedorainfracloud.org/coprs/polymc/polymc/):
-  
+
 ```bash
 dnf copr enable polymc/polymc
 ```
@@ -79,7 +79,7 @@ dnf copr enable polymc/polymc
 
 # <img src="https://www.gentoo.org/assets/img/logo/gentoo-signet.svg" height="20"/> Gentoo Linux
 
-ebuilds for PolyMC can be downloaded from the [polymc](https://git.swurl.xyz/PolyMC/overlay) overlay.
+ebuilds for PolyMC can be downloaded from the [polymc](https://github.com/PolyMC/overlay) overlay.
 
 Write the following to `/etc/portage/repos.conf/polymc.conf`:
 
@@ -87,7 +87,7 @@ Write the following to `/etc/portage/repos.conf/polymc.conf`:
 [polymc]
 location = /var/db/repos/polymc
 sync-type = git
-sync-uri = https://git.swurl.xyz/PolyMC/overlay.git
+sync-uri = https://github.com/PolyMC/overlay.git
 ```
 
 If you want to build and install the latest version from git, then unmask the 9999 ebuild:
